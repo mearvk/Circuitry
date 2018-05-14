@@ -1,0 +1,449 @@
+Master Document
+
+Table of Contents
+
+1. System
+2. System Components
+3. Extensibility
+4. Use Cases
+5. Exceptions
+6. Final Words
+
+//
+
+>> System
+
+The system is the heart of the program.  We work with particular emphasis on extensibility of components and integration.  Value. Proximity. Extensibility. Ok.
+
+>> System Components
+
+    System components are used for framing applications, revising applications and integrating applications.  These components provide logical frameworks for you to use with your application.
+
+    Extensibility is left well guarded herein.  As a quick example we would say that an Analyzer could have a very simple circuit; the simplest circuit would be a unlatched input, process, output sequence.
+
+    What if we wanted a more complicated circuit?  We could add a latched version.  No one could interrupt the analysis with further data once it began. However what if we wanted a multiple phase analyzer?
+One could see that more complicated circuits, for all Component types, could be created to preserve extensibility across framing, revising and integration your application. Extensibility would then have to be considered.
+Extensibility likely would then have some recurring themes.  Let's look at them.
+
+    For the Analyzer to work as a simple circuit we need very little, perhaps the latch itself for starters.  If we add some care to a multi-state analysis then we would need to support it.  Some concern about programmer's
+skill would become apparent.  Would it be true that a skilled programmer would be safe without a circuit theory to guide him?  Perhaps.  Would it be true that more extensible circuits would require usually more or fewer
+components as a rule?  Ok, you get the idea.  So let's look a while at how that scales, how it forms and then let's look at our set of basic system components.  Ok.
+
+    Firstly how many ways can we rely on these system components.  In the simple case we have: a) execution flow, b) system call and c) return to execution flow.  In a greater complexity we would have: a) execution flow,
+b) system call, c) system logic, d) return to execution flow.  These are very similar except now the scope of the system call is unbounded.  It could be, a quick call, a check against a flag and quit. On the other hand
+it could be a call to a system value and the entire duration of the program is a series of system calls.  Ok.  This is important because this is a careful look at extensibility of design and program flow as a system evaluation of
+extensibility.  Extensibility is important.
+
+    Actually then, in working our way to a fine set of truly extensible components, we would need each Component to know about about itself and each other in terms of execution.  There is a system state that relies on an Analyzer and
+the analyzer is integrated against a system that relies on a Server, Streamliner, Producer and a Revisor.  The Server gets many requests and sends them to the Streamliner for codification.  The Producer then sets into motion a request
+for an action to occur; we expect a product to arrive in the system execution flow.  The Revisor is looking to check the work of the product but only after the Analyzer does some analysis on it.  The analysis reveals that this
+batch of product is not at all related to this server but some other server.  However now we need to back up and handle the server from the view of the analyzer which had no logic fit for it.  Ok.  The Server then had no expectation
+for a total failure and so had no way to forward it to its related parent components a failing condition.  The work suddenly stops because there is an obscure flag setting that governs the queueing system for the Server's
+external system.  The Server now has some 'n' remaining items to work on, but it cannot because it has a guarded condition that it cannot control: the external system Monitor. To make matters worse there's not really a way to persist
+items that are "stuck" in system.  No one thought to "extend" the system.  The day's order is ruined and all the components did the best they could.  Now the other company must be informed and worst of all they find nothing wrong
+with their orders.  They look correct.  Perhaps weeks later they find there is a very minor difference is a text document from Solaris text editor and one from Windows but for weeks no one can spot the cause of the problem.
+
+    This is an interesting example because it touches many degrees of extensibility.  The programmer is the pilot of the system and the chief architect, but none of this was so foreseeable as to be very real to him or her.
+So as above the value produced by a) execution b) system call c) system logic d) execution is zero.  The system did not even have a way to return to execution.  Oops!
+
+    In this case a Persistor object would be useful.  We need the system objects (orders, order IDs, etc) to be available even if the system breaks or halts and especially when it breaks or freezes.  This is because we, as humans,
+care about protecting the ad hominem contract we entire.  In this case the businesses understand that they send documents and place orders with them.  They do not understand that there is a potential issue within the system that
+the simple will become very complicated, untenable.  Were the boss willing to come and look we would see there is a Persist button right there on the software and this would print out the variables in the system.  Ideally we would
+care to write a simple system Component to handle these new Solaris text documents so we would like to write a second Analyzer to determine which kind of document to attend.  Ok.  The system itself did not have a way to continue
+when there was a fatal error so would need a Decider way up high to determine what should happen if the system stack goes haywire.  This is a great example of a design use case.  The client would care that the business owner
+did not drop the ball, to say lose all the contract data.  So they would want a Decider and a Persistor and a Notifier.  Ok.  Now we can see that there are degrees of extensibility.  Integrating each of these after the software is designed
+may be costly or slow.  And then what - many client contracts will go into the system and many may be Solaris text documents!
+
+    Ok, we can touch the system more simply and quickly than we could touch the application logic.  Adding a simple workaround is preferable to a complicated one. This also speaks to having to touch source code which is not yours.
+By using components and a System process we can resolve these more quickly than rewriting complicated circuits in a complicated course of revision.  This is the ad hominem contract; we intuit the costs relatively well.  We do not
+want to spend two weeks on revision where we stand to spend only one day.  Ok, so we care to protect that.
+
+>> Extensibility
+
+    We herein list the ways in which a SystemComponent may be regulated; we list how they may be guaranteed to perform.  Some important values here are value, proximity and extensibility.  If we overvalue or undervalue a component or system
+we arrive at difficulty.  If we have too many circuits, or indeed concepts about them, in a short period then we arrive at difficulty.  If we do not understand the extensible value set and how to use it then we arrive at difficulty.
+These are well guarded for and against the ad hominem logic set of teaching and learning methodology, a fair set of processes for viewing, learning and comprehension.  These are indeed then very strong and stable starting points for
+re-education of previously lost or confused individuals with respect to coding well.
+
+1. Starting
+
+We list here all the ways a system component could be started; therefore all the ways you would rightly start a system component.
+
+    a. direct object
+
+    b. indirect object
+
+    d. circuit object
+
+2. Restarting
+
+    a. restart w/ conditions
+
+    b. restart w/ no conditions
+
+    c. restart w/ circuit logic
+
+3. Pausing
+
+    a. pause w/ conditions
+
+    b. pause w/ no conditions
+
+    c. pause w/ circuit logic
+
+4. Stopping
+
+    a. stop w/ conditions
+
+    b. stop w/ no conditions
+
+    c. stop w/ circuit logic
+
+5. Validating
+
+    a. validate local logical state
+
+    b. validate circuit logical state
+
+    c. validate lock condition
+
+6. Revalidating
+
+    a. revalidate local logical state
+
+    b. revalidate circuit logical state
+
+    c. revalidate lock condition
+
+7. Dynamic Allocation
+
+    a. against inward extensible
+
+    b. against outward extensible
+
+    c. against stateward extensible
+
+8. Revising
+
+9. Integrating
+
+10. Reintegrating
+
+11. Peering
+
+
+>> Component Descriptions
+
+1. Analyzer
+
+    Description:
+
+    Input: object to analyze
+
+    Output: return value of analysis
+
+    Process: analyze a system or object
+
+    Lock(s): standard latch system
+
+    Notes: none
+
+2. Automater
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+3. Client
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+4. Consumer
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+5. Creator
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+6. Decider
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+7. Deliverer
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+8. Destroyer
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+9. Driver
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+10. Encapsulator
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+11. Extender
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+12. Inferrer
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+13. Mover
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+14. Observer
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+15. Orderer
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+16. Recognizer
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+17. Revisor
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+18. Server
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+19. Simplifier
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+20. Storer
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+21. Streamliner
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+22. Visitor
+
+    Description:
+
+    Input:
+
+    Output:
+
+    Process:
+
+    Lock(s):
+
+    Notes:
+
+>> Use Cases
+
+>> Exceptions
+
+>> Final Words
