@@ -1,9 +1,21 @@
 package org.mearvk.circuitry;
 
+import org.mearvk.ancellaries.System;
 import org.mearvk.ancellaries.SystemComponent;
 
 public class Automater extends SystemComponent
 {
+    public Automater() {
+
+    }
+
+    public Automater(System system) {
+
+    }
+
+    public void automate() {
+
+    }
 
     @Override
     public void latch() throws Exception {
