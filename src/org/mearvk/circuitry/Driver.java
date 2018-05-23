@@ -1,10 +1,25 @@
 package org.mearvk.circuitry;
 
+import org.mearvk.ancellaries.BusLogic;
+import org.mearvk.ancellaries.System;
 import org.mearvk.ancellaries.SystemComponent;
 import org.mearvk.circuitry.org.mearvk.interfaces.Runner;
 
 public class Driver extends SystemComponent implements Runner
 {
+    public BusLogic bus;
+
+    //
+
+    public Driver() {
+
+    }
+
+    public Driver(System system) {
+        this.system = system;
+    }
+
+
     @Override
     public void run()
     {

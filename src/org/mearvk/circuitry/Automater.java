@@ -1,10 +1,15 @@
 package org.mearvk.circuitry;
 
+import org.mearvk.ancellaries.BusLogic;
 import org.mearvk.ancellaries.System;
 import org.mearvk.ancellaries.SystemComponent;
 
 public class Automater extends SystemComponent
 {
+    public BusLogic bus;
+
+    //
+
     public Automater() {
 
     }

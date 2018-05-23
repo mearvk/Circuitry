@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Revolver.java" afterDir="false" />
+    <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="Latest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/ancellaries/BusLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/ancellaries/BusLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/ancellaries/ExceptionRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/ancellaries/ExceptionRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/ancellaries/SignalRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/ancellaries/SignalRegister.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Analyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Analyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Automater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Automater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Counter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Creator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Creator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Decider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Decider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Deliverer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Deliverer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Destroyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Destroyer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Encapsulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Encapsulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Extender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Extender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Inferrer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Inferrer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Monitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Monitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Mover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Mover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Notifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Notifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Orderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Orderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Persistor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Persistor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Recognizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Recognizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Registrar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Registrar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Revisor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Revisor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Revolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Revolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Simplifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Simplifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Storer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Storer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Streamliner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Streamliner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Visitor.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,56 +46,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Client.java">
+      <file leaf-file-name="Revolver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Revolver.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#201#202#0" expanded="true" />
-                <element signature="e#234#235#0" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Consumer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Consumer.java">
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="master.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mearvk/master.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1614">
-              <caret line="97" column="28" lean-forward="true" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Analyzer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Analyzer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" selection-end-line="41" />
+            <state relative-caret-position="221">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
               <folding>
-                <element signature="e#153#154#0" expanded="true" />
-                <element signature="e#185#186#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#300#301#0" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Automater.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Automater.java">
+      <file leaf-file-name="BusLogic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/BusLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="119">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,47 +86,80 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Revolver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Revolver.java">
+      <file leaf-file-name="ExceptionRegister.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/ExceptionRegister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="68">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Notifier.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Notifier.java">
+      <file leaf-file-name="SignalRegister.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/SignalRegister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="68">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Persistor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Persistor.java">
+      <file leaf-file-name="System.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/System.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Monitor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Monitor.java">
+      <file leaf-file-name="SystemComponent.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/SystemComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state relative-caret-position="459">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Producer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Producer.java">
+      <file leaf-file-name="Simplifier.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Simplifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="612">
+              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#316#317#0" expanded="true" />
+                <element signature="e#352#353#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Storer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Storer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#300#301#0" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Streamliner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Streamliner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#319#320#0" expanded="true" />
+                <element signature="e#355#356#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,34 +188,41 @@
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/SystemComponent.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/ExceptionRegister.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/System.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Driver.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Encapsulator.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Observer.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/SystemComponent.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Deliverer.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Storer.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Counter.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Decider.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Mover.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Creator.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Destroyer.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Extender.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Streamliner.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Recognizer.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Revisor.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Visitor.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Orderer.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Inferrer.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Simplifier.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Registrar.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/Flag.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Server.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/master.txt" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Deliverer.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Analyzer.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Revolver.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Automater.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Client.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Consumer.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Counter.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Creator.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Decider.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Driver.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Destroyer.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Inferrer.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Monitor.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Extender.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Encapsulator.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Mover.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Notifier.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Observer.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Orderer.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Persistor.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Producer.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Server.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/BusLogic.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Simplifier.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Revolver.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Storer.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Visitor.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Recognizer.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Registrar.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Revisor.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Streamliner.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/ExceptionRegister.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/SignalRegister.java" />
       </list>
     </option>
   </component>
@@ -188,6 +238,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,8 +281,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,12 +359,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526322158632</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Latest">
+      <created>1526429701849</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526429701849</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -323,7 +379,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32987747" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -337,21 +393,49 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Latest" />
     <option name="LAST_COMMIT_MESSAGE" value="Latest" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Monitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Registrar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -377,11 +461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -441,24 +520,303 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/Flag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/master.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1649">
+          <caret line="97" column="28" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Monitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Inferrer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Extender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Encapsulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding>
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding>
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Destroyer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Deliverer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Decider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Creator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Counter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Automater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Analyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Mover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="22" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Notifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Orderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Persistor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Visitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Recognizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Registrar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Revisor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Revolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Simplifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Storer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Streamliner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/BusLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="119">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/ExceptionRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/SignalRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -469,239 +827,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Encapsulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Observer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/SystemComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Deliverer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Storer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="8" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Counter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Decider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="8" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Mover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Creator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Destroyer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="8" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Extender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Streamliner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Recognizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Revisor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Visitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Orderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Inferrer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Simplifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Registrar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/Flag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Producer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Monitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Persistor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Notifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/master.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1614">
-          <caret line="97" column="28" lean-forward="true" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Analyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-line="41" />
-          <folding>
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#185#186#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Revolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Automater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        <state relative-caret-position="459">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>

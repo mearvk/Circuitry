@@ -1,9 +1,18 @@
 package org.mearvk.circuitry;
 
+import org.mearvk.ancellaries.BusLogic;
 import org.mearvk.ancellaries.SystemComponent;
 
 public class Analyzer extends SystemComponent
 {
+    public BusLogic bus;
+
+    //
+
+    public Analyzer() {
+
+    }
+
     public Analyzer(org.mearvk.ancellaries.System system) {
         this.system = system;
     }
