@@ -24,17 +24,7 @@ Many patterns naturally will relate function and structure in general ways which
 
         g. You will add components pre/post/during design time
 
-        h. You will need to add a queue to a component
-
-        i. You will need to add a system to a component
-
-        j. You will need to add a logic to a component
-
-        k. You will need to add a queue to a system
-
-        l. You will need to add a system to a system
-
-        m. You will need to add a logic to a system
+        o. You will need to consider connectors for such additions
 
     Each of these will be a carry object.  We will take a look now at what this means for you, the developer.  As we progress in understanding the objects we intuit tend to mature as well.  These items will remain constant; you will expect to carry them in the delta set for reference.
 
@@ -44,7 +34,7 @@ Many patterns naturally will relate function and structure in general ways which
 
         Here we have s strong case for getting it all right to begin with.  Strong exceptions will be later adding unforeseeable requirements, lack of understandingness for it, or adding new developers or development processes. The objects here will be about gathering concepts and feelings about it the early fill-space we will conquer.
 
-        The extensible set will maintain extensible features well.  What we will consider is how extensible the system should be.  We want the complete list of attributes to consider ahead of design time.  Here they are:
+        The good or strong extensible set will maintain extensible features well.  What we will consider is how extensible the system should be.  We want the complete list of attributes to consider ahead of design time.  Here they are:
 
             a.  The object will need referencing
 
@@ -68,9 +58,11 @@ Many patterns naturally will relate function and structure in general ways which
 
             k.  The object will need to use / infer logic
 
-        These are considered two ways.  The programmer will want a clean way to move values in the 2-space of design.  The software itself will need a way to handle these at runtime.
+        These are considered two ways.  The programmer will want a clean way to move values in the 2-space of design.  The software itself will need a way to handle these at runtime.  Thus we address three things: the application, the system application and the system for design.
 
         ib. Design Time
+
+            a.
 
         ic. Post-Design Time
 
