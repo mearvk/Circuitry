@@ -1,0 +1,28 @@
+Extensibility:
+
+I. Standard Extensibilities
+
+Many patterns naturally will relate function and structure in general ways which we can understand.  Understanding these well in terms of design and extensibility is the difference between a job and a doingness. Let's take a look at how these break down.
+
+    i.      Relating Supercomplexity toward Swith*
+
+    Here we issue toward reuse of standard patterns in terms their manifold across and relating to the patterns issued at design and post-design time.
+
+    ii.     Direct System Related Extensibility Mapping
+
+    The backing system is the object here; as we add to the program we need the extensibility in terms of speed and ease.  We add functionality in terms of understanding to maintain this edge in the sort.
+
+    iii.    Indirect System Related Extensibility Mapping
+
+    The programmer and/or designer are the object here.  Clear cut case of adding complexity by adding external constraints that are not a direct system value.
+
+    iv.     Reorganization and Cleanliness
+
+II. Specific Extensibilities
+
+Certain patterns will have specific
+
+
+Terms:
+
+Swith: Super-smooth, low-latency coolness,, again
