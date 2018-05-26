@@ -16,11 +16,31 @@ Many patterns naturally will relate function and structure in general ways which
 
         c. You will add components to a queue or very similar
 
-        d. You will add components to a system
+        d. You will add components to a system or very similar
 
         e. You will add components to a logic
 
         f. You will add components pre/post/during design time
+
+    Each of these will be a carry object.  We will take a look now at what this means for you, the developer.  As we progress in understanding the objects we intuit tend to mature as well.  These items will remain constant; you will expect to carry them in the delta set for reference.
+
+    Now we need to shape our perspectives.  In what way then best to understand the relating pattern of adding, removing or altering components at pre/post/during design time, at runtime, across the permute of the list above?
+
+        ia. Pre-Design Time
+
+        Here we have s strong case for getting it all right to begin with.  Strong exceptions will be later adding unforeseeable requirements, lack of understandingness for it, or adding new developers or development processes. The objects here will be about gathering concepts and feelings about it the early fill-space we will conquer.
+
+        The extensible set will maintain extensible features well.
+
+
+
+        ib. Design Time
+
+        ic. Post-Design Time
+
+        id. Runtime
+
+        ie. Errata
 
     ii.     Direct System Related Extensibility Mapping
 
