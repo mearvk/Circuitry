@@ -24,6 +24,18 @@ Many patterns naturally will relate function and structure in general ways which
 
         g. You will add components pre/post/during design time
 
+        h. You will need to add a queue to a component
+
+        i. You will need to add a system to a component
+
+        j. You will need to add a logic to a component
+
+        k. You will need to add a queue to a system
+
+        l. You will need to add a system to a system
+
+        m. You will need to add a logic to a system
+
     Each of these will be a carry object.  We will take a look now at what this means for you, the developer.  As we progress in understanding the objects we intuit tend to mature as well.  These items will remain constant; you will expect to carry them in the delta set for reference.
 
     Now we need to shape our perspectives.  In what way then best to understand the relating pattern of adding, removing or altering components at pre/post/during design time, at runtime, across the permute of the list above?
