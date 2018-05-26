@@ -1,9 +1,19 @@
 package org.mearvk.ancellaries;
 
-import org.mearvk.ancellaries.ExceptionRegister;
-
 public class System
 {
+    public System system;
+
+    public System() {
+
+    }
+
+    public System(System system) {
+        this.system = system;
+    }
+
+    //
+
     public void latch(Object relative, Object target){}
 
     public void put(Object relative, Object deliverable, Object target){}
