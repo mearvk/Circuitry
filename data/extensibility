@@ -6,7 +6,21 @@ Many patterns naturally will relate function and structure in general ways which
 
     i.      Relating Supercomplexity toward Swith*
 
-    Here we issue toward reuse of standard patterns in terms their manifold across and relating to the patterns issued at design and post-design time.
+    Here we issue toward reuse of standard patterns in terms their manifold across and relating to the patterns issued at design and post-design time - specifically where these extend structure and therefore function beyond the simple interlinking of well understood pattern(s).
+
+    We issue then in keeping with standard ordering logic the following:
+
+        a. You will add components to a component
+
+        b. You will add components to a series of components
+
+        c. You will add components to a queue or very similar
+
+        d. You will add components to a system
+
+        e. You will add components to a logic
+
+        f. You will add components pre/post/during design time
 
     ii.     Direct System Related Extensibility Mapping
 
@@ -26,3 +40,6 @@ Certain patterns will have specific
 Terms:
 
 Swith: Super-smooth, low-latency coolness,, again
+
+Darth: Break-even point for emperor
+
