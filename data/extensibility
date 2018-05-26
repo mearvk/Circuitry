@@ -32,17 +32,31 @@ Many patterns naturally will relate function and structure in general ways which
 
         Here we have s strong case for getting it all right to begin with.  Strong exceptions will be later adding unforeseeable requirements, lack of understandingness for it, or adding new developers or development processes. The objects here will be about gathering concepts and feelings about it the early fill-space we will conquer.
 
-        The extensible set will maintain extensible features well.  What we will consider is how extensible the system should be.
+        The extensible set will maintain extensible features well.  What we will consider is how extensible the system should be.  We want the complete list of attributes to consider ahead of design time.  Here they are:
 
-        a.  The object will need referencing
+            a.  The object will need referencing
 
-        b.  The object will need pointer reference
+            b.  The object will need pointer reference
 
-        b.  The object will need to be moved
+            c.  The object will need to be moved
 
-        c.  The object will need a new degree of extensibility
+            d.  The object will need a new degree of extensibility
 
-        d.  The object will need lock(s) and/or locking features
+            e.  The object will need lock(s) and/or locking features
+
+            f.  The object will need to be encapsulated
+
+            g.  The object will need to support an interface
+
+            h.  The object will need a support mechanism (protocol or protocols)
+
+            i.  The object will need to support a varying workload
+
+            j.  The object will need to support scheduling
+
+            k.  The object will need to use / infer logic
+
+        These are considered two ways.  The programmer will want a clean way to move values in the 2-space of design.  The software itself will need a way to handle these at runtime.
 
         ib. Design Time
 
