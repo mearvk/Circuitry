@@ -4,7 +4,7 @@ import org.mearvk.ancellaries.BusLogic;
 import org.mearvk.ancellaries.System;
 import org.mearvk.ancellaries.SystemComponent;
 
-public class Server extends SystemComponent
+public class Server extends SystemComponent implements Runnable
 {
     public BusLogic bus;
 
@@ -30,6 +30,11 @@ public class Server extends SystemComponent
 
     @Override
     public void ready() throws Exception {
+
+    }
+
+    @Override
+    public void run() {
 
     }
 }
