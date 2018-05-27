@@ -1,24 +1,53 @@
 package org.mearvk.ancellaries;
 
-public class System
+import javax.jms.*;
+import javax.naming.InitialContext;
+
+public class System extends SystemComponent
 {
     public System system;
 
-    public System() {
-
+    public System(String name) {
+        this.name = name;
     }
 
-    public System(System system) {
+    public System(System system, String name) {
         this.system = system;
+
+        this.name = name;
     }
 
     //
 
-    public void latch(Object relative, Object target){}
+    @Override
+    public void latch() throws Exception {
 
-    public void put(Object relative, Object deliverable, Object target){}
+    }
 
-    public void pump(Object relative, ExceptionRegister register){}
+    @Override
+    public void unlatch() throws Exception {
 
-    public void unlatch(Object relative, Object target){}
+    }
+
+    @Override
+    public void ready() throws Exception {
+
+    }
+
+    @Override
+    public void init() {
+        try {
+            InitialContext context = new InitialContext();
+
+            Topic topic = (Topic) context.lookup(name);
+
+            TopicConnectionFactory connFactory = (TopicConnectionFactory) context.lookup("topic/connectionFactory");
+
+            TopicConnection topicConn = connFactory.createTopicConnection();
+
+            TopicSession topicSession = topicConn.createTopicSession(false, Session.AUTO_ACKNOWLEDGE);
+        } catch (Exception e) {
+
+        }
+    }
 }
