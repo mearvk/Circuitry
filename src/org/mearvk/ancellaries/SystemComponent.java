@@ -1,9 +1,6 @@
 package org.mearvk.ancellaries;
 
-import javax.jms.Topic;
-import javax.jms.TopicConnection;
-import javax.jms.TopicConnectionFactory;
-import javax.jms.TopicSession;
+import javax.jms.*;
 import javax.naming.InitialContext;
 import java.util.concurrent.locks.Lock;
 
@@ -19,13 +16,18 @@ public abstract class SystemComponent
 
     public InitialContext messaging_context;
 
-    public Topic messaging_topic;
+    public Topic messaging_exception_endpoint;
+
+    public Topic messaging_event_endpoint;
 
     public TopicConnectionFactory messaging_connection_factory;
 
     public TopicConnection messaging_connection;
 
     public TopicSession messaging_session;
+
+    public TopicPublisher messaging_topic_publisher;
+
 
     //
 

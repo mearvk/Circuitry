@@ -1,6 +1,8 @@
 package org.mearvk.ancellaries;
 
-import javax.jms.*;
+import javax.jms.Session;
+import javax.jms.Topic;
+import javax.jms.TopicConnectionFactory;
 import javax.naming.InitialContext;
 
 public class System extends SystemComponent
@@ -37,15 +39,20 @@ public class System extends SystemComponent
     @Override
     public void init() {
         try {
-            InitialContext context = new InitialContext();
+            this.messaging_context = new InitialContext();
 
-            Topic topic = (Topic) context.lookup(name);
+            this.messaging_exception_endpoint = (Topic) messaging_context.lookup(name + "/exceptions");
 
-            TopicConnectionFactory connFactory = (TopicConnectionFactory) context.lookup("topic/connectionFactory");
+            this.messaging_event_endpoint = (Topic) messaging_context.lookup(name + "/events");
 
-            TopicConnection topicConn = connFactory.createTopicConnection();
+            this.messaging_connection_factory = (TopicConnectionFactory) messaging_context.lookup(name + "/connection_factory");
 
-            TopicSession topicSession = topicConn.createTopicSession(false, Session.AUTO_ACKNOWLEDGE);
+            this.messaging_connection = messaging_connection_factory.createTopicConnection();
+
+            this.messaging_session = messaging_connection.createTopicSession(false, Session.AUTO_ACKNOWLEDGE);
+
+            this.messaging_topic_publisher = messaging_session.createPublisher(messaging_exception_endpoint);
+
         } catch (Exception e) {
 
         }
