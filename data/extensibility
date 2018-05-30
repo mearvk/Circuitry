@@ -88,9 +88,11 @@ Many patterns naturally will relate function and structure in general ways which
 
         d. You will want a way to show where implements keyword is useful and why
 
-        e. You will want a way to show where component features/commonalities are redundant or already well
+        e. You will want a way to show where component features/commonalities are redundant or already concerted
 
-        f. You will want a way to show
+        f. You will want a way to show where adding more system feature will cause a refactoring
+
+        g. so on A+ really good so far@
 
         //
 
