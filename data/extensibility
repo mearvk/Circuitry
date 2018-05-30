@@ -24,7 +24,75 @@ Many patterns naturally will relate function and structure in general ways which
 
         g. You will add components pre/post/during design time
 
-        o. You will need to consider connectors for such additions
+        h. You will need to consider connectors for such additions
+
+        //
+
+        a. You will latch components
+
+        b. You will latch subcomponents
+
+        c. You will latch applications
+
+        d. You will latch systems
+
+        e. You will latch networks
+
+        f. You will latch protocols
+
+        //
+
+        a. You will make more or less public a component and/or system etc.
+
+        b. You will make more or less private a component and/or system etc.
+
+        c. You will make more or less protected a component and/or system etc.
+
+        d. You will make more or less commutative a component and/or system etc.
+
+        e. You will make more or less transitive a component and/or system etc.
+
+        f. You will make more or less reflexive a component and/or system etc.
+
+        //
+
+        a.  You will want to offer a reference across a simple circuit and/or component
+
+        b.  You will want to offer a reference across a complicated circuit and/or component
+
+        c.  You will want to offer a reference across a privately held circuit and/or component
+
+        d.  You will want to offer a reference across a shared circuit and/or component
+
+        e.  You will want to offer re-reference across these items
+
+        f.  You will want to add such values at runtime
+
+        g.  You will want to add such values at compile time
+
+        //
+
+        a. You will want to move system components through transitivity ( question of how it will be there - time based or logic )
+
+        b. You will want to move system components through commutativity ( question of ordering relation )
+
+        c. You will want to move system components through reflexivity ( question of self-knowledge )
+
+        //
+
+        a. You will want a way to generalize system functionalities to form minimal complete set
+
+        b. You will want a way to classify system functionalities to form minimal complete set
+
+        c. You will want a way to show where extends keyword is useful and why
+
+        d. You will want a way to show where implements keyword is useful and why
+
+        e. You will want a way to show where component features/commonalities are redundant or already well
+
+        f. You will want a way to show
+
+        //
 
     Each of these will be a carry object.  We will take a look now at what this means for you, the developer.  As we progress in understanding the objects we intuit tend to mature as well.  These items will remain constant; you will expect to carry them in the delta set for reference.
 

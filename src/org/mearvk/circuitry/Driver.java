@@ -40,4 +40,9 @@ public class Driver extends SystemComponent implements Runner
     public void ready() throws Exception {
 
     }
+
+    @Override
+    public void init() throws Exception {
+
+    }
 }

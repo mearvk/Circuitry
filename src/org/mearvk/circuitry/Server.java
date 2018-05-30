@@ -34,6 +34,11 @@ public class Server extends SystemComponent implements Runnable
     }
 
     @Override
+    public void init() throws Exception {
+
+    }
+
+    @Override
     public void run() {
 
     }

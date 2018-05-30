@@ -39,8 +39,6 @@ public abstract class Deliverer extends SystemComponent implements Runner, Deliv
 
     //
 
-
-
     @Override
     public void ready()
     {
@@ -50,16 +48,7 @@ public abstract class Deliverer extends SystemComponent implements Runner, Deliv
     @Override
     public void deliver()
     {
-        synchronized(this.latchlock)
-        {
-                this.system.latch(this, this.target);
 
-                this.system.put(this, this.deliverable, this.target);
-
-                this.system.pump(this, this.exceptionregister);
-
-                this.system.unlatch(this, this.target);
-        }
     }
 }
 

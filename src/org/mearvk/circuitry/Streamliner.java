@@ -36,4 +36,9 @@ public class Streamliner extends SystemComponent implements Runnable {
     public void ready() throws Exception {
 
     }
+
+    @Override
+    public void init() throws Exception {
+
+    }
 }

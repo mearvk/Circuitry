@@ -34,6 +34,11 @@ public class Encapsulator extends SystemComponent implements Runner
     }
 
     @Override
+    public void init() throws Exception {
+
+    }
+
+    @Override
     public void run() {
 
     }

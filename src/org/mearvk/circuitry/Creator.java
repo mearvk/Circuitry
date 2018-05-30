@@ -32,4 +32,9 @@ public class Creator extends SystemComponent
     public void ready() throws Exception {
 
     }
+
+    @Override
+    public void init() throws Exception {
+
+    }
 }

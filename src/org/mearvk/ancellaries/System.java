@@ -1,12 +1,18 @@
 package org.mearvk.ancellaries;
 
-import javax.jms.Session;
-import javax.jms.Topic;
-import javax.jms.TopicConnectionFactory;
-import javax.naming.InitialContext;
+public class System extends SystemComponent implements Runnable {
+    public static void main(String... args) {
+        System system = new System("system");
 
-public class System extends SystemComponent
-{
+        //system.add(type1);
+
+        //system.add(type2);
+
+        //system.add(type3);
+
+        system.run();
+    }
+
     public System system;
 
     public System(String name) {
@@ -36,25 +42,21 @@ public class System extends SystemComponent
 
     }
 
+    public void put(Object object) {
+
+    }
+
+    public void pump() {
+
+    }
+
     @Override
     public void init() {
-        try {
-            this.messaging_context = new InitialContext();
 
-            this.messaging_exception_endpoint = (Topic) messaging_context.lookup(name + "/exceptions");
+    }
 
-            this.messaging_event_endpoint = (Topic) messaging_context.lookup(name + "/events");
-
-            this.messaging_connection_factory = (TopicConnectionFactory) messaging_context.lookup(name + "/connection_factory");
-
-            this.messaging_connection = messaging_connection_factory.createTopicConnection();
-
-            this.messaging_session = messaging_connection.createTopicSession(false, Session.AUTO_ACKNOWLEDGE);
-
-            this.messaging_topic_publisher = messaging_session.createPublisher(messaging_exception_endpoint);
-
-        } catch (Exception e) {
-
-        }
+    @Override
+    public void run() {
+        java.lang.System.out.println();
     }
 }

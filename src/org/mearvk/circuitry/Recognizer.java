@@ -32,4 +32,9 @@ public class Recognizer extends SystemComponent
     public void ready() throws Exception {
 
     }
+
+    @Override
+    public void init() throws Exception {
+
+    }
 }
