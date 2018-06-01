@@ -328,6 +328,53 @@ Many patterns naturally will relate function and structure in general ways which
 
             Here the code structure would be set once or some few times and then compiled and reworked from there.  The upside is that code and circuit function are guaranteed by the relationship between hierarchy and naming convention.
 
+            Let's take a minute here and draft a circuit guard:
+
+            public class CircuitGuard
+            {
+                public ArrayList<Object> components;
+
+                public ArrayList<LockOrderer> l_application;
+
+                public ArrayList<LockOrderer> l_system;
+
+                public ArrayList<FunctionOrderer> functions;
+
+                //
+
+                public CircuitGuard(System system, ...)
+                {
+                    //setters
+
+                    ...
+                }
+
+                public void tryCircuit()
+                {
+                    //
+                }
+
+                public void tryApplicationLock()
+                {
+                    //
+                }
+
+                public void tryApplicationUnlock()
+                {
+                    //
+                }
+
+                public void trySystemLock()
+                {
+                    //
+                }
+
+                public void trySystemUnlock()
+                {
+                    //
+                }
+            }
+
              c. Full Interpretive
 
             Finally the strong case
