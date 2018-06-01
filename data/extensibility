@@ -258,6 +258,8 @@ Many patterns naturally will relate function and structure in general ways which
 
                     public SystemReferencer sys_referencer;         //change out this object for another like it; binary replacement or pointer alteration
 
+                    public Data data;                               //data for this button to interact with
+
                     ...
 
                     public void actionPerformed(ActionEvent ae)
