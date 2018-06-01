@@ -302,7 +302,7 @@ Many patterns naturally will relate function and structure in general ways which
 
                     <jframe>
 
-                        <data id="jframe_master"/>
+                        <data id="jframe_master" alloc="org.bloq.data.Data"/>
 
                         <callback type="exception" target="exception_primary"/>
 
@@ -314,9 +314,9 @@ Many patterns naturally will relate function and structure in general ways which
 
                         <jpanel>
 
-                            <data id="jpanel_navigation"/>
+                            <data id="jpanel_navigation" alloc="org.bloq.data.Data"/>
 
-                        ...
+                            ...
 
                         </jpanel>
 
@@ -326,7 +326,7 @@ Many patterns naturally will relate function and structure in general ways which
 
              </bloq>
 
-            Here the code structure would be set once or some few times and then compiled and reworked from there.
+            Here the code structure would be set once or some few times and then compiled and reworked from there.  The upside is that code and circuit function are guaranteed by the relationship between hierarchy and naming convention.
 
              c. Full Interpretive
 
