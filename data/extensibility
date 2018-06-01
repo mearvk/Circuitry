@@ -178,18 +178,74 @@ Many patterns naturally will relate function and structure in general ways which
 
              Here we state that there is a lock of finite complexity; forever locks that end up deadlocking the process itself we don't address here.  However the system will require two plumbings; one for the application and one for the system.  So a developer would be responsible for stating and characterizing the circuit for unlock and lock of his function(s).
 
-             The system developer would need to read the description of the circuit and the application code that goes with it.  Here he would architect a unlock sequence for emergencies for example; or perhaps for simple transfer to another system a blocking threaded process.  Many things could be locked and by degree many things would have to be written carefully.
+             The system developer would need to read the description of the circuit and the application code that goes with it.  Here he would architect a unlock sequence for emergencies for example; or perhaps for simple transfer to another system blocking a threaded process.  Many things could be locked and by degree many things would have to be written carefully.
 
              Basically we address however the system's ability to recover from locked condition and transfer of control back to application as would be considered safe and complete by a given startup condition.  We would then vie for monitors and registrars for exceptions and state transfer(s) by system and application.
 
-             So adding these up into system cognate we find we approach some bounded complexity and a likeness to circuitry.
+             So adding these up into system cognate we find we approach some bounded complexity and a likeness to circuitry.  We close by stating that these will usually be reducible to prototypical conducts; that a person's circuit will be as large as is required and not more.
 
 
              ii.    Transfer locked system state
 
+             Here we state that there is a lock of finite scope; locks that end up changing during transfer process we don't address here.  However the system will require two plumbings; one for transfer of reference and one for a transfer of binary code.  So a developer would be responsible for stating and characterizing the circuit for transfer under normal and failure conditions for both rereferncing and binary exchanges.
+
+             The system developer would need to read the description of the circuit and the application code that goes with it.  Here he would architect a unlock sequence for emergencies for example; or perhaps for simple transfer to another system blocking a threaded process.  Many things could be related and by degree many things would have to be written carefully.
+
+             Basically we address however the system's ability to recover from locked condition and transfer of control back to application as would be considered safe and complete by a given startup or existing condition.  We would then care to manage reservations for monitors and registrars for exceptions and state transfer(s) by system and application.
+
+             So adding these up into system cognate we find we approach some bounded complexity and a likeness to circuitry.  We close by stating that these will usually be reducible to prototypical conducts; that a program's circuit will be as large as is required and not more.
+
+
              iii.   Normal process (lock and unlock normally)
 
+             Here we state that there is a lock of finite complexity; intractable locks that end up deadlocking the process or system reach itself we don't address here.  However the system will require two plumbings; one for the application and one for the system.  So a developer would be responsible for stating and characterizing the circuit for unlock and lock of his function(s).
 
+             The system developer would need to read the description of the circuit and the application code that goes with it.  Here he would architect a unlock sequence for emergencies for example; or perhaps for simple transfer to another system a blocking threaded process.  Many things could be locked and by degree many things would have to be written carefully.
+
+             Basically we address however the system's ability to recover from locked condition and transfer of control back to application as would be considered safe and complete by a given startup condition.  We would then vie for monitors and registrars for exceptions and state transfer(s) by system and application.
+
+             So adding these up into system cognate we find we approach some bounded complexity and a likeness to circuitry.  We close by stating that these will usually be reducible to prototypical conducts; that a person's circuit will be as large as is required and not more.
+
+             //
+
+             Summarily we need then a scope of circuit, data and application function separation, application circuitry for standard start, restart, pause and stop, system circuitry for standard start, restart, pause and stop, listeners for errors, listeners for exceptions, listeners for state, listeners for state transfers and perhaps more.
+
+             If you try to write these all by hand it may become tedious and best-case vs worst-case scenarios will not always be known.  Further minor design variations will have major shifts in design if we are not careful and patience will be consumed ahead of schedule.
+
+             Let's look at a quick example then for a button, continuing with these themes elsewhere.
+
+             //
+
+             public class Button0001 extends JButton
+             {
+                    public Button0001(System system, JComponent parent)
+                    {
+                        //setters
+
+                        //application calls
+
+                        //system calls
+                    }
+
+                    ...
+
+                    public CircuitGuard cg_application;
+
+                    public CircuitGuard cg_system;
+
+                    public System system;
+
+                    public SystemIntegrand i_system;
+
+                    ...
+
+                    public void actionPerformed(ActionEvent ae)
+                    {
+                        //stub code
+                    }
+             }
+
+             //
 
              b. Quick Interpretive
 
