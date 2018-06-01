@@ -78,11 +78,13 @@ Many patterns naturally will relate function and structure in general ways which
 
         c. You will want to move system components through reflexivity ( question of self-knowledge )
 
+        d. You will want to move system components through
+
         //
 
-        a. You will want a way to generalize system functionalities to form minimal complete set
+        a. You will want a way to generalize system functionalities to form definition of minimal complete set
 
-        b. You will want a way to classify system functionalities to form minimal complete set
+        b. You will want a way to classify system functionalities to claim form minimal complete set
 
         c. You will want a way to show where extends keyword is useful and why
 
@@ -130,9 +132,76 @@ Many patterns naturally will relate function and structure in general ways which
 
         These are considered two ways.  The programmer will want a clean way to move values in the 2-space of design.  The software itself will need a way to handle these at runtime.  Thus we address three things: the application, the system application and the system for design.
 
+        Here you will want to gather system design documents that will help you guide the process towards safe and thorough completion for each step.  These documents and/or references should be read and understood by all group members ahead of starting on design proposal.
+
         ib. Design Time
 
-            a.
+            a. You will want to make a list of human addressables; these will be the human concept of what will be going on.  You will want to keep a design folder and a copy that show the design and theory for each step as you proceed through design and revision.
+
+            How detailed a folder is more than subjective.  You will want something like 10 pages per design object.  You will want to create a circuit diagram, a basic write up and supporting theory for why the process supports that program, finally you will want a page stating which architects and/or designers were involved.
+
+            This will become more interesting and usual to you as you work through the process of system and locating system components against a well understood logic for basis.  A good architect will have many successful folders illustrating his design approach and processes.  If it seems to easy you probably did not do enough work on predesign.
+
+            //
+
+            Example 1:  User Interface Apportionment
+
+            Studying the field of user interfaces we see they usually are designed some three different ways.  The first way will have a monitor for actions with subscribers and listeners.  The second way will be a slightly more systematic approach and the third way would have a very systematic approach.
+
+            These might be then that a browser will have a buttons or input dialogs written in native C or C++.  Inside the browser we find that the scripting engine indeed transfers this process to XML/HTML.  That we can rely on a system mechanism like onclick() to transfer control to a fucntion of our choosing.
+
+            We will find above this there is indeed a total requirement for a system to manage greater system complexity.  This is where design comes into the picture.  Further we can isolate other important factors such as the degree of imposition on locating the callbacks in a system.
+
+            //
+
+            The boss comes to you and suggests you create a user interface proposal.  You can a) write all the code by hand and hope the complexity requirements are met by simple callback functionality, b) write an interpreter that will help you manage development complexity or c) rely on a strong system for component management.
+
+            The case for writing it by hand is clear; you will have total control and responsibility.  An interpretive layer would also be good; you would rely on a shorthand completion for many builds and finally connect any idiosyncracies by hand for final design. The proposal would itself be helped by an XML/HTML implementation as it is easily read by human conceptual preconceptual.
+
+            The final case is a very powerful tool for it; you can complete functional code and locate it in a mapped index.  Each functional component can be called by name and by reference as we grow the method for answering button clicks and the like.  Let's look at how far each can go in stable atmosphere before running into technical challenges.
+
+             //
+
+             a. By Hand
+
+             The application will require a minimum relation with a system backing that will allow motive in relation to system components and that theory.  We would state that safely the functional code should be stored in a Function object that has a mapped property and a lookup mechanism for that function to answer some method towards response.
+
+             There may be many systems that attend the state of execution for a button press.  There may be many dependencies on a system state and that, in turn, on behalf of some human interaction.  This to say that we will be attending some common practices to make sure we support a general method deep enough for a system architect to interface with and repeatable enough to see value in scripting and that thing.
+
+             //
+
+             The locking mechanism for the system state should be global and well named.  We should have a method to access it within the source code and within scripting.  We should have a relative affluence in system space with respect toward application requirements.
+
+             The three values here are:
+
+             i.     Unlock locked system state
+
+             Here we state that there is a lock of finite complexity; forever locks that end up deadlocking the process itself we don't address here.  However the system will require two plumbings; one for the application and one for the system.  So a developer would be responsible for stating and characterizing the circuit for unlock and lock of his function(s).
+
+             The system developer would need to read the description of the circuit and the application code that goes with it.  Here he would architect a unlock sequence for emergencies for example; or perhaps for simple transfer to another system a blocking threaded process.  Many things could be locked and by degree many things would have to be written carefully.
+
+             Basically we address however the system's ability to recover from locked condition and transfer of control back to application as would be considered safe and complete by a given startup condition.  We would then vie for monitors and registrars for exceptions and state transfer(s) by system and application.
+
+             So adding these up into system cognate we find we approach some bounded complexity and a likeness to circuitry.
+
+
+             ii.    Transfer locked system state
+
+             iii.   Normal process (lock and unlock normally)
+
+
+
+             b. Quick Interpretive
+
+             c. Full Interpretive
+
+            Finally the strong case
+
+            Example 2:  Network Interface Apportionment
+
+
+
+            Example 3:
 
         ic. Post-Design Time
 
