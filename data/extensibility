@@ -260,21 +260,73 @@ Many patterns naturally will relate function and structure in general ways which
 
                     public Data data;                               //data for this button to interact with
 
+                    public Lock l_system;                           //lock for system administration
+
+                    public Lock l_application;                      //lock for application administration
+
                     ...
 
                     public void actionPerformed(ActionEvent ae)
                     {
-                        this.system.registerEvent(this, this.getBytes());
+                        this.system.registerEvent(this, this.getBytes(), ae);
                     }
              }
 
              Ok, with this basic setup we can start to guarantee that system viability is protected going forward.  We would not really expect to have a simpler setup than this; stronger cases could exist for integration however.  On the other end we would like the circuits for system to be robust but we will not trade into that just yet.
 
-             We would trade something like a hash code or binary of the object back into the system for its verification on basic state change (button press) against the system maintaining action listeners of its own for now.  This would give the system some idea about deadlock or liveness.
+             We would trade something like a hash code or binary of the object back into the system for its verification on basic state change (e.g. button press) against the system maintaining action listeners of its own for now.  This would give the system some idea about deadlock or liveness.
 
              //
 
              b. Quick Interpretive
+
+             The quick interpretive case would have a system to convert XML/HTML to source code.  You may look online at https://github.com/mearvk/Bloq and find some examples of how this would work.
+
+             <bloq>
+
+                <system>
+
+                    <handler id="exception_primary" type="exception">
+
+                    </handler>
+
+                    ...
+
+                    <monitor id="state_transfer_primary" type="state_transfer">
+
+                    </monitor>
+
+                </system>
+
+                <ui>
+
+                    <jframe>
+
+                        <data id="jframe_master"/>
+
+                        <callback type="exception" target="exception_primary"/>
+
+                        <callback type="error" target="error_primary"/>
+
+                        <callback type="state" target="state_primary"/>
+
+                        <callback type="state_transfer" target="state_transfer_primary"/>
+
+                        <jpanel>
+
+                            <data id="jpanel_navigation"/>
+
+                        ...
+
+                        </jpanel>
+
+                    </jframe>
+
+                </ui>
+
+             </bloq>
+
+            Here the code structure would be set once or some few times and then compiled and reworked from there.
 
              c. Full Interpretive
 
