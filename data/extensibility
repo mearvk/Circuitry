@@ -246,13 +246,13 @@ Many patterns naturally will relate function and structure in general ways which
 
                     public SystemIntegrand i_system;                //logic unit for integration with system or reintegration with system
 
-                    public ExceptionMonitor ex_monitor;             //monitor for exceptions
+                    public ExceptionMonitor exception_monitor;      //monitor for exceptions
 
-                    public ErrorMonitor er_monitor;                 //monitor for errors
+                    public ErrorMonitor error_monitor;              //monitor for errors
 
-                    public StateMonitor st_monitor;                 //monitor for state or change in state
+                    public StateMonitor state_monitor;              //monitor for state or change in state
 
-                    public StateTransferMonitor sx_monitor;         //monitor for transfer of ownership
+                    public StateTransferMonitor transfer_monitor;   //monitor for transfer of ownership
 
                     public Map <String, Function> function_map;     //functional lookup by name (JNDI, etc)
 
