@@ -433,7 +433,7 @@ Many patterns naturally will relate function and structure in general ways which
 
             by saying we could allocate many such Checkouts across the entire scope of the public interface of the Application.  Assuming we are all trustworthy perhaps this is OK.  As we dig deeper we will explore how this may rely on a deeper sense of architectural understanding than simple Component interlinking.
 
-            Presently that we would consider the Network implementation to only really concentrate on state, state change, and object management.  We would see to use them a one or few ways at this time for discussion.
+            Presently that we would consider the Network implementation to only really concentrate on state, state change, and object management.  We would see to use them a one or few ways at this time for discussion.  Now that we limited some scope let's look at a few design issues.
 
             //
 
