@@ -206,6 +206,7 @@ Many patterns naturally will relate function and structure in general ways which
 
              So adding these up into system cognate we find we approach some bounded complexity and a likeness to circuitry.  We close by stating that these will usually be reducible to prototypical conducts; that a person's circuit will be as large as is required and not more.
 
+
              //
 
              Summarily we need then a scope of circuit, data and application function separation, application circuitry for standard start, restart, pause and stop, system circuitry for standard start, restart, pause and stop, listeners for errors, listeners for exceptions, listeners for state, listeners for state transfers and perhaps more.
@@ -330,15 +331,15 @@ Many patterns naturally will relate function and structure in general ways which
 
             Let's take a minute here and draft a circuit guard:
 
-            public class CircuitGuard
+            public class CircuitGuard extends ...
             {
-                public ArrayList<Object> components;
+                public ArrayList<Object> components;                            //objects that we may need to reference
 
-                public ArrayList<LockOrderer> l_application;
+                public ArrayList<LockOrderer> lock_orderer_application;         //lock list for application to perform certain tasks
 
-                public ArrayList<LockOrderer> l_system;
+                public ArrayList<LockOrderer> lock_orderer_system;              //lock list for system to perform certain tasks
 
-                public ArrayList<FunctionOrderer> functions;
+                public ArrayList<FunctionOrderer> function_orderer;             //commutative function orderer (function a --> function b --> function c)
 
                 //
 
@@ -377,11 +378,88 @@ Many patterns naturally will relate function and structure in general ways which
 
              c. Full Interpretive
 
-            Finally the strong case
+            Finally the strong case would have a IDE with system values integrated into it.  In certain cases we would find a circuit analog would be required for software.  We would expect this to be a powerful and well supported standard.
+
+            Things like JNDI, XML mapping(s), circuit backends, quick inferencing, and logic principalism would be supported.  Commutatation, Reflexivity, Control, Ownership, Transitivity, Redesign, etc would be considered well and kept in a clean and easy to understand software development package.
+
+            Bloq and APML would be early examples of the underpinnings of such a system.  Such a beginning may be found at https://github.com/mearvk/Bloq for instance.  The full case would allow us to move more freely and responsively to the changing values the design may require.
+
+            It would also serve as a well-model for education and education materials.  More on such a system later; for now a system would be quick, robust and allow users to design software quickly.  As we look into various implementational methods we will be making notes that will tie in here.
+
+            One end would tie into sophisticated IDE and scripting language and the other would tie into a compilation engine generating source code in whichever language you chose. This is where we'd like to go with software, with design, for now. We stress that we'd like to keep people interested and happy with design.  Ok.
+
+            //
 
             Example 2:  Network Interface Apportionment
 
+            Networks are our friends.  As we've taken up locking and so forth previously as a careful part of component integration and design let's look at some of the other interesting values we could ascribe to network(s) as system components.  Ideally we have some few initial things to clear before heading into theory.
 
+            Let's take a look a a few of them.  Firstly we would like networks to maintain a notion of interconnectivity between computers via Ethernet or TCP.  We don't mean really neural networks or a circuit that operates in a cyclic way.
+
+            Secondly we state that networks are basically about moving data; that this data should be relatively safe.  We can and will look at how this breaks down as object references are passed instead of datagrams/packets.  Finally that we would like the networks to survive a degree of integrative complexity.
+
+            That we would be able to add networks or network listeners at various stages of implementation.  That we would be able to remove them also.  That location of networks, their source(s), their destination(s), relative extensibility of the network as a component itself should be strong, or very strong.
+
+            That a network interface should not give away control of a system; that we should be able to rely on a safe version in well cases.  These conceptual outlines will help you because they stay relatively still, stable.  Let look at some outlines:
+
+            //
+
+            public class Network extends SystemComponent
+            {
+                ... //standard component composition
+
+                public Network(System system, Socket socket, ...)
+                {
+                    ... //
+                }
+
+                public Network(System system, ArrayList<Socket> sockets, ...)
+                {
+                    ... //
+                }
+            }
+
+            //
+
+            As you might intuit we could start right away with Network class and work this into the system.  This would be great.  The class above does very little else than extend SystemComponent and take Socket(s) as constructors.  Taking it up perhaps too simply what else would we need?
+
+            The network would be reliably as extensible as a other SystemComponent but now with Network classes.  We should say famously that this will not be enough.  Here let's take up a few senior defenses of networks and the attacks they avoid.
+
+            For instance we should state that giving a Network object to another design team, group or company as an interface would normally be thought of as very safe.  The Network object is allowed certain protocol(s) and a designer comes over to say how they will be used; this is the nature of the Application Layer in 7 layer OSI.
+
+            What could possibly go wrong?  No, we've checked the buffer allocation and it is very clean. It cannot be overflowed.  We check the user name and password and it that the user has 60 minutes to use network per validation.  No problems so far, right?
+
+            Well supposing your designer is very brilliant and decides to make a Checkout implementation for the Network class.  You share a company token, this is unique to your company, and for this correct value you will be returned a Network object.  Further, we could perhaps add salt to argument
+
+            by saying we could allocate many such Checkouts across the entire scope of the public interface of the Application.  Assuming we are all trustworthy perhaps this is OK.  As we dig deeper we will explore how this may rely on a deeper sense of architectural understanding than simple Component interlinking.
+
+            Presently that we would consider the Network implementation to only really concentrate on state, state change, and object management.  We would see to use them a one or few ways at this time for discussion.
+
+            //
+
+            public class Checkout extends SystemComponent implements SecurityValidator
+            {
+                ... //standard component composition
+
+                public Checkout(System system, Endpoint endpoint, ...)
+                {
+                    ... //
+                }
+
+                public Checkout(System system, ArrayList<Endpoint> endpoints, ...)
+                {
+                    ... //
+                }
+
+                //
+
+                public void validateSecurity(SecurityToken securityToken, ...)
+                {
+
+                }
+            }
+
+            //
 
             Example 3:
 
