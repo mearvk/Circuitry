@@ -455,11 +455,13 @@ Many patterns naturally will relate function and structure in general ways which
 
                 public void validateSecurity(SecurityToken securityToken, ...)
                 {
-
+                    //validate and return network value
                 }
             }
 
             //
+
+            Here the validateSecurity() function would cover validation and returning the appropriate value: the Network with unique ID and expiry for session and the like.  End here for now; good night.
 
             Example 3:
 
