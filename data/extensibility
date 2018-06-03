@@ -465,7 +465,9 @@ Many patterns naturally will relate function and structure in general ways which
 
             //
 
-            Example 3:
+            Example 3: Tray the System
+
+            In this case we would look at the value utility of deep clone vs shallow clone or pass by reference.  Deep cloning of course allows the program to move between JVMs more permanently than pass by reference.  This will produce interesting theory for system and security results and/or designs. Good night.
 
             //
 
