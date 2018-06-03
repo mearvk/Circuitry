@@ -238,13 +238,13 @@ Many patterns naturally will relate function and structure in general ways which
 
                     ...
 
-                    public CircuitGuard cg_application;             //the application circuit we implement against; write this as agreed upon scope in design docs
+                    public CircuitGuard circuit_guard_application;  //the application circuit we implement against; write this as agreed upon scope in design docs
 
-                    public CircuitGuard cg_system;                  //the system circuit we implement against; write this as agreed upon scope into design docs
+                    public CircuitGuard circuit_guard_system;       //the system circuit we implement against; write this as agreed upon scope into design docs
 
                     public System system;                           //the topmost system we can rely on by scope or circuit
 
-                    public SystemIntegrand i_system;                //logic unit for integration with system or reintegration with system
+                    public SystemIntegrand integrand_system;        //logic unit for integration with system or reintegration with system
 
                     public ExceptionMonitor exception_monitor;      //monitor for exceptions
 
@@ -256,13 +256,13 @@ Many patterns naturally will relate function and structure in general ways which
 
                     public Map <String, Function> function_map;     //functional lookup by name (JNDI, etc)
 
-                    public SystemReferencer sys_referencer;         //change out this object for another like it; binary replacement or pointer alteration
+                    public SystemReferencer system_referencer;      //change out this object for another like it; binary replacement or pointer alteration
 
                     public Data data;                               //data for this button to interact with
 
-                    public Lock l_system;                           //lock for system administration
+                    public Lock lock_system;                        //lock for system administration
 
-                    public Lock l_application;                      //lock for application administration
+                    public Lock lock_application;                   //lock for application administration
 
                     ...
 
