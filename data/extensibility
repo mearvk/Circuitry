@@ -843,6 +843,58 @@ Many patterns naturally will relate function and structure in general ways which
 
             toward a science of design for software.  Here the Engineer would stand, the developer would learn.  Ok.
 
+            //
+
+            The first case we care to entertain is that one action will preclude unknowably some other action.  ClientImpl001 will then require some reset of process that will oblique another user or process.  The client will request a change of resource
+
+            that is now either changed or is part of another flow that precludes the second item from getting any service.  For instance we have a Grader for determining whether a JSON input is well formed; this Grader will have then some interested parties.
+
+            The Grader is then rewired as being later in the process flow and the Monitor it was using now gets no action as there is another Grader is written to only flow data that is indeed correct.  Ok, so this case is a bit contrived but here we no feedback for
+
+            a government organization that is legally required to implement a Monitor all transaction data, valid requests or not.
+
+            //
+
+            public class Network
+            {
+                public Network(System system, ...)
+                {
+                    ... //
+                }
+
+
+            }
+
+            //
+
+            The second case is a race-condition; the polite user is not getting any attention.  He does all that is required, does it well and on time and sees that his results are not getting enough of the processor time.  The subject here is that another user knows
+
+            that a protocol is more flexible than previously considered.  The system has no logic circuit to detect it and no observer to know about it.  The circuit specifically cannot guarantee a proportional opportunity because, in addition to requesting a data process
+
+            there is some other condition that is being entered. Below a condition the circuit will have an expectation that will not be met; there will be a function that will eventually depend on two competing methods.  We will look here at a complete example.  This space is
+
+            rich for PhD research and for system theory itself.  Basically the system will seem right but some part of it will be subject to a nuance that will be difficult to detect.  Indeed how close we can come to a fair, secure implementation that will
+
+            guard a humanistic appraisal of contract would be itself rich territory for ethics, business and theory.  Let's have a look at some examples:
+
+            //
+
+            public class Server
+            {
+                ... //
+
+                public Server(System system, ...)
+                {
+                    ... //
+                }
+
+
+            }
+
+            //
+
+            The third case is knowing whether a particular alteration is a priori correct.  The system cannot guarantee a contract toward working order ahead if we allow any SystemComponent ordering in the system.
+
         ic. Post-Design Time
 
         id. Runtime
