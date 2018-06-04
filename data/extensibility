@@ -612,6 +612,8 @@ Many patterns naturally will relate function and structure in general ways which
 
                 <registrar type="jndi"> ... </registrar>
 
+                <registrar type="event"> ... </registrar>
+
 
 
                 <call name="list" local="true" class="org.their.network.Network01" atomic="enforce" jndi="jndi://remotehost:8080/system/branch/target001">
