@@ -708,9 +708,32 @@ Many patterns naturally will relate function and structure in general ways which
 
             Example 3: Tray the System
 
-            In this case we would look at the value utility of deep clone vs shallow clone or pass by reference.  Deep cloning of course allows the program to move between JVMs more permanently than pass by reference.  This will produce interesting theory for system and security results and/or designs. Good night.
+            In this case we would look at the value utility of deep clone vs shallow clone or pass by reference.  Deep cloning of course allows the program to move between JVMs more permanently than pass by reference.  This will produce interesting theory for system and security results and/or designs.
+
+            Firstly let's be aware of the security risk of Software as a Service (SaaS).  Primarily we would like a system as the top-most node.  That is, we ask for a service by name and get a SystemComponent back, a system implementation or harness.
+
+            We cover some security issues with the Network class, let's look at what we'd like to protect in design and extensibility as far as traying the system.
 
             //
+
+            public class Network implements SecurityValidator, Validator
+            {
+
+            }
+
+            //
+
+            Example 4: Runtime Dependencies
+
+            In this case we would look at costs of shuffling or reordering SystemComponent modules.  The standard system is related by hierarchical ordering or indeed a JDNI mapping.  The are fine for pre-compile or design time.  We would like to discuss with you the costs
+
+            of shuffling components during the operational phase of system.  Some examples would be duplicating a system on the fly as new hardware came online; another example would be adding a Network component with SecurityValidator, Validator, Server implementation into an existing system and how to
+
+            decide on the extensibilities for that option.  Finally we would like to discuss reordering references in the general case, and a slightly more complex case.  Here we would also look at a DocumentOptix or DocumentLoader for the system designer.  Remember all these things
+
+            should be easy for the experience system administrator to work with and bread and butter for the system developer.  Let's then take a look a some case examples:
+
+
 
         ic. Post-Design Time
 
