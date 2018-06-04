@@ -602,6 +602,96 @@ Many patterns naturally will relate function and structure in general ways which
 
             //
 
+            And yet clearer or perhaps better would be an XML or JSON document with clear mappings:
+
+            //
+
+            <network type="api" id="pokemontrader" >
+
+                <registrar type="exceptions"> ... </registrar>
+
+                <registrar type="jndi"> ... </registrar>
+
+
+
+                <call name="list" local="true" class="org.their.network.Network01" atomic="enforce">
+
+                <encapsulator value="enforce"></encapsulator>
+
+                    <args>
+
+                        ...
+
+                    </args>
+
+                </call>
+
+            </network>
+
+            //
+
+            Giving a slightly more interesting look at the ClientImpl class:
+
+            //
+
+            public class ClientImpl implements Runnable
+            {
+                ... //standard component composition
+
+                public ClientImpl()
+                {
+                    ... //
+                }
+
+                //
+
+                @Override
+                public void run()
+                {
+                    try
+                    {
+                        Network pokemontrader_network;
+
+                        pokemontrader_network = org.our.System.reference("XML", "file://localhost/dir/file");
+
+                        //
+
+                        pokemontrader_network.atom(Atomic.NEW);
+
+                        //
+
+                        pokemontrader_network.function("list").args("pokecard0056", 5.00, "USD");
+
+                        pokemontrader_network.function("list").args("pokecard0056", 5.00, "USD");
+
+                        ...
+
+                        //
+
+                        pokemontrader_network.atom(Atomic.COMMIT);
+
+                        //
+
+                        Atom transactional_atom = pokemontrader_network.atom(Atomic.LAST);
+
+                        //
+
+                        org.our.System.ui.jframe.jtabbedpane.newTabPane( pokemontrader_network.asList(transactional_atom) );
+                    }
+                    catch(Exception e)
+                    {
+                        //reroute exception to handler
+                    }
+                }
+
+            This will be ahead in a critical way; some meaningful extensibility will have been preserved.  Now instead of relying on a precompiled value at the level of third-party encapsulator and a published API document we have a direct list of values which can be agreed upon ahead of time.
+
+            The system maintains a degree of relation which stays constant with respect to an interface instead of the Encapsulator's concrete class.  This will be all for now.  We will look later at how Network interfaces can be added or removed from system safely with all this in swing.
+
+            This will be a strong case for system security, protecting your system from being copied, unintended effects and design decisions that must be connected later than we would like.  The Network addresses all these and so we will take this component up as an exemplar.
+
+             //
+
             Example 3: Tray the System
 
             In this case we would look at the value utility of deep clone vs shallow clone or pass by reference.  Deep cloning of course allows the program to move between JVMs more permanently than pass by reference.  This will produce interesting theory for system and security results and/or designs. Good night.

@@ -77,8 +77,8 @@
       <file leaf-file-name="extensibility" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/extensibility">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="572" column="76" lean-forward="true" selection-start-line="572" selection-start-column="76" selection-end-line="572" selection-end-column="76" />
+            <state relative-caret-position="798">
+              <caret line="690" column="12" selection-start-line="690" selection-start-column="12" selection-end-line="690" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -574,7 +574,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527994984659</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Latest">
+      <created>1528077954024</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1528077954024</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Latest">
+      <created>1528078528722</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1528078528722</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -998,8 +1012,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/extensibility">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="572" column="76" lean-forward="true" selection-start-line="572" selection-start-column="76" selection-end-line="572" selection-end-column="76" />
+        <state relative-caret-position="798">
+          <caret line="690" column="12" selection-start-line="690" selection-start-column="12" selection-end-line="690" selection-end-column="12" />
         </state>
       </provider>
     </entry>
