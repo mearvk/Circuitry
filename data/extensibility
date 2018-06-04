@@ -879,17 +879,61 @@ Many patterns naturally will relate function and structure in general ways which
 
             //
 
-            public class Server
+            public class Server extends SystemComponent implements Swappable
             {
                 ... //
+
+                ArrayList<SystemComponent> components;
 
                 public Server(System system, ...)
                 {
                     ... //
                 }
 
+                @Override
+                public void swap(Object one, Object two)
+                {
+                    org.our.System.event("Server "+this.hashCode()+" starts swap for object "+one+" and object "+two);
 
+                    Object temp;
+
+                    temp = one;
+
+                    one = two;
+
+                    two = temp;
+
+                    org.our.System.event("Server "+this.hashCode()+" swapped object "+one+" for object "+two);
+                }
             }
+
+            //
+
+            This object is simpler than we might find in the wild and so we might argue that it is more contrived than is strictly necessary.  The overarching position is that there is a potential system or application call that will put, alter or remove a value, object or component without having
+
+            a static way to state it.  The potential reach of the system must then be reducible to quantifiable calculus so we step carefully to avoid race-conditions in the software.  Again the circuit and XML/JSON to form a rules document would be
+
+            well held.  Then the potential reach of the system should be fair in terms of time, in terms of trade and in terms of scale.  A complete systems approach would care here.  Let's take a quick look at a XML document that would allow a contractual grade
+
+            Guarantor to be written.
+
+            //
+
+            <logic type="rules">
+
+                <time>
+
+                </time>
+
+                <trade>
+
+                </trade>
+
+                <scale>
+
+                </scale>
+
+            </logic>
 
             //
 
