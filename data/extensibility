@@ -716,7 +716,7 @@ Many patterns naturally will relate function and structure in general ways which
 
             //
 
-            public class Network implements SecurityValidator, Validator
+            public class Server implements SecurityValidator, Validator
             {
 
             }
@@ -725,7 +725,7 @@ Many patterns naturally will relate function and structure in general ways which
 
             Example 4: Runtime Dependencies
 
-            In this case we would look at costs of shuffling or reordering SystemComponent modules.  The standard system is related by hierarchical ordering or indeed a JDNI mapping.  The are fine for pre-compile or design time.  We would like to discuss with you the costs
+            In this case we would look at costs of shuffling or reordering SystemComponent modules at runtime.  The standard system is related by hierarchical ordering or indeed a JDNI mapping.  The are fine for pre-compile or design time.  We would like to discuss with you the costs
 
             of shuffling components during the operational phase of system.  Some examples would be duplicating a system on the fly as new hardware came online; another example would be adding a Network component with SecurityValidator, Validator, Server implementation into an existing system and how to
 
@@ -733,7 +733,115 @@ Many patterns naturally will relate function and structure in general ways which
 
             should be easy for the experience system administrator to work with and bread and butter for the system developer.  Let's then take a look a some case examples:
 
+            //
 
+            As starting from above we can see that offering a Service interface for the system may indeed be the superior in many ways to a local concrete implementation.  In avoiding a pitfall, we should look to an appropriate methodology for start.
+
+            public class System001 extends System implements SecurityValidator, Validator
+            {
+
+            }
+
+            public class Network extends SystemComponent implements SecurityValidator, Validator
+            {
+
+            }
+
+            public class Endpoint001 extends Endpoint implements SecurityValidator, Validator
+            {
+
+            }
+
+            public class Endpoint002 extends Endpoint implements SecurityValidator, Validator
+            {
+
+            }
+
+            ...
+
+            public class ClientImpl extends SystemComponent implements Runnable
+            {
+                public ClientImpl(System system, ...)
+                {
+                    ... //
+                }
+
+                @Override
+                public void run()
+                {
+                    org.our.System.function("jndi/lookup").args("jndi://localhost:8080/system001", "jndi/system001");  *STRONG CASE*
+
+                    //
+
+                    System001 system;
+
+                    system = (org.our.System001) org.our.System.alias("jndi/system001").shallow_copy();
+
+                    //
+
+                    system.service("pause").args(system.copier);
+
+                    system.service("pause").args(system.monitor001);
+
+                    system.service("pause").args(system.monitor002);
+
+                    //
+
+                    system.service("add").args(system.copier.components, network005);
+
+                    system.service("add").args(system.monitor001.components, network005);
+
+                    system.service("add").args(system.monitor002.components, network005);
+
+                    //
+
+                    system.service("remove").args(system.copier.components, ALL);
+
+                    //
+
+                    system.service("add").rules("file://localhost/file").args(system.copier.components, ON_COPY);
+
+                    system.service("add").rules("file://localhost/file").args(system.monitor001.components, INTERFACE_ACTION);
+
+                    system.service("add").rules("file://localhost/file").args(system.monitor002.components, INTERFACE_ACTION);
+
+                    //
+
+                    system.service("resume").args(system.copier);
+
+                    system.service("resume").args(system.monitor001);
+
+                    system.service("resume").args(system.monitor002);
+
+                    //
+
+                    system.service("notify").args(system.listeners, EVENT_LOG);
+
+                    system.service("notify").args(system.encapsulators, EVENT_LOG);
+
+                    system.service("notify").args(system.registrars, EVENT_LOG);
+
+                    //
+                }
+            }
+
+            //
+
+            This looks fine; as we basically are care here toward a simple system alteration. There is a Copier SystemComponent that requires some input, a transaction for a Bank let's imagine, and this way added at original design time a way
+
+            for a backup component to get a copy ahead of the rest of the system continuing in doing the actual bank transfer call.  In this case we clearly are in an area for security concern.  The system development team would have to design a circuit aware
+
+            system
+
+            Example 5: Running out of Time
+
+            Here we would look at some cases where the best assumed human effort would cause malfunction: the system would have to brought down and manually configured.  We would look at this as a directed graph, best vs worst case scenario against our list of SystemComponent modules.
+
+            Before beginning we would care to stress that finally we care to adjust reference documents and that these documents should change as required.  As we learn a valuable axiom, corollary we would make adjustment toward these truths in the reference manual.
+
+            These in turn would form something like truth tables and just-in-time references for you as a developer.  These we would hold as important.  A complete work up might take some four to six months, not more.  Working through some best and worst cases we would find helpful in starting
+
+            toward a science of design for software.  Here the Engineer would stand, the developer would learn.  Ok.
 
         ic. Post-Design Time
 

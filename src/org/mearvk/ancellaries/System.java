@@ -1,5 +1,7 @@
 package org.mearvk.ancellaries;
 
+import org.mearvk.circuitry.org.mearvk.interfaces.Bodi;
+
 public class System extends SystemComponent implements Runnable {
     public static void main(String... args) {
         System system = new System("system");
@@ -12,6 +14,8 @@ public class System extends SystemComponent implements Runnable {
 
         system.run();
     }
+
+    public Bodi bodi;
 
     public System system;
 
