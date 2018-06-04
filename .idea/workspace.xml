@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/Guarantor.java" afterDir="false" />
+    <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="Latest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/extensibility" beforeDir="false" afterPath="$PROJECT_DIR$/data/extensibility" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +17,7 @@
       <file leaf-file-name="System.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/System.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="289">
               <caret line="17" column="15" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="15" />
             </state>
           </provider>
@@ -34,20 +32,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extensibility" pinned="false" current-in-tab="false">
+      <file leaf-file-name="extensibility" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/extensibility">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="890" lean-forward="true" selection-start-line="890" selection-end-line="890" />
+            <state relative-caret-position="815">
+              <caret line="937" column="19" selection-start-line="937" selection-start-column="19" selection-end-line="937" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Guarantor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Swappable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/org/mearvk/interfaces/Swappable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Guarantor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Guarantor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+            <state relative-caret-position="391">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -97,22 +104,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Deliverer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Deliverer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -170,8 +168,8 @@
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/org/mearvk/interfaces/SecurityValidator.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/org/mearvk/interfaces/Bodi.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/System.java" />
-        <option value="$PROJECT_DIR$/data/extensibility" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Guarantor.java" />
+        <option value="$PROJECT_DIR$/data/extensibility" />
       </list>
     </option>
   </component>
@@ -187,7 +185,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,30 +192,13 @@
               <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
               <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mearvk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mearvk" type="462c0819:PsiDirectoryNode" />
-              <item name="circuitry" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,27 +295,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Latest">
-      <created>1526322158631</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1526322158632</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Latest">
-      <created>1526429701849</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1526429701849</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Latest">
-      <created>1527103314469</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1527103314469</updated>
     </task>
     <task id="LOCAL-00004" summary="Latest">
       <created>1527103553906</created>
@@ -659,12 +618,32 @@
       <option name="project" value="LOCAL" />
       <updated>1528144125714</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Latest">
+      <created>1528152486720</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1528152486720</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Latest">
+      <created>1528153545670</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1528153545670</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Latest">
+      <created>1528153912196</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1528153912196</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -709,13 +688,6 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Monitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Producer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -958,9 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="36" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -968,9 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="37" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -978,9 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="37" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -988,11 +951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="37" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1000,9 +958,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="41" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,11 +965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="37" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1062,7 +1012,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/System.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="289">
           <caret line="17" column="15" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="15" />
         </state>
       </provider>
@@ -1074,17 +1024,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/extensibility">
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Guarantor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="890" lean-forward="true" selection-start-line="890" selection-end-line="890" />
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Guarantor.java">
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/org/mearvk/interfaces/Swappable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        <state relative-caret-position="34">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/extensibility">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="815">
+          <caret line="937" column="19" selection-start-line="937" selection-start-column="19" selection-end-line="937" selection-end-column="19" />
         </state>
       </provider>
     </entry>
