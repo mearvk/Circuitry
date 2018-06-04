@@ -570,13 +570,29 @@ Many patterns naturally will relate function and structure in general ways which
 
                         pokemontrader_network = org.our.System.request(Cloner.DEEP_COPY, "jndi://remotehost:8080/systemname/network01");
 
+                        //
+
+                        pokemontrader_network.encapsulator.atom(Atomic.NEW);
+
+                        //
+
                         pokemontrader_network.encapsulator.list("pokecard0056", 5.00, "USD");
 
-                        pokemontrader_network.encapsulator.list("xxx", xxx, "USD");
+                        pokemontrader_network.encapsulator.list("pokecard0056", 5.00, "USD");
 
                         ...
 
-                        org.our.System.ui.jframe.jtabbedpane.newTabPane( pokemontrader_network.encapsulator.asList(last_list_token) );
+                        //
+
+                        pokemontrader_network.encapsulator.atom(Atomic.COMMIT);
+
+                        //
+
+                        Atom transactional_atom = pokemontrader_network.encapsulator.atom(Atomic.LAST);
+
+                        //
+
+                        org.our.System.ui.jframe.jtabbedpane.newTabPane( pokemontrader_network.encapsulator.asList(transactional_atom) );
                     }
                     catch(Exception e)
                     {
