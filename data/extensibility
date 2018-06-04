@@ -742,17 +742,17 @@ Many patterns naturally will relate function and structure in general ways which
 
             }
 
-            public class Network extends SystemComponent implements SecurityValidator, Validator
+            public class Copier extends SystemComponent implements SecurityValidator, Validator
             {
 
             }
 
-            public class Endpoint001 extends Endpoint implements SecurityValidator, Validator
+            public class Monitor001 extends Endpoint implements SecurityValidator, Validator
             {
 
             }
 
-            public class Endpoint002 extends Endpoint implements SecurityValidator, Validator
+            public class Monitor002 extends Endpoint implements SecurityValidator, Validator
             {
 
             }
