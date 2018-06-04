@@ -614,7 +614,19 @@ Many patterns naturally will relate function and structure in general ways which
 
 
 
-                <call name="list" local="true" class="org.their.network.Network01" atomic="enforce">
+                <call name="list" local="true" class="org.their.network.Network01" atomic="enforce" jndi="jndi://remotehost:8080/system/branch/target001">
+
+                <encapsulator value="enforce"></encapsulator>
+
+                    <args>
+
+                        ...
+
+                    </args>
+
+                </call>
+
+                <call name="list" local="true" class="org.their.network.Network01" atomic="enforce" jndi="jndi://remotehost:8080/system/branch/target002">
 
                 <encapsulator value="enforce"></encapsulator>
 
@@ -660,9 +672,9 @@ Many patterns naturally will relate function and structure in general ways which
 
                         //
 
-                        pokemontrader_network.function("list").args("pokecard0056", 5.00, "USD");
+                        pokemontrader_network.function("target001/list").args("pokecard0056", 5.00, "USD");             //one system object - target001
 
-                        pokemontrader_network.function("list").args("pokecard0056", 5.00, "USD");
+                        pokemontrader_network.function("target002/list").args("pokecard0056", 5.00, "USD");             //one system object - target002
 
                         ...
 
@@ -688,7 +700,7 @@ Many patterns naturally will relate function and structure in general ways which
 
             The system maintains a degree of relation which stays constant with respect to an interface instead of the Encapsulator's concrete class.  This will be all for now.  We will look later at how Network interfaces can be added or removed from system safely with all this in swing.
 
-            This will be a strong case for system security, protecting your system from being copied, unintended effects and design decisions that must be connected later than we would like.  The Network addresses all these and so we will take this component up as an exemplar.
+            This will be a strong case for system security, protecting your system from being copied, unintended effects and design decisions that must be connected/implemented/added/removed later than we would like.  The Network addresses all these and so we will take this component up as an exemplar.
 
              //
 

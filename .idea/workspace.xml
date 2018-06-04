@@ -77,8 +77,8 @@
       <file leaf-file-name="extensibility" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/extensibility">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="690" column="12" selection-start-line="690" selection-start-column="12" selection-end-line="690" selection-end-column="12" />
+            <state relative-caret-position="407">
+              <caret line="676" column="56" selection-start-line="676" selection-start-column="56" selection-end-line="676" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -588,7 +588,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528078528722</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Latest">
+      <created>1528079896073</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1528079896073</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1012,8 +1019,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/extensibility">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="690" column="12" selection-start-line="690" selection-start-column="12" selection-end-line="690" selection-end-column="12" />
+        <state relative-caret-position="407">
+          <caret line="676" column="56" selection-start-line="676" selection-start-column="56" selection-end-line="676" selection-end-column="56" />
         </state>
       </provider>
     </entry>
