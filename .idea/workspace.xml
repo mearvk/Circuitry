@@ -77,8 +77,8 @@
       <file leaf-file-name="extensibility" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/extensibility">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="459" column="13" lean-forward="true" selection-start-line="459" selection-start-column="13" selection-end-line="459" selection-end-column="13" />
+            <state relative-caret-position="560">
+              <caret line="572" column="76" lean-forward="true" selection-start-line="572" selection-start-column="76" selection-end-line="572" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -204,6 +204,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,31 +214,10 @@
               <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
               <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mearvk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mearvk" type="462c0819:PsiDirectoryNode" />
-              <item name="circuitry" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -557,7 +539,42 @@
       <option name="project" value="LOCAL" />
       <updated>1527988841714</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Latest">
+      <created>1527993799390</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1527993799390</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Latest">
+      <created>1527994396517</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1527994396517</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Latest">
+      <created>1527994449517</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1527994449517</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Latest">
+      <created>1527994676455</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1527994676455</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Latest">
+      <created>1527994984659</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1527994984659</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -571,8 +588,8 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32987747" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.31479737" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32987747" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -581,8 +598,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32987747" />
@@ -981,8 +998,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/extensibility">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="459" column="13" lean-forward="true" selection-start-line="459" selection-start-column="13" selection-end-line="459" selection-end-column="13" />
+        <state relative-caret-position="560">
+          <caret line="572" column="76" lean-forward="true" selection-start-line="572" selection-start-column="76" selection-end-line="572" selection-end-column="76" />
         </state>
       </provider>
     </entry>

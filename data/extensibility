@@ -158,7 +158,7 @@ Many patterns naturally will relate function and structure in general ways which
 
             The case for writing it by hand is clear; you will have total control and responsibility.  An interpretive layer would also be good; you would rely on a shorthand completion for many builds and finally connect any idiosyncracies by hand for final design. The proposal would itself be helped by an XML/HTML implementation as it is easily read by human conceptual preconceptual.
 
-            The final case is a very powerful tool for it; you can complete functional code and locate it in a mapped index.  Each functional component can be called by name and by reference as we grow the method for answering button clicks and the like.  Let's look at how far each can go in stable atmosphere before running into technical challenges.
+            The final case is a very powerful tool for developer/developers; you can complete functional code and locate it in a mapped index.  Each functional component can be called by name and by reference as we grow the method for answering button clicks and the like.  Let's look at how far each can go in stable atmosphere before running into technical challenges.
 
              //
 
@@ -453,6 +453,7 @@ Many patterns naturally will relate function and structure in general ways which
 
                 //
 
+                @Override
                 public void validateSecurity(SecurityToken securityToken, ...)
                 {
                     //validate and return network value
@@ -461,7 +462,127 @@ Many patterns naturally will relate function and structure in general ways which
 
             //
 
-            Here the validateSecurity() function would cover validation and returning the appropriate value: the Network with unique ID and expiry for session and the like.  End here for now; good night.
+            Here the validateSecurity() function would cover validation and returning the appropriate value: the Network with unique ID and expiry for session and the like.  Here we would point out a few interesting items.  To begin the Checkout should not return
+
+            Networks which are not the property or concern of the person/group/company requesting them.  Further that Networks should not have class members which are unsafe.  That Network A should not have class member which is not cleared by a Security mechanism, giving for instance a pointer to system for reference to Network B, some other network.
+
+            So to include a more final proposal we should have a class that acts as a Encapsulator for grouping like objects together and that these objects should in fact limit degree of extensibility, of reach into system.
+
+            //
+
+            public class Encapsulator extends SystemComponent implements SecurityValidator, Validator, Aggregator
+            {
+                ... //standard component composition
+
+                public Encapsulator(System system, ArrayList<SystemComponent>, ...)
+                {
+                    ... //
+                }
+
+                public Encapsulator(System system, ArrayList<SystemComponent>, ...)
+                {
+                    ... //
+                }
+
+                //
+
+                @Override
+                public void validateSecurity(SecurityToken securityToken, ...)
+                {
+                    //validate and return network value
+                }
+
+                @Override
+                public Object validate(SecurityToken securityToken, Object object, String name)
+                {
+                    //validate and return object based on JDNI name, or comparator
+                }
+
+                @Override
+                public void add(SecurityToken securityToken, Object object, String name)
+                {
+                    //add object to concern list
+                }
+            }
+
+            //
+
+            As you can see the class also has implementations for Validator and Aggregator.  These would in fact be used mainly to limit access to published system artifacts.  You would expect then any public exposed interfaces to follow this or similar pattern for restricting access to objects.
+
+            Ideally we would want an XML or JSON file for driving these and that this would be held privately, away from an HTTP or Network request.  Since the following would be unimpressive we would look for it implemented through a Driver:
+
+            //
+
+            public class ClientImpl implements Runnable
+            {
+                ... //standard component composition
+
+                public ClientImpl()
+                {
+                    ... //
+                }
+
+                //
+
+                @Override
+                public void run()
+                {
+                    try
+                    {
+                        org.our.System.qualify("jndi://remotehost:8080/systemname", "localalias", "username", "password");
+
+                        org.our.System.lookup("localalias", "network01", "username", "password");
+
+                        ...
+
+                        //many small calls, etc.
+
+                        ...
+
+                        org.our.System.close("localalias", "network01", "username", "password");
+                    }
+                    catch(Exception e)
+                    {
+                        //reroute exception to handler
+                    }
+                }
+            }
+
+            Instead we would like a system interface that would clear the objects implicitly on the fly and store and respond to exceptions and errors on the basis of a circuit or similar:
+
+            public class ClientImpl implements Runnable
+            {
+                ... //standard component composition
+
+                public ClientImpl()
+                {
+                    ... //
+                }
+
+                //
+
+                @Override
+                public void run()
+                {
+                    try
+                    {
+                        Network pokemontrader_network;
+
+                        pokemontrader_network = org.our.System.request(Cloner.DEEP_COPY, "jndi://remotehost:8080/systemname/network01");
+
+                        pokemontrader_network.encapsulator.list("pokecard0056", 5.00, "USD");
+
+                        pokemontrader_network.encapsulator.list("xxx", xxx, "USD");
+
+                        ...
+
+                        org.our.System.ui.jframe.jtabbedpane.newTabPane( pokemontrader_network.encapsulator.asList(last_list_token) );
+                    }
+                    catch(Exception e)
+                    {
+                        //reroute exception to handler
+                    }
+                }
 
             //
 
