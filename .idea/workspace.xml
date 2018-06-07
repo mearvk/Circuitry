@@ -36,8 +36,8 @@
       <file leaf-file-name="extensibility" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/extensibility">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
-              <caret line="1099" column="222" selection-start-line="1099" selection-start-column="222" selection-end-line="1099" selection-end-column="222" />
+            <state relative-caret-position="699">
+              <caret line="1105" column="10" lean-forward="true" selection-start-line="1105" selection-start-column="10" selection-end-line="1105" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -296,13 +296,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Latest">
-      <created>1527103602344</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1527103602344</updated>
     </task>
     <task id="LOCAL-00006" summary="Latest">
       <created>1527348248853</created>
@@ -640,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528155880563</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Latest">
+      <created>1528400505977</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1528400505977</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -659,7 +659,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13645834" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -1042,8 +1042,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/extensibility">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="1099" column="222" selection-start-line="1099" selection-start-column="222" selection-end-line="1099" selection-end-column="222" />
+        <state relative-caret-position="699">
+          <caret line="1105" column="10" lean-forward="true" selection-start-line="1105" selection-start-column="10" selection-end-line="1105" selection-end-column="10" />
         </state>
       </provider>
     </entry>

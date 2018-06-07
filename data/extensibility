@@ -1097,7 +1097,7 @@ public class ClientImpl extends SystemComponent implements Runnable, Pausable, .
    {
         //
 
-        org.our.System.api("/api/project/system/classes/EndpointFactory").store("jndi://localhost:8080/team/store/id", "/project/system/objects/Endpoint00056").args("NEW_INSTANCE", "rules.xml", "standard.implementation.bak").run();
+        org.our.System.api("/api/project/system/classes/EndpointFactory").store("jndi://localhost:8080/team/store/id", "/project/system/objects/Endpoint00056").args("rules.xml", "standard.implementation.bak").run();
 
         //
 
