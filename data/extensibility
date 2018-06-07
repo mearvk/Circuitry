@@ -971,6 +971,153 @@ II. Specific Extensibilities
 
 Certain patterns will have specific
 
+III.
+
+In the general case there will be 3 to 5 states that will be guarded before decided if a particular implementation will be safe for system development.  The first case is the concrete class; we should all now be familiar with a concrete class.
+
+A concrete class will be a class itself or a class that implements a interface guarantee.  The concrete class is problematic in that it will only guarantee a rigid structure.  The provides some positive benefits insofar as the programmer is concerned.
+
+The program will be easily read and implemented by programmers.  It will have so many options and so many ways before you have exhausted the extensible nature of the object.  In the very general case we end up using the SystemComponent object
+
+as a backing class to provide maximum utility to a concrete class so we do not run into design issues.
+
+//
+
+In the second case we have a way for adding system and component function to a class implementation.  In such cases we would like to know about the object from the third person point-of-view; that is we should carry it well for the abstract case as well, not just our immediate reference.
+
+And so it becomes clear then that we should examine the degree of required extensibility before deciding on patterns I, II or III, etc.  In this case we should look to understand a requirement and implementation diagram or proposal ahead of pulling out the 3 iron and just going for it.
+
+What will become clear as we continue is that we have some recurring problems in the software space but that naturally we would want to favor a perfect or very well written system.  In this case we would look to add support
+
+in terms of functionality, degree and/or reference.  Let's just set that for now.  Your class will be more or less extensible in terms of these things.  So in taking up Java we see that it is good for some things while behind in others.
+
+For term we should consult that a function is normally very concrete; it is a structural member very usually and inherited or otherwise.  There are no pointers to functions as C or C++ implements.  So in stepping up a degree in extensibility to meet
+
+this functional extensible we should understand the costs and angles for calculation. Let's just take a quick look at how this typically goes and see if we can graduate a concept of few:
+
+//
+
+public class Endpoint extends SystemComponent implements Runnable, Pausable, ... //
+{
+    ... //
+
+    @Override
+    public void run()
+    {
+        ... //
+    }
+
+    @Override
+    public void pause()
+    {
+        ... //
+    }
+}
+
+Here is the standard case; you would write a class that has some interface for a system or the like and you would have a more or less steady target to aim at.  Many of such classes would suggest a strong system backend and perhaps suggest a strongly conceived approach.
+
+If we wanted then to add functionality on the fly we have basically two approaches.  Firstly we could implement something like:
+
+//
+
+public class Endpoint extends SystemComponent implements Runnable, Pausable, ... //
+{
+    public Function<Runnable> runnable;
+
+    public Function<Pausable> pausable;
+
+    ... //
+
+    @Override
+    public void run()
+    {
+        ... //
+
+        runnable.run();
+
+        ... //
+    }
+
+    @Override
+    public void pause()
+    {
+        ... //
+
+        pausable.pause();
+
+        ... //
+    }
+}
+
+This makes few assumptions about the state of the object (the instance) as the Runnable and Pausable do not directly infer or rely directly on any other class members.  So this way indeed might be safe and friendly; ideal.  Here
+
+we have public, let us say for speed, members that can be simply swapped out.  This is fine for now however later we can look at some issues with keeping members public.  Ok, for now.
+
+The other example would be to call a system component and ask for a specific functional object to be created on the fly.  We could have then minor variants in functional aspect that are housed in the object that we return as concrete references.
+
+//
+
+public class Endpoint extends SystemComponent implements Runnable, Pausable, ... //
+{
+    ... //
+
+    @Override
+    public void run()
+    {
+        ... //
+
+        concrete code
+
+        ... //
+    }
+
+    @Override
+    public void pause()
+    {
+        ... //
+
+        concrete code
+
+        ... //
+    }
+}
+
+//
+
+If there is a nagging doubt about how this would indeed work; go with it.  We don't need a perfect value here we need instead the correct intuition.  And instead of getting stuck go ahead and see what technology will allow you; you working the problem yourself.
+
+Therefore then the system call may look like:
+
+public class ClientImpl extends SystemComponent implements Runnable, Pausable, ... /
+{
+    ... //
+
+   @Override
+   public void run()
+   {
+        //
+
+        org.our.System.api("/api/project/system/classes/EndpointFactory").store("jndi://localhost:8080/team/store/id", "/project/system/objects/Endpoint00056").args("NEW_INSTANCE", "rules.xml", "standard.implementation.bak").run();
+
+        //
+
+        org.our.System.api("/api/project/system/classes/EndpointValidator").store("jndi://localhost:8080/team/store/id", "/project/system/objects/Validation00056").args("validation_rules.xml", "/project/system/objects/Endpoint00056").run();
+
+        //
+
+        org.our.System.api("/api/project/system/classes/ResultRegistrar").store("jndi://localhost:8080/team/store/id", "/project/system/objects/Result00056").args("result_registrar_rules.xml", "/project/system/objects/Validation00056");
+
+        //
+
+        org.our.System.api("/api/project/system/classes/SystemComponentRegistrar").store("jndi://localhost:8080/team/store/id", "/project/system/objects/SystemRegistration00056").args("https://rules/system_component_registrar_rules.xml", "/project/system/objects/Object00056");
+
+        //
+
+        org.our.System.api("/api/project/system/classes/SystemEventRegistrar").store("jndi://localhost:8080/team/store/id", "/project/system/objects/SystemEventRegistration00056").args("event_rules.xml", "/project/system/objects/Object00056");
+
+        ... //
+   }
+}
 
 Terms:
 
