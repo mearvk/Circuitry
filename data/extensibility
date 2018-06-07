@@ -1119,6 +1119,12 @@ public class ClientImpl extends SystemComponent implements Runnable, Pausable, .
    }
 }
 
+This looks fine for now.  You see we have an API call to get a reference to a function house by a classname.  We have some quick JNDI storage for values that we will care to reference ahead.  We have some arguments that may go into these functions as well.
+
+Mainly for now we care to issue to you the notion that we can specify deeply the runtime characteristics of a org.yours.name.Classname by simple factory at runtime.  The factory then can relate some event, validation or similar functional data to the system and we can get on with life
+
+without relying on old or dirty secrets again and again. Ok.
+
 Terms:
 
 Swith: Super-smooth, low-latency coolness,, again
