@@ -1123,7 +1123,7 @@ This looks fine for now.  You see we have an API call to get a reference to a fu
 
 Mainly for now we care to issue to you the notion that we can specify deeply the runtime characteristics of a org.yours.name.Classname by simple factory at runtime.  The factory then can relate some event, validation or similar functional data to the system and we can get on with life
 
-without relying on old or dirty secrets again and again. Ok.
+without relying on old or dirty secrets again and again.
 
 Terms:
 
