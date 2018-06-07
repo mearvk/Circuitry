@@ -1105,15 +1105,15 @@ public class ClientImpl extends SystemComponent implements Runnable, Pausable, .
 
         //
 
-        org.our.System.api("/api/project/system/classes/ResultRegistrar").store("jndi://localhost:8080/team/store/id", "/project/system/objects/Result00056").args("result_registrar_rules.xml", "/project/system/objects/Validation00056");
+        org.our.System.api("/api/project/system/classes/ResultRegistrar").store("jndi://localhost:8080/team/store/id", "/project/system/objects/Result00056").args("result_registrar_rules.xml", "/project/system/objects/Validation00056").run();
 
         //
 
-        org.our.System.api("/api/project/system/classes/SystemComponentRegistrar").store("jndi://localhost:8080/team/store/id", "/project/system/objects/SystemRegistration00056").args("https://rules/system_component_registrar_rules.xml", "/project/system/objects/Object00056");
+        org.our.System.api("/api/project/system/classes/SystemComponentRegistrar").store("jndi://localhost:8080/team/store/id", "/project/system/objects/SystemRegistration00056").args("https://rules/system_component_registrar_rules.xml", "/project/system/objects/Object00056").run();
 
         //
 
-        org.our.System.api("/api/project/system/classes/SystemEventRegistrar").store("jndi://localhost:8080/team/store/id", "/project/system/objects/SystemEventRegistration00056").args("event_rules.xml", "/project/system/objects/Object00056");
+        org.our.System.api("/api/project/system/classes/SystemEventRegistrar").store("jndi://localhost:8080/team/store/id", "/project/system/objects/SystemEventRegistration00056").args("event_rules.xml", "/project/system/objects/Object00056").run();
 
         ... //
    }
