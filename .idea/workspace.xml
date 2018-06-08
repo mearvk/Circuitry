@@ -36,8 +36,8 @@
       <file leaf-file-name="extensibility" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/extensibility">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="144" column="104" lean-forward="true" selection-start-line="144" selection-start-column="104" selection-end-line="144" selection-end-column="104" />
+            <state relative-caret-position="306">
+              <caret line="303" column="64" selection-start-line="303" selection-start-column="48" selection-end-line="303" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -301,13 +301,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Latest">
-      <created>1527377152582</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1527377152582</updated>
     </task>
     <task id="LOCAL-00015" summary="Latest">
       <created>1527380056247</created>
@@ -645,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528472280858</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Latest">
+      <created>1528472728064</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1528472728064</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1047,8 +1047,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/extensibility">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="144" column="104" lean-forward="true" selection-start-line="144" selection-start-column="104" selection-end-line="144" selection-end-column="104" />
+        <state relative-caret-position="306">
+          <caret line="303" column="64" selection-start-line="303" selection-start-column="48" selection-end-line="303" selection-end-column="64" />
         </state>
       </provider>
     </entry>
