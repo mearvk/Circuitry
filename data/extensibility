@@ -782,6 +782,22 @@ Many patterns naturally will relate function and structure in general ways which
 
             c. Network interfaces(s) which allow network control of system
 
+            d. Adding/altering/removing of interface(s) which allow a, b and/or c.
+
+            e. Meaningful contractual revision of intent across these
+
+            We would then be sure to write very carefully these against, if they became part of a required, approvable system specification, further expectations which would look something like;
+
+            a. Direct references effectively would not allow deep cloning without security measure(s)
+
+            b. Direct references of system objects would not be swappable without security measure(s)
+
+            c. Private data could not be stored in the object itself without security measures(s) [ i.e. hashed versions of passwords only ]
+
+            d. Security data could not be stored in the object itself without security measure(s) [ protected API calls, protected values ]
+
+            e. Private/secure data would not be part of a cloned object beyond agreed upon system state [ newly cloned objects would not pass a singleton test for example ]
+
             //
 
             public class Server implements SecurityValidator, Validator
