@@ -78,13 +78,15 @@ Many patterns naturally will relate function and structure in general ways which
 
         d. You will make more or less commutative a component and/or system etc. [ x ]
 
-        e. You will make more or less transitive a component and/or system etc.  [ a . a . b ≈ b . c . ã == a . a . b ≈ b . c . ã . a]
+        e. You will make more or less transitive a component and/or system etc.  [ a . a . b ≈ b . c . ã == a . a . b ≈ b . c . ã . a ]
 
         f. You will make more or less reflexive a component and/or system etc. [ x ]
 
+        g. You will make more or less imponent (input specificity) a component and/or system etc. [ a -> b ≈ a -> bb is no]
+
         //
 
-
+        Referencing x. By ... we mean
 
         a.  You will want to offer a reference across a simple circuit and/or component
 
@@ -102,6 +104,8 @@ Many patterns naturally will relate function and structure in general ways which
 
         //
 
+        Modement x.
+
         a. You will want to move system components through transitivity ( question of how it will be there - time based or logic )
 
         b. You will want to move system components through commutativity ( question of ordering relation )
@@ -111,6 +115,8 @@ Many patterns naturally will relate function and structure in general ways which
         d. You will want to move system components through
 
         //
+
+        General Valuations x.
 
         a. You will want a way to generalize system functionalities to form definition of minimal complete set
 
@@ -125,6 +131,8 @@ Many patterns naturally will relate function and structure in general ways which
         f. You will want a way to show where adding more system feature will cause a refactoring
 
         //
+
+        Contractual x.
 
         a. You will want a contract grade circuit for specifying/guaranteeing timing
 
