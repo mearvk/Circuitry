@@ -776,33 +776,79 @@ Many patterns naturally will relate function and structure in general ways which
 
             Insofar as we care we must then be careful to deliver the proper commutative sequence.  The system generally then should not have the following:
 
-            a. Network interface(s) which allow direct object reference(s)
+                a. Network interface(s) which allow direct object reference(s)
 
-            b. Network interface(s) which do not have careful Encapsulator(s) classes
+                b. Network interface(s) which do not have careful Encapsulator(s) classes
 
-            c. Network interfaces(s) which allow network control of system
+                c. Network interfaces(s) which allow network control of system
 
-            d. Adding/altering/removing of interface(s) which allow a, b and/or c.
+                d. Adding/altering/removing of interface(s) which allow a, b and/or c.
 
-            e. Meaningful contractual revision of intent across these
+                e. Meaningful contractual revision of intent across these
 
             We would then be sure to write very carefully these against, if they became part of a required, approvable system specification, further expectations which would look something like;
 
-            a. Direct references effectively would not allow deep cloning without security measure(s)
+                a. Direct references effectively would not allow deep cloning without security measure(s)
 
-            b. Direct references of system objects would not be swappable without security measure(s)
+                b. Direct references of system objects would not be swappable without security measure(s)
 
-            c. Private data could not be stored in the object itself without security measures(s) [ i.e. hashed versions of passwords only ]
+                c. Private data could not be stored in the object itself without security measures(s) [ i.e. hashed versions of passwords only ]
 
-            d. Security data could not be stored in the object itself without security measure(s) [ protected API calls, protected values ]
+                d. Security data could not be stored in the object itself without security measure(s) [ protected API calls, protected values ]
 
-            e. Private/secure data would not be part of a cloned object beyond agreed upon system state [ newly cloned objects would not pass a singleton test for example ]
+                e. Private/secure data would not be part of a cloned object beyond agreed upon system state [ newly cloned objects would not pass a singleton test for example ]
+
+            In the general case let's take care to guard then the following as markedly important, guarded:
+
+                a. Cloning of objects
+
+                b. Security state as unguardedly preeminent
+
+                c. Private data as unguardedly preeminent
+
+                d. Networks of a kind would be used; not simple access to objects
+
+                Carefully that no data should exist in the system as ready ahead of a SystemComponent model for guaranteeing it is safe and coherent.  That private data should not be held in the clear, rather that it should be encrypted or controlled.
+
+                That therefore there should be a safe, top-most token for verifying each transaction in the application and/or system.  That security tokens should be well held, unavailable toward exception in the case of cloning, intentional or otherwise.
+
+                The features support well a client/server model where we ask for values through strong getter/setter models that prove Encapsulation is a well integrated property of the system's design.  Looking then at the few basic models we could share as careful:
 
             //
 
-            public class Server implements SecurityValidator, Validator
-            {
+            Model One would have a direct reference to the object, and here we leave the inherent integrity issue(s) as well kept.  As noted the security issue would be that clones could be made remotely and these clones could be misused.  The direct object then would have some care
 
+            toward protecting its instance members and that as a security concern.  A private resource may not be enough to guard against misuse by an experienced blackhat hacker, as a way to understand the issue or problem(s).  Here for instance many books could be written on this subject
+
+            directly, many courses offered at fine Universities.
+
+
+            public class Server implements SecurityValidator, Validator, JNDISystemComponentServer
+            {
+                public Server(System system, ...)
+                {
+                    ... //
+                }
+
+                @Override
+                public SystemComponent doGet(SecurityToken token, String name, ...)
+                {
+                    ... //
+                }
+
+                @Override
+                public SystemComponent doPut(SecurityToken token, String name, ...)
+                {
+                    ... //
+                }
+
+                ... //
+
+                @Override
+                public Boolean validate(Object target, ...)
+                {
+                    ... //
+                }
             }
 
             //
