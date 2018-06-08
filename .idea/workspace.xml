@@ -36,8 +36,8 @@
       <file leaf-file-name="extensibility" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/extensibility">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="1110" lean-forward="true" selection-start-line="1110" selection-end-line="1110" />
+            <state relative-caret-position="438">
+              <caret line="102" column="90" lean-forward="true" selection-start-line="102" selection-start-column="90" selection-end-line="102" selection-end-column="90" />
             </state>
           </provider>
         </entry>
@@ -186,7 +186,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,8 +197,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -296,13 +296,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Latest">
-      <created>1527359989308</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1527359989308</updated>
     </task>
     <task id="LOCAL-00011" summary="Latest">
       <created>1527360194246</created>
@@ -640,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528401046462</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Latest">
+      <created>1528401095790</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1528401095790</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1042,8 +1042,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/extensibility">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="1110" lean-forward="true" selection-start-line="1110" selection-end-line="1110" />
+        <state relative-caret-position="438">
+          <caret line="102" column="90" lean-forward="true" selection-start-line="102" selection-start-column="90" selection-end-line="102" selection-end-column="90" />
         </state>
       </provider>
     </entry>

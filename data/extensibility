@@ -94,7 +94,17 @@ Many patterns naturally will relate function and structure in general ways which
 
         f. You will want a way to show where adding more system feature will cause a refactoring
 
-        g. so on A+ really good so far@
+        //
+
+        a. You will want a contract grade circuit for specifying/guaranteeing timing
+
+        b. You will want a contract grade circuit for specifying/guaranteeing ordering
+
+        c. You will want a contract grade circuit for specifying/guaranteeing data orlineaness (virginity)
+
+        d. You will want a contract grade circuit for specifying/guaranteeing scale as a factor
+
+        e. You will want a contract grade circuit for specifying/guaranteeing what can be traded and how
 
         //
 
