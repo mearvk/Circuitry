@@ -144,6 +144,8 @@ Many patterns naturally will relate function and structure in general ways which
 
         e. You will want a contract grade circuit for specifying/guaranteeing what can be traded and how
 
+        f. You will want a contract grade circuit for specifying/guaranteeing safety
+
         //
 
     Each of these will be a carry object.  We will take a look now at what this means for you, the developer.  As we progress in understanding the objects we intuit tend to mature as well.  These items will remain constant; you will expect to carry them in the delta set for reference.
@@ -379,6 +381,10 @@ Many patterns naturally will relate function and structure in general ways which
 
             Here the code structure would be set once or some few times and then compiled and reworked from there.  The upside is that code and circuit function are guaranteed by the relationship between hierarchy and naming convention.
 
+            Quickly let's regard the XML as valuable.  We would care for instance that the XML document remain that way.  Adding many components after the fact would be additive and in some case would cause the system to be redone, designed again.
+
+            Ideally we would then want to lay system components as final, the top-most value and then allow latching only downwardly.  We make note of that ideal here.
+
             Let's take a minute here and draft a circuit guard:
 
             public class CircuitGuard extends ...
@@ -479,7 +485,7 @@ Many patterns naturally will relate function and structure in general ways which
 
             What could possibly go wrong?  No, we've checked the buffer allocation and it is very clean. It cannot be overflowed.  We check the user name and password and it that the user has 60 minutes to use network per validation.  No problems so far, right?
 
-            Well supposing your designer is very brilliant and decides to make a Checkout implementation for the Network class.  You share a company token, this is unique to your company, and for this correct value you will be returned a Network object.  Further, we could perhaps add salt to argument
+            Well supposing your designer is very brilliant and decides to make a Checkout implementation for the Network class.  You share a company token, this is unique to the 3rd party company, and for this correct value you will be returned a Network object.  Further, we could perhaps add salt to argument
 
             by saying we could allocate many such Checkouts across the entire scope of the public interface of the Application.  Assuming we are all trustworthy perhaps this is OK.  As we dig deeper we will explore how this may rely on a deeper sense of architectural understanding than simple Component interlinking.
 
@@ -763,6 +769,18 @@ Many patterns naturally will relate function and structure in general ways which
             Firstly let's be aware of the security risk of Software as a Service (SaaS).  Primarily we would like a system as the top-most node.  That is, we ask for a service by name and get a SystemComponent back, a system implementation or harness.
 
             We cover some security issues with the Network class, let's look at what we'd like to protect in design and extensibility as far as traying the system.
+
+            In covering deep cloning we should be aware that when we give a reference to a system object we give away some control over that object.  We have some care to deliver only the correct amount of control to the end-user.  If we publish an API
+
+            that API should not give access to specific components and properties which we do not intend to cover ahead in control theory.  The SaaS model intends this; that deliver of a Service will be only the right amount of access to the object or system.
+
+            Insofar as we care we must then be careful to deliver the proper commutative sequence.  The system generally then should not have the following:
+
+            a. Network interface(s) which allow direct object reference(s)
+
+            b. Network interface(s) which do not have careful Encapsulator(s) classes
+
+            c. Network interfaces(s) which allow network control of system
 
             //
 

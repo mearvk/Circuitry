@@ -36,8 +36,8 @@
       <file leaf-file-name="extensibility" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/extensibility">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="303" column="64" selection-start-line="303" selection-start-column="48" selection-end-line="303" selection-end-column="64" />
+            <state relative-caret-position="646">
+              <caret line="782" column="74" selection-start-line="782" selection-start-column="74" selection-end-line="782" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -301,20 +301,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Latest">
-      <created>1527380056247</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1527380056247</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Latest">
-      <created>1527380874018</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1527380874018</updated>
     </task>
     <task id="LOCAL-00017" summary="Latest">
       <created>1527648571858</created>
@@ -645,7 +631,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528472728064</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Latest">
+      <created>1528473224479</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1528473224479</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Latest">
+      <created>1528473793134</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1528473793134</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1047,8 +1047,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/extensibility">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="303" column="64" selection-start-line="303" selection-start-column="48" selection-end-line="303" selection-end-column="64" />
+        <state relative-caret-position="646">
+          <caret line="782" column="74" selection-start-line="782" selection-start-column="74" selection-end-line="782" selection-end-column="74" />
         </state>
       </provider>
     </entry>
