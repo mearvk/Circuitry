@@ -144,9 +144,34 @@ Many patterns naturally will relate function and structure in general ways which
 
         e. You will want a contract grade circuit for specifying/guaranteeing what can be traded and how
 
-        f. You will want a contract grade circuit for specifying/guaranteeing safety
+        f. You will want a contract grade circuit for specifying/guaranteeing safety/security
+
+        g. You will want a contract grade circuit for specifying/guaranteeing liveliness
+
+        h. You will want a contract grade circuit for specifying/guaranteeing contracts/circuits
 
         //
+
+        Security x.  You will want to understand how Security relates to extensibility; how adding security influences design and cost in the contemplative space.
+
+        a. You will want to guarantee a source code matches a bytecode
+
+        b. You will want to guarantee dynamic loading of bytecode w/ respect to a contract
+
+        c. You will want to guarantee changes of reference w/ respect to a circuit
+
+        d. You will want to guarantee changes of reference w/ respect to a ad hominem concept
+
+        e. You will want to guarantee private data is not compromised
+
+        f. You will want to guarantee security tokens are live
+
+        g. You will want to guarantee that your bytecode is not decompiled
+
+        h. You will want to guarantee that your system has not been compromised
+
+        i. You will want to guarantee that your system has a rigorous, complete way to detect if it has been compromised
+
 
     Each of these will be a carry object.  We will take a look now at what this means for you, the developer.  As we progress in understanding the objects we intuit tend to mature as well.  These items will remain constant; you will expect to carry them in the delta set for reference.
 
@@ -931,11 +956,15 @@ Many patterns naturally will relate function and structure in general ways which
                 }
             }
 
-            In this case we would care to suggest that we trade in data first and foremost.  That therefore no intrinsic value is returned to connect to the system.  We see this basically in the internet for instance.  Few escalations exist
+            In this case we would care to suggest that we trade in data first and foremost, or carefully in encapsulated, validatable system objects.  That therefore no intrinsic value is returned to connect to the system.  We see this basically in the internet for instance.  Few escalations exist
 
             to convert a doGet() call to the backing system object.  So we find that the ad hominem contract is relatively safe.  Do not return data that is not for that request, session, business object, so on, if it is not purposed for that request.
 
             With this is mind we do see that it might be possible to insert an incorrect value into the JNDI index.  This would be perhaps two orders of magnitude more safe than incidentally returning a live, validate system object by way of reference or copy. Ok.
+
+            This is exciting material.  We would then care to formalize the degree of extensibility of our system against these concerns.  That we care to publish right course and document for these degrees and not some other thing.  It is very well to add function but in certain cases
+
+            we cannot always guarantee a rigorous contract to them.  We will look later at what would be required in direct object exchange and how this relates to extensible concepts like security.
 
             //
 
