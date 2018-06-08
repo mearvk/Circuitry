@@ -812,7 +812,7 @@ Many patterns naturally will relate function and structure in general ways which
 
                 That therefore there should be a safe, top-most token for verifying each transaction in the application and/or system.  That security tokens should be well held, unavailable toward exception in the case of cloning, intentional or otherwise.
 
-                The features support well a client/server model where we ask for values through strong getter/setter models that prove Encapsulation is a well integrated property of the system's design.  Looking then at the few basic models we could share as careful:
+                The features support well a client/server model where we ask for values through strong getter/setter models that prove Encapsulation is a well integrated property of the system's design.  Looking then at the few exemplar models we could share as uncareful, unsafe:
 
             //
 
@@ -820,11 +820,13 @@ Many patterns naturally will relate function and structure in general ways which
 
             toward protecting its instance members and that as a security concern.  A private resource may not be enough to guard against misuse by an experienced blackhat hacker, as a way to understand the issue or problem(s).  Here for instance many books could be written on this subject
 
-            directly, many courses offered at fine Universities.
+            directly, many courses offered at fine Universities.  We would of course guard against using these examples without fine care and understanding towards them.
 
 
-            public class Server implements SecurityValidator, Validator, JNDISystemComponentServer
+            public class Server extends SystemComponent implements SecurityValidator, Validator, JNDISystemComponentServer
             {
+                ... //
+
                 public Server(System system, ...)
                 {
                     ... //
@@ -833,11 +835,48 @@ Many patterns naturally will relate function and structure in general ways which
                 @Override
                 public SystemComponent doGet(SecurityToken token, String name, ...)
                 {
-                    ... //
+                    ... //actual object returned
                 }
 
                 @Override
                 public SystemComponent doPut(SecurityToken token, String name, ...)
+                {
+                    ... //actual object inserted
+                }
+
+                ... //
+
+                @Override
+                public Boolean validate(Object target, ...)
+                {
+                    ... //
+                }
+            }
+
+            //
+
+            Model Two would have a Network object that was uncoupled to a tight contract.  The system would allow a Network component to exist in the system space as a functional requirement and the Network would have to guarantee that it implemented
+
+            the SystemComponent object.  Besides this it would not have a limiting extension class like RemoteSystemComponent which, in theory could limit the functionality of the source code completely.  Let's look at this class, again, as a model of what we
+
+            would categorize as inherently unsafe.  As the System API grows we have to care to tend that we do not offer more exposure to this general surface in the liability set.
+
+
+            public class Network extends SystemComponent implements SecurityValidator, Validator, JNDISystemComponentClient
+            {
+                Protocol protocol;
+
+                ... //
+
+                public Network(System system, ...)
+                {
+                    ... //
+                }
+
+                ... //
+
+                @Override
+                public SystemComponent doGet(SecurityToken token, String name, ...)
                 {
                     ... //
                 }
@@ -850,6 +889,53 @@ Many patterns naturally will relate function and structure in general ways which
                     ... //
                 }
             }
+
+            Since we have no Guarantor toward the Protocol yet we really have no way to stop it from transmitting pure binary.  Here some care would be given.  There is no explicit handshake between setup and the sanctity of the System object therein.
+
+            In fact we should indicate to our fellow designers that this will either be totally trusted 3rd party or in fact very unsafe design.  Neatly then some further interface would be drafted and perhaps a callback to verify that the source file
+
+            and the bytecode would be inherently connected, integrally ensured.  Stepping back out of the design vs security paradigm we would look and see that this is indeed very apparently OK by design rhetoric.  The class requires almost nothing obvious as to
+
+            why it would be a security issue.  Further complicating the issue we find that all classes that would contain lists of such Network SystemComponent[s] would also need a Security Encapsulator to ensure the basic ad hominem understanding was fine.
+
+            These are fine, broad strokes for you to consider.  Ideally, from the perspective of Grand System Design, we would care to tender such functionality as open, guaranteed.  That a System would be very normally safe for addition or transform is a keystone
+
+            in the world of Strong System Theory.  You would see then that many contracts would be permitted, expected as the System Capacitance grows.  This too should fill many books, many College level courses here at our Universities.
+
+            //
+
+            Finally, Model Three would be the least System Centric but more secure of Model One and Model Two.  Why?  Put your pencils to paper and see what you imagine would go here before continuing.
+
+            Model Three looks like this:
+
+
+            public class Server extends SystemComponent implement SecurityValidator, Validator, JNDISystemComponentServer
+            {
+                public Server(System system, ...)
+                {
+                    ... //
+                }
+
+                ... //
+
+                @Override
+                public SystemComponent doGet(SecurityToken token, String name, ...)
+                {
+                    ... //encapsulated object or data only returned
+                }
+
+                @Override
+                public SystemComponent doPut(SecurityToken token, String name, ...)
+                {
+                    ... //encapsulated object or data only inserted
+                }
+            }
+
+            In this case we would care to suggest that we trade in data first and foremost.  That therefore no intrinsic value is returned to connect to the system.  We see this basically in the internet for instance.  Few escalations exist
+
+            to convert a doGet() call to the backing system object.  So we find that the ad hominem contract is relatively safe.  Do not return data that is not for that request, session, business object, so on, if it is not purposed for that request.
+
+            With this is mind we do see that it might be possible to insert an incorrect value into the JNDI index.  This would be perhaps two orders of magnitude more safe than incidentally returning a live, validate system object by way of reference or copy. Ok.
 
             //
 
