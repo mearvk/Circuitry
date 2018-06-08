@@ -100,7 +100,7 @@ Many patterns naturally will relate function and structure in general ways which
 
         b. You will want a contract grade circuit for specifying/guaranteeing ordering
 
-        c. You will want a contract grade circuit for specifying/guaranteeing data orlineaness (virginity)
+        c. You will want a contract grade circuit for specifying/guaranteeing data state
 
         d. You will want a contract grade circuit for specifying/guaranteeing scale as a factor
 
