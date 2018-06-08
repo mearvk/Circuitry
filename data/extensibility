@@ -321,6 +321,8 @@ Many patterns naturally will relate function and structure in general ways which
                     }
              }
 
+             //
+
              Ok, with this basic setup we can start to guarantee that system viability is protected going forward.  We would not really expect to have a simpler setup than this; stronger cases could exist for integration however.  On the other end we would like the circuits for system to be robust but we will not trade into that just yet.
 
              We would trade something like a hash code or binary of the object back into the system for its verification on basic state change (e.g. button press) against the system maintaining action listeners of its own for now.  This would give the system some idea about deadlock or liveness.
