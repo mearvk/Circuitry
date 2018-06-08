@@ -10,6 +10,8 @@ Many patterns naturally will relate function and structure in general ways which
 
     We issue then in keeping with standard ordering logic the following:
 
+        Additivity x. By additivity we mean that there will be acts of addition and we treat these as a theorem.  Here we list the a complete additive properties list for software design.
+
         a. You will add components to a component
 
         b. You will add components to a series of components
@@ -28,6 +30,30 @@ Many patterns naturally will relate function and structure in general ways which
 
         //
 
+        Locking x. By locking we mean there will be a runtime software lock available for a resource, resources or process and that these will be well specified and safe.  That there will be some Guarantor for sanity throughout the process of using it, the runtime locking system.
+
+        a. You will lock/unlock components
+
+        b. You will lock/unlock subcomponents
+
+        c. You will lock/unlock applications
+
+        d. You will lock/unlock systems
+
+        e. You will lock/unlock networks
+
+        f. You will lock/unlock protocols
+
+        g. You will lock/unlock latches
+
+        h. You will have locks based on kinds of problems
+
+        i. You will have locks based on kinds of components
+
+        //
+
+        Latching x. By latching we mean a component will have a clear, usually simple connection process from one component to another component or components.  These can be above, below, or with in terms of hierarchy or before, simultaneous or after in terms of execution.  These are structured relevances.
+
         a. You will latch components
 
         b. You will latch subcomponents
@@ -42,19 +68,23 @@ Many patterns naturally will relate function and structure in general ways which
 
         //
 
+        Component Properties x. By properties we mean the basic properties a system component would have.  These are listed below.  This capacitates to be a full list.
+
         a. You will make more or less public a component and/or system etc.
 
         b. You will make more or less private a component and/or system etc.
 
         c. You will make more or less protected a component and/or system etc.
 
-        d. You will make more or less commutative a component and/or system etc.
+        d. You will make more or less commutative a component and/or system etc. [ x ]
 
-        e. You will make more or less transitive a component and/or system etc.
+        e. You will make more or less transitive a component and/or system etc.  [ a . a . b ≈ b . c . ã == a . a . b ≈ b . c . ã . a]
 
-        f. You will make more or less reflexive a component and/or system etc.
+        f. You will make more or less reflexive a component and/or system etc. [ x ]
 
         //
+
+
 
         a.  You will want to offer a reference across a simple circuit and/or component
 
@@ -754,7 +784,7 @@ Many patterns naturally will relate function and structure in general ways which
 
             public class Copier extends SystemComponent implements SecurityValidator, Validator
             {
-
+                //copier prunes invalid before sending
             }
 
             public class Monitor001 extends Endpoint implements SecurityValidator, Validator
@@ -837,9 +867,9 @@ Many patterns naturally will relate function and structure in general ways which
 
             //
 
-            This looks fine; as we basically are care here toward a simple system alteration. There is a Copier SystemComponent that requires some input, a transaction for a Bank let's imagine, and this way added at original design time a way
+            This looks fine; as we basically are care here toward a simple system alteration. There is a Copier SystemComponent that requires some input, a transaction for a Bank let's imagine, and this way added, at original design time, a way
 
-            for a backup component to get a copy ahead of the rest of the system continuing in doing the actual bank transfer call.  In this case we clearly are in an area for security concern.  The system development team would have to design a circuit aware
+            for a Backup SystemComponent to get a copy ahead of the rest of the system continuing in doing the actual bank transfer call.  In this case we clearly are in an area for security concern.  The system development team would have to design a circuit aware
 
             system
 
