@@ -1214,8 +1214,35 @@ Many patterns naturally will relate function and structure in general ways which
 
         by a calm and correct individual.  Ethics would be important.  Good social manner would be expected.  These jobs would pay well.  Let's look at some ideas:
 
+        //
 
+        public class CheckoutClient
+        {
+            public Proposal proposal;
 
+            public Integer tech_id;
+
+            public Integer private_key;
+
+            public Integer jndi_key;
+        }
+
+        //
+
+        public class JNDIClient
+        {
+            public Integer tech_id;
+
+            public Integer private_key;
+
+            public Integer jndi_key;
+
+            //
+
+            public String source_code;
+
+            public Byte[] byte_code;
+        }
 
         //
 
