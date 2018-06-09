@@ -36,8 +36,8 @@
       <file leaf-file-name="extensibility" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/extensibility">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="781">
-              <caret line="1300" column="10" lean-forward="true" selection-start-line="1300" selection-start-column="10" selection-end-line="1300" selection-end-column="10" />
+            <state relative-caret-position="815">
+              <caret line="1299" lean-forward="true" selection-start-line="1299" selection-end-line="1299" />
             </state>
           </provider>
         </entry>
@@ -301,13 +301,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Latest">
-      <created>1527865783097</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1527865783097</updated>
     </task>
     <task id="LOCAL-00029" summary="Latest">
       <created>1527866673146</created>
@@ -645,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528506482024</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Latest">
+      <created>1528506696867</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1528506696867</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1047,8 +1047,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/extensibility">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="781">
-          <caret line="1300" column="10" lean-forward="true" selection-start-line="1300" selection-start-column="10" selection-end-line="1300" selection-end-column="10" />
+        <state relative-caret-position="815">
+          <caret line="1299" lean-forward="true" selection-start-line="1299" selection-end-line="1299" />
         </state>
       </provider>
     </entry>
