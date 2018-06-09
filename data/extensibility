@@ -1292,7 +1292,11 @@ Many patterns naturally will relate function and structure in general ways which
 
         So far so good.  We would like to show that a competent programmer could quickly run a quick client for a proposal and response system. The senior in charge of checkout would post a reply
 
-        and the JDNIClient would be readied to pull the appropriate component and begin work.  The programmer would not work outside this scope.
+        and the JDNIClient would be readied to pull the appropriate component and begin work.  The programmer would not work outside this scope.  The architecture document would be filled in accordance with
+
+        SystemArchitecture instances being compiled and stored.  The idea is that architectural objects are returned and only the key or senior developer has the picture.  As the work queue is filled up
+
+        the Deployer essentially labels each part with respect to a group and develops it.  More complicated system play would be played by higher engineers on a as-needed basis.  The pay would be fine and would work for all.
 
         //
 
