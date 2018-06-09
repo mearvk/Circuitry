@@ -1216,7 +1216,7 @@ Many patterns naturally will relate function and structure in general ways which
 
         //
 
-        public class CheckoutClient
+        public class CheckoutClient extends SystemComponent
         {
             public Proposal proposal;
 
@@ -1233,13 +1233,15 @@ Many patterns naturally will relate function and structure in general ways which
 
         //
 
-        public class JNDIClient
+        public class JNDIClient extends SystemComponent
         {
             public Integer tech_id;
 
             public Integer private_key;
 
             public Integer jndi_key;
+
+            public Integer programmer_id;
 
             //
 
@@ -1252,7 +1254,43 @@ Many patterns naturally will relate function and structure in general ways which
             public ArrayList<Byte> source_code;
 
             public ArrayList<Byte> byte_code;
+
+            public Map<String, SystemComponent> system_component;
         }
+
+        //
+
+        public class CheckoutServer extends SystemComponent ...
+        {
+            public ArrayList<Proposal> proposals;
+
+            public ArrayList<Clients> clients;
+
+
+
+            ...
+        }
+
+        //
+
+        public class SystemArchitecture extends GovernableComponent ...
+        {
+            public Integer hashcode;
+
+            public SystemArchitecture<SystemComponent> architecture;
+
+            //
+
+            public Integer jndi_key;
+
+            public Integer programmer_id;
+        }
+
+        //
+
+        So far so good.  We would like to show that a competent programmer could quickly run a quick client for a proposal and response system. The senior in charge of checkout would post a reply
+
+        and the JDNIClient would be readied to pull the appropriate component and begin work.  The programmer would not work outside this scope.
 
         //
 
