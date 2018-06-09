@@ -36,8 +36,8 @@
       <file leaf-file-name="extensibility" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/extensibility">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="798" column="143" selection-start-line="798" selection-start-column="143" selection-end-line="798" selection-end-column="143" />
+            <state relative-caret-position="1513">
+              <caret line="1274" lean-forward="true" selection-start-line="1274" selection-end-line="1274" />
             </state>
           </provider>
         </entry>
@@ -186,6 +186,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,8 +205,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,34 +301,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Latest">
-      <created>1527648857851</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1527648857851</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Latest">
-      <created>1527824082759</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1527824082759</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Latest">
-      <created>1527825638595</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1527825638595</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Latest">
-      <created>1527826475492</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1527826475492</updated>
     </task>
     <task id="LOCAL-00022" summary="Latest">
       <created>1527826588357</created>
@@ -645,11 +617,39 @@
       <option name="project" value="LOCAL" />
       <updated>1528476938501</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Latest">
+      <created>1528477447369</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1528477447369</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Latest">
+      <created>1528478485879</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1528478485879</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Latest">
+      <created>1528480539713</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1528480539713</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Latest">
+      <created>1528481150523</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1528481150523</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -1047,8 +1047,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/extensibility">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="798" column="143" selection-start-line="798" selection-start-column="143" selection-end-line="798" selection-end-column="143" />
+        <state relative-caret-position="1513">
+          <caret line="1274" lean-forward="true" selection-start-line="1274" selection-end-line="1274" />
         </state>
       </provider>
     </entry>
