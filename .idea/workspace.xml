@@ -36,8 +36,8 @@
       <file leaf-file-name="extensibility" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/extensibility">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="1246" column="10" selection-start-line="1246" selection-start-column="10" selection-end-line="1246" selection-end-column="10" />
+            <state relative-caret-position="339">
+              <caret line="1228" column="14" lean-forward="true" selection-start-line="1228" selection-start-column="14" selection-end-line="1228" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -301,13 +301,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Latest">
-      <created>1527826655328</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1527826655328</updated>
     </task>
     <task id="LOCAL-00024" summary="Latest">
       <created>1527827135044</created>
@@ -645,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528502401091</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Latest">
+      <created>1528502844902</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1528502844902</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1047,8 +1047,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/extensibility">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="1246" column="10" selection-start-line="1246" selection-start-column="10" selection-end-line="1246" selection-end-column="10" />
+        <state relative-caret-position="339">
+          <caret line="1228" column="14" lean-forward="true" selection-start-line="1228" selection-start-column="14" selection-end-line="1228" selection-end-column="14" />
         </state>
       </provider>
     </entry>
