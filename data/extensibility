@@ -1243,9 +1243,15 @@ Many patterns naturally will relate function and structure in general ways which
 
             //
 
-            public String source_code;
+            public Date checkout_date;
 
-            public Byte[] byte_code;
+            public Date expiration_date;
+
+            //
+
+            public ArrayList<Byte> source_code;
+
+            public ArrayList<Byte> byte_code;
         }
 
         //
