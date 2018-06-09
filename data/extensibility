@@ -1266,8 +1266,6 @@ Many patterns naturally will relate function and structure in general ways which
 
             public ArrayList<Clients> clients;
 
-
-
             ...
         }
 
