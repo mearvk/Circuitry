@@ -1273,9 +1273,11 @@ Many patterns naturally will relate function and structure in general ways which
 
         //
 
-        public class SystemArchitecture extends GovernableComponent ...
+        public class SystemArchitecture extends GovernedComponent ...
         {
             public Integer hashcode;
+
+            public SystemArchitecture<SystemComponentHashcode> component_hashcode;
 
             public SystemArchitecture<SystemComponent> architecture;
 
