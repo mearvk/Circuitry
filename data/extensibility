@@ -1481,3 +1481,134 @@ Swith: Super-smooth, low-latency coolness,, again
 
 Darth: Break-even point for emperor
 
+//
+
+//
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.HashMap;
+import java.util.function.Function;
+
+public class UserInterface extends JFrame{
+
+    String JNDI_programmer_id = "jim12345666";
+
+    public static void main(String...args)
+    {
+        new UserInterface();
+    }
+
+    //
+
+    public HashMap<String, JMenu> jmenus = new HashMap<>();
+
+    public JMenuBar jmenubar = new JMenuBar();
+
+    //
+
+    public UserInterface()
+    {
+
+        System
+                .push(this)
+                .function(new Function("settitle", "derp"));
+
+        //
+
+        System  .rmi("/system/function/addjmenubar")
+                .see("system/functions/list.rpl")
+                .put(this.jmenus)
+                .put("/system/values/jmenus")
+                .push(this);
+
+        //
+
+        //this.setSize(new Dimension(600, 300));
+
+        //this.setVisible(true);
+
+        System.init.run(this);
+    }
+
+    protected void addJMenubar() throws Exception
+    {
+        this.setJMenuBar(this.jmenubar);
+
+        //
+
+        System.system.set(this.system, "/systems/ui");
+
+        System.jndi.function(this, "jmenus", "org.our.Class.create", list{"File","Edit","View"});
+
+        System.system.events.set(this.system, "onclick", this.jmenus, "/systems/events/listeners/$programmer_id/jmenus:onclick", "/systems/events/publishers/matt0987/jmenus:onclick");
+
+        //
+
+        System.safe.init(this, this.system, "/system/ui/interface/$program_name", "final $INIT_ERROR_LOG", "$ADMIN_ID/$program_id/errors/init");
+
+        //
+
+        System.subscribe(this.system.listener001, "/systems/events/listeners/.../jmenus:onclick", "onclick", );
+
+        System.publish(this, this.system, "/publishing/dynamic/ui/$PROGRAM_ID", "input.txt");
+
+        //
+
+        this.jmenus.put("File", new JMenu("File"));
+
+        this.jmenus.put("Edit", new JMenu("Edit"));
+
+        this.jmenus.put("View", new JMenu("View"));
+
+        this.jmenus.put("Navigate", new JMenu("Navigate"));
+
+        this.jmenus.put("Code", new JMenu("Code"));
+
+        this.jmenus.put("Analyze", new JMenu("Analyze"));
+
+        this.jmenus.put("Refactor", new JMenu("Refactor"));
+
+        this.jmenus.put("Build", new JMenu("Build"));
+
+        this.jmenus.put("Run", new JMenu("Run"));
+
+        this.jmenus.put("Tools", new JMenu("Tools"));
+
+        this.jmenus.put("VCS", new JMenu("VCS"));
+
+        this.jmenus.put("Window", new JMenu("Window"));
+
+        this.jmenus.put("Help", new JMenu("Help"));
+
+        //
+
+        this.jmenubar.add(this.jmenus.get("File"));
+
+        this.jmenubar.add(this.jmenus.get("Edit"));
+
+        this.jmenubar.add(this.jmenus.get("View"));
+
+        this.jmenubar.add(this.jmenus.get("Navigate"));
+
+        this.jmenubar.add(this.jmenus.get("Code"));
+
+        this.jmenubar.add(this.jmenus.get("Analyze"));
+
+        this.jmenubar.add(this.jmenus.get("Refactor"));
+
+        this.jmenubar.add(this.jmenus.get("Build"));
+
+        this.jmenubar.add(this.jmenus.get("Run"));
+
+        this.jmenubar.add(this.jmenus.get("Tools"));
+
+        this.jmenubar.add(this.jmenus.get("VCS"));
+
+        this.jmenubar.add(this.jmenus.get("Window"));
+
+        this.jmenubar.add(this.jmenus.get("Help"));
+
+        //
+    }
+}
