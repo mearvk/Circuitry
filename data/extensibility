@@ -1512,11 +1512,12 @@ public class UserInterface extends JFrame{
 
         System
                 .push(this)
-                .function(new Function("settitle", "derp"));
+                .function(new Function("setTitle", "Program Title 1.0"));
 
         //
 
-        System  .rmi("/system/function/addjmenubar")
+        System
+                .rmi("/system/function/addjmenubar")
                 .see("system/functions/list.rpl")
                 .put(this.jmenus)
                 .put("/system/values/jmenus")

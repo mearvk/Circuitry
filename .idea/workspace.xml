@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/org/mearvk/org/mearvk/jndi/JNDI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/extensibility" beforeDir="false" afterPath="$PROJECT_DIR$/data/extensibility" afterDir="false" />
     </list>
@@ -14,12 +18,63 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="extensibility" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="extensibility" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/extensibility">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2022">
-              <caret line="1614" lean-forward="true" selection-start-line="1614" selection-end-line="1614" />
+            <state relative-caret-position="546">
+              <caret line="1524" lean-forward="true" selection-start-line="1524" selection-end-line="1524" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RMI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RMIServer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="24" column="36" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RMISystemComponent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/RMISystemComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RMIClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JNDI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/org/mearvk/jndi/JNDI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -40,10 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Flag.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/SignalRegister.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/BusLogic.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/org/mearvk/interfaces/Deliverer.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/org/mearvk/interfaces/Runner.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/org/mearvk/interfaces/Deliver.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/SystemComponent.java" />
@@ -90,12 +141,17 @@
         <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/System.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/Guarantor.java" />
         <option value="$PROJECT_DIR$/data/extensibility" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/org/mearvk/jndi/JNDI.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMI.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIClient.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/RMISystemComponent.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIServer.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="154" />
-    <option name="y" value="52" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="282" />
+    <option name="y" value="31" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -105,7 +161,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -130,11 +185,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="mearvk" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mearvk" type="462c0819:PsiDirectoryNode" />
+              <item name="mearvk" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,13 +295,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Latest">
-      <created>1527988724105</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1527988724105</updated>
     </task>
     <task id="LOCAL-00032" summary="Latest">
       <created>1527988841714</created>
@@ -576,11 +632,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528506797991</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Latest">
+      <created>1528690951084</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1528690951085</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
+    <frame x="282" y="31" width="1400" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -590,18 +653,18 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32987747" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.31479737" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32987747" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1975" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2283237" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32987747" />
@@ -626,48 +689,6 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/master.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-          <caret line="123" column="35" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/org/mearvk/interfaces/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/org/mearvk/interfaces/Deliver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/Flag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/master.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="97" column="28" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/Monitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/SignalRegister.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -976,10 +997,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/org/mearvk/jndi/JNDI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/extensibility">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2022">
-          <caret line="1614" lean-forward="true" selection-start-line="1614" selection-end-line="1614" />
+        <state relative-caret-position="546">
+          <caret line="1524" lean-forward="true" selection-start-line="1524" selection-end-line="1524" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/RMISystemComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
