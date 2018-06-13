@@ -11,7 +11,8 @@ public class Observer extends SystemComponent implements Runner
 
     //
 
-    public Observer() {
+    public Observer()
+    {
 
     }
 
@@ -23,27 +24,32 @@ public class Observer extends SystemComponent implements Runner
     }
 
     @Override
-    public void latch() throws Exception {
+    public void latch() throws Exception
+    {
 
     }
 
     @Override
-    public void unlatch() throws Exception {
+    public void unlatch() throws Exception
+    {
 
     }
 
     @Override
-    public void ready() throws Exception {
+    public void ready() throws Exception
+    {
 
     }
 
     @Override
-    public void init() throws Exception {
+    public void init() throws Exception
+    {
 
     }
 
     @Override
-    public void run() {
+    public void run()
+    {
 
     }
 }

@@ -1,24 +1,9 @@
-package org.mearvk.circuitry;
+package org.mearvk.ancellaries;
 
-import org.mearvk.ancellaries.BusLogic;
-import org.mearvk.ancellaries.SystemComponent;
+import java.rmi.Remote;
 
-public class Producer extends SystemComponent
+public class RMISystemComponent extends SystemComponent implements Remote
 {
-    public BusLogic bus;
-
-    //
-
-    public Producer()
-    {
-
-    }
-
-    public Producer(System system)
-    {
-
-    }
-
     @Override
     public void latch() throws Exception
     {

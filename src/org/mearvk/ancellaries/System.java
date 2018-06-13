@@ -2,8 +2,25 @@ package org.mearvk.ancellaries;
 
 import org.mearvk.circuitry.org.mearvk.interfaces.Bodi;
 
-public class System extends SystemComponent implements Runnable {
-    public static void main(String... args) {
+public class System extends SystemComponent implements Runnable
+{
+    public Bodi bodi;
+    public System system;
+
+    public System(String name)
+    {
+        this.name = name;
+    }
+
+    public System(System system, String name)
+    {
+        this.system = system;
+
+        this.name = name;
+    }
+
+    public static void main(String... args)
+    {
         System system = new System("system");
 
         //system.add(type1);
@@ -15,52 +32,45 @@ public class System extends SystemComponent implements Runnable {
         system.run();
     }
 
-    public Bodi bodi;
-
-    public System system;
-
-    public System(String name) {
-        this.name = name;
-    }
-
-    public System(System system, String name) {
-        this.system = system;
-
-        this.name = name;
-    }
-
     //
 
     @Override
-    public void latch() throws Exception {
+    public void latch() throws Exception
+    {
 
     }
 
     @Override
-    public void unlatch() throws Exception {
+    public void unlatch() throws Exception
+    {
 
     }
 
     @Override
-    public void ready() throws Exception {
+    public void ready() throws Exception
+    {
 
     }
 
-    public void put(Object object) {
+    public void put(Object object)
+    {
 
     }
 
-    public void pump() {
+    public void pump()
+    {
 
     }
 
     @Override
-    public void init() {
+    public void init()
+    {
 
     }
 
     @Override
-    public void run() {
+    public void run()
+    {
         java.lang.System.out.println();
     }
 }

@@ -12,7 +12,8 @@ public abstract class Deliverer extends SystemComponent implements Runner, Deliv
 
     //
 
-    public Deliverer(System system, SystemComponent target) {
+    public Deliverer(System system, SystemComponent target)
+    {
         this.system = system;
 
         this.target = target;
@@ -22,7 +23,7 @@ public abstract class Deliverer extends SystemComponent implements Runner, Deliv
     @Override
     public void latch() throws Exception
     {
-        synchronized(this.latchlock)
+        synchronized (this.latchlock)
         {
             this.latchlock.lock();
         }
@@ -31,7 +32,7 @@ public abstract class Deliverer extends SystemComponent implements Runner, Deliv
     @Override
     public void unlatch() throws Exception
     {
-        synchronized(this.latchlock)
+        synchronized (this.latchlock)
         {
             this.latchlock.unlock();
         }

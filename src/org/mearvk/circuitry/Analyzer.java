@@ -9,41 +9,49 @@ public class Analyzer extends SystemComponent
 
     //
 
-    public Analyzer() {
+    public Analyzer()
+    {
 
     }
 
-    public Analyzer(org.mearvk.ancellaries.System system) {
+    public Analyzer(org.mearvk.ancellaries.System system)
+    {
         this.system = system;
     }
 
-    public Analyzer(org.mearvk.ancellaries.System system, SystemComponent target) {
+    public Analyzer(org.mearvk.ancellaries.System system, SystemComponent target)
+    {
         this.system = system;
 
         this.target = target;
     }
 
-    public void analyze() {
+    public void analyze()
+    {
 
     }
 
     @Override
-    public void latch() throws Exception {
+    public void latch() throws Exception
+    {
 
     }
 
     @Override
-    public void unlatch() throws Exception {
+    public void unlatch() throws Exception
+    {
 
     }
 
     @Override
-    public void ready() throws Exception {
+    public void ready() throws Exception
+    {
 
     }
 
     @Override
-    public void init() throws Exception {
+    public void init() throws Exception
+    {
 
     }
 }

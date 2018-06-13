@@ -10,31 +10,37 @@ public class Consumer extends SystemComponent
 
     //
 
-    public Consumer() {
+    public Consumer()
+    {
 
     }
 
-    public Consumer(System system) {
-
-    }
-
-    @Override
-    public void latch() throws Exception {
+    public Consumer(System system)
+    {
 
     }
 
     @Override
-    public void unlatch() throws Exception {
+    public void latch() throws Exception
+    {
 
     }
 
     @Override
-    public void ready() throws Exception {
+    public void unlatch() throws Exception
+    {
 
     }
 
     @Override
-    public void init() throws Exception {
+    public void ready() throws Exception
+    {
+
+    }
+
+    @Override
+    public void init() throws Exception
+    {
 
     }
 }

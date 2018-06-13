@@ -1,4 +1,5 @@
 package org.mearvk.ancellaries;
 
-public class SecurityToken {
+public class SecurityToken
+{
 }

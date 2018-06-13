@@ -1,4 +1,5 @@
 package org.mearvk.circuitry;
 
-public class Validator {
+public class Validator
+{
 }

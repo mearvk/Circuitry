@@ -8,23 +8,28 @@ import java.io.ByteArrayOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-public class Copier extends SystemComponent {
+public class Copier extends SystemComponent
+{
     public Object source;
 
     public Object destination;
 
     //
 
-    public Copier() {
+    public Copier()
+    {
 
     }
 
-    public Copier(System system) {
+    public Copier(System system)
+    {
         this.system = system;
     }
 
-    public void copy() {
-        try {
+    public void copy()
+    {
+        try
+        {
             ByteArrayOutputStream baos;
 
             ByteArrayInputStream bais;
@@ -54,28 +59,34 @@ public class Copier extends SystemComponent {
             //
 
             destination = ois.readObject();
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
 
         }
     }
 
     @Override
-    public void latch() throws Exception {
+    public void latch() throws Exception
+    {
 
     }
 
     @Override
-    public void unlatch() throws Exception {
+    public void unlatch() throws Exception
+    {
 
     }
 
     @Override
-    public void ready() throws Exception {
+    public void ready() throws Exception
+    {
 
     }
 
     @Override
-    public void init() throws Exception {
+    public void init() throws Exception
+    {
 
     }
 }

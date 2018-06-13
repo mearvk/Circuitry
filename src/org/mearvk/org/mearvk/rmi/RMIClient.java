@@ -5,17 +5,22 @@ import org.mearvk.ancellaries.SystemComponent;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
-public class RMIClient extends SystemComponent {
+public class RMIClient extends SystemComponent
+{
     public String host = "";
 
     public Registry registry;
 
     //
 
-    public RMIClient() {
-        try {
+    public RMIClient()
+    {
+        try
+        {
             registry = LocateRegistry.getRegistry(host);
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             System.err.println("RMIClient is: " + e);
         }
     }
@@ -23,22 +28,26 @@ public class RMIClient extends SystemComponent {
     //
 
     @Override
-    public void latch() throws Exception {
+    public void latch() throws Exception
+    {
 
     }
 
     @Override
-    public void unlatch() throws Exception {
+    public void unlatch() throws Exception
+    {
 
     }
 
     @Override
-    public void ready() throws Exception {
+    public void ready() throws Exception
+    {
 
     }
 
     @Override
-    public void init() throws Exception {
+    public void init() throws Exception
+    {
 
     }
 }

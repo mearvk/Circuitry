@@ -10,31 +10,37 @@ public class Visitor extends SystemComponent
 
     //
 
-    public Visitor() {
+    public Visitor()
+    {
 
     }
 
-    public Visitor(System system) {
+    public Visitor(System system)
+    {
         this.system = system;
     }
 
     @Override
-    public void latch() throws Exception {
+    public void latch() throws Exception
+    {
 
     }
 
     @Override
-    public void unlatch() throws Exception {
+    public void unlatch() throws Exception
+    {
 
     }
 
     @Override
-    public void ready() throws Exception {
+    public void ready() throws Exception
+    {
 
     }
 
     @Override
-    public void init() throws Exception {
+    public void init() throws Exception
+    {
 
     }
 }

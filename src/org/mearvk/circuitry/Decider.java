@@ -10,31 +10,37 @@ public class Decider extends SystemComponent
 
     //
 
-    public Decider() {
+    public Decider()
+    {
 
     }
 
-    public Decider(System system) {
-
-    }
-
-    @Override
-    public void latch() throws Exception {
+    public Decider(System system)
+    {
 
     }
 
     @Override
-    public void unlatch() throws Exception {
+    public void latch() throws Exception
+    {
 
     }
 
     @Override
-    public void ready() throws Exception {
+    public void unlatch() throws Exception
+    {
 
     }
 
     @Override
-    public void init() throws Exception {
+    public void ready() throws Exception
+    {
+
+    }
+
+    @Override
+    public void init() throws Exception
+    {
 
     }
 }

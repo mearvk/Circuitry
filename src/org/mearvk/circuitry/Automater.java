@@ -10,35 +10,42 @@ public class Automater extends SystemComponent
 
     //
 
-    public Automater() {
+    public Automater()
+    {
 
     }
 
-    public Automater(System system) {
+    public Automater(System system)
+    {
 
     }
 
-    public void automate() {
-
-    }
-
-    @Override
-    public void latch() throws Exception {
-
-    }
-
-    @Override
-    public void unlatch() throws Exception {
+    public void automate()
+    {
 
     }
 
     @Override
-    public void ready() throws Exception {
+    public void latch() throws Exception
+    {
 
     }
 
     @Override
-    public void init() throws Exception {
+    public void unlatch() throws Exception
+    {
+
+    }
+
+    @Override
+    public void ready() throws Exception
+    {
+
+    }
+
+    @Override
+    public void init() throws Exception
+    {
 
     }
 }

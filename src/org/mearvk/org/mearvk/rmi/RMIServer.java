@@ -5,21 +5,26 @@ import org.mearvk.ancellaries.RMISystemComponent;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
-public class RMIServer extends RMISystemComponent {
+public class RMIServer extends RMISystemComponent
+{
     public RMIServer server;
 
     public Registry registry;
 
     //
 
-    public RMIServer() {
+    public RMIServer()
+    {
         this.server = this;
 
-        try {
+        try
+        {
             this.registry = LocateRegistry.getRegistry();
 
             this.registry.bind("/rmi", this);
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             System.err.println("Error > " + e);
         }
     }
@@ -27,22 +32,26 @@ public class RMIServer extends RMISystemComponent {
     //
 
     @Override
-    public void latch() throws Exception {
+    public void latch() throws Exception
+    {
 
     }
 
     @Override
-    public void unlatch() throws Exception {
+    public void unlatch() throws Exception
+    {
 
     }
 
     @Override
-    public void ready() throws Exception {
+    public void ready() throws Exception
+    {
 
     }
 
     @Override
-    public void init() throws Exception {
+    public void init() throws Exception
+    {
 
     }
 }

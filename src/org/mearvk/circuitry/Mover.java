@@ -10,31 +10,37 @@ public class Mover extends SystemComponent
 
     //
 
-    public Mover() {
+    public Mover()
+    {
 
     }
 
-    public Mover(System system) {
+    public Mover(System system)
+    {
         this.system = system;
     }
 
     @Override
-    public void latch() throws Exception {
+    public void latch() throws Exception
+    {
 
     }
 
     @Override
-    public void unlatch() throws Exception {
+    public void unlatch() throws Exception
+    {
 
     }
 
     @Override
-    public void ready() throws Exception {
+    public void ready() throws Exception
+    {
 
     }
 
     @Override
-    public void init() throws Exception {
+    public void init() throws Exception
+    {
 
     }
 }
