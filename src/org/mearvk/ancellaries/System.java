@@ -2,6 +2,7 @@ package org.mearvk.ancellaries;
 
 import org.mearvk.circuitry.org.mearvk.interfaces.Bodi;
 import org.mearvk.org.mearvk.rmi.RMIClient;
+import org.mearvk.org.mearvk.rmi.RMIServer;
 
 public class System extends SystemComponent implements Runnable
 {
@@ -9,7 +10,11 @@ public class System extends SystemComponent implements Runnable
 
     public System system;
 
-    public RMIClient rmi;
+    public RMIClient rmi_client;
+
+    public RMIServer rmi_server;
+
+    //
 
     public System(String name)
     {

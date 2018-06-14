@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/ancellaries/DefaultListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/ancellaries/DefaultListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/ancellaries/System.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/ancellaries/System.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/mearvk/examples/Example001.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/examples/Example001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIServer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,34 +22,42 @@
       <file leaf-file-name="RMIServer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Example001.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/Example001.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="97" lean-forward="true" selection-start-line="49" selection-start-column="97" selection-end-line="49" selection-end-column="97" />
+            <state relative-caret-position="340">
+              <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#154#155#0" expanded="true" />
-                <element signature="e#195#196#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultListener.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Example001.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/Example001.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#294#295#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultListener.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/DefaultListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="863">
+              <caret line="113" column="21" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#176#183#0" expanded="true" />
+                <element signature="e#185#192#0" expanded="true" />
+                <element signature="e#260#277#0" expanded="true" />
+                <element signature="e#330#338#0" expanded="true" />
+                <element signature="e#2471#2472#0" expanded="true" />
+                <element signature="e#2549#2550#0" expanded="true" />
+                <element signature="e#2568#2569#0" expanded="true" />
+                <element signature="e#2617#2618#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/org/mearvk/interfaces/Voter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -72,12 +84,14 @@
       <file leaf-file-name="System.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/System.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="880">
+              <caret line="80" column="21" lean-forward="true" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#272#273#0" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+                <element signature="e#344#345#0" expanded="true" />
+                <element signature="e#1073#1074#0" expanded="true" />
+                <element signature="e#1119#1120#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,8 +100,8 @@
       <file leaf-file-name="RMIClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+            <state relative-caret-position="187">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,14 +112,8 @@
       <file leaf-file-name="ExceptionQueue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/ExceptionQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="204">
               <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-              <folding>
-                <element signature="e#192#193#0" expanded="true" />
-                <element signature="e#242#243#0" expanded="true" />
-                <element signature="e#278#279#0" expanded="true" />
-                <element signature="e#308#309#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -124,10 +132,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-              <folding>
-                <element signature="e#169#170#0" expanded="true" />
-                <element signature="e#205#206#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -189,16 +193,16 @@
         <option value="$PROJECT_DIR$/src/org/mearvk/org/mearvk/jndi/JNDI.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/RMISystemComponent.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMI.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIServer.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/System.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RemoteWrapper.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/ExceptionQueue.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/ExceptionWrapper.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIClient.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/org/mearvk/interfaces/Voter.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/DefaultListener.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/Event.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIClient.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIServer.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/System.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/examples/Example001.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/DefaultListener.java" />
       </list>
     </option>
   </component>
@@ -214,6 +218,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
@@ -227,7 +232,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,7 +260,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RMIServer">
+  <component name="RunManager" selected="Application.Example001">
+    <configuration name="Example001" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.mearvk.examples.Example001" />
+      <module name="Circuitry" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.mearvk.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="RMIServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.mearvk.org.mearvk.rmi.RMIServer" />
       <module name="Circuitry" />
@@ -323,9 +338,11 @@
     <list>
       <item itemvalue="Application.System" />
       <item itemvalue="Application.RMIServer" />
+      <item itemvalue="Application.Example001" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Example001" />
         <item itemvalue="Application.RMIServer" />
         <item itemvalue="Application.System" />
       </list>
@@ -341,13 +358,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Latest">
-      <created>1528079896073</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1528079896073</updated>
     </task>
     <task id="LOCAL-00041" summary="Latest">
       <created>1528080558636</created>
@@ -685,7 +695,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528992808496</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Latest">
+      <created>1529003595992</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1529003595992</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -700,18 +717,18 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3139644" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32987747" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3139644" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21625" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.139375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1020,10 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding>
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#205#206#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,13 +1049,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/ExceptionQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="204">
           <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="80" column="21" lean-forward="true" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
           <folding>
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#1073#1074#0" expanded="true" />
+            <element signature="e#1119#1120#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1050,47 +1071,7 @@
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/org/mearvk/interfaces/Voter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/DefaultListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#176#183#0" expanded="true" />
-          </folding>
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -1101,14 +1082,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/Example001.java">
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="97" lean-forward="true" selection-start-line="49" selection-start-column="97" selection-end-line="49" selection-end-column="97" />
+        <state relative-caret-position="340">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#154#155#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/Example001.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/DefaultListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="863">
+          <caret line="113" column="21" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#185#192#0" expanded="true" />
+            <element signature="e#260#277#0" expanded="true" />
+            <element signature="e#330#338#0" expanded="true" />
+            <element signature="e#2471#2472#0" expanded="true" />
+            <element signature="e#2549#2550#0" expanded="true" />
+            <element signature="e#2568#2569#0" expanded="true" />
+            <element signature="e#2617#2618#0" expanded="true" />
           </folding>
         </state>
       </provider>

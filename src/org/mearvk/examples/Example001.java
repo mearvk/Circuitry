@@ -18,36 +18,48 @@ public class Example001 implements Remote
     {
         Example001 example001 = new Example001();
 
-        example001.system.rmi.put("//example001", example001);
+        //
+
+        example001.system.rmi_client.put("//example001", example001);
 
         //
 
-        example001.system.rmi.put("//example001/listeners/default", new DefaultListener());
+        example001.system.rmi_client.put("//example001/listeners/default", new DefaultListener());
 
-        example001.system.rmi.put("//example001/listeners/ui/default", new DefaultListener());
+        example001.system.rmi_client.put("//example001/listeners/ui/default", new DefaultListener());
 
-        example001.system.rmi.put("//example001/listeners/dev/default", new DefaultListener());
+        example001.system.rmi_client.put("//example001/listeners/dev/default", new DefaultListener());
 
-        example001.system.rmi.put("//example001/listeners/prod/default", new DefaultListener());
-
-        //
-
-        example001.system.rmi.put("//example001/notifiers/default", new DefaultListener());
-
-        example001.system.rmi.put("//example001/notifiers/ui/default", new DefaultListener());
-
-        example001.system.rmi.put("//example001/notifiers/dev/default", new DefaultListener());
-
-        example001.system.rmi.put("//example001/notifiers/prod/default", new DefaultListener());
+        example001.system.rmi_client.put("//example001/listeners/prod/default", new DefaultListener());
 
         //
 
-        example001.system.rmi.put("//example001/registrars/default", new DefaultListener());
+        example001.system.rmi_client.put("//example001/notifiers/default", new DefaultListener());
 
-        example001.system.rmi.put("//example001/registrars/ui/default", new DefaultListener());
+        example001.system.rmi_client.put("//example001/notifiers/ui/default", new DefaultListener());
 
-        example001.system.rmi.put("//example001/registrars/dev/default", new DefaultListener());
+        example001.system.rmi_client.put("//example001/notifiers/dev/default", new DefaultListener());
 
-        example001.system.rmi.put("//example001/registrars/prod/default", new DefaultListener());
+        example001.system.rmi_client.put("//example001/notifiers/prod/default", new DefaultListener());
+
+        //
+
+        example001.system.rmi_client.put("//example001/registrars/default", new DefaultListener());
+
+        example001.system.rmi_client.put("//example001/registrars/ui/default", new DefaultListener());
+
+        example001.system.rmi_client.put("//example001/registrars/dev/default", new DefaultListener());
+
+        example001.system.rmi_client.put("//example001/registrars/prod/default", new DefaultListener());
+
+        //
+
+        example001.system.rmi_client.put("//example001/publishers/default", new DefaultListener());
+
+        example001.system.rmi_client.put("//example001/publishers/ui/default", new DefaultListener());
+
+        example001.system.rmi_client.put("//example001/publishers/dev/default", new DefaultListener());
+
+        example001.system.rmi_client.put("//example001/publishers/prod/default", new DefaultListener());
     }
 }

@@ -9,7 +9,7 @@ import java.rmi.registry.Registry;
 
 public class RMIClient extends SystemComponent
 {
-    public String host = "";
+    public String host = "//rmi";
 
     public Registry registry;
 
