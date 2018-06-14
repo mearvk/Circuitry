@@ -42,6 +42,37 @@ public class DefaultListener implements Remote
         }
     }
 
+    public void addEvent(Event event, String eventname)
+    {
+        try
+        {
+            this.registry = LocateRegistry.getRegistry("rmi");
+
+            this.registry.bind(eventname, event);
+
+            //
+
+            //this.events.trimToSize();
+
+            this.events.add(event);
+        }
+        catch (Exception exception)
+        {
+            try
+            {
+                ExceptionQueue queue;
+
+                queue = (ExceptionQueue) this.registry.lookup(java.lang.System.getProperty("//rmi/exceptions"));
+
+                queue.treat(exception);
+            }
+            catch (Exception trim)
+            {
+                java.lang.System.err.println("DefaultListener > " + trim);
+            }
+        }
+    }
+
     public void addEvent(Event event)
     {
         try
@@ -55,6 +86,37 @@ public class DefaultListener implements Remote
             //this.events.trimToSize();
 
             this.events.add(event);
+        }
+        catch (Exception exception)
+        {
+            try
+            {
+                ExceptionQueue queue;
+
+                queue = (ExceptionQueue) this.registry.lookup(java.lang.System.getProperty("//rmi/exceptions"));
+
+                queue.treat(exception);
+            }
+            catch (Exception trim)
+            {
+                java.lang.System.err.println("DefaultListener > " + trim);
+            }
+        }
+    }
+
+    public void addListener(DefaultListener listener, String listenername)
+    {
+        try
+        {
+            this.registry = LocateRegistry.getRegistry("rmi");
+
+            this.registry.bind(listenername, listener);
+
+            //
+
+            //this.listeners.trimToSize();
+
+            this.listeners.add(listener);
         }
         catch (Exception exception)
         {

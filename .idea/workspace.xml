@@ -4,10 +4,6 @@
     <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/mearvk/ancellaries/DefaultListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/ancellaries/DefaultListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/ancellaries/System.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/ancellaries/System.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/examples/Example001.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/examples/Example001.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIServer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,8 +43,8 @@
       <file leaf-file-name="DefaultListener.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/DefaultListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="863">
-              <caret line="113" column="21" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
+            <state relative-caret-position="370">
+              <caret line="109" column="9" lean-forward="true" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#185#192#0" expanded="true" />
@@ -358,13 +354,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Latest">
-      <created>1528080558636</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1528080558636</updated>
     </task>
     <task id="LOCAL-00042" summary="Latest">
       <created>1528080688843</created>
@@ -702,7 +691,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529003595992</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="Latest">
+      <created>1529018033680</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1529018033680</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1115,8 +1111,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/DefaultListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="863">
-          <caret line="113" column="21" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
+        <state relative-caret-position="370">
+          <caret line="109" column="9" lean-forward="true" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#185#192#0" expanded="true" />
