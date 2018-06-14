@@ -166,12 +166,12 @@ public class DefaultListener implements Remote
         }
     }
 
-    private String getNextListenerName()
+    protected String getNextListenerName()
     {
         return "Listener_" + String.format("%03d", this.listeners.size());
     }
 
-    private String getNextEventName()
+    protected String getNextEventName()
     {
         return "Event_" + String.format("%03d", this.events.size());
     }
