@@ -1,10 +1,9 @@
-package org.mearvk.org.mearvk.rmi;
+package org.mearvk.circuitry.org.mearvk.interfaces;
 
 import org.mearvk.ancellaries.SystemComponent;
 
-public class RMI extends SystemComponent
+public class Voter extends SystemComponent
 {
-
 
     @Override
     public void latch() throws Exception

@@ -2,10 +2,11 @@ package org.mearvk.org.mearvk.rmi;
 
 import org.mearvk.ancellaries.RMISystemComponent;
 
+import java.io.Serializable;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
-public class RMIServer extends RMISystemComponent
+public class RMIServer extends RMISystemComponent implements Serializable
 {
     public RMIServer server;
 
@@ -13,19 +14,26 @@ public class RMIServer extends RMISystemComponent
 
     //
 
-    public RMIServer()
+    public RMIServer() throws Exception
     {
         this.server = this;
 
+        this.registry = LocateRegistry.getRegistry();
+
+        this.registry.bind("rmi", this);
+    }
+
+    //
+
+    public static void main(String... args)
+    {
         try
         {
-            this.registry = LocateRegistry.getRegistry();
-
-            this.registry.bind("/rmi", this);
+            new RMIServer();
         }
         catch (Exception e)
         {
-            System.err.println("Error > " + e);
+            e.printStackTrace();
         }
     }
 

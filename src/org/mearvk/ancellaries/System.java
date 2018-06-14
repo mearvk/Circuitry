@@ -1,11 +1,15 @@
 package org.mearvk.ancellaries;
 
 import org.mearvk.circuitry.org.mearvk.interfaces.Bodi;
+import org.mearvk.org.mearvk.rmi.RMIClient;
 
 public class System extends SystemComponent implements Runnable
 {
     public Bodi bodi;
+
     public System system;
+
+    public RMIClient rmi;
 
     public System(String name)
     {
