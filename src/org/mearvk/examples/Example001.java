@@ -17,6 +17,6 @@ public class Example001 implements Remote
     {
         Example001 example001 = new Example001();
 
-        example001.system.rmi.put("//example/001", example001);
+        example001.system.rmi.put("//example001", example001);
     }
 }
