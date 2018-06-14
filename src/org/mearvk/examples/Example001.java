@@ -39,5 +39,15 @@ public class Example001 implements Remote
         example001.system.rmi.put("//example001/notifiers/dev/default", new DefaultListener());
 
         example001.system.rmi.put("//example001/notifiers/prod/default", new DefaultListener());
+
+        //
+
+        example001.system.rmi.put("//example001/registrars/default", new DefaultListener());
+
+        example001.system.rmi.put("//example001/registrars/ui/default", new DefaultListener());
+
+        example001.system.rmi.put("//example001/registrars/dev/default", new DefaultListener());
+
+        example001.system.rmi.put("//example001/registrars/prod/default", new DefaultListener());
     }
 }
