@@ -23,7 +23,7 @@ public class DefaultListener implements Remote
         {
             this.registry = LocateRegistry.getRegistry("rmi");
 
-            this.registry.bind("LINK", this);
+            this.registry.bind(this.getNextListenerName(), this);
         }
         catch (Exception exception)
         {
@@ -41,6 +41,7 @@ public class DefaultListener implements Remote
             }
         }
     }
+
 
     public void addEvent(Event event, String eventname)
     {
