@@ -75,9 +75,29 @@ public class RMIClient extends SystemComponent
         }
     }
 
-    public void pull()
+    public Remote pull(String name)
     {
+        try
+        {
+            return this.registry.lookup(name);
+        }
+        catch (Exception exception)
+        {
+            try
+            {
+                ExceptionQueue queue;
 
+                queue = (ExceptionQueue) this.registry.lookup(System.getProperty("rmi://defaults/exceptions"));
+
+                queue.treat(exception);
+            }
+            catch (Exception trim)
+            {
+                System.err.println("RMIClient > " + trim);
+            }
+
+            return null;
+        }
     }
 
     @Override

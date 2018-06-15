@@ -13,7 +13,13 @@ public class DefaultListener implements Remote
 
     public ArrayList<String> references = new ArrayList<String>();
 
+    //
+
     public Registry registry;
+
+    //
+
+    public EventResponder responder;
 
     //
 
@@ -42,7 +48,6 @@ public class DefaultListener implements Remote
         }
     }
 
-
     public void addEvent(Event event, String eventname)
     {
         try
@@ -53,9 +58,11 @@ public class DefaultListener implements Remote
 
             //
 
-            //this.events.trimToSize();
-
             this.events.add(event);
+
+            //
+
+            this.responder.handleEvent(event);
         }
         catch (Exception exception)
         {
@@ -84,9 +91,11 @@ public class DefaultListener implements Remote
 
             //
 
-            //this.events.trimToSize();
-
             this.events.add(event);
+
+            //
+
+            this.responder.handleEvent(event);
         }
         catch (Exception exception)
         {
@@ -114,8 +123,6 @@ public class DefaultListener implements Remote
             this.registry.bind(listenername, listener);
 
             //
-
-            //this.listeners.trimToSize();
 
             this.listeners.add(listener);
         }
@@ -146,8 +153,6 @@ public class DefaultListener implements Remote
 
             //
 
-            //this.listeners.trimToSize();
-
             this.listeners.add(listener);
         }
         catch (Exception exception)
@@ -167,6 +172,7 @@ public class DefaultListener implements Remote
         }
     }
 
+
     protected String getNextListenerName()
     {
         return "Listener_" + String.format("%03d", this.listeners.size());
@@ -175,5 +181,10 @@ public class DefaultListener implements Remote
     protected String getNextEventName()
     {
         return "Event_" + String.format("%03d", this.events.size());
+    }
+
+    public void setResponseHandler(EventResponder responder)
+    {
+        this.responder = responder;
     }
 }

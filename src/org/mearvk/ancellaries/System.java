@@ -10,9 +10,9 @@ public class System extends SystemComponent implements Runnable
 
     public System system;
 
-    public RMIClient rmi_client;
+    public RMIClient rmi_client = new RMIClient();
 
-    public RMIServer rmi_server;
+    public RMIServer rmi_server = new RMIServer();
 
     //
 

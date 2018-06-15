@@ -14,13 +14,20 @@ public class RMIServer extends RMISystemComponent implements Serializable
 
     //
 
-    public RMIServer() throws Exception
+    public RMIServer()
     {
         this.server = this;
 
-        this.registry = LocateRegistry.getRegistry("//rmi");
+        try
+        {
+            this.registry = LocateRegistry.getRegistry("//rmi");
 
-        this.registry.bind("rmi", this);
+            this.registry.bind("rmi", this);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     //
