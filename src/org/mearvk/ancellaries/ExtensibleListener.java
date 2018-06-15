@@ -1,8 +1,9 @@
 package org.mearvk.ancellaries;
 
+import java.io.Serializable;
 import java.rmi.registry.LocateRegistry;
 
-public class ExtensibleListener extends DefaultListener
+public class ExtensibleListener extends DefaultListener implements Serializable
 {
     public void addSuperListener(DefaultListener superlistener)
     {
@@ -22,7 +23,7 @@ public class ExtensibleListener extends DefaultListener
             {
                 ExceptionQueue queue;
 
-                queue = (ExceptionQueue) this.registry.lookup(java.lang.System.getProperty("//rmi/exceptions"));
+                queue = (ExceptionQueue) this.registry.lookup(System.DEFAULT_RMI_EXCEPTION);
 
                 queue.treat(exception);
             }
@@ -51,7 +52,7 @@ public class ExtensibleListener extends DefaultListener
             {
                 ExceptionQueue queue;
 
-                queue = (ExceptionQueue) this.registry.lookup(java.lang.System.getProperty("//rmi/exceptions"));
+                queue = (ExceptionQueue) this.registry.lookup(System.DEFAULT_RMI_EXCEPTION);
 
                 queue.treat(exception);
             }

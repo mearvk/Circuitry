@@ -1,11 +1,12 @@
 package org.mearvk.ancellaries;
 
+import java.io.Serializable;
 import java.rmi.Remote;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.ArrayList;
 
-public class DefaultListener implements Remote
+public class DefaultListener implements Remote, Serializable
 {
     public ArrayList<Event> events = new ArrayList<Event>();
 
@@ -27,7 +28,7 @@ public class DefaultListener implements Remote
     {
         try
         {
-            this.registry = LocateRegistry.getRegistry("rmi");
+            this.registry = LocateRegistry.getRegistry();
 
             this.registry.bind(this.getNextListenerName(), this);
         }
@@ -37,7 +38,7 @@ public class DefaultListener implements Remote
             {
                 ExceptionQueue queue;
 
-                queue = (ExceptionQueue) this.registry.lookup(java.lang.System.getProperty("//rmi/exceptions"));
+                queue = (ExceptionQueue) this.registry.lookup(System.DEFAULT_RMI_EXCEPTION);
 
                 queue.treat(exception);
             }
@@ -52,7 +53,7 @@ public class DefaultListener implements Remote
     {
         try
         {
-            this.registry = LocateRegistry.getRegistry("rmi");
+            this.registry = LocateRegistry.getRegistry();
 
             this.registry.bind(eventname, event);
 
@@ -70,7 +71,7 @@ public class DefaultListener implements Remote
             {
                 ExceptionQueue queue;
 
-                queue = (ExceptionQueue) this.registry.lookup(java.lang.System.getProperty("//rmi/exceptions"));
+                queue = (ExceptionQueue) this.registry.lookup(System.DEFAULT_RMI_EXCEPTION);
 
                 queue.treat(exception);
             }
@@ -85,7 +86,7 @@ public class DefaultListener implements Remote
     {
         try
         {
-            this.registry = LocateRegistry.getRegistry("rmi");
+            this.registry = LocateRegistry.getRegistry();
 
             this.registry.bind(this.getNextEventName(), event);
 
@@ -103,7 +104,7 @@ public class DefaultListener implements Remote
             {
                 ExceptionQueue queue;
 
-                queue = (ExceptionQueue) this.registry.lookup(java.lang.System.getProperty("//rmi/exceptions"));
+                queue = (ExceptionQueue) this.registry.lookup(System.DEFAULT_RMI_EXCEPTION);
 
                 queue.treat(exception);
             }
@@ -118,7 +119,7 @@ public class DefaultListener implements Remote
     {
         try
         {
-            this.registry = LocateRegistry.getRegistry("rmi");
+            this.registry = LocateRegistry.getRegistry();
 
             this.registry.bind(listenername, listener);
 
@@ -132,7 +133,7 @@ public class DefaultListener implements Remote
             {
                 ExceptionQueue queue;
 
-                queue = (ExceptionQueue) this.registry.lookup(java.lang.System.getProperty("//rmi/exceptions"));
+                queue = (ExceptionQueue) this.registry.lookup(System.DEFAULT_RMI_EXCEPTION);
 
                 queue.treat(exception);
             }
@@ -147,7 +148,7 @@ public class DefaultListener implements Remote
     {
         try
         {
-            this.registry = LocateRegistry.getRegistry("rmi");
+            this.registry = LocateRegistry.getRegistry();
 
             this.registry.bind(this.getNextListenerName(), listener);
 
@@ -161,7 +162,7 @@ public class DefaultListener implements Remote
             {
                 ExceptionQueue queue;
 
-                queue = (ExceptionQueue) this.registry.lookup(java.lang.System.getProperty("//rmi/exceptions"));
+                queue = (ExceptionQueue) this.registry.lookup(System.DEFAULT_RMI_EXCEPTION);
 
                 queue.treat(exception);
             }

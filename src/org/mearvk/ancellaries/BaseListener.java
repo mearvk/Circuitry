@@ -1,6 +1,8 @@
 package org.mearvk.ancellaries;
 
-public class BaseListener extends DefaultListener
+import java.io.Serializable;
+
+public class BaseListener extends DefaultListener implements Serializable
 {
 
 }

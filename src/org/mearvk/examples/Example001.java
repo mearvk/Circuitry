@@ -4,9 +4,10 @@ import org.mearvk.ancellaries.BaseListener;
 import org.mearvk.ancellaries.Event;
 import org.mearvk.ancellaries.System;
 
+import java.io.Serializable;
 import java.rmi.Remote;
 
-public class Example001 implements Remote
+public class Example001 implements Remote, Serializable
 {
     public System system;
 

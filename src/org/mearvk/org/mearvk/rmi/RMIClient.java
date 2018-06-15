@@ -1,6 +1,7 @@
 package org.mearvk.org.mearvk.rmi;
 
 import org.mearvk.ancellaries.ExceptionQueue;
+import org.mearvk.ancellaries.System;
 import org.mearvk.ancellaries.SystemComponent;
 
 import java.rmi.Remote;
@@ -9,7 +10,7 @@ import java.rmi.registry.Registry;
 
 public class RMIClient extends SystemComponent
 {
-    public String host = "//rmi";
+    public String host = "";
 
     public Registry registry;
 
@@ -19,11 +20,11 @@ public class RMIClient extends SystemComponent
     {
         try
         {
-            registry = LocateRegistry.getRegistry(host);
+            registry = LocateRegistry.getRegistry();
         }
         catch (Exception e)
         {
-            System.err.println("RMIClient > " + e);
+            java.lang.System.err.println("RMIClient > " + e);
         }
     }
 
@@ -47,7 +48,7 @@ public class RMIClient extends SystemComponent
             }
             catch (Exception trim)
             {
-                System.err.println("RMIClient > " + trim);
+                java.lang.System.err.println("RMIClient > " + trim);
             }
         }
     }
@@ -64,13 +65,13 @@ public class RMIClient extends SystemComponent
             {
                 ExceptionQueue queue;
 
-                queue = (ExceptionQueue) this.registry.lookup(System.getProperty("rmi://defaults/exceptions"));
+                queue = (ExceptionQueue) this.registry.lookup(System.DEFAULT_RMI_EXCEPTION);
 
                 queue.treat(exception);
             }
             catch (Exception trim)
             {
-                System.err.println("RMIClient > " + trim);
+                java.lang.System.err.println("RMIClient > " + trim);
             }
         }
     }
@@ -87,13 +88,13 @@ public class RMIClient extends SystemComponent
             {
                 ExceptionQueue queue;
 
-                queue = (ExceptionQueue) this.registry.lookup(System.getProperty("rmi://defaults/exceptions"));
+                queue = (ExceptionQueue) this.registry.lookup(System.DEFAULT_RMI_EXCEPTION);
 
                 queue.treat(exception);
             }
             catch (Exception trim)
             {
-                System.err.println("RMIClient > " + trim);
+                java.lang.System.err.println("RMIClient > " + trim);
             }
 
             return null;

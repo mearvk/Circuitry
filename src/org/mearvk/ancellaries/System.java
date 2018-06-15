@@ -4,7 +4,9 @@ import org.mearvk.circuitry.org.mearvk.interfaces.Bodi;
 import org.mearvk.org.mearvk.rmi.RMIClient;
 import org.mearvk.org.mearvk.rmi.RMIServer;
 
-public class System extends SystemComponent implements Runnable
+import java.io.Serializable;
+
+public class System extends SystemComponent implements Runnable, Serializable
 {
     public Bodi bodi;
 
@@ -13,6 +15,8 @@ public class System extends SystemComponent implements Runnable
     public RMIClient rmi_client = new RMIClient();
 
     public RMIServer rmi_server = new RMIServer();
+
+    public static final String DEFAULT_RMI_EXCEPTION = "//rmi/exceptions";
 
     //
 
@@ -27,20 +31,6 @@ public class System extends SystemComponent implements Runnable
 
         this.name = name;
     }
-
-    public static void main(String... args)
-    {
-        System system = new System("system");
-
-        //system.add(type1);
-
-        //system.add(type2);
-
-        //system.add(type3);
-
-        system.run();
-    }
-
     //
 
     @Override
