@@ -1,4 +1,4 @@
-package org.mearvk.org.mearvk.rmi;
+package org.mearvk.rmi;
 
 import java.rmi.Remote;
 

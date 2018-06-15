@@ -1,9 +1,10 @@
-package org.mearvk.org.mearvk.jndi;
+package org.mearvk.rmi;
 
 import org.mearvk.ancellaries.SystemComponent;
 
-public class JNDI extends SystemComponent
+public class RMI extends SystemComponent
 {
+
 
     @Override
     public void latch() throws Exception

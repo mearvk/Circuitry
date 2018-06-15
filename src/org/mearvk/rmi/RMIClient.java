@@ -1,14 +1,15 @@
-package org.mearvk.org.mearvk.rmi;
+package org.mearvk.rmi;
 
 import org.mearvk.ancellaries.ExceptionQueue;
 import org.mearvk.ancellaries.System;
 import org.mearvk.ancellaries.SystemComponent;
 
+import java.io.Serializable;
 import java.rmi.Remote;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
-public class RMIClient extends SystemComponent
+public class RMIClient extends SystemComponent implements Serializable
 {
     public String host = "";
 

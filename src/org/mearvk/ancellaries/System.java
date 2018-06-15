@@ -1,8 +1,8 @@
 package org.mearvk.ancellaries;
 
 import org.mearvk.circuitry.org.mearvk.interfaces.Bodi;
-import org.mearvk.org.mearvk.rmi.RMIClient;
-import org.mearvk.org.mearvk.rmi.RMIServer;
+import org.mearvk.rmi.RMIClient;
+import org.mearvk.rmi.RMIServer;
 
 import java.io.Serializable;
 

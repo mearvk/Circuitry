@@ -1475,6 +1475,16 @@ Mainly for now we care to issue to you the notion that we can specify deeply the
 
 without relying on old or dirty secrets again and again.
 
+//
+
+Thesis:
+
+Mainly for now we would illustrate that the door swings for you as a developer up to a point.  The application can always be, theoretically, be written by hand.  The system that rests behind it can vary some or a great deal.
+
+
+
+//
+
 Terms:
 
 Swith: Super-smooth, low-latency coolness,, again
