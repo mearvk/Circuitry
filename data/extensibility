@@ -1503,9 +1503,27 @@ After some years the programmer would find areas of concern well held by persons
 
 it has spent millions on software design in areas which include System Theory and not given ground.  The System Architecture degree would be valuable here; college universities would spend turn preferring
 
-system design and architecture for the future of its students and this as a principle of it the design process. 
+system design and architecture for the future of its students and this as a principle of it the design process.
 
+//
 
+In conclusion we expect value in iteration.  Usually the design process will involve certain views and stories. These will be useful only for so long.  The customer, in this case, the design group
+
+will have certain custodies it will tend.  A good design group will be able to isolate, name and explain the design issues for their project.  The project leader will stand certain principles and frameworks
+
+for the project to work within. Architectural elements will stand more afore as the creature begins, comes to custody. Then basically we have three areas of design issuance:
+
+a) The application level process and containment
+
+b) The system level process and containment
+
+c) Extensibility of both application and system as far as design proposes modesty
+
+These stack up as graduatedly more complex. We would begin by pointing out that no one has all of these pieces.  It would be somewhat simpler to suggest a venn diagram for these as they
+
+relate to developing software, developing system for developing software, developing system for application and developing system for system proper.  We suggest that system development, as far as the developer sees,
+
+will have mainly to do with developing application and then therefore developing system for development of software itself. Ok. Thank you.
 
 //
 
@@ -1514,6 +1532,8 @@ Terms:
 Swith: Super-smooth, low-latency coolness,, again
 
 Darth: Break-even point for emperor
+
+Bay: Traveling backwards actually - ado
 
 //
 
