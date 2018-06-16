@@ -1667,3 +1667,7 @@ public class UserInterface extends JFrame{
         //
     }
 }
+
+Posit:
+
+System integration is done most aptly by an algorithm after the basic units have been built/written by hand.

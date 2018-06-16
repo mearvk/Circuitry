@@ -4,14 +4,6 @@
     <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/extensibility" beforeDir="false" afterPath="$PROJECT_DIR$/data/extensibility" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Circuitry/org/mearvk/ancellaries/System.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Circuitry/org/mearvk/ancellaries/System.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/ancellaries/System.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/ancellaries/System.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/examples/Example001.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/examples/Example001.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/org/mearvk/jndi/JNDI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/rmi/RMI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/rmi/RMIClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RMIServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/rmi/RMIServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/org/mearvk/rmi/RemoteWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/rmi/RemoteWrapper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +18,8 @@
       <file leaf-file-name="extensibility" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/extensibility">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="1483" lean-forward="true" selection-start-line="1483" selection-end-line="1483" />
+            <state relative-caret-position="974">
+              <caret line="1672" column="108" selection-start-line="1672" selection-start-column="108" selection-end-line="1672" selection-end-column="108" />
             </state>
           </provider>
         </entry>
@@ -119,6 +111,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,9 +125,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -259,55 +251,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Latest">
-      <created>1528142570313</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1528142570313</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Latest">
-      <created>1528143531606</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1528143531606</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Latest">
-      <created>1528144125714</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1528144125714</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Latest">
-      <created>1528152486720</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1528152486720</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Latest">
-      <created>1528153545670</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1528153545670</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Latest">
-      <created>1528153912196</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1528153912196</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Latest">
-      <created>1528155880563</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1528155880563</updated>
     </task>
     <task id="LOCAL-00054" summary="Latest">
       <created>1528400505977</created>
@@ -603,7 +546,56 @@
       <option name="project" value="LOCAL" />
       <updated>1529024276880</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="Latest">
+      <created>1529095515197</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1529095515197</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Latest">
+      <created>1529097592992</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1529097592992</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Latest">
+      <created>1529097757742</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1529097757742</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Latest">
+      <created>1529098739005</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1529098739005</updated>
+    </task>
+    <task id="LOCAL-00100" summary="Latest">
+      <created>1529099232472</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1529099232472</updated>
+    </task>
+    <task id="LOCAL-00101" summary="Latest">
+      <created>1529100431203</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1529100431203</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Latest">
+      <created>1529100488016</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1529100488016</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -631,11 +623,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.23055296" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3289597" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3289597" />
     </layout>
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -657,7 +649,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/mearvk/examples/Example001.java</url>
-          <line>27</line>
+          <line>28</line>
           <properties />
         </line-breakpoint>
       </breakpoints>
@@ -937,9 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2720">
           <caret line="164" column="90" selection-start-line="164" selection-start-column="90" selection-end-line="164" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -947,9 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
           <caret line="54" column="90" selection-start-line="54" selection-start-column="90" selection-end-line="54" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -957,11 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -976,9 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -993,9 +971,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1003,9 +978,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1028,8 +1000,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/extensibility">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="1483" lean-forward="true" selection-start-line="1483" selection-end-line="1483" />
+        <state relative-caret-position="974">
+          <caret line="1672" column="108" selection-start-line="1672" selection-start-column="108" selection-end-line="1672" selection-end-column="108" />
         </state>
       </provider>
     </entry>
