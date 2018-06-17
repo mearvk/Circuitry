@@ -1,4 +1,4 @@
-package org.mearvk.examples;
+package org.mearvk.examples.example001;
 
 import org.mearvk.ancellaries.Event;
 import org.mearvk.ancellaries.EventResponder;

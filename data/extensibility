@@ -172,6 +172,20 @@ Many patterns naturally will relate function and structure in general ways which
 
         i. You will want to guarantee that your system has a rigorous, complete way to detect if it has been compromised
 
+        //
+
+        Flattening x. You will want to flatten an object or codebase toward pure procedural, toward functional x procedural or from system to pure application
+
+        a. You will care to show relation between pure application and system development
+
+        b. You will care to show relation between functional code and relationship elsewhere
+
+        c. You will care to show relation between proceural code and relationships elsewhere
+
+        d. You will care to show how a single document approach can survive (all in one document at the beginning)
+
+        //
+
 
     Each of these will be a carry object.  We will take a look now at what this means for you, the developer.  As we progress in understanding the objects we intuit tend to mature as well.  These items will remain constant; you will expect to carry them in the delta set for reference.
 
