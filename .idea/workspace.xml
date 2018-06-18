@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/examples/examples002/SystemAbstractButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/examples/examples002/SystemAbstractButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/ancellaries/annotations/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/ancellaries/annotations/Resource.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,17 +18,17 @@
       <file leaf-file-name="extensibility" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/extensibility">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
+            <state relative-caret-position="1107">
               <caret line="184" column="114" selection-start-line="184" selection-start-column="114" selection-end-line="184" selection-end-column="114" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Resource.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Resource.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/annotations/Resource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+            <state relative-caret-position="527">
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SystemAbstractButton.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SystemAbstractButton.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/examples002/SystemAbstractButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
+            <state relative-caret-position="969">
               <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -56,6 +56,12 @@
                 <element signature="e#4928#4929#0" expanded="true" />
                 <element signature="e#4959#4960#0" expanded="true" />
                 <element signature="e#4986#4987#0" expanded="true" />
+                <element signature="e#6186#6187#0" expanded="true" />
+                <element signature="e#6213#6214#0" expanded="true" />
+                <element signature="e#6386#6387#0" expanded="true" />
+                <element signature="e#6413#6414#0" expanded="true" />
+                <element signature="e#6453#6454#0" expanded="true" />
+                <element signature="e#6480#6481#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,8 +150,8 @@
         <option value="$PROJECT_DIR$/src/org/mearvk/examples/examples002/SystemJComponent.java" />
         <option value="$PROJECT_DIR$/data/extensibility" />
         <option value="$PROJECT_DIR$/src/org/mearvk/examples/examples002/SystemAbstractButtonImpl.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/annotations/Resource.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/examples/examples002/SystemAbstractButton.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/annotations/Resource.java" />
       </list>
     </option>
   </component>
@@ -301,13 +307,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Latest">
-      <created>1528467150396</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1528467150396</updated>
     </task>
     <task id="LOCAL-00061" summary="Latest">
       <created>1528467895860</created>
@@ -645,7 +644,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529340944912</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="Latest">
+      <created>1529342211713</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1529342211713</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1020,13 +1026,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/extensibility">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="184" column="114" selection-start-line="184" selection-start-column="114" selection-end-line="184" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/examples002/Example002.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1034,13 +1033,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/annotations/Resource.java">
+    <entry file="file://$PROJECT_DIR$/data/extensibility">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1107">
+          <caret line="184" column="114" selection-start-line="184" selection-start-column="114" selection-end-line="184" selection-end-column="114" />
         </state>
       </provider>
     </entry>
@@ -1056,7 +1052,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/examples002/SystemAbstractButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
+        <state relative-caret-position="969">
           <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1064,6 +1060,22 @@
             <element signature="e#4928#4929#0" expanded="true" />
             <element signature="e#4959#4960#0" expanded="true" />
             <element signature="e#4986#4987#0" expanded="true" />
+            <element signature="e#6186#6187#0" expanded="true" />
+            <element signature="e#6213#6214#0" expanded="true" />
+            <element signature="e#6386#6387#0" expanded="true" />
+            <element signature="e#6413#6414#0" expanded="true" />
+            <element signature="e#6453#6454#0" expanded="true" />
+            <element signature="e#6480#6481#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/annotations/Resource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

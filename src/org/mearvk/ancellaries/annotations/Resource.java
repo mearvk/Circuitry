@@ -28,4 +28,6 @@ public @interface Resource
     String monitor() default "$monitor";
 
     String security() default "$security";
+
+    String[] circuits() default "$circuits";
 }
