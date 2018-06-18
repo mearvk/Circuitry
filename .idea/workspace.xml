@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/org/mearvk/examples/examples002/Example002.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/mearvk/examples/examples002/JComponent.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/mearvk/examples/examples002/SystemAbstractButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/mearvk/examples/examples002/SystemAbstractButtonImpl.java" afterDir="false" />
+    <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="Latest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/extensibility" beforeDir="false" afterPath="$PROJECT_DIR$/data/extensibility" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/examples/Example001.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/examples/example001/Example001.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/examples/SimpleOutputEventResponder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/examples/example001/SimpleOutputEventResponder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Circuitry/org/mearvk/ancellaries/System.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/examples/examples002/SystemAbstractButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/examples/examples002/SystemAbstractButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/examples/examples002/SystemAbstractButtonImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/examples/examples002/SystemAbstractButtonImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +20,7 @@
       <file leaf-file-name="extensibility" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/extensibility">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
+            <state relative-caret-position="3128">
               <caret line="184" column="114" selection-start-line="184" selection-start-column="114" selection-end-line="184" selection-end-column="114" />
             </state>
           </provider>
@@ -33,7 +29,7 @@
       <file leaf-file-name="Example001.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/example001/Example001.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="68">
               <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -63,8 +59,8 @@
       <file leaf-file-name="JComponent.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/examples002/JComponent.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1921">
-              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+            <state relative-caret-position="11305">
+              <caret line="665" column="12" selection-start-line="665" selection-start-column="12" selection-end-line="665" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -72,52 +68,10 @@
       <file leaf-file-name="SystemAbstractButton.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/examples002/SystemAbstractButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="70" column="45" lean-forward="true" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+            <state relative-caret-position="642">
+              <caret line="209" column="17" selection-start-line="209" selection-start-column="17" selection-end-line="209" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2214#2215#0" expanded="true" />
-                <element signature="e#2241#2242#0" expanded="true" />
-                <element signature="e#2983#2984#0" expanded="true" />
-                <element signature="e#3004#3005#0" expanded="true" />
-                <element signature="e#3041#3042#0" expanded="true" />
-                <element signature="e#3068#3069#0" expanded="true" />
-                <element signature="e#3147#3148#0" expanded="true" />
-                <element signature="e#3174#3175#0" expanded="true" />
-                <element signature="e#3213#3214#0" expanded="true" />
-                <element signature="e#3240#3241#0" expanded="true" />
-                <element signature="e#2410#2411#0" expanded="true" />
-                <element signature="e#2437#2438#0" expanded="true" />
-                <element signature="e#2384#2385#0" expanded="true" />
-                <element signature="e#2411#2412#0" expanded="true" />
-                <element signature="e#2341#2342#0" expanded="true" />
-                <element signature="e#2368#2369#0" expanded="true" />
-                <element signature="e#2430#2431#0" expanded="true" />
-                <element signature="e#2457#2458#0" expanded="true" />
-                <element signature="e#2566#2567#0" expanded="true" />
-                <element signature="e#2593#2594#0" expanded="true" />
-                <element signature="e#2575#2576#0" expanded="true" />
-                <element signature="e#2602#2603#0" expanded="true" />
-                <element signature="e#2664#2665#0" expanded="true" />
-                <element signature="e#2691#2692#0" expanded="true" />
-                <element signature="e#2501#2502#0" expanded="true" />
-                <element signature="e#2528#2529#0" expanded="true" />
-                <element signature="e#2569#2570#0" expanded="true" />
-                <element signature="e#2596#2597#0" expanded="true" />
-                <element signature="e#2788#2789#0" expanded="true" />
-                <element signature="e#2815#2816#0" expanded="true" />
-                <element signature="e#2881#2882#0" expanded="true" />
-                <element signature="e#2908#2909#0" expanded="true" />
-                <element signature="e#2967#2968#0" expanded="true" />
-                <element signature="e#2994#2995#0" expanded="true" />
-                <element signature="e#3053#3054#0" expanded="true" />
-                <element signature="e#3080#3081#0" expanded="true" />
-                <element signature="e#3136#3137#0" expanded="true" />
-                <element signature="e#3163#3164#0" expanded="true" />
-                <element signature="e#3205#3206#0" expanded="true" />
-                <element signature="e#3232#3233#0" expanded="true" />
-                <element signature="e#3271#3272#0" expanded="true" />
-                <element signature="e#3298#3299#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,8 +80,8 @@
       <file leaf-file-name="SystemAbstractButtonImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/examples002/SystemAbstractButtonImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+            <state relative-caret-position="612">
+              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -222,8 +176,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,27 +201,13 @@
               <item name="mearvk" type="462c0819:PsiDirectoryNode" />
               <item name="examples" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mearvk" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-              <item name="example001" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mearvk" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-              <item name="examples002" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,13 +334,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Latest">
-      <created>1528400531937</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1528400531937</updated>
     </task>
     <task id="LOCAL-00056" summary="Latest">
       <created>1528400572443</created>
@@ -740,7 +671,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529183055987</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="Latest">
+      <created>1529250933797</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1529250933797</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -759,8 +697,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.3298969" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -769,10 +706,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.23055296" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3289597" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.3289597" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
     </layout>
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -1100,7 +1038,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/example001/Example001.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="68">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1122,24 +1060,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/examples002/JComponent.txt">
+    <entry file="file://$PROJECT_DIR$/data/extensibility">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1921">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        <state relative-caret-position="3128">
+          <caret line="184" column="114" selection-start-line="184" selection-start-column="114" selection-end-line="184" selection-end-column="114" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/extensibility">
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/examples002/JComponent.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="184" column="114" selection-start-line="184" selection-start-column="114" selection-end-line="184" selection-end-column="114" />
+        <state relative-caret-position="11305">
+          <caret line="665" column="12" selection-start-line="665" selection-start-column="12" selection-end-line="665" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/examples002/SystemAbstractButtonImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        <state relative-caret-position="612">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1148,52 +1086,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/examples002/SystemAbstractButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="70" column="45" lean-forward="true" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+        <state relative-caret-position="642">
+          <caret line="209" column="17" selection-start-line="209" selection-start-column="17" selection-end-line="209" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2214#2215#0" expanded="true" />
-            <element signature="e#2241#2242#0" expanded="true" />
-            <element signature="e#2983#2984#0" expanded="true" />
-            <element signature="e#3004#3005#0" expanded="true" />
-            <element signature="e#3041#3042#0" expanded="true" />
-            <element signature="e#3068#3069#0" expanded="true" />
-            <element signature="e#3147#3148#0" expanded="true" />
-            <element signature="e#3174#3175#0" expanded="true" />
-            <element signature="e#3213#3214#0" expanded="true" />
-            <element signature="e#3240#3241#0" expanded="true" />
-            <element signature="e#2410#2411#0" expanded="true" />
-            <element signature="e#2437#2438#0" expanded="true" />
-            <element signature="e#2384#2385#0" expanded="true" />
-            <element signature="e#2411#2412#0" expanded="true" />
-            <element signature="e#2341#2342#0" expanded="true" />
-            <element signature="e#2368#2369#0" expanded="true" />
-            <element signature="e#2430#2431#0" expanded="true" />
-            <element signature="e#2457#2458#0" expanded="true" />
-            <element signature="e#2566#2567#0" expanded="true" />
-            <element signature="e#2593#2594#0" expanded="true" />
-            <element signature="e#2575#2576#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#2664#2665#0" expanded="true" />
-            <element signature="e#2691#2692#0" expanded="true" />
-            <element signature="e#2501#2502#0" expanded="true" />
-            <element signature="e#2528#2529#0" expanded="true" />
-            <element signature="e#2569#2570#0" expanded="true" />
-            <element signature="e#2596#2597#0" expanded="true" />
-            <element signature="e#2788#2789#0" expanded="true" />
-            <element signature="e#2815#2816#0" expanded="true" />
-            <element signature="e#2881#2882#0" expanded="true" />
-            <element signature="e#2908#2909#0" expanded="true" />
-            <element signature="e#2967#2968#0" expanded="true" />
-            <element signature="e#2994#2995#0" expanded="true" />
-            <element signature="e#3053#3054#0" expanded="true" />
-            <element signature="e#3080#3081#0" expanded="true" />
-            <element signature="e#3136#3137#0" expanded="true" />
-            <element signature="e#3163#3164#0" expanded="true" />
-            <element signature="e#3205#3206#0" expanded="true" />
-            <element signature="e#3232#3233#0" expanded="true" />
-            <element signature="e#3271#3272#0" expanded="true" />
-            <element signature="e#3298#3299#0" expanded="true" />
           </folding>
         </state>
       </provider>

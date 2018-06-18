@@ -4,7 +4,7 @@ import jdk.jfr.Name;
 
 import javax.swing.*;
 
-public class SystemAbstractButtonImpl
+public class SystemAbstractButtonImpl extends SystemAbstractButton
 {
     @Name("//ui/systemabstractbuttonimpl/getmodel")
     public ButtonModel getModel()
@@ -19,5 +19,23 @@ public class SystemAbstractButtonImpl
         //
 
         return rmi.buttonmodel;
+    }
+
+    public final void putClientProperty(Object key, Object value)
+    {
+        /*
+        Hashtable t = getClientProperties();
+
+        Object old = t.get(key);
+        if (value != null)
+            t.put(key, value);
+         else
+           t.remove(key);
+
+
+         if (old != null || value != null)
+               firePropertyChange(key.toString(), old, value);
+
+        */
     }
 }

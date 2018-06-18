@@ -5,7 +5,7 @@ import jdk.jfr.Name;
 import javax.swing.*;
 import java.io.File;
 
-@R
+
 public class SystemAbstractButton
 {
     public SystemAbstractButton ref = this;
@@ -52,6 +52,55 @@ public class SystemAbstractButton
                 .run(this, ref)
                 .frame()
                 .store();
+
+        return null;
+    }
+
+    @Name("//hook/source")
+    public final void putClientProperty(Object key, Object value)
+    {
+        //System.proposal.listeners.tend(SYSTEM.SUGGESTED_OBSERVER);
+
+        //secure frame
+        System.hooks
+                .frame()
+                .securitize(System.rmi, this);
+
+        //load provisional requests
+        System.hooks
+                .frame()
+                .requests()
+                .fill();
+
+        //load provisional listeners
+        System.hooks
+                .frame()
+                .listeners()
+                .fill();
+
+        //request for backing object
+        System.rmi
+                .run(this, ref)
+                .frame()
+                .store();
+
+        //notify listeners
+        System.events
+                .listeners()
+                .fire();
+
+        //notify listeners : security
+        System.security
+                .listeners()
+                .fire();
+
+        //release security locks
+        System.hooks
+                .frame()
+                .desecuritize(System.rmi, this);
+
+
+        return;
     }
 }
 
@@ -71,7 +120,7 @@ class Main
 
         //
 
-        buttonmodel = (ButtonModel) button.getModel().frame("0x0001").ref();     //get buttonmodel, frame the call with an explicit context, equate the result locally
+        buttonmodel = (ButtonModel) button.getModel().frame("0x0001").ref();    //get buttonmodel, frame the call with an explicit context, equate the result locally
 
         button.getModel().frame("0x0001").as(buttonmodel);                      //get buttonmodel, frame the call with an explicit context, store the result locally
 
@@ -81,6 +130,7 @@ class Main
 
         //
 
+        button.impl.putClientProperty(null, null);
 
         //4 basic items:
 
@@ -93,7 +143,7 @@ class Main
         //do a return value
 
 
-        button.setModel();
+        //button.setModel();
     }
 }
 
@@ -101,9 +151,22 @@ class System
 {
     public static RMI rmi;
 
+    public static RMI local;
+
+    public static RMI hooks;
+
+    public static RMI events;
+
+    public static RMI security;
+
     public String getNameAnnotationValue(StackTraceElement element)
     {
         return null;
+    }
+
+    public RMI hooks()
+    {
+        return local.hooks();
     }
 }
 
@@ -124,6 +187,51 @@ class RMI
 
         //
 
+        return null;
+    }
+
+    public RMI fire()
+    {
+        return null;
+    }
+
+    public RMI desecuritize(RMI rmi, Object reference)
+    {
+        return null; //we need this - now
+    }
+
+    public RMI securitize(RMI rmi, Object reference)
+    {
+        return null; //we need this - now
+    }
+
+    public RMI lock()
+    {
+        return null;
+    }
+
+    public RMI unlock()
+    {
+        return null;
+    }
+
+    public RMI listeners()
+    {
+        return null;
+    }
+
+    public RMI requests()
+    {
+        return null;
+    }
+
+    public RMI fill()
+    {
+        return null;
+    }
+
+    public RMI hooks()
+    {
         return null;
     }
 
