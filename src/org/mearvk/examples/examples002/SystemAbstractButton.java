@@ -64,7 +64,8 @@ public class SystemAbstractButton
         //secure frame
         System.hooks
                 .frame()
-                .securitize(System.rmi, this);
+                .securitize(System.rmi, this)
+                .lock();
 
         //load provisional requests
         System.hooks
@@ -97,7 +98,8 @@ public class SystemAbstractButton
         //release security locks
         System.hooks
                 .frame()
-                .desecuritize(System.rmi, this);
+                .securitize(System.rmi, this)
+                .unlock();
 
 
         return;
