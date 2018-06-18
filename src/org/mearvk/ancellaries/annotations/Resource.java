@@ -1,0 +1,27 @@
+package org.mearvk.ancellaries.annotations;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target({ElementType.METHOD, ElementType.CONSTRUCTOR})
+public @interface Resource
+{
+    String name() default "$name";
+
+    String value() default "$value";
+
+    String resolver() default "$resolver";
+
+    String frame() default "$frame";
+
+    String init() default "$init";
+
+    String rules() default "$rules";
+
+    String[] rmi() default "$rmi";
+
+    String pilot() default "$pilot";
+}

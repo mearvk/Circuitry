@@ -1,7 +1,8 @@
 package org.mearvk.examples.examples002;
 
-import jdk.jfr.Name;
+import org.mearvk.ancellaries.annotations.Resource;
 
+import javax.accessibility.AccessibleStateSet;
 import javax.swing.*;
 import java.io.File;
 
@@ -16,47 +17,29 @@ public class SystemAbstractButton
 
     public File initfile = null;
 
-    /*
-    public AbstractButton()
-1006:   {
-    1007:     horizontalAlignment = CENTER;
-    1008:     horizontalTextPosition = TRAILING;
-    1009:     verticalAlignment = CENTER;
-    1010:     verticalTextPosition = CENTER;
-    1011:     borderPainted = true;
-    1012:     contentAreaFilled = true;
-    1013:     focusPainted = true;
-    1014:     setFocusable(true);
-    1015:     setAlignmentX(CENTER_ALIGNMENT);
-    1016:     setAlignmentY(CENTER_ALIGNMENT);
-    1017:     setDisplayedMnemonicIndex(-1);
-    1018:     setOpaque(true);
-    1019:     text = "";
-    1020:     // testing on JRE1.5 shows that the iconTextGap default value is
-    1021:     // hard-coded here and the 'Button.iconTextGap' setting in the
-    1022:     // UI defaults is ignored, at least by the MetalLookAndFeel
-    1023:     iconTextGap = 4;
-    1024:   }
-    */
+    //
 
+    @Resource(rmi = {"/rmi/framelogic"}, rules = "/rules/framebased")
     public SystemAbstractButton()
     {
         System.rmi
                 .init("//ui/init/", this, this.initfile);
     }
 
-    @Name("rules/standard")
+    @Resource(rmi = {"/rmi/framelogic"}, rules = "/rules/framebased")
     public RMI getModel()
     {
+        ButtonModel ref = null;
+
         System.rmi
                 .run(this, ref)
                 .frame()
                 .store();
 
-        return null;
+        return System.rmi;
     }
 
-    @Name("//hook/source")
+    @Resource(rmi = {"/rmi/framelogic"}, rules = "/rules/framebased")
     public final void putClientProperty(Object key, Object value)
     {
         //System.proposal.listeners.tend(SYSTEM.SUGGESTED_OBSERVER);
@@ -104,6 +87,19 @@ public class SystemAbstractButton
 
         return;
     }
+
+    @Resource(rmi = {"/rmi/framelogic"}, rules = "/rules/framebased")
+    public AccessibleStateSet getAccessibleStateSet()
+    {
+        AccessibleStateSet stateSet = null;
+
+        System.rmi
+                .run(this, ref)
+                .frame()
+                .store();
+
+        return stateSet;
+    }
 }
 
 class Main
@@ -118,7 +114,7 @@ class Main
 
         //
 
-        buttonmodel = button.impl.getModel();
+        buttonmodel = button.impl._getModel();
 
         //
 
@@ -132,7 +128,7 @@ class Main
 
         //
 
-        button.impl.putClientProperty(null, null);
+        button.impl._putClientProperty(null, null);
 
         //4 basic items:
 
@@ -349,3 +345,9 @@ class RMIStore
 {
 
 }
+
+class RMIInstance
+{
+
+}
+

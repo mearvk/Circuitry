@@ -2,12 +2,14 @@ package org.mearvk.examples.examples002;
 
 import jdk.jfr.Name;
 
+import javax.accessibility.AccessibleState;
+import javax.accessibility.AccessibleStateSet;
 import javax.swing.*;
 
 public class SystemAbstractButtonImpl extends SystemAbstractButton
 {
     @Name("//ui/systemabstractbuttonimpl/getmodel")
-    public ButtonModel getModel()
+    public ButtonModel _getModel()
     {
         SystemAbstractButton rmi = null;
 
@@ -21,21 +23,28 @@ public class SystemAbstractButtonImpl extends SystemAbstractButton
         return rmi.buttonmodel;
     }
 
-    public final void putClientProperty(Object key, Object value)
+    public final void _putClientProperty(Object key, Object value)
     {
-        /*
-        Hashtable t = getClientProperties();
+        /*  */
+    }
 
-        Object old = t.get(key);
-        if (value != null)
-            t.put(key, value);
-         else
-           t.remove(key);
+    public AccessibleStateSet _getAccessibleStateSet()
+    {
+        AccessibleStateSet state = super.getAccessibleStateSet();
 
+        if (_getModel().isArmed())
+        {
+            state.add(AccessibleState.ARMED);
+        }
+        if (_getModel().isPressed())
+        {
+            state.add(AccessibleState.PRESSED);
+        }
+        if (_getModel().isSelected())
+        {
+            state.add(AccessibleState.CHECKED);
+        }
 
-         if (old != null || value != null)
-               firePropertyChange(key.toString(), old, value);
-
-        */
+        return state;
     }
 }
