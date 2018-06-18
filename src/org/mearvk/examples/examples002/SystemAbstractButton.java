@@ -23,7 +23,7 @@ public class SystemAbstractButton
 
     //
 
-    @Resource(rmi = {"/rmi/framelogic"}, rules = "/rules/framebased")
+    @Resource(rmi = {"/rmi/framelogic"}, rules = "/rules/context")
     public SystemAbstractButton()
     {
         System.rmi
@@ -46,8 +46,6 @@ public class SystemAbstractButton
     @Resource(rmi = {"/rmi/framelogic"}, rules = "/rules/framebased")
     public final void putClientProperty(Object key, Object value)
     {
-        //System.proposal.listeners.tend(SYSTEM.SUGGESTED_OBSERVER);
-
         //secure frame
         System.hooks
                 .frame()
@@ -302,14 +300,27 @@ class RMI
         return null;
     }
 
+    /**
+     * Regard stackelement in due course (system state, prior function calle, etc)
+     *
+     * @return
+     */
     public RMI frame()
     {
-        //lookup stackelement and find name annotation for actual call to stub class
+        return null;
+    }//lookup stackelement and find name annotation for actual call to stub class
 
+    public RMI frame(String URI)
+    {
         return null;
     }
 
-    public RMI frame(String URI)
+    public RMI logic()
+    {
+        return null;
+    }
+
+    public RMI logic(String URI)
     {
         return null;
     }
