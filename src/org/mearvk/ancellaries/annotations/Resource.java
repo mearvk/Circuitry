@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.METHOD, ElementType.CONSTRUCTOR})
+@Target({ElementType.METHOD, ElementType.CONSTRUCTOR, ElementType.TYPE, ElementType.FIELD})
 public @interface Resource
 {
     String name() default "$name";
@@ -24,4 +24,8 @@ public @interface Resource
     String[] rmi() default "$rmi";
 
     String pilot() default "$pilot";
+
+    String monitor() default "$monitor";
+
+    String security() default "$security";
 }

@@ -6,15 +6,19 @@ import javax.accessibility.AccessibleStateSet;
 import javax.swing.*;
 import java.io.File;
 
-
+@Resource(rmi = {"/rmi/framelogic"}, rules = "/rules/framebased")
 public class SystemAbstractButton
 {
+    @Resource()
     public SystemAbstractButton ref = this;
 
+    @Resource()
     public SystemAbstractButtonImpl impl = null;
 
+    @Resource()
     public ButtonModel buttonmodel;
 
+    @Resource()
     public File initfile = null;
 
     //
