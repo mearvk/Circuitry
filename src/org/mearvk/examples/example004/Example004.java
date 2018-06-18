@@ -1,9 +1,4 @@
-package org.mearvk.examples.example003;
-
-import org.mearvk.ancellaries.BaseListener;
-import org.mearvk.ancellaries.annotations.Resource;
-
-import java.io.File;
+package org.mearvk.examples.example004;
 
 interface RMIModel
 {
@@ -11,46 +6,57 @@ interface RMIModel
 }
 
 /**
- * Add a senior graphing system above an already existing system
+ * Moving things into and out of stores
  */
-public class Example003
+public class Example004
 {
-    public Example003()
+    public Example004()
     {
-        SystemObject object = new SystemObject();
+        SystemObject producer = new SystemObject();
 
-        SystemObject monitor = new SystemObject();
+        SystemObject consumer = new SystemObject();
 
-        //
-
-        object.getModel().frame("0x01").store();
-
-        object.getAttributes().frame("0x01").store();
-
-        object.getFeed().frame("0x01").store();
-
-        object.rmi.go();
+        RMIStore store001 = null;
 
         //
 
-        System.rmi.lift(object, monitor).rules("/lifter/rules").store();
+        producer.getModel().frame().store("model");
+
+        producer.getAttributes().frame().store("attributes");
+
+        producer.getFeed().frame().store("feed");
+
+        producer.rmi.go();
 
         //
 
-        object.getModel().frame("0x02").store();
+        producer.getModel().frame().store(store001);
 
-        object.getAttributes().frame("0x02").store();
+        producer.getAttributes().frame().store(store001);
 
-        object.getFeed().frame("0x02").store();
+        producer.getFeed().frame().store(store001);
 
-        object.rmi.go();
+        producer.rmi.go();
+
+        //
+
+        consumer.rmi.frame().store("model");
+
+        consumer.rmi.frame().store("attributes");
+
+        consumer.rmi.frame().store("feed");
+
+        //
+
+        consumer.rmi.frame().store(store001, 0);
+
+        consumer.rmi.frame().store(store001, 1);
+
+        consumer.rmi.frame().store(store001, 2);
+
+
+        consumer.rmi.go();
     }
-}
-
-@Resource(name = "/monitor001")
-class SeniorSystem implements RMIModel
-{
-    BaseListener listener;
 }
 
 class SystemObject extends SystemObjectImpl

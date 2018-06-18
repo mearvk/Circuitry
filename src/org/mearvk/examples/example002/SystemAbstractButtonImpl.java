@@ -1,4 +1,4 @@
-package org.mearvk.examples.examples002;
+package org.mearvk.examples.example002;
 
 import jdk.jfr.Name;
 
