@@ -24,6 +24,7 @@ public class Example004
 
         //
         //
+        //
 
         producer.getModel().frame().store("model");
 
@@ -41,6 +42,7 @@ public class Example004
 
         consumer.rmi.frame().store("feed");
 
+        //
         //
         //
 
@@ -62,6 +64,7 @@ public class Example004
 
         consumer.rmi.go();
 
+        //
         //
         //
 

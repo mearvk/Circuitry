@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/examples/example004/Example004.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/examples/example004/Example004.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -149,8 +150,8 @@
       <file leaf-file-name="Example004.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/example004/Example004.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-425">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="25" />
+            <state relative-caret-position="-170">
+              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
               <folding>
                 <element signature="e#869#870#0" expanded="true" />
                 <element signature="e#896#897#0" expanded="true" />
@@ -518,13 +519,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
     </task>
-    <task id="LOCAL-00065" summary="Latest">
-      <created>1528473793134</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1528473793134</updated>
-    </task>
     <task id="LOCAL-00066" summary="Latest">
       <created>1528476938501</created>
       <option name="number" value="00066" />
@@ -861,7 +855,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529368379829</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="Latest">
+      <created>1529368633625</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1529368633625</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1406,8 +1407,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/example004/Example004.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="25" />
+        <state relative-caret-position="-170">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
           <folding>
             <element signature="e#869#870#0" expanded="true" />
             <element signature="e#896#897#0" expanded="true" />
