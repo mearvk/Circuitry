@@ -23,6 +23,8 @@ public class UserInterfaceImpl
     {
         this.jframe = new JFrame();
 
+        this.jsplitpane = new JSplitPane();
+
         this.top = new JTextPane();
 
         this.bottom = new JTextPane();
@@ -53,13 +55,11 @@ public class UserInterfaceImpl
 
         //
 
-        this.panel.add(commit);
-
-        //
-
         this.jframe.add(this.jsplitpane);
 
         this.jframe.add(this.panel);
+
+        this.panel.add(commit);
 
         //
 

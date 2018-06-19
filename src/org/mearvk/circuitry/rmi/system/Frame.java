@@ -29,6 +29,42 @@ public class Frame
 
     //
 
+    public Frame()
+    {
+        this.elements.addAll(Arrays.asList(Thread.currentThread().getStackTrace()));
+    }
+
+    public Frame(ArrayList<StackTraceElement> elements)
+    {
+        this.elements = elements;
+    }
+
+    public Frame(StackTraceElement[] elements)
+    {
+        this.elements.addAll(Arrays.asList(elements));
+    }
+
+    public Frame(StackTraceElement element)
+    {
+        this.element = element;
+
+        this.classname = this.element.getClassName();
+
+        this.filename = this.element.getFileName();
+
+        this.methodname = this.element.getMethodName();
+
+        this.modulename = this.element.getModuleName();
+
+        this.moduleversion = this.element.getModuleVersion();
+
+        this.linenumber = this.element.getLineNumber();
+
+        this.classloadername = this.element.getClassLoaderName();
+
+        this.hashcode = this.element.hashCode();
+    }
+
     public Frame(Object object, StackTraceElement element)
     {
         this.object = object;

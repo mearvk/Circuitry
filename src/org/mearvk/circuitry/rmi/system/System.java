@@ -2,19 +2,19 @@ package org.mearvk.circuitry.rmi.system;
 
 public class System
 {
-    public static RMI init;
+    public static RMI init = new RMI();
 
-    public static RMI rmi;
+    public static RMI rmi = new RMI();
 
-    public static RMI local;
+    public static RMI local = new RMI();
 
-    public static RMI hooks;
+    public static RMI hooks = new RMI();
 
-    public static RMI events;
+    public static RMI events = new RMI();
 
-    public static RMI security;
+    public static RMI security = new RMI();
 
-    public static RMI frames;
+    public static RMI frames = new RMI();
 
     //
 

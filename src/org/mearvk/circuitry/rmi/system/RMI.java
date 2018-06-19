@@ -1,9 +1,23 @@
 package org.mearvk.circuitry.rmi.system;
 
 import java.io.File;
+import java.util.Stack;
+
+class CallStore
+{
+    Stack<RMI> stack = new Stack();
+
+}
 
 public class RMI
 {
+    public RMI ref = this;
+
+    public RMI()
+    {
+
+    }
+
     //
 
     public RMI init(String URI, Object initobject, File initfile)
@@ -163,12 +177,20 @@ public class RMI
 
     public RMI frame()
     {
-        return null;
+        System.frameregistry.push();
+
+        //
+
+        return this;
     }
 
     public RMI frame(String URI)
     {
-        return null;
+        System.frameregistry.push();
+
+        //
+
+        return this;
     }
 
     public RMI logic()

@@ -1,6 +1,18 @@
 package org.mearvk.examples.example010;
 
-public class ThinClient
+class Main
+{
+    public static void main(String... args)
+    {
+        ThinClient client = new ThinClient();
+
+        System.out.println(client.getClass());
+
+        System.out.println(client.getClass().getAnnotatedSuperclass());
+    }
+}
+
+public class ThinClient extends BonerPatrol
 {
     public UserInterface userinterface;
 
@@ -14,10 +26,7 @@ public class ThinClient
     }
 }
 
-class Main
+class BonerPatrol extends Object
 {
-    public static void main(String... args)
-    {
-        ThinClient client = new ThinClient();
-    }
+
 }
