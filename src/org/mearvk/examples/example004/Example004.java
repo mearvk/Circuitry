@@ -1,5 +1,7 @@
 package org.mearvk.examples.example004;
 
+import java.io.File;
+
 interface RMIModel
 {
 
@@ -18,6 +20,9 @@ public class Example004
 
         RMIStore store001 = null;
 
+        RMIDbms database = null;
+
+        //
         //
 
         producer.getModel().frame().store("model");
@@ -30,6 +35,15 @@ public class Example004
 
         //
 
+        consumer.rmi.frame().store("model");
+
+        consumer.rmi.frame().store("attributes");
+
+        consumer.rmi.frame().store("feed");
+
+        //
+        //
+
         producer.getModel().frame().store(store001);
 
         producer.getAttributes().frame().store(store001);
@@ -40,20 +54,30 @@ public class Example004
 
         //
 
-        consumer.rmi.frame().store("model");
-
-        consumer.rmi.frame().store("attributes");
-
-        consumer.rmi.frame().store("feed");
-
-        //
-
         consumer.rmi.frame().store(store001, 0);
 
         consumer.rmi.frame().store(store001, 1);
 
         consumer.rmi.frame().store(store001, 2);
 
+        consumer.rmi.go();
+
+        //
+        //
+
+        producer.getModel().frame().store(database);
+
+        producer.getAttributes().frame().store(database);
+
+        producer.getFeed().frame().store(database);
+
+        //
+
+        consumer.rmi.frame().store(database, 0);
+
+        consumer.rmi.frame().store(database, 1);
+
+        consumer.rmi.frame().store(database, 2);
 
         consumer.rmi.go();
     }
@@ -224,7 +248,22 @@ class RMI
         return null;
     }
 
+    public RMI store(RMIDbms database)
+    {
+        return null;
+    }
+
+    public RMI store(RMIDbms database, Integer id)
+    {
+        return null;
+    }
+
     public RMI store(RMIStore store, String id)
+    {
+        return null;
+    }
+
+    public RMI store(RMIStore store, Integer id)
     {
         return null;
     }
@@ -336,6 +375,11 @@ class RMIStore
 }
 
 class RMIInstance
+{
+
+}
+
+class RMIDbms
 {
 
 }

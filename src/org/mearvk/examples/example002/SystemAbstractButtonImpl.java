@@ -11,7 +11,7 @@ public class SystemAbstractButtonImpl extends SystemAbstractButton
     @Name("//ui/systemabstractbuttonimpl/getmodel")
     public ButtonModel _getModel()
     {
-        SystemAbstractButton rmi = null;
+        SystemAbstractButton ref = null;
 
         //
 
@@ -20,7 +20,7 @@ public class SystemAbstractButtonImpl extends SystemAbstractButton
 
         //
 
-        return rmi.buttonmodel;
+        return ref.buttonmodel;
     }
 
     public final void _putClientProperty(Object key, Object value)
