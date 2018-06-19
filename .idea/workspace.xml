@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/examples/example002/SystemAbstractButtonImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/examples/example002/SystemAbstractButtonImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/examples/example004/Example004.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/examples/example004/Example004.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -151,8 +149,8 @@
       <file leaf-file-name="Example004.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/example004/Example004.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+            <state relative-caret-position="-425">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="25" />
               <folding>
                 <element signature="e#869#870#0" expanded="true" />
                 <element signature="e#896#897#0" expanded="true" />
@@ -520,13 +518,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
     </task>
-    <task id="LOCAL-00064" summary="Latest">
-      <created>1528473224479</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1528473224479</updated>
-    </task>
     <task id="LOCAL-00065" summary="Latest">
       <created>1528473793134</created>
       <option name="number" value="00065" />
@@ -863,7 +854,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529348998020</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="Latest">
+      <created>1529368379829</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1529368379829</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -882,7 +880,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -1408,8 +1406,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/example004/Example004.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+        <state relative-caret-position="-425">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="25" />
           <folding>
             <element signature="e#869#870#0" expanded="true" />
             <element signature="e#896#897#0" expanded="true" />
