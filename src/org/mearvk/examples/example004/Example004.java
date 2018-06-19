@@ -18,13 +18,13 @@ public class Example004
 
         SystemObject consumer = new SystemObject();
 
-        RMIStore store001 = null;
+        RMIStore store = null;
 
         RMIDbms database = null;
 
-        //
-        //
-        //
+        /**
+         / Model One
+         */
 
         producer.getModel().frame().store("model");
 
@@ -42,31 +42,31 @@ public class Example004
 
         consumer.rmi.frame().store("feed");
 
-        //
-        //
-        //
+        /**
+         / Model Two
+         */
 
-        producer.getModel().frame().store(store001);
+        producer.getModel().frame().store(store);
 
-        producer.getAttributes().frame().store(store001);
+        producer.getAttributes().frame().store(store);
 
-        producer.getFeed().frame().store(store001);
+        producer.getFeed().frame().store(store);
 
         producer.rmi.go();
 
         //
 
-        consumer.rmi.frame().store(store001, 0);
+        consumer.rmi.frame().store(store, 0);
 
-        consumer.rmi.frame().store(store001, 1);
+        consumer.rmi.frame().store(store, 1);
 
-        consumer.rmi.frame().store(store001, 2);
+        consumer.rmi.frame().store(store, 2);
 
         consumer.rmi.go();
 
-        //
-        //
-        //
+        /**
+         / Model Three
+         */
 
         producer.getModel().frame().store(database);
 
