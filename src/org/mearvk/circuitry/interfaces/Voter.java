@@ -1,4 +1,4 @@
-package org.mearvk.circuitry.org.mearvk.interfaces;
+package org.mearvk.circuitry.interfaces;
 
 import org.mearvk.ancellaries.SystemComponent;
 

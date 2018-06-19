@@ -3,7 +3,7 @@ package org.mearvk.circuitry.rmi;
 import org.mearvk.ancellaries.BusLogic;
 import org.mearvk.ancellaries.System;
 import org.mearvk.ancellaries.SystemComponent;
-import org.mearvk.circuitry.org.mearvk.interfaces.Runner;
+import org.mearvk.circuitry.interfaces.Runner;
 import org.mearvk.circuitry.rmi.system.RMIModel;
 
 public class Encapsulator extends SystemComponent implements Runner, RMIModel

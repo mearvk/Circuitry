@@ -4,6 +4,8 @@ import java.io.File;
 
 public class RMI
 {
+    //
+
     public RMI init(String URI, Object initobject, File initfile)
     {
         return null;
@@ -159,15 +161,10 @@ public class RMI
         return null;
     }
 
-    /**
-     * Regard stackelement in due course (system state, prior function calle, etc)
-     *
-     * @return
-     */
     public RMI frame()
     {
         return null;
-    }//lookup stackelement and find name annotation for actual call to stub class
+    }
 
     public RMI frame(String URI)
     {
@@ -196,12 +193,22 @@ public class RMI
 
     public RMI run(Object object, Object reference)
     {
-        return null;
+        return this;
     }
 
     public RMI run(String URI, Object reference)
     {
-        return null;
+        return this;
+    }
+
+    public RMI run(Object object, Object reference, Object... args)
+    {
+        return this;
+    }
+
+    public RMI run(String URI, Object reference, Class superclass, Object... args)
+    {
+        return this;
     }
 
     public RMI cast(Object object)
@@ -212,5 +219,19 @@ public class RMI
     public RMI cast(String URI)
     {
         return null;
+    }
+
+    public RMI register(SystemEvent event)
+    {
+        System.eventregistry.events.add(event);
+
+        return this;
+    }
+
+    public RMI register(Frame frame)
+    {
+        System.frameregistry.frames.add(frame);
+
+        return this;
     }
 }

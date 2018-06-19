@@ -1,4 +1,4 @@
-package org.mearvk.circuitry.org.mearvk.interfaces;
+package org.mearvk.circuitry.interfaces;
 
 import com.sun.security.auth.module.JndiLoginModule;
 

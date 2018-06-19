@@ -3,7 +3,7 @@ package org.mearvk.circuitry.standard;
 import org.mearvk.ancellaries.BusLogic;
 import org.mearvk.ancellaries.System;
 import org.mearvk.ancellaries.SystemComponent;
-import org.mearvk.circuitry.org.mearvk.interfaces.Runner;
+import org.mearvk.circuitry.interfaces.Runner;
 
 public class Driver extends SystemComponent implements Runner
 {

@@ -19,6 +19,8 @@ public @interface Resource
 
     String init() default "$init";
 
+    String initfile() default "$initfile";
+
     String rules() default "$rules";
 
     String[] rmi() default "$rmi";
