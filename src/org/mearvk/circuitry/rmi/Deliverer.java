@@ -5,8 +5,9 @@ import org.mearvk.ancellaries.System;
 import org.mearvk.ancellaries.SystemComponent;
 import org.mearvk.circuitry.org.mearvk.interfaces.Deliver;
 import org.mearvk.circuitry.org.mearvk.interfaces.Runner;
+import org.mearvk.circuitry.rmi.system.RMIModel;
 
-public abstract class Deliverer extends SystemComponent implements Runner, Deliver
+public abstract class Deliverer extends SystemComponent implements Runner, Deliver, RMIModel
 {
     public BusLogic bus;
 

@@ -1,5 +1,7 @@
 package org.mearvk.circuitry.rmi;
 
-public class Grader
+import org.mearvk.circuitry.rmi.system.RMIModel;
+
+public class Grader implements RMIModel
 {
 }

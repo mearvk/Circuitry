@@ -1,12 +1,13 @@
 package org.mearvk.circuitry.rmi;
 
 import org.mearvk.ancellaries.SystemComponent;
+import org.mearvk.circuitry.rmi.system.RMIModel;
 
 /**
  * The Guarantor class will reference a XML document to guarantee a condition against a state or state change.  The purpose is to avoid race-condition in changing system components.
  */
 
-public class Guarantor extends SystemComponent
+public class Guarantor extends SystemComponent implements RMIModel
 {
 
 

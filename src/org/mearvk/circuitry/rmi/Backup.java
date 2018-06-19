@@ -1,5 +1,7 @@
 package org.mearvk.circuitry.rmi;
 
-public class Backup
+import org.mearvk.circuitry.rmi.system.RMIModel;
+
+public class Backup implements RMIModel
 {
 }

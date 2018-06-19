@@ -1,5 +1,7 @@
 package org.mearvk.circuitry.rmi;
 
-public class Checkout
+import org.mearvk.circuitry.rmi.system.RMIModel;
+
+public class Checkout implements RMIModel
 {
 }

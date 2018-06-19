@@ -2,8 +2,9 @@ package org.mearvk.circuitry.rmi;
 
 import org.mearvk.ancellaries.BusLogic;
 import org.mearvk.ancellaries.SystemComponent;
+import org.mearvk.circuitry.rmi.system.RMIModel;
 
-public class Producer extends SystemComponent
+public class Producer extends SystemComponent implements RMIModel
 {
     public BusLogic bus;
 

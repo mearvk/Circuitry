@@ -4,8 +4,9 @@ import org.mearvk.ancellaries.BusLogic;
 import org.mearvk.ancellaries.System;
 import org.mearvk.ancellaries.SystemComponent;
 import org.mearvk.circuitry.org.mearvk.interfaces.Runner;
+import org.mearvk.circuitry.rmi.system.RMIModel;
 
-public class Observer extends SystemComponent implements Runner
+public class Observer extends SystemComponent implements Runner, RMIModel
 {
     public BusLogic bus;
 

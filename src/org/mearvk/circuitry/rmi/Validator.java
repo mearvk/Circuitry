@@ -1,5 +1,7 @@
 package org.mearvk.circuitry.rmi;
 
-public class Validator
+import org.mearvk.circuitry.rmi.system.RMIModel;
+
+public class Validator implements RMIModel
 {
 }

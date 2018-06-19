@@ -3,8 +3,9 @@ package org.mearvk.circuitry.rmi;
 import org.mearvk.ancellaries.BusLogic;
 import org.mearvk.ancellaries.System;
 import org.mearvk.ancellaries.SystemComponent;
+import org.mearvk.circuitry.rmi.system.RMIModel;
 
-public class Client extends SystemComponent
+public class Client extends SystemComponent implements RMIModel
 {
     public BusLogic bus;
 
