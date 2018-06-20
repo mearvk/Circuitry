@@ -1,6 +1,9 @@
 package org.mearvk.circuitry.rmi.system;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.ObjectOutputStream;
+import java.io.PrintStream;
 
 public class RMI
 {
@@ -166,6 +169,72 @@ public class RMI
     public RMI lookup(String URI)
     {
         return null;
+    }
+
+    public RMI post(PrintStream stream, Object object)
+    {
+        try
+        {
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+
+            ObjectOutputStream oos = new ObjectOutputStream(baos);
+
+            //
+
+            oos.writeObject(object);
+
+            oos.flush();
+
+            //
+
+            stream.print("Event: " + baos.toByteArray());
+
+            stream.flush();
+
+            stream.close();
+
+            //
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+        return this;
+    }
+
+    public RMI post(PrintStream stream, String URI)
+    {
+        try
+        {
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+
+            ObjectOutputStream oos = new ObjectOutputStream(baos);
+
+            //
+
+            oos.writeObject(System.rmi.lookup(URI));
+
+            oos.flush();
+
+            //
+
+            stream.print("Event: " + baos.toByteArray());
+
+            stream.flush();
+
+            stream.close();
+
+            //
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+        //
+
+        return this;
     }
 
     public RMI frame(Object object)

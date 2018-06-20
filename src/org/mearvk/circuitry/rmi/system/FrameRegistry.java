@@ -12,6 +12,8 @@ public class FrameRegistry
 
     public ArrayList<Frame> frames = new ArrayList();
 
+    //
+
     public FrameRegistry()
     {
 
@@ -20,12 +22,16 @@ public class FrameRegistry
     @Resource(frame = Frame.METHOD_BASED)
     public void push(Object object)
     {
-        System.frames.frame(this).run(this, null);
+        System.frames.run(this, null);
+
+        System.events.post(java.lang.System.out, object);
     }
 
     @Resource(frame = Frame.METHOD_BASED)
     public void register(Object object)
     {
-        System.frames.frame(this).run(this, null);
+        System.frames.run(this, null);
+
+        System.events.post(java.lang.System.out, object);
     }
 }
