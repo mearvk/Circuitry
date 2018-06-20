@@ -17,8 +17,6 @@ public class FrameRegistry
 
     public FrameRegistry push()
     {
-        this.frames.add(new Frame(++index));
-
         //
 
         return this;

@@ -168,21 +168,13 @@ public class RMI
         return null;
     }
 
-    public RMI frame()
+    public RMI frame(Object object)
     {
-        StackTraceElement[] elements = Thread.currentThread().getStackTrace();
-
-        //
-
         return this;
     }
 
-    public RMI frame(String URI)
+    public RMI frame(Object object, String URI)
     {
-        StackTraceElement[] elements = Thread.currentThread().getStackTrace();
-
-        //
-
         return this;
     }
 

@@ -21,7 +21,7 @@ public class ThinClient
     @Resource(frame = Frame.METHOD_BASED)
     public ThinClient()
     {
-        System.rmi.frame().run(this, null);
+        System.rmi.frame(this).run(this, null);
     }
 }
 
