@@ -180,8 +180,6 @@ public class RMI implements Serializable
 
             oos.writeObject(object);
 
-            oos.flush();
-
             //
 
             stream.print("Event: " + baos.toByteArray());
@@ -211,8 +209,6 @@ public class RMI implements Serializable
             //
 
             oos.writeObject(System.rmi.lookup(URI));
-
-            oos.flush();
 
             //
 

@@ -4,6 +4,8 @@ import org.mearvk.ancellaries.annotations.Resource;
 import org.mearvk.circuitry.rmi.system.Frame;
 import org.mearvk.circuitry.rmi.system.System;
 
+import java.io.Serializable;
+
 class Main
 {
     public static void main(String... args)
@@ -11,10 +13,14 @@ class Main
         ThinClient client000 = new ThinClient();
 
         ThinClient client001 = new ThinClient();
+
+        ThinClient client002 = new ThinClient();
+
+        ThinClient client003 = new ThinClient();
     }
 }
 
-public class ThinClient
+public class ThinClient implements Serializable
 {
     public UserInterface userinterface;
 
@@ -25,7 +31,7 @@ public class ThinClient
     }
 }
 
-class ThinClientImpl extends ThinClient
+class ThinClientImpl extends ThinClient implements Serializable
 {
     public UserInterfaceImpl userinterfaceimpl;
 
