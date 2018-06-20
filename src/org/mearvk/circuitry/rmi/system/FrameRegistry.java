@@ -2,9 +2,10 @@ package org.mearvk.circuitry.rmi.system;
 
 import org.mearvk.ancellaries.annotations.Resource;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class FrameRegistry
+public class FrameRegistry implements Serializable
 {
     public Object object;
 

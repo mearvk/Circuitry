@@ -1,6 +1,8 @@
 package org.mearvk.circuitry.rmi.system;
 
-public class FrameRegistryImpl extends FrameRegistry
+import java.io.Serializable;
+
+public class FrameRegistryImpl extends FrameRegistry implements Serializable
 {
     public FrameRegistryImpl _push(Object object)
     {

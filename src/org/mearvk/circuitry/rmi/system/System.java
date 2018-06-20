@@ -1,6 +1,8 @@
 package org.mearvk.circuitry.rmi.system;
 
-public class System
+import java.io.Serializable;
+
+public class System implements Serializable
 {
     public static RMI init = new RMI();
 

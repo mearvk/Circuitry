@@ -1,11 +1,8 @@
 package org.mearvk.circuitry.rmi.system;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.ObjectOutputStream;
-import java.io.PrintStream;
+import java.io.*;
 
-public class RMI
+public class RMI implements Serializable
 {
     public RMI ref = this;
 

@@ -1,10 +1,11 @@
 package org.mearvk.circuitry.rmi.system;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 
-public class Frame
+public class Frame implements Serializable
 {
     public static final String CLASS_BASED = "CLASS";
     public static final String SYSTEM_BASED = "SYSTEM";

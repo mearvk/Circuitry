@@ -2,8 +2,9 @@ package org.mearvk.examples.example010;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.Serializable;
 
-public class UserInterfaceImpl
+public class UserInterfaceImpl implements Serializable
 {
     public JFrame jframe = null;
 

@@ -10,8 +10,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.io.File;
+import java.io.Serializable;
 
-public class UserInterface extends UserInterfaceImpl implements ActionListener, FocusListener, RMIModel
+public class UserInterface extends UserInterfaceImpl implements ActionListener, FocusListener, RMIModel, Serializable
 {
     public File initfile = null;
 
