@@ -170,11 +170,19 @@ public class RMI
 
     public RMI frame(Object object)
     {
+        System.frame_registry.push(object);
+
+        //
+
         return this;
     }
 
     public RMI frame(Object object, String URI)
     {
+        System.frame_registry.push(object);
+
+        //
+
         return this;
     }
 

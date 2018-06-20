@@ -1,5 +1,7 @@
 package org.mearvk.circuitry.rmi.system;
 
+import org.mearvk.ancellaries.annotations.Resource;
+
 import java.util.ArrayList;
 
 public class FrameRegistry
@@ -15,19 +17,15 @@ public class FrameRegistry
 
     }
 
-    public FrameRegistry push()
+    @Resource(frame = Frame.METHOD_BASED)
+    public void push(Object object)
     {
-        //
-
-        return this;
+        System.frames.frame(this).run(this, null);
     }
 
-    public FrameRegistry register()
+    @Resource(frame = Frame.METHOD_BASED)
+    public void register(Object object)
     {
-        this.frames.add(new Frame(++index));
-
-        //
-
-        return this;
+        System.frames.frame(this).run(this, null);
     }
 }
