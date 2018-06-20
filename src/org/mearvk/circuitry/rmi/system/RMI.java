@@ -1,13 +1,6 @@
 package org.mearvk.circuitry.rmi.system;
 
 import java.io.File;
-import java.util.Stack;
-
-class CallStore
-{
-    Stack<RMI> stack = new Stack();
-
-}
 
 public class RMI
 {
@@ -177,7 +170,7 @@ public class RMI
 
     public RMI frame()
     {
-        System.frameregistry.push();
+        StackTraceElement[] elements = Thread.currentThread().getStackTrace();
 
         //
 
@@ -186,7 +179,7 @@ public class RMI
 
     public RMI frame(String URI)
     {
-        System.frameregistry.push();
+        StackTraceElement[] elements = Thread.currentThread().getStackTrace();
 
         //
 
@@ -245,14 +238,14 @@ public class RMI
 
     public RMI register(SystemEvent event)
     {
-        System.eventregistry.events.add(event);
+        System.event_registry.events.add(event);
 
         return this;
     }
 
     public RMI register(Frame frame)
     {
-        System.frameregistry.frames.add(frame);
+        System.frame_registry.frames.add(frame);
 
         return this;
     }

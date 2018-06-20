@@ -1,6 +1,7 @@
 package org.mearvk.examples.example010;
 
 import org.mearvk.ancellaries.annotations.Resource;
+import org.mearvk.circuitry.rmi.system.Frame;
 import org.mearvk.circuitry.rmi.system.RMIModel;
 import org.mearvk.circuitry.rmi.system.System;
 
@@ -16,7 +17,7 @@ public class UserInterface extends UserInterfaceImpl implements ActionListener, 
 
     //
 
-    @Resource(init = "/ui/init")
+    @Resource(init = "/ui/init", frame = Frame.METHOD_BASED)
     public UserInterface()
     {
         System.rmi.frame().run(this, null);

@@ -6,6 +6,8 @@ public class FrameRegistry
 {
     public Object object;
 
+    public static Integer index = 0;
+
     public ArrayList<Frame> frames = new ArrayList();
 
     public FrameRegistry()
@@ -15,7 +17,7 @@ public class FrameRegistry
 
     public FrameRegistry push()
     {
-        this.frames.add(new Frame());
+        this.frames.add(new Frame(++index));
 
         //
 
@@ -24,7 +26,7 @@ public class FrameRegistry
 
     public FrameRegistry register()
     {
-        this.frames.add(new Frame());
+        this.frames.add(new Frame(++index));
 
         //
 

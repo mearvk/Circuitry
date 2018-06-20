@@ -18,9 +18,9 @@ public class System
 
     //
 
-    public static FrameRegistry frameregistry = new FrameRegistry();
+    public static FrameRegistry frame_registry = new FrameRegistry();
 
-    public static EventRegistry eventregistry = new EventRegistry();
+    public static EventRegistry event_registry = new EventRegistry();
 
     //
 

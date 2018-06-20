@@ -27,12 +27,25 @@ public class Frame
 
     public Integer hashcode;
 
+    public static final String METHOD_BASED = "METHOD";
+
+    public static final String CLASS_BASED = "METHOD";
+
+    public static final String SYSTEM_BASED = "METHOD";
+
     //
 
     public Frame()
     {
         this.elements.addAll(Arrays.asList(Thread.currentThread().getStackTrace()));
     }
+
+    public Frame(Integer index)
+    {
+        this.elements.addAll(Arrays.asList(Thread.currentThread().getStackTrace()));
+    }
+
+    //
 
     public Frame(ArrayList<StackTraceElement> elements)
     {

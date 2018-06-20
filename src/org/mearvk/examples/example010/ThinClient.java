@@ -1,32 +1,38 @@
 package org.mearvk.examples.example010;
 
+import org.mearvk.ancellaries.annotations.Resource;
+import org.mearvk.circuitry.rmi.system.Frame;
+import org.mearvk.circuitry.rmi.system.System;
+
 class Main
 {
     public static void main(String... args)
     {
-        ThinClient client = new ThinClient();
+        ThinClient client000 = new ThinClient();
 
-        System.out.println(client.getClass());
-
-        System.out.println(client.getClass().getAnnotatedSuperclass());
+        ThinClient client001 = new ThinClient();
     }
 }
 
-public class ThinClient extends BonerPatrol
+public class ThinClient
 {
     public UserInterface userinterface;
 
+    @Resource(frame = Frame.METHOD_BASED)
     public ThinClient()
     {
-        this.userinterface = new UserInterface();
-
-        this.userinterface.connect();
-
-        this.userinterface.show();
+        System.rmi.frame().run(this, null);
     }
 }
 
-class BonerPatrol extends Object
+class ThinClientImpl extends ThinClient
 {
+    public UserInterfaceImpl userinterfaceimpl;
 
+    @Resource(frame = Frame.METHOD_BASED)
+    public ThinClientImpl()
+    {
+        java.lang.System.out.println("ThinClientImpl");
+    }
 }
+
