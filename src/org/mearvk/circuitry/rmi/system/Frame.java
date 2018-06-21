@@ -8,7 +8,9 @@ import java.util.Date;
 public class Frame implements Serializable
 {
     public static final String METHOD_BASED = "CLASS";
+
     public static final String CLASS_BASED = "CLASS";
+
     public static final String SYSTEM_BASED = "SYSTEM";
 
     public Date date = null;
@@ -24,12 +26,19 @@ public class Frame implements Serializable
     //
 
     public ArrayList<StackTraceElement> elements = null;
+
     public String os = null;
+
     public String system = null;
+
     public ArrayList<String> classnames = new ArrayList();
+
     public ArrayList<String> filenames = new ArrayList();
+
     public ArrayList<String> methodnames = new ArrayList();
+
     public ArrayList<String> modulenames = new ArrayList();
+
     public ArrayList<Integer> linenumbers = new ArrayList();
 
     //

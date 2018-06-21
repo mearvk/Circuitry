@@ -13,6 +13,11 @@ public class RMI implements Serializable
 
     //
 
+    protected RMI file() // neatly that each call should register with System API for calc.
+    {
+        return null;
+    }
+
     public RMI init(String URI, Object initobject, File initfile)
     {
         return null;
@@ -178,11 +183,17 @@ public class RMI implements Serializable
 
             //
 
-            oos.writeObject(object);
+            oos.writeObject(System.rmi);
+
+            oos.flush();
+
+            oos.close();
 
             //
 
-            stream.print("Event: " + baos.toByteArray());
+            stream.println("Class size: " + baos.toByteArray().length);
+
+            stream.println("Class data: " + baos.toByteArray());
 
             stream.flush();
 
@@ -210,9 +221,15 @@ public class RMI implements Serializable
 
             oos.writeObject(System.rmi.lookup(URI));
 
+            oos.flush();
+
+            oos.close();
+
             //
 
-            stream.print("Event: " + baos.toByteArray());
+            stream.println("Event: " + baos.toByteArray());
+
+            stream.println("Event: " + baos.toByteArray().length);
 
             stream.flush();
 
