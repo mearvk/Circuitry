@@ -183,7 +183,7 @@ public class RMI implements Serializable
 
             //
 
-            oos.writeObject(System.rmi);
+            oos.writeObject(object);
 
             oos.flush();
 
@@ -191,9 +191,20 @@ public class RMI implements Serializable
 
             //
 
+            byte[] bytes = baos.toByteArray();
+
+            //
+
             stream.println("Class size: " + baos.toByteArray().length);
 
-            stream.println("Class data: " + baos.toByteArray());
+            for (int i = 0; i < bytes.length; i++)
+            {
+                stream.write((char) bytes[i]);
+            }
+
+            //
+
+            //stream.println("Class data: " + bytes);
 
             stream.flush();
 
