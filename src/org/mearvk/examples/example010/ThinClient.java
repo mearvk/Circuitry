@@ -10,7 +10,7 @@ class Main
 {
     public static void main(String... args)
     {
-        ThinClient client000 = new ThinClient();
+        ThinClientImpl client000 = new ThinClientImpl();
     }
 }
 
@@ -32,7 +32,7 @@ class ThinClientImpl extends ThinClient implements Serializable
     @Resource(frame = Frame.METHOD_BASED)
     public ThinClientImpl()
     {
-        java.lang.System.out.println("ThinClientImpl");
+        System.rmi.frame(this).run(this, null);
     }
 }
 
