@@ -6,11 +6,11 @@ import java.io.File;
 import java.io.PrintStream;
 import java.io.Serializable;
 
-public class RMI implements Serializable
+public class RMI extends RMIImpl implements Serializable
 {
     public RMI ref = this;
 
-    public RMIImpl impl = new RMIImpl();
+    public RMIImpl impl = super.ref;
 
     public RMI()
     {
@@ -193,14 +193,14 @@ public class RMI implements Serializable
 
     public RMI frame(Object object)
     {
-        System.rmi.run(this, null);
+        super._frame(object);
 
         return this;
     }
 
     public RMI frame(Object object, String URI)
     {
-        System.rmi.run(this, null);
+        super._frame(object);
 
         return this;
     }
@@ -235,28 +235,28 @@ public class RMI implements Serializable
 
     public RMI run(Object object, Object reference)
     {
-        System.rmi.impl.run(this, null);
+        super._run(object, reference);
 
         return this;
     }
 
     public RMI run(String URI, Object reference)
     {
-        System.rmi.impl.run(this, null);
+        super._run(URI, reference);
 
         return this;
     }
 
     public RMI run(Object object, Object reference, Object... args)
     {
-        System.rmi.impl.run(this, null);
+        super._run(object, reference, args);
 
         return this;
     }
 
     public RMI run(String URI, Object reference, Class superclass, Object... args)
     {
-        System.rmi.impl.run(this, null);
+        super._run(URI, reference, superclass, args);
 
         return this;
     }

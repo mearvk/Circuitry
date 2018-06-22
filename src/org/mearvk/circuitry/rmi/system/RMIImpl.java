@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.ObjectOutputStream;
 import java.io.PrintStream;
 
-public class RMIImpl extends RMI
+public class RMIImpl
 {
     public RMIImpl ref = this;
 
