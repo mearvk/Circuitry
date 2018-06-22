@@ -10,7 +10,7 @@ class Main
 {
     public static void main(String... args)
     {
-        ThinClientImpl client000 = new ThinClientImpl();
+        ThinClient client000 = new ThinClient();
     }
 }
 

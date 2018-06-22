@@ -191,14 +191,14 @@ public class RMI implements Serializable
 
     public RMI frame(Object object)
     {
-        System.frame_registry.push(object);
+        System.rmi.run(this, null);
 
         return this;
     }
 
     public RMI frame(Object object, String URI)
     {
-        System.frame_registry.push(object);
+        System.rmi.run(this, null);
 
         return this;
     }
