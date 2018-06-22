@@ -1,5 +1,6 @@
 package org.mearvk.circuitry.rmi.system;
 
+import org.mearvk.ancellaries.annotations.Resource;
 import org.mearvk.circuitry.rmi.system.interfaces.RMIModel;
 
 import java.io.File;
@@ -191,16 +192,18 @@ public class RMI extends RMIImpl implements Serializable
         return this;
     }
 
-    public RMI frame(Object object)
+    @Resource()
+    public RMI frame(Object object, Object... args)
     {
-        super._frame(object);
+        System.rmi.impl._frame(object, args)._run(object, null);
 
         return this;
     }
 
-    public RMI frame(Object object, String URI)
+    @Resource()
+    public RMI frame(Object object, String URI, Object... args)
     {
-        super._frame(object);
+        System.rmi.run(object, URI);
 
         return this;
     }
@@ -235,28 +238,28 @@ public class RMI extends RMIImpl implements Serializable
 
     public RMI run(Object object, Object reference)
     {
-        super._run(object, reference);
+        System.rmi.run(object, reference);
 
         return this;
     }
 
     public RMI run(String URI, Object reference)
     {
-        super._run(URI, reference);
+        System.rmi.run(URI, reference);
 
         return this;
     }
 
     public RMI run(Object object, Object reference, Object... args)
     {
-        super._run(object, reference, args);
+        System.rmi.run(object, reference, args);
 
         return this;
     }
 
     public RMI run(String URI, Object reference, Class superclass, Object... args)
     {
-        super._run(URI, reference, superclass, args);
+        System.rmi.run(URI, reference);
 
         return this;
     }
@@ -280,9 +283,16 @@ public class RMI extends RMIImpl implements Serializable
         return this;
     }
 
-    public RMI register(Frame frame)
+    public RMI register(Frame frame, Object object, String URI)
     {
-        System.frame_registry.frames.add(frame);
+
+
+        return this;
+    }
+
+    public RMI register(Frame frame, Object object)
+    {
+
 
         return this;
     }

@@ -67,6 +67,11 @@ public class Frame implements Serializable
 
     //
 
+    public Frame(Object object)
+    {
+        this.elements.addAll(Arrays.asList(Thread.currentThread().getStackTrace()));
+    }
+
     public Frame()
     {
         this.elements.addAll(Arrays.asList(Thread.currentThread().getStackTrace()));

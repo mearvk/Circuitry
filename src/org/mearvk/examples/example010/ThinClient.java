@@ -16,7 +16,7 @@ class Main
 
 public class ThinClient extends ThinClientImpl implements Serializable
 {
-    public UserInterface userinterface;
+    public UserInterface userinterface = new UserInterface();
 
     @Resource(frame = Frame.METHOD_BASED)
     public ThinClient()
@@ -27,22 +27,11 @@ public class ThinClient extends ThinClientImpl implements Serializable
 
 class ThinClientImpl implements Serializable
 {
-    public UserInterfaceImpl userinterfaceimpl;
+    public UserInterfaceImpl userinterfaceimpl = new UserInterfaceImpl();
 
     @Resource(frame = Frame.METHOD_BASED)
     public ThinClientImpl()
     {
-        assert (System.rmi == null);
-
-        try
-        {
-            Class.forName("org.mearvk.circuitry.rmi.system.System");
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
-
         System.rmi.frame(this).run(this, null);
     }
 }

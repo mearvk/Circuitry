@@ -22,6 +22,8 @@ public class System implements Serializable
 
     public static FrameRegistry frame_registry = new FrameRegistry();
 
+    public static FrameRegistry call_registry = new FrameRegistry();
+
     public static EventRegistry event_registry = new EventRegistry();
 
     //

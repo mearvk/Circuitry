@@ -35,4 +35,10 @@ public class FrameRegistry implements Serializable
 
         System.events.post(java.lang.System.out, object);
     }
+
+    @Resource(frame = Frame.METHOD_BASED)
+    public void pull(Object object)
+    {
+        //return object
+    }
 }

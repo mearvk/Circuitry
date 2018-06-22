@@ -6,6 +6,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.ObjectOutputStream;
 import java.io.PrintStream;
+import java.util.Arrays;
 
 public class RMIImpl
 {
@@ -243,7 +244,7 @@ public class RMIImpl
 
             //
 
-            stream.println("Event: " + baos.toByteArray());
+            stream.println("Event: " + Arrays.toString(baos.toByteArray()));
 
             stream.println("Event: " + baos.toByteArray().length);
 
@@ -263,18 +264,24 @@ public class RMIImpl
         return this;
     }
 
-    public RMIImpl _frame(Object object)
+    /**
+     * Same object and same stack function subset should equal the same context
+     *
+     * @param object
+     * @return
+     */
+    public RMIImpl _frame(Object object, Object... args)
     {
-        System.frame_registry.push(object);
+        System.rmi.register(new Frame(), object);
 
         //
 
         return this;
     }
 
-    public RMIImpl _frame(Object object, String URI)
+    public RMIImpl _frame(Object object, String URI, Object... args)
     {
-        System.frame_registry.push(object);
+        System.rmi.register(new Frame(), object, URI);
 
         //
 
@@ -303,6 +310,10 @@ public class RMIImpl
 
     public RMIImpl _run(Object object, Object reference)
     {
+        System.call_registry.push(object);
+
+        //
+
         return this;
     }
 
