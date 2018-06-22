@@ -2,8 +2,8 @@ package org.mearvk.examples.example010;
 
 import org.mearvk.ancellaries.annotations.Resource;
 import org.mearvk.circuitry.rmi.system.Frame;
-import org.mearvk.circuitry.rmi.system.RMIModel;
 import org.mearvk.circuitry.rmi.system.System;
+import org.mearvk.circuitry.rmi.system.interfaces.RMIModel;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

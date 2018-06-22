@@ -1,5 +1,7 @@
 package org.mearvk.circuitry.rmi.system;
 
+import org.mearvk.circuitry.rmi.system.interfaces.RMIModel;
+
 import java.io.File;
 import java.io.PrintStream;
 import java.io.Serializable;

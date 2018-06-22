@@ -2,6 +2,7 @@ package org.mearvk.rmi;
 
 import org.mearvk.circuitry.rmi.system.*;
 import org.mearvk.circuitry.rmi.system.System;
+import org.mearvk.circuitry.rmi.system.interfaces.RMIModel;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

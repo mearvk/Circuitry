@@ -2,7 +2,7 @@ package org.mearvk.circuitry.rmi;
 
 import org.mearvk.ancellaries.BusLogic;
 import org.mearvk.ancellaries.SystemComponent;
-import org.mearvk.circuitry.rmi.system.RMIModel;
+import org.mearvk.circuitry.rmi.system.interfaces.RMIModel;
 
 public class Analyzer extends SystemComponent implements RMIModel
 {

@@ -4,7 +4,7 @@ import org.mearvk.ancellaries.BusLogic;
 import org.mearvk.ancellaries.System;
 import org.mearvk.ancellaries.SystemComponent;
 import org.mearvk.circuitry.interfaces.Runner;
-import org.mearvk.circuitry.rmi.system.RMIModel;
+import org.mearvk.circuitry.rmi.system.interfaces.RMIModel;
 
 public class Driver extends SystemComponent implements Runner, RMIModel
 {
