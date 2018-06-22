@@ -10,6 +10,8 @@ public class RMI implements Serializable
 {
     public RMI ref = this;
 
+    public RMIImpl impl = new RMIImpl();
+
     public RMI()
     {
 
@@ -233,28 +235,28 @@ public class RMI implements Serializable
 
     public RMI run(Object object, Object reference)
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.impl.run(this, null);
 
         return this;
     }
 
     public RMI run(String URI, Object reference)
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.impl.run(this, null);
 
         return this;
     }
 
     public RMI run(Object object, Object reference, Object... args)
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.impl.run(this, null);
 
         return this;
     }
 
     public RMI run(String URI, Object reference, Class superclass, Object... args)
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.impl.run(this, null);
 
         return this;
     }

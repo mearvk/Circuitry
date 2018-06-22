@@ -18,42 +18,42 @@ public class RMIImpl extends RMI
 
     //
 
-    protected RMIImpl file() // neatly that each call should register with System API for calc.
+    protected RMIImpl _file() // neatly that each call should register with System API for calc.
     {
         return null;
     }
 
-    public RMIImpl init(String URI, Object initobject, File initfile)
+    public RMIImpl _init(String URI, Object initobject, File initfile)
     {
         return null;
     }
 
-    public RMIImpl compile()
+    public RMIImpl _compile()
     {
         return null;
     }
 
-    public RMIImpl go()
+    public RMIImpl _go()
     {
         return null;
     }
 
-    public RMIImpl rules(String URI)
+    public RMIImpl _rules(String URI)
     {
         return null;
     }
 
-    public RMIImpl rules(RMIImpl endpoint)
+    public RMIImpl _rules(RMIImpl endpoint)
     {
         return null;
     }
 
-    public RMIImpl lift(RMIModel object, RMIModel monitor)
+    public RMIImpl _lift(RMIModel object, RMIModel monitor)
     {
         return null;
     }
 
-    public RMIImpl fire()
+    public RMIImpl _fire()
     {
         return null;
     }
@@ -63,117 +63,117 @@ public class RMIImpl extends RMI
         return null; //we need this - now
     }
 
-    public RMIImpl securitize(RMIImpl rmi, Object reference)
+    public RMIImpl _securitize(RMIImpl rmi, Object reference)
     {
         return null; //we need this - now
     }
 
-    public RMIImpl lock()
+    public RMIImpl _lock()
     {
         return null;
     }
 
-    public RMIImpl unlock()
+    public RMIImpl _unlock()
     {
         return null;
     }
 
-    public RMIImpl listeners()
+    public RMIImpl _listeners()
     {
         return null;
     }
 
-    public RMIImpl requests()
+    public RMIImpl _requests()
     {
         return null;
     }
 
-    public RMIImpl fill()
+    public RMIImpl _fill()
     {
         return null;
     }
 
-    public RMIImpl hooks()
+    public RMIImpl _hooks()
     {
         return null;
     }
 
-    public RMIImpl store()
+    public RMIImpl _store()
     {
         return null;
     }
 
-    public RMIImpl store(String id)
+    public RMIImpl _store(String id)
     {
         return null;
     }
 
-    public RMIImpl store(RMIStore store)
+    public RMIImpl _store(RMIStore store)
     {
         return null;
     }
 
-    public RMIImpl store(RMIDbms database)
+    public RMIImpl _store(RMIDbms database)
     {
         return null;
     }
 
-    public RMIImpl store(RMIDbms database, Integer id)
+    public RMIImpl _store(RMIDbms database, Integer id)
     {
         return null;
     }
 
-    public RMIImpl store(RMIStore store, String id)
+    public RMIImpl _store(RMIStore store, String id)
     {
         return null;
     }
 
-    public RMIImpl store(RMIStore store, Integer id)
+    public RMIImpl _store(RMIStore store, Integer id)
     {
         return null;
     }
 
-    public RMIImpl as(Object reference)
+    public RMIImpl _as(Object reference)
     {
         return null;
     }
 
-    public RMIImpl reference(Object reference)
+    public RMIImpl _reference(Object reference)
     {
         return null;
     }
 
-    public RMIImpl reference(Object object, Object reference)
+    public RMIImpl _reference(Object object, Object reference)
     {
         return null;
     }
 
-    public RMIImpl reference(String URI, Object reference)
+    public RMIImpl _reference(String URI, Object reference)
     {
         return null;
     }
 
-    public RMIImpl ref()
+    public RMIImpl _ref()
     {
         return null;
     }
 
-    public RMIImpl ref(Object object, Object reference)
+    public RMIImpl _ref(Object object, Object reference)
     {
         return null;
     }
 
-    public RMIImpl ref(String URI, Object reference)
+    public RMIImpl _ref(String URI, Object reference)
     {
         return null;
     }
 
-    public RMIImpl lookup(Object object)
+    public RMIImpl _lookup(Object object)
     {
         return null;
     }
 
-    public RMIImpl lookup(String URI)
+    public RMIImpl _lookup(String URI)
     {
         return null;
     }
@@ -263,7 +263,7 @@ public class RMIImpl extends RMI
         return this;
     }
 
-    public RMIImpl frame(Object object)
+    public RMIImpl _frame(Object object)
     {
         System.frame_registry.push(object);
 
@@ -272,7 +272,7 @@ public class RMIImpl extends RMI
         return this;
     }
 
-    public RMIImpl frame(Object object, String URI)
+    public RMIImpl _frame(Object object, String URI)
     {
         System.frame_registry.push(object);
 
@@ -281,64 +281,64 @@ public class RMIImpl extends RMI
         return this;
     }
 
-    public RMIImpl logic()
+    public RMIImpl _logic()
     {
         return null;
     }
 
-    public RMIImpl logic(String URI)
+    public RMIImpl _logic(String URI)
     {
         return null;
     }
 
-    public RMIImpl lookup(Object object, Object reference)
+    public RMIImpl _lookup(Object object, Object reference)
     {
         return null;
     }
 
-    public RMIImpl lookup(String URI, Object reference)
+    public RMIImpl _lookup(String URI, Object reference)
     {
         return null;
     }
 
-    public RMIImpl run(Object object, Object reference)
+    public RMIImpl _run(Object object, Object reference)
     {
         return this;
     }
 
-    public RMIImpl run(String URI, Object reference)
+    public RMIImpl _run(String URI, Object reference)
     {
         return this;
     }
 
-    public RMIImpl run(Object object, Object reference, Object... args)
+    public RMIImpl _run(Object object, Object reference, Object... args)
     {
         return this;
     }
 
-    public RMIImpl run(String URI, Object reference, Class superclass, Object... args)
+    public RMIImpl _run(String URI, Object reference, Class superclass, Object... args)
     {
         return this;
     }
 
-    public RMIImpl cast(Object object)
+    public RMIImpl _cast(Object object)
     {
         return null;
     }
 
-    public RMIImpl cast(String URI)
+    public RMIImpl _cast(String URI)
     {
         return null;
     }
 
-    public RMIImpl register(SystemEvent event)
+    public RMIImpl _register(SystemEvent event)
     {
         System.event_registry.events.add(event);
 
         return this;
     }
 
-    public RMIImpl register(Frame frame)
+    public RMIImpl _register(Frame frame)
     {
         System.frame_registry.frames.add(frame);
 
