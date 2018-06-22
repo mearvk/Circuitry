@@ -1,6 +1,8 @@
 package org.mearvk.circuitry.rmi.system;
 
-import java.io.*;
+import java.io.File;
+import java.io.PrintStream;
+import java.io.Serializable;
 
 public class RMI implements Serializable
 {
@@ -10,8 +12,6 @@ public class RMI implements Serializable
     {
 
     }
-
-    //
 
     protected RMI file() // neatly that each call should register with System API for calc.
     {
@@ -170,90 +170,19 @@ public class RMI implements Serializable
 
     public RMI lookup(String URI)
     {
-        return null;
+        return this;
     }
 
     public RMI post(PrintStream stream, Object object)
     {
-        try
-        {
-            ByteArrayOutputStream baos = new ByteArrayOutputStream();
-
-            ObjectOutputStream oos = new ObjectOutputStream(baos);
-
-            //
-
-            oos.writeObject(object);
-
-            oos.flush();
-
-            oos.close();
-
-            //
-
-            byte[] bytes = baos.toByteArray();
-
-            //
-
-            stream.println("Class size: " + baos.toByteArray().length);
-
-            for (int i = 0; i < bytes.length; i++)
-            {
-                stream.write((char) bytes[i]);
-            }
-
-            //
-
-            //stream.println("Class data: " + bytes);
-
-            stream.flush();
-
-            stream.close();
-
-            //
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
+        System.rmi.frame(this).run(stream, object);
 
         return this;
     }
 
     public RMI post(PrintStream stream, String URI)
     {
-        try
-        {
-            ByteArrayOutputStream baos = new ByteArrayOutputStream();
-
-            ObjectOutputStream oos = new ObjectOutputStream(baos);
-
-            //
-
-            oos.writeObject(System.rmi.lookup(URI));
-
-            oos.flush();
-
-            oos.close();
-
-            //
-
-            stream.println("Event: " + baos.toByteArray());
-
-            stream.println("Event: " + baos.toByteArray().length);
-
-            stream.flush();
-
-            stream.close();
-
-            //
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
-
-        //
+        System.rmi.frame(this).run(stream, URI);
 
         return this;
     }
@@ -262,8 +191,6 @@ public class RMI implements Serializable
     {
         System.frame_registry.push(object);
 
-        //
-
         return this;
     }
 
@@ -271,59 +198,75 @@ public class RMI implements Serializable
     {
         System.frame_registry.push(object);
 
-        //
-
         return this;
     }
 
     public RMI logic()
     {
-        return null;
+        System.rmi.frame(this).run(this, null);
+
+        return this;
     }
 
     public RMI logic(String URI)
     {
-        return null;
+        System.rmi.frame(this).run(this, null);
+
+        return this;
     }
 
     public RMI lookup(Object object, Object reference)
     {
-        return null;
+        System.rmi.frame(this).run(this, null);
+
+        return this;
     }
 
     public RMI lookup(String URI, Object reference)
     {
-        return null;
+        System.rmi.frame(this).run(this, null);
+
+        return this;
     }
 
     public RMI run(Object object, Object reference)
     {
+        System.rmi.frame(this).run(this, null);
+
         return this;
     }
 
     public RMI run(String URI, Object reference)
     {
+        System.rmi.frame(this).run(this, null);
+
         return this;
     }
 
     public RMI run(Object object, Object reference, Object... args)
     {
+        System.rmi.frame(this).run(this, null);
+
         return this;
     }
 
     public RMI run(String URI, Object reference, Class superclass, Object... args)
     {
+        System.rmi.frame(this).run(this, null);
+
         return this;
     }
 
     public RMI cast(Object object)
     {
-        return null;
+        System.rmi.frame(this).run(this, null);
+
+        return this;
     }
 
     public RMI cast(String URI)
     {
-        return null;
+        return this;
     }
 
     public RMI register(SystemEvent event)
