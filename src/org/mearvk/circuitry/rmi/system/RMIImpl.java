@@ -9,7 +9,7 @@ import java.io.PrintStream;
 
 public class RMIImpl extends RMI
 {
-    public org.mearvk.circuitry.rmi.system.RMIImpl ref = this;
+    public RMIImpl ref = this;
 
     public RMIImpl()
     {
@@ -18,167 +18,167 @@ public class RMIImpl extends RMI
 
     //
 
-    protected org.mearvk.circuitry.rmi.system.RMIImpl file() // neatly that each call should register with System API for calc.
+    protected RMIImpl file() // neatly that each call should register with System API for calc.
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl init(String URI, Object initobject, File initfile)
+    public RMIImpl init(String URI, Object initobject, File initfile)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl compile()
+    public RMIImpl compile()
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl go()
+    public RMIImpl go()
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl rules(String URI)
+    public RMIImpl rules(String URI)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl rules(org.mearvk.circuitry.rmi.system.RMIImpl endpoint)
+    public RMIImpl rules(RMIImpl endpoint)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl lift(RMIModel object, RMIModel monitor)
+    public RMIImpl lift(RMIModel object, RMIModel monitor)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl fire()
+    public RMIImpl fire()
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl desecuritize(org.mearvk.circuitry.rmi.system.RMIImpl rmi, Object reference)
+    public RMIImpl desecuritize(RMIImpl rmi, Object reference)
     {
         return null; //we need this - now
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl securitize(org.mearvk.circuitry.rmi.system.RMIImpl rmi, Object reference)
+    public RMIImpl securitize(RMIImpl rmi, Object reference)
     {
         return null; //we need this - now
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl lock()
+    public RMIImpl lock()
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl unlock()
+    public RMIImpl unlock()
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl listeners()
+    public RMIImpl listeners()
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl requests()
+    public RMIImpl requests()
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl fill()
+    public RMIImpl fill()
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl hooks()
+    public RMIImpl hooks()
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl store()
+    public RMIImpl store()
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl store(String id)
+    public RMIImpl store(String id)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl store(RMIStore store)
+    public RMIImpl store(RMIStore store)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl store(RMIDbms database)
+    public RMIImpl store(RMIDbms database)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl store(RMIDbms database, Integer id)
+    public RMIImpl store(RMIDbms database, Integer id)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl store(RMIStore store, String id)
+    public RMIImpl store(RMIStore store, String id)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl store(RMIStore store, Integer id)
+    public RMIImpl store(RMIStore store, Integer id)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl as(Object reference)
+    public RMIImpl as(Object reference)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl reference(Object reference)
+    public RMIImpl reference(Object reference)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl reference(Object object, Object reference)
+    public RMIImpl reference(Object object, Object reference)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl reference(String URI, Object reference)
+    public RMIImpl reference(String URI, Object reference)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl ref()
+    public RMIImpl ref()
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl ref(Object object, Object reference)
+    public RMIImpl ref(Object object, Object reference)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl ref(String URI, Object reference)
+    public RMIImpl ref(String URI, Object reference)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl lookup(Object object)
+    public RMIImpl lookup(Object object)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl lookup(String URI)
+    public RMIImpl lookup(String URI)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl _post(PrintStream stream, Object object)
+    public RMIImpl _post(PrintStream stream, Object object)
     {
         try
         {
@@ -225,7 +225,7 @@ public class RMIImpl extends RMI
         return this;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl _post(PrintStream stream, String URI)
+    public RMIImpl _post(PrintStream stream, String URI)
     {
         try
         {
@@ -263,7 +263,7 @@ public class RMIImpl extends RMI
         return this;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl frame(Object object)
+    public RMIImpl frame(Object object)
     {
         System.frame_registry.push(object);
 
@@ -272,7 +272,7 @@ public class RMIImpl extends RMI
         return this;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl frame(Object object, String URI)
+    public RMIImpl frame(Object object, String URI)
     {
         System.frame_registry.push(object);
 
@@ -281,64 +281,64 @@ public class RMIImpl extends RMI
         return this;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl logic()
+    public RMIImpl logic()
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl logic(String URI)
+    public RMIImpl logic(String URI)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl lookup(Object object, Object reference)
+    public RMIImpl lookup(Object object, Object reference)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl lookup(String URI, Object reference)
+    public RMIImpl lookup(String URI, Object reference)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl run(Object object, Object reference)
+    public RMIImpl run(Object object, Object reference)
     {
         return this;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl run(String URI, Object reference)
+    public RMIImpl run(String URI, Object reference)
     {
         return this;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl run(Object object, Object reference, Object... args)
+    public RMIImpl run(Object object, Object reference, Object... args)
     {
         return this;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl run(String URI, Object reference, Class superclass, Object... args)
+    public RMIImpl run(String URI, Object reference, Class superclass, Object... args)
     {
         return this;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl cast(Object object)
+    public RMIImpl cast(Object object)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl cast(String URI)
+    public RMIImpl cast(String URI)
     {
         return null;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl register(SystemEvent event)
+    public RMIImpl register(SystemEvent event)
     {
         System.event_registry.events.add(event);
 
         return this;
     }
 
-    public org.mearvk.circuitry.rmi.system.RMIImpl register(Frame frame)
+    public RMIImpl register(Frame frame)
     {
         System.frame_registry.frames.add(frame);
 
