@@ -322,6 +322,8 @@ public class RMI extends RMIImpl implements Serializable
 
         java.lang.System.out.println("  > Stacktrace : " + frame.stacktrace);
 
+        //java.lang.System.out.println("  > Bytecode : " + frame.bytecodestring);
+
 
         return this;
     }

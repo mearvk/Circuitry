@@ -355,7 +355,6 @@ public class Frame implements Serializable
 
             this.bytecode = baos.toByteArray();
 
-
             //
         }
         catch (Exception e)
