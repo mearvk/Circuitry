@@ -1,7 +1,5 @@
 package org.mearvk.circuitry.rmi.system;
 
-import org.mearvk.circuitry.rmi.system.interfaces.CallRegistry;
-
 import java.io.Serializable;
 
 public class System implements Serializable
@@ -19,6 +17,8 @@ public class System implements Serializable
     public static RMI security = new RMI();
 
     public static RMI frames = new RMI();
+
+    public static RMI factory = new RMI();
 
     //
 

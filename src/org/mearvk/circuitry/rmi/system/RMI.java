@@ -3,6 +3,7 @@ package org.mearvk.circuitry.rmi.system;
 import org.mearvk.ancellaries.annotations.Resource;
 import org.mearvk.circuitry.rmi.system.interfaces.RMIModel;
 
+import javax.xml.stream.EventFilter;
 import java.io.File;
 import java.io.PrintStream;
 import java.io.Serializable;
@@ -18,10 +19,20 @@ public class RMI extends RMIImpl implements Serializable
 
     }
 
+    //
+
     protected RMI file() // neatly that each call should register with System API for calc.
     {
         return null;
     }
+
+    //
+
+    public RMI create(Class _class, Object ref)
+    {
+        return this;
+    }
+
 
     public RMI init(String URI, Object initobject, File initfile)
     {
@@ -85,57 +96,87 @@ public class RMI extends RMIImpl implements Serializable
 
     public RMI requests()
     {
-        return null;
+        return this;
     }
 
     public RMI fill()
     {
-        return null;
+        return this;
+    }
+
+    public RMI removehook(Class _class, String type)
+    {
+        return this;
+    }
+
+    public RMI addhook(Class _class, String type)
+    {
+        return this;
+    }
+
+    public RMI hook(Class _class, String type)
+    {
+        return this;
+    }
+
+    public RMI hook(Class _class, EventFilter filter)
+    {
+        return this;
+    }
+
+    public RMI hook(Class _class)
+    {
+        return this;
+    }
+
+    public RMI hook(Object object, Class _class)
+    {
+        return this;
     }
 
     public RMI hooks()
     {
-        return null;
+        return this;
     }
 
     public RMI store()
     {
-        return null;
+        return this;
     }
 
     public RMI store(String id)
     {
-        return null;
+        return this;
     }
 
     public RMI store(RMIStore store)
     {
-        return null;
+        return this;
     }
 
     public RMI store(RMIDbms database)
     {
-        return null;
+        return this;
     }
 
     public RMI store(RMIDbms database, Integer id)
     {
-        return null;
+        return this;
     }
 
     public RMI store(RMIStore store, String id)
     {
-        return null;
+        return this;
     }
 
     public RMI store(RMIStore store, Integer id)
     {
-        return null;
+        return this;
     }
 
     public RMI as(Object reference)
     {
-        return null;
+        return this;
     }
 
     public RMI reference(Object reference)
@@ -289,6 +330,13 @@ public class RMI extends RMIImpl implements Serializable
 
     public RMI cast(String URI)
     {
+        return this;
+    }
+
+    public RMI register(Object object, String type)
+    {
+        System.EREG.events.add(new SystemEvent(type));
+
         return this;
     }
 

@@ -1,8 +1,6 @@
-package org.mearvk.circuitry.rmi.system.interfaces;
+package org.mearvk.circuitry.rmi.system;
 
 import org.mearvk.ancellaries.annotations.Resource;
-import org.mearvk.circuitry.rmi.system.Call;
-import org.mearvk.circuitry.rmi.system.Frame;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
