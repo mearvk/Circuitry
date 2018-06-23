@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/data/frames" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/examples/example010/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/examples/example010/UserInterface.java" afterDir="false" />
-    </list>
+    <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +31,8 @@
       <file leaf-file-name="frames" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/frames">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1479">
-              <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+            <state relative-caret-position="357">
+              <caret line="21" column="116" lean-forward="true" selection-start-line="21" selection-start-column="116" selection-end-line="21" selection-end-column="116" />
             </state>
           </provider>
         </entry>
@@ -481,13 +477,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
     </task>
-    <task id="LOCAL-00093" summary="Latest">
-      <created>1529018424682</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1529018424682</updated>
-    </task>
     <task id="LOCAL-00094" summary="Latest">
       <created>1529021552061</created>
       <option name="number" value="00094" />
@@ -824,11 +813,19 @@
       <option name="project" value="LOCAL" />
       <updated>1529722984077</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="Latest">
+      <created>1529724984079</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1529724984079</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -843,12 +840,12 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.180625" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.180625" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.52296156" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.316776" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -904,18 +901,18 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/mearvk/examples/example001/Example001.java</url>
+          <url />
           <line>28</line>
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/mearvk/examples/example010/UserInterfaceImpl.java</url>
+          <url />
           <line>7</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/mearvk/examples/example010/UserInterface.java</url>
+          <url />
           <line>23</line>
           <properties />
           <option name="timeStamp" value="2" />
@@ -1471,8 +1468,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/frames">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+        <state relative-caret-position="357">
+          <caret line="21" column="116" lean-forward="true" selection-start-line="21" selection-start-column="116" selection-end-line="21" selection-end-column="116" />
         </state>
       </provider>
     </entry>
