@@ -21,79 +21,79 @@ public class RMIImpl
 
     //
 
-    protected RMIImpl _file() // neatly that each call should register with System API for calc.
+    protected RMIImpl _file()
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _init(String URI, Object initobject, File initfile)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _compile()
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _go()
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _rules(String URI)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _rules(RMIImpl endpoint)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _lift(RMIModel object, RMIModel monitor)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _fire()
     {
-        return null;
+        return this;
     }
 
     public RMIImpl desecuritize(RMIImpl rmi, Object reference)
     {
-        return null; //we need this - now
+        return this; //we need this - now
     }
 
     public RMIImpl _securitize(RMIImpl rmi, Object reference)
     {
-        return null; //we need this - now
+        return this; //we need this - now
     }
 
     public RMIImpl _lock()
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _unlock()
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _listeners()
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _requests()
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _fill()
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _hook(Object object, String type)
@@ -120,82 +120,82 @@ public class RMIImpl
 
     public RMIImpl _store()
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _store(String id)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _store(RMIStore store)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _store(RMIDbms database)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _store(RMIDbms database, Integer id)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _store(RMIStore store, String id)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _store(RMIStore store, Integer id)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _as(Object reference)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _reference(Object reference)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _reference(Object object, Object reference)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _reference(String URI, Object reference)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _ref()
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _ref(Object object, Object reference)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _ref(String URI, Object reference)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _lookup(Object object)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _lookup(String URI)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _post(PrintStream stream, Object object)
@@ -281,15 +281,11 @@ public class RMIImpl
         return this;
     }
 
-    /**
-     * Same object and same stack function subset should equal the same context
-     *
-     * @param object
-     * @return
-     */
     public RMIImpl _frame(Object object, Object... args)
     {
-        System.rmi.register(new Frame(object, args));
+        java.lang.System.out.println("RMIImpl _frame called...");
+
+        System.frame_registry.push(new Frame(object, args));
 
         //
 
@@ -298,7 +294,9 @@ public class RMIImpl
 
     public RMIImpl _frame(Object object, String URI, Object... args)
     {
-        System.rmi.register(new Frame(), object, URI);
+        java.lang.System.out.println("RMIImpl _frame called...");
+
+        System.frame_registry.push(new Frame(object, args));
 
         //
 
@@ -312,19 +310,20 @@ public class RMIImpl
 
     public RMIImpl _logic(String URI)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _lookup(Object object, Object reference)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _lookup(String URI, Object reference)
     {
-        return null;
+        return this;
     }
 
+    @Resource()
     public RMIImpl _run(Object object, Object reference)
     {
         Method method = null;
@@ -341,11 +340,11 @@ public class RMIImpl
 
         try
         {
-            method.invoke(object, null);
+            reference = method.invoke(object, null);
         }
         catch (Exception e)
         {
-            //e.printStackTrace();
+            e.printStackTrace();
         }
 
         //
@@ -353,16 +352,61 @@ public class RMIImpl
         return this;
     }
 
+    @Resource()
     public RMIImpl _run(String URI, Object reference)
     {
+        Method method = null;
+
+        Class[] types = null;
+
+        Object[] args = null;
+
+        Object object = System.rmi.lookup(URI);
+
+        //
+
+        System.call_registry.pull(object, method, types, args);
+
+        //
+
+        try
+        {
+            reference = method.invoke(object, null);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
         return this;
     }
 
+    @Resource()
     public RMIImpl _run(Object object, Object reference, Object... args)
     {
+        Method method = null;
+
+        Class[] types = null;
+
+        //
+
+        System.call_registry.pull(object, method, types, args);
+
+        //
+
+        try
+        {
+            reference = method.invoke(object, null);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
         return this;
     }
 
+    @Resource()
     public RMIImpl _run(String URI, Object reference, Class superclass, Object... args)
     {
         return this;
@@ -370,12 +414,12 @@ public class RMIImpl
 
     public RMIImpl _cast(Object object)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _cast(String URI)
     {
-        return null;
+        return this;
     }
 
     public RMIImpl _register(SystemEvent event)

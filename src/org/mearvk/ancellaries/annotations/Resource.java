@@ -9,6 +9,8 @@ import java.lang.annotation.Target;
 @Target({ElementType.METHOD, ElementType.CONSTRUCTOR, ElementType.TYPE, ElementType.FIELD})
 public @interface Resource
 {
+    String tie() default "$tie";
+
     String name() default "$name";
 
     String value() default "$value";
