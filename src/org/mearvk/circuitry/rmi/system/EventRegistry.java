@@ -17,6 +17,12 @@ public class EventRegistry
     }
 
     @Resource(frame = Frame.METHOD_BASED)
+    public void push(Event event)
+    {
+
+    }
+
+    @Resource(frame = Frame.METHOD_BASED)
     public void push(Object object)
     {
 

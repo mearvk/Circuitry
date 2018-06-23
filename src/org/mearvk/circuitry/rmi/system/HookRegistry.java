@@ -20,6 +20,12 @@ public class HookRegistry
     }
 
     @Resource(frame = Frame.METHOD_BASED)
+    public void push(Hook hook)
+    {
+        System.events.post(java.lang.System.out, hook);
+    }
+
+    @Resource(frame = Frame.METHOD_BASED)
     public void push(String type)
     {
         System.events.post(java.lang.System.out, type);

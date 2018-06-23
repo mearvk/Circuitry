@@ -99,11 +99,11 @@ public class RMIImpl
 
     public RMIImpl _hook(Object object, String type)
     {
-        System.hook_registry.push(object, type);
+        System.hook_registry.push(new Hook(object, type));
 
-        System.event_registry.push(object, type);
+        System.event_registry.push(new Event(object, type));
 
-        System.frame_registry.push(new Frame());
+        System.frame_registry.push(new Frame(object, type));
 
         return this;
     }
