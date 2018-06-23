@@ -20,7 +20,7 @@ public class RMI extends RMIImpl implements Serializable
 
     //
 
-    protected RMI file() // neatly that each call should register with System API for calc.
+    protected RMI file()
     {
         return null;
     }
