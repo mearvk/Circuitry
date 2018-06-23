@@ -72,4 +72,24 @@ public class HookRegistry
     {
         //return object
     }
+
+    @Resource
+    public void post(Hook hook)
+    {
+        java.lang.System.out.println("RMI Hook Registry receives [JVM " + hook.jvm + "]: ");
+
+        java.lang.System.out.println("  > Frame : " + hook.toString());
+
+        java.lang.System.out.println("  > Method : " + hook.classname + " " + hook.methodname);
+
+        java.lang.System.out.println("  > Object : " + hook.object);
+
+        java.lang.System.out.println("  > Thread : " + hook.threadname);
+
+        java.lang.System.out.println("  > Timestamp : " + hook.date);
+
+        java.lang.System.out.println("  > Bytecode : " + hook.bytecodestring);
+
+        java.lang.System.out.println("  > Stacktrace : " + hook.stacktrace);
+    }
 }

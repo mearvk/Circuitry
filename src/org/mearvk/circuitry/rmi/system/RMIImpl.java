@@ -9,7 +9,6 @@ import java.io.File;
 import java.io.ObjectOutputStream;
 import java.io.PrintStream;
 import java.lang.reflect.Method;
-import java.util.Arrays;
 
 public class RMIImpl
 {
@@ -248,62 +247,12 @@ public class RMIImpl
 
     public RMIImpl _post(PrintStream stream, String URI)
     {
-        try
-        {
-            ByteArrayOutputStream baos = new ByteArrayOutputStream();
-
-            ObjectOutputStream oos = new ObjectOutputStream(baos);
-
-            //
-
-            oos.writeObject(System.rmi.lookup(URI));
-
-            oos.flush();
-
-            oos.close();
-
-            //
-
-            stream.println("Event: " + Arrays.toString(baos.toByteArray()));
-
-            stream.println("Event: " + baos.toByteArray().length);
-
-            stream.flush();
-
-            stream.close();
-
-            //
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
-
-        //
-
         return this;
     }
 
     @Resource()
     public RMIImpl _create(Class _class, Object ref)
     {
-        Object object = null;
-
-        try
-        {
-            object = _class.newInstance();
-        }
-        catch (Exception exception)
-        {
-            exception.printStackTrace();
-        }
-        finally
-        {
-            ref = object;
-        }
-
-        //
-
         return this;
     }
 

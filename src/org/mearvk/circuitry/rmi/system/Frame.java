@@ -9,7 +9,7 @@ import java.util.Date;
 
 public class Frame implements Serializable
 {
-    public static final String METHOD_BASED = "CLASS";
+    public static final String METHOD_BASED = "METHOD";
 
     public static final String CLASS_BASED = "CLASS";
 
