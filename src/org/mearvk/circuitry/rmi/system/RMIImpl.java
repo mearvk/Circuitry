@@ -273,7 +273,7 @@ public class RMIImpl
      */
     public RMIImpl _frame(Object object, Object... args)
     {
-        System.rmi.register(new Frame(), object);
+        System.rmi.register(new Frame(object, args));
 
         //
 

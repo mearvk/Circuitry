@@ -11,7 +11,6 @@ class Main
         ThinClient client000 = new ThinClient();
 
         ThinClient client001 = new ThinClient();
-
     }
 }
 

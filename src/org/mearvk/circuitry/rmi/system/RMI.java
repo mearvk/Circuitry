@@ -301,28 +301,24 @@ public class RMI extends RMIImpl implements Serializable
 
     public RMI register(Frame frame, Object object, String URI)
     {
-
-
         return this;
     }
 
-    public RMI register(Frame frame, Object object)
+    public RMI register(Frame frame)
     {
-        java.lang.System.out.println("RMI Frame Registry receives: ");
+        java.lang.System.out.println("RMI Frame Registry receives [JVM " + frame.jvm + "]: ");
 
         java.lang.System.out.println("  > Frame : " + frame.toString());
 
         java.lang.System.out.println("  > Method : " + frame.classname + " " + frame.methodname);
 
-        java.lang.System.out.println("  > Object : " + object.toString());
+        java.lang.System.out.println("  > Object : " + frame.object);
 
         java.lang.System.out.println("  > Timestamp : " + frame.date);
 
-        java.lang.System.out.println("  > JVM : " + frame.jvm);
+        java.lang.System.out.println("  > Bytecode : " + frame.bytecodestring);
 
         java.lang.System.out.println("  > Stacktrace : " + frame.stacktrace);
-
-        //java.lang.System.out.println("  > Bytecode : " + frame.bytecodestring);
 
 
         return this;

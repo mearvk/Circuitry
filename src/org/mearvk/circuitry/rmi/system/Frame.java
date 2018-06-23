@@ -49,6 +49,8 @@ public class Frame implements Serializable
 
     public ArrayList<Integer> linenumbers = new ArrayList();
 
+    public ArrayList<Object> parameters = new ArrayList();
+
     //
 
     public String classname;
@@ -75,11 +77,15 @@ public class Frame implements Serializable
 
     //
 
-    public Frame(Object object)
+    public Frame(Object object, Object... args)
     {
         this.elements.addAll(Arrays.asList(Thread.currentThread().getStackTrace()));
 
         //
+
+        this.object = object;
+
+        this.parameters.addAll(Arrays.asList(args));
 
         this.os = java.lang.System.getProperty("os.name");
 
@@ -356,6 +362,10 @@ public class Frame implements Serializable
             this.bytecode = baos.toByteArray();
 
             //
+
+            //baos.flush();
+
+            //baos.close();
         }
         catch (Exception e)
         {
