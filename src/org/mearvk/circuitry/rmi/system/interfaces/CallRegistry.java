@@ -4,12 +4,15 @@ import org.mearvk.ancellaries.annotations.Resource;
 import org.mearvk.circuitry.rmi.system.Call;
 import org.mearvk.circuitry.rmi.system.Frame;
 
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 
 public class CallRegistry
 {
     public static Integer index = 0;
+
     public Object object;
+
     public ArrayList<Call> queued = new ArrayList();
 
     public ArrayList<Call> completed = new ArrayList();
@@ -40,8 +43,8 @@ public class CallRegistry
     }
 
     @Resource(frame = Frame.METHOD_BASED)
-    public void pull(Object object)
+    public Call pull(Object object, Method method, Class[] types, Object[] args)
     {
-
+        return null;
     }
 }

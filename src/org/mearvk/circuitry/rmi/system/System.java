@@ -1,5 +1,7 @@
 package org.mearvk.circuitry.rmi.system;
 
+import org.mearvk.circuitry.rmi.system.interfaces.CallRegistry;
+
 import java.io.Serializable;
 
 public class System implements Serializable
@@ -20,11 +22,11 @@ public class System implements Serializable
 
     //
 
-    public static FrameRegistry frame_registry = new FrameRegistry();
+    public static FrameRegistry FREG = new FrameRegistry();
 
-    public static FrameRegistry call_registry = new FrameRegistry();
+    public static CallRegistry CREG = new CallRegistry();
 
-    public static EventRegistry event_registry = new EventRegistry();
+    public static EventRegistry EREG = new EventRegistry();
 
     //
 

@@ -193,6 +193,22 @@ public class RMI extends RMIImpl implements Serializable
     }
 
     @Resource()
+    public RMI frame(Object object)
+    {
+        System.rmi.impl._frame(object)._run(object, null);
+
+        return this;
+    }
+
+    @Resource()
+    public RMI frame(Object object, String URI)
+    {
+        System.rmi.impl._frame(object)._run(object, URI);
+
+        return this;
+    }
+
+    @Resource()
     public RMI frame(Object object, Object... args)
     {
         System.rmi.impl._frame(object, args)._run(object, null);
@@ -203,14 +219,14 @@ public class RMI extends RMIImpl implements Serializable
     @Resource()
     public RMI frame(Object object, String URI, Object... args)
     {
-        System.rmi.run(object, URI);
+        System.rmi.impl._frame(object, args)._run(object, null);
 
         return this;
     }
 
     public RMI logic()
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.impl._frame(this)._run(this, null);
 
         return this;
     }
@@ -238,28 +254,28 @@ public class RMI extends RMIImpl implements Serializable
 
     public RMI run(Object object, Object reference)
     {
-        System.rmi.run(object, reference);
+        System.rmi.impl._run(object, reference);
 
         return this;
     }
 
     public RMI run(String URI, Object reference)
     {
-        System.rmi.run(URI, reference);
+        System.rmi.impl._run(URI, reference);
 
         return this;
     }
 
     public RMI run(Object object, Object reference, Object... args)
     {
-        System.rmi.run(object, reference, args);
+        System.rmi.impl._run(object, reference, args);
 
         return this;
     }
 
     public RMI run(String URI, Object reference, Class superclass, Object... args)
     {
-        System.rmi.run(URI, reference);
+        System.rmi.impl._run(URI, reference, args);
 
         return this;
     }
@@ -278,7 +294,7 @@ public class RMI extends RMIImpl implements Serializable
 
     public RMI register(SystemEvent event)
     {
-        System.event_registry.events.add(event);
+        System.EREG.events.add(event);
 
         return this;
     }
@@ -292,6 +308,17 @@ public class RMI extends RMIImpl implements Serializable
 
     public RMI register(Frame frame, Object object)
     {
+        java.lang.System.out.println("RMI Frame Registry receives: ");
+
+        java.lang.System.out.println("  > Frame : " + frame.toString());
+
+        java.lang.System.out.println("  > Method : " + frame.classname + " " + frame.methodname);
+
+        java.lang.System.out.println("  > Object : " + object.toString());
+
+        java.lang.System.out.println("  > Timestamp : " + frame.date);
+
+        java.lang.System.out.println("  > JVM : " + frame.jvm);
 
 
         return this;

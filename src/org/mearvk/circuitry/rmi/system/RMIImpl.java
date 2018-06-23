@@ -6,6 +6,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.ObjectOutputStream;
 import java.io.PrintStream;
+import java.lang.reflect.Method;
 import java.util.Arrays;
 
 public class RMIImpl
@@ -310,7 +311,26 @@ public class RMIImpl
 
     public RMIImpl _run(Object object, Object reference)
     {
-        System.call_registry.push(object);
+        Method method = null;
+
+        Class[] types = null;
+
+        Object[] args = null;
+
+        //
+
+        System.CREG.pull(object, method, types, args);
+
+        //
+
+        try
+        {
+            method.invoke(object, null);
+        }
+        catch (Exception e)
+        {
+            //e.printStackTrace();
+        }
 
         //
 
@@ -344,14 +364,14 @@ public class RMIImpl
 
     public RMIImpl _register(SystemEvent event)
     {
-        System.event_registry.events.add(event);
+        System.EREG.events.add(event);
 
         return this;
     }
 
     public RMIImpl _register(Frame frame)
     {
-        System.frame_registry.frames.add(frame);
+        System.FREG.frames.add(frame);
 
         return this;
     }

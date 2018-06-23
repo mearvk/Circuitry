@@ -267,7 +267,7 @@ public class RMIImpl extends RMI
 
     public org.mearvk.rmi.RMIImpl frame(Object object)
     {
-        System.frame_registry.push(object);
+        System.FREG.push(object);
 
         //
 
@@ -276,7 +276,7 @@ public class RMIImpl extends RMI
 
     public org.mearvk.rmi.RMIImpl frame(Object object, String URI)
     {
-        System.frame_registry.push(object);
+        System.FREG.push(object);
 
         //
 
@@ -335,14 +335,14 @@ public class RMIImpl extends RMI
 
     public org.mearvk.rmi.RMIImpl register(SystemEvent event)
     {
-        System.event_registry.events.add(event);
+        System.EREG.events.add(event);
 
         return this;
     }
 
     public org.mearvk.rmi.RMIImpl register(Frame frame)
     {
-        System.frame_registry.frames.add(frame);
+        System.FREG.frames.add(frame);
 
         return this;
     }

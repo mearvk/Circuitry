@@ -19,17 +19,17 @@ public class Frame implements Serializable
 
     public Object object = null;
 
+    public String os = null;
+
+    public String system = null;
+
     //
 
     public StackTraceElement element = null;
 
     //
 
-    public ArrayList<StackTraceElement> elements = null;
-
-    public String os = null;
-
-    public String system = null;
+    public ArrayList<StackTraceElement> elements = new ArrayList<StackTraceElement>();
 
     public ArrayList<String> classnames = new ArrayList();
 
@@ -70,11 +70,39 @@ public class Frame implements Serializable
     public Frame(Object object)
     {
         this.elements.addAll(Arrays.asList(Thread.currentThread().getStackTrace()));
+
+        //
+
+        this.os = java.lang.System.getProperty("os.name");
+
+        this.jvm = java.lang.System.getProperty("java.version");
+
+        this.date = new Date(java.lang.System.currentTimeMillis());
+
+        this.system = java.lang.System.getProperty("system.name");
+
+        this.methodname = this.elements.get(0).getMethodName();
+
+        this.classname = this.elements.get(0).getClassName();
     }
 
     public Frame()
     {
         this.elements.addAll(Arrays.asList(Thread.currentThread().getStackTrace()));
+
+        //
+
+        this.os = java.lang.System.getProperty("os.name");
+
+        this.jvm = java.lang.System.getProperty("java.version");
+
+        this.date = new Date(java.lang.System.currentTimeMillis());
+
+        this.system = java.lang.System.getProperty("system.name");
+
+        this.methodname = this.elements.get(0).getMethodName();
+
+        this.classname = this.elements.get(0).getClassName();
     }
 
     public Frame(Integer index)
@@ -88,13 +116,17 @@ public class Frame implements Serializable
 
         //
 
-        this.os = java.lang.System.getProperty("OS.NAME");
+        this.os = java.lang.System.getProperty("os.name");
 
-        this.jvm = java.lang.System.getProperty("JAVA.VERSION");
+        this.jvm = java.lang.System.getProperty("java.version");
 
         this.date = new Date(java.lang.System.currentTimeMillis());
 
-        this.system = java.lang.System.getProperty("SYSTEM.NAME");
+        this.system = java.lang.System.getProperty("system.name");
+
+        this.methodname = this.elements.get(0).getMethodName();
+
+        this.classname = this.elements.get(0).getClassName();
 
         //
 
@@ -122,13 +154,17 @@ public class Frame implements Serializable
 
         //
 
-        this.os = java.lang.System.getProperty("OS.NAME");
+        this.os = java.lang.System.getProperty("os.name");
 
-        this.jvm = java.lang.System.getProperty("JAVA.VERSION");
+        this.jvm = java.lang.System.getProperty("java.version");
 
         this.date = new Date(java.lang.System.currentTimeMillis());
 
-        this.system = java.lang.System.getProperty("SYSTEM.NAME");
+        this.system = java.lang.System.getProperty("system.name");
+
+        this.methodname = this.elements.get(0).getMethodName();
+
+        this.classname = this.elements.get(0).getClassName();
 
         //
 
@@ -156,13 +192,17 @@ public class Frame implements Serializable
 
         //
 
-        this.os = java.lang.System.getProperty("OS.NAME");
+        this.os = java.lang.System.getProperty("os.name");
 
-        this.jvm = java.lang.System.getProperty("JAVA.VERSION");
+        this.jvm = java.lang.System.getProperty("java.version");
 
         this.date = new Date(java.lang.System.currentTimeMillis());
 
-        this.system = java.lang.System.getProperty("SYSTEM.NAME");
+        this.system = java.lang.System.getProperty("system.name");
+
+        this.methodname = this.elements.get(0).getMethodName();
+
+        this.classname = this.elements.get(0).getClassName();
 
         //
 
@@ -189,13 +229,17 @@ public class Frame implements Serializable
 
         //
 
-        this.os = java.lang.System.getProperty("OS.NAME");
+        this.os = java.lang.System.getProperty("os.name");
 
-        this.jvm = java.lang.System.getProperty("JAVA.VERSION");
+        this.jvm = java.lang.System.getProperty("java.version");
 
         this.date = new Date(java.lang.System.currentTimeMillis());
 
-        this.system = java.lang.System.getProperty("SYSTEM.NAME");
+        this.system = java.lang.System.getProperty("system.name");
+
+        this.methodname = this.elements.get(0).getMethodName();
+
+        this.classname = this.elements.get(0).getClassName();
 
         //
 
@@ -224,12 +268,16 @@ public class Frame implements Serializable
 
         //
 
-        this.os = java.lang.System.getProperty("OS.NAME");
+        this.os = java.lang.System.getProperty("os.name");
 
-        this.jvm = java.lang.System.getProperty("JAVA.VERSION");
+        this.jvm = java.lang.System.getProperty("java.version");
 
         this.date = new Date(java.lang.System.currentTimeMillis());
 
-        this.system = java.lang.System.getProperty("SYSTEM.NAME");
+        this.system = java.lang.System.getProperty("system.name");
+
+        this.methodname = this.elements.get(0).getMethodName();
+
+        this.classname = this.elements.get(0).getClassName();
     }
 }
