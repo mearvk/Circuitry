@@ -109,13 +109,47 @@ public class RMI extends RMIImpl implements Serializable
         return this;
     }
 
+    /**
+     * Without removing any existing hooks, add a new Hook type
+     *
+     * @param _class The class of object we care to hook
+     * @param type   The type of Hook we care to install
+     * @return RMI object per the calling function
+     */
     public RMI addhook(Class _class, String type)
     {
         return this;
     }
 
+    /**
+     * Remove any old hooks, add new Hook type
+     *
+     * @param _class The class of object we care to hook
+     * @param type The type of Hook we care to install
+     * @return RMI object per the calling function
+     */
     public RMI hook(Class _class, String type)
     {
+
+
+        //
+
+        return this;
+    }
+
+    /**
+     * Remove any old hooks, add new Hook type
+     *
+     * @param object The class of object we care to hook
+     * @param type   The type of Hook we care to install
+     * @return RMI object per the calling function
+     */
+    public RMI hook(Object object, String type)
+    {
+
+
+        //
+
         return this;
     }
 

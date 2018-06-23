@@ -20,16 +20,15 @@ class Main
 
         //
 
-        //any create, any finalize, any alteration, any clone, any data, any movement
-        System.hooks.hook(ThinClient.class, Hook.ON_ALL);
+        System.hooks.hook(ThinClient.class, Hook.ON_ALL);                                           //care about all hooks for this class of object
 
         //
 
-        System.factory.create(ThinClient.class, client000).register(client000, Registrar.CREATE);
+        System.factory.create(ThinClient.class, client000).register(client000, Registrar.CREATE);   //also publish Create event here directly
 
-        System.factory.create(ThinClient.class, client001).register(client001, Registrar.CREATE);
+        System.factory.create(ThinClient.class, client001).register(client001, Registrar.CREATE);   //also publish Create event here directly
 
-        System.factory.create(ThinClient.class, client002).register(client001, Registrar.CREATE);
+        System.factory.create(ThinClient.class, client002).register(client001, Registrar.CREATE);   //also publish Create event here directly
     }
 }
 
