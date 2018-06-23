@@ -265,6 +265,57 @@ public class RMIImpl
         return this;
     }
 
+    public RMIImpl _create(Class _class, Object ref)
+    {
+
+
+        Object object = null;
+
+        try
+        {
+            object = _class.newInstance();
+        }
+        catch (Exception exception)
+        {
+            exception.printStackTrace();
+        }
+        finally
+        {
+            ref = object;
+        }
+
+        System.registry.register(object, Registrar.CREATE);
+
+        //
+
+
+        return this;
+    }
+
+    public RMIImpl _create(Class _class, Object ref, Object... args)
+    {
+        Object object = null;
+
+        try
+        {
+            object = _class.newInstance();
+        }
+        catch (Exception exception)
+        {
+            exception.printStackTrace();
+        }
+        finally
+        {
+            ref = object;
+        }
+
+        System.registry.register(object, Registrar.CREATE);
+
+        //
+
+        return this;
+    }
+
     /**
      * Same object and same stack function subset should equal the same context
      *

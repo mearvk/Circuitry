@@ -3,7 +3,6 @@ package org.mearvk.examples.example010;
 import org.mearvk.ancellaries.annotations.Resource;
 import org.mearvk.circuitry.rmi.system.Frame;
 import org.mearvk.circuitry.rmi.system.Hook;
-import org.mearvk.circuitry.rmi.system.Registrar;
 import org.mearvk.circuitry.rmi.system.System;
 
 import java.io.Serializable;
@@ -20,15 +19,15 @@ class Main
 
         //
 
-        System.hooks.hook(ThinClient.class, Hook.ON_ALL);                                           //care about all hooks for this class of object
+        System.rmi.hook(ThinClient.class, Hook.ON_ALL);                                           //care about all hooks for this class of object
 
         //
 
-        System.factory.create(ThinClient.class, client000).register(client000, Registrar.CREATE);   //also publish Create event here directly
+        System.rmi.create(ThinClient.class, client000);
 
-        System.factory.create(ThinClient.class, client001).register(client001, Registrar.CREATE);   //also publish Create event here directly
+        System.rmi.create(ThinClient.class, client001);
 
-        System.factory.create(ThinClient.class, client002).register(client001, Registrar.CREATE);   //also publish Create event here directly
+        System.rmi.create(ThinClient.class, client002);
     }
 }
 

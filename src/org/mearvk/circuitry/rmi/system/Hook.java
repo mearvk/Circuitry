@@ -2,6 +2,14 @@ package org.mearvk.circuitry.rmi.system;
 
 public class Hook
 {
+    public Object object = null;
+
+    public Class _class = null;
+
+    public String type = null;
+
+    //
+
     public static final String ON_ALL = "0x00";
 
     //
@@ -37,4 +45,20 @@ public class Hook
     public static final String ON_REGISTER = "0x26";
 
     public static final String ON_INTEGRATE = "0x27";
+
+    //
+
+    public Hook(Class _class, String type)
+    {
+        this._class = _class;
+
+        this.type = type;
+    }
+
+    public Hook(Object object, String type)
+    {
+        this.object = object;
+
+        this.type = type;
+    }
 }

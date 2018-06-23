@@ -4,17 +4,17 @@ import org.mearvk.ancellaries.annotations.Resource;
 
 import java.util.ArrayList;
 
-public class HookRegistry
+public class ObjectRegistry
 {
     public static Integer index = 0;
 
     public Object object;
 
-    public ArrayList<Hook> hooks = new ArrayList();
+    public ArrayList<Object> objects = new ArrayList();
 
     //
 
-    public HookRegistry()
+    public ObjectRegistry()
     {
 
     }
@@ -22,11 +22,11 @@ public class HookRegistry
     @Resource(frame = Frame.METHOD_BASED)
     public void push(Class _class, String type)
     {
-        this.hooks.add(new Hook(_class, type));
+        this.objects.add(new Hook(_class, type));
 
         //
 
-        System.hooks.run(this, null);
+        System.registry.run(this, null);
 
         //
 
@@ -36,11 +36,11 @@ public class HookRegistry
     @Resource(frame = Frame.METHOD_BASED)
     public void push(Object object, String type)
     {
-        this.hooks.add(new Hook(object, type));
+        this.objects.add(new Hook(object, type));
 
         //
 
-        System.hooks.run(this, null);
+        System.registry.run(this, null);
 
         //
 

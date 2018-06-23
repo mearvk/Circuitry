@@ -20,11 +20,15 @@ public class System implements Serializable
 
     public static RMI factory = new RMI();
 
+    public static RMI registry = new RMI();
+
     //
 
     public static FrameRegistry FREG = new FrameRegistry();
 
     public static CallRegistry CREG = new CallRegistry();
+
+    public static HookRegistry HREG = new HookRegistry();
 
     public static EventRegistry EREG = new EventRegistry();
 

@@ -30,6 +30,27 @@ public class RMI extends RMIImpl implements Serializable
 
     public RMI create(Class _class, Object ref)
     {
+        System.rmi.hooks().fill();
+
+        System.rmi.frame(_class).run(this, ref);
+
+        System.rmi.hooks().fire();
+
+        //
+
+        return this;
+    }
+
+    public RMI create(Class _class, Object ref, Object... args)
+    {
+        System.rmi.hooks().fill();
+
+        System.rmi.frame(_class).run(this, ref, args);
+
+        System.rmi.hooks().fire();
+
+        //
+
         return this;
     }
 
@@ -130,7 +151,13 @@ public class RMI extends RMIImpl implements Serializable
      */
     public RMI hook(Class _class, String type)
     {
+        //
 
+        System.rmi.frame(this).run(this, null);
+
+        //
+
+        System.HREG.push(_class, type);
 
         //
 
