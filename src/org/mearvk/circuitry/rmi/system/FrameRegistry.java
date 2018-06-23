@@ -23,17 +23,13 @@ public class FrameRegistry implements Serializable
     @Resource(frame = Frame.METHOD_BASED)
     public void push(Object object)
     {
-        System.frames.run(this, null);
-
-        System.events.post(java.lang.System.out, object);
+        this.post(new Frame(object));
     }
 
     @Resource(frame = Frame.METHOD_BASED)
-    public void register(Object object)
+    public void push(Frame frame)
     {
-        System.frames.run(this, null);
-
-        System.events.post(java.lang.System.out, object);
+        this.post(frame);
     }
 
     @Resource(frame = Frame.METHOD_BASED)
