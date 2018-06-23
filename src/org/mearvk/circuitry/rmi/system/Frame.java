@@ -15,6 +15,8 @@ public class Frame implements Serializable
 
     public static final String SYSTEM_BASED = "SYSTEM";
 
+    //
+
     public Object object = null;
 
     public Date date = null;
@@ -53,6 +55,8 @@ public class Frame implements Serializable
 
     //
 
+    public String threadname;
+
     public String classname;
 
     public String filename;
@@ -69,6 +73,8 @@ public class Frame implements Serializable
 
     public Integer hashcode;
 
+    public Thread thread;
+
     //
 
     public ArrayList<String> classloadernames = new ArrayList();
@@ -79,7 +85,11 @@ public class Frame implements Serializable
 
     public Frame(Object object, Object... args)
     {
-        this.elements.addAll(Arrays.asList(Thread.currentThread().getStackTrace()));
+        Thread currentthread = this.thread = Thread.currentThread();
+
+        //
+
+        this.elements.addAll(Arrays.asList(currentthread.getStackTrace()));
 
         //
 
@@ -99,6 +109,8 @@ public class Frame implements Serializable
 
         this.classname = this.elements.get(4).getClassName();
 
+        this.threadname = currentthread.getName();
+
         this.stacktrace();
 
         this.bytecode();
@@ -106,7 +118,11 @@ public class Frame implements Serializable
 
     public Frame()
     {
-        this.elements.addAll(Arrays.asList(Thread.currentThread().getStackTrace()));
+        Thread currentthread = this.thread = Thread.currentThread();
+
+        //
+
+        this.elements.addAll(Arrays.asList(currentthread.getStackTrace()));
 
         //
 
@@ -122,6 +138,8 @@ public class Frame implements Serializable
 
         this.classname = this.elements.get(4).getClassName();
 
+        this.threadname = currentthread.getName();
+
         this.stacktrace();
 
         this.bytecode();
@@ -129,11 +147,17 @@ public class Frame implements Serializable
 
     public Frame(Integer index)
     {
+        Thread currentthread = this.thread = Thread.currentThread();
+
         this.elements.addAll(Arrays.asList(Thread.currentThread().getStackTrace()));
     }
 
     public Frame(ArrayList<StackTraceElement> elements)
     {
+        Thread currentthread = this.thread = Thread.currentThread();
+
+        //
+
         this.elements = elements;
 
         //
@@ -149,6 +173,8 @@ public class Frame implements Serializable
         this.methodname = this.elements.get(0).getMethodName();
 
         this.classname = this.elements.get(0).getClassName();
+
+        this.threadname = currentthread.getName();
 
         this.stacktrace();
 
@@ -176,6 +202,10 @@ public class Frame implements Serializable
 
     public Frame(StackTraceElement[] elements)
     {
+        Thread currentthread = this.thread = Thread.currentThread();
+
+        //
+
         this.elements.addAll(Arrays.asList(elements));
 
         //
@@ -191,6 +221,8 @@ public class Frame implements Serializable
         this.methodname = this.elements.get(0).getMethodName();
 
         this.classname = this.elements.get(0).getClassName();
+
+        this.threadname = currentthread.getName();
 
         this.stacktrace();
 
@@ -218,6 +250,10 @@ public class Frame implements Serializable
 
     public Frame(StackTraceElement element)
     {
+        Thread currentthread = this.thread = Thread.currentThread();
+
+        //
+
         this.element = element;
 
         //
@@ -233,6 +269,8 @@ public class Frame implements Serializable
         this.methodname = this.elements.get(0).getMethodName();
 
         this.classname = this.elements.get(0).getClassName();
+
+        this.threadname = currentthread.getName();
 
         this.stacktrace();
 
@@ -259,6 +297,10 @@ public class Frame implements Serializable
 
     public Frame(Object object, StackTraceElement element)
     {
+        Thread currentthread = this.thread = Thread.currentThread();
+
+        //
+
         this.object = object;
 
         //
@@ -274,6 +316,8 @@ public class Frame implements Serializable
         this.methodname = this.elements.get(0).getMethodName();
 
         this.classname = this.elements.get(0).getClassName();
+
+        this.threadname = currentthread.getName();
 
         this.stacktrace();
 
@@ -302,6 +346,10 @@ public class Frame implements Serializable
 
     public Frame(Object object, StackTraceElement[] elements)
     {
+        Thread currentthread = this.thread = Thread.currentThread();
+
+        //
+
         this.elements.addAll(Arrays.asList(elements));
 
         //
@@ -317,6 +365,8 @@ public class Frame implements Serializable
         this.methodname = this.elements.get(0).getMethodName();
 
         this.classname = this.elements.get(0).getClassName();
+
+        this.threadname = currentthread.getName();
 
         this.stacktrace();
 

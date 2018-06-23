@@ -1,5 +1,7 @@
 package org.mearvk.circuitry.rmi.system;
 
+import org.mearvk.ancellaries.annotations.Resource;
+import org.mearvk.circuitry.rmi.system.interfaces.Hooks;
 import org.mearvk.circuitry.rmi.system.interfaces.RMIModel;
 
 import java.io.ByteArrayOutputStream;
@@ -95,9 +97,26 @@ public class RMIImpl
         return null;
     }
 
+    public RMIImpl _hook(Object object, String type)
+    {
+        System.hook_registry.push(object, type);
+
+        System.event_registry.push(object, type);
+
+        System.frame_registry.push(new Frame());
+
+        return this;
+    }
+
     public RMIImpl _hooks()
     {
-        return null;
+        System.hook_registry.push(null, Hooks.REF_REGISTRY);
+
+        System.event_registry.push(null, Hooks.REF_REGISTRY);
+
+        System.frame_registry.push(new Frame());
+
+        return this;
     }
 
     public RMIImpl _store()
@@ -265,10 +284,9 @@ public class RMIImpl
         return this;
     }
 
+    @Resource()
     public RMIImpl _create(Class _class, Object ref)
     {
-
-
         Object object = null;
 
         try
@@ -284,14 +302,12 @@ public class RMIImpl
             ref = object;
         }
 
-        System.registry.register(object, Registrar.CREATE);
-
         //
-
 
         return this;
     }
 
+    @Resource()
     public RMIImpl _create(Class _class, Object ref, Object... args)
     {
         Object object = null;
@@ -370,7 +386,7 @@ public class RMIImpl
 
         //
 
-        System.CREG.pull(object, method, types, args);
+        System.call_registry.pull(object, method, types, args);
 
         //
 
@@ -415,14 +431,14 @@ public class RMIImpl
 
     public RMIImpl _register(SystemEvent event)
     {
-        System.EREG.events.add(event);
+        System.event_registry.events.add(event);
 
         return this;
     }
 
     public RMIImpl _register(Frame frame)
     {
-        System.FREG.frames.add(frame);
+        System.frame_registry.frames.add(frame);
 
         return this;
     }

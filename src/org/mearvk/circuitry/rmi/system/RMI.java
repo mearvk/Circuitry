@@ -3,7 +3,6 @@ package org.mearvk.circuitry.rmi.system;
 import org.mearvk.ancellaries.annotations.Resource;
 import org.mearvk.circuitry.rmi.system.interfaces.RMIModel;
 
-import javax.xml.stream.EventFilter;
 import java.io.File;
 import java.io.PrintStream;
 import java.io.Serializable;
@@ -30,33 +29,43 @@ public class RMI extends RMIImpl implements Serializable
 
     public RMI create(Class _class, Object ref)
     {
-        System.rmi.hooks().fill();
-
-        System.rmi.frame(_class).run(this, ref);
-
-        System.rmi.hooks().fire();
-
-        //
+        System.rmi.frame(this).run(this, ref);
 
         return this;
     }
 
     public RMI create(Class _class, Object ref, Object... args)
     {
-        System.rmi.hooks().fill();
-
-        System.rmi.frame(_class).run(this, ref, args);
-
-        System.rmi.hooks().fire();
-
-        //
+        System.rmi.frame(this).run(this, ref, args);
 
         return this;
     }
 
+    public RMI filter(String type)
+    {
+        System.rmi.frame(this).run(this, null);
+
+        return this;
+    }
+
+    public RMI filter(EventFilter filter)
+    {
+        System.rmi.frame(this).run(this, null);
+
+        return this;
+    }
+
+    public RMI filter(Event event)
+    {
+        System.rmi.frame(this).run(this, null);
+
+        return this;
+    }
 
     public RMI init(String URI, Object initobject, File initfile)
     {
+        System.rmi.frame(this).run(this, null);
+
         return null;
     }
 
@@ -125,7 +134,7 @@ public class RMI extends RMIImpl implements Serializable
         return this;
     }
 
-    public RMI removehook(Class _class, String type)
+    public RMI unhook(Class _class, String type)
     {
         return this;
     }
@@ -137,8 +146,10 @@ public class RMI extends RMIImpl implements Serializable
      * @param type   The type of Hook we care to install
      * @return RMI object per the calling function
      */
-    public RMI addhook(Class _class, String type)
+    public RMI rehook(Class _class, String type)
     {
+        System.rmi.frame(this).run(this, null);
+
         return this;
     }
 
@@ -151,15 +162,7 @@ public class RMI extends RMIImpl implements Serializable
      */
     public RMI hook(Class _class, String type)
     {
-        //
-
         System.rmi.frame(this).run(this, null);
-
-        //
-
-        System.HREG.push(_class, type);
-
-        //
 
         return this;
     }
@@ -173,30 +176,43 @@ public class RMI extends RMIImpl implements Serializable
      */
     public RMI hook(Object object, String type)
     {
-
-
-        //
+        System.rmi.frame(this).run(this, null);
 
         return this;
     }
 
     public RMI hook(Class _class, EventFilter filter)
     {
+        System.rmi.frame(this).run(this, null);
+
         return this;
     }
 
     public RMI hook(Class _class)
     {
+        System.rmi.frame(this).run(this, null);
+
         return this;
     }
 
     public RMI hook(Object object, Class _class)
     {
+        System.rmi.frame(this).run(this, null);
+
         return this;
     }
 
     public RMI hooks()
     {
+        System.hooks.lookup(this);  //lookup the calling object off the stack
+
+        return this;
+    }
+
+    public RMI hooks(Object object)
+    {
+        System.hooks.lookup(object);
+
         return this;
     }
 
@@ -256,6 +272,11 @@ public class RMI extends RMIImpl implements Serializable
     }
 
     public RMI ref()
+    {
+        return null;
+    }
+
+    public RMI ref(Object object)
     {
         return null;
     }
@@ -396,14 +417,14 @@ public class RMI extends RMIImpl implements Serializable
 
     public RMI register(Object object, String type)
     {
-        System.EREG.events.add(new SystemEvent(type));
+        System.event_registry.events.add(new SystemEvent(type));
 
         return this;
     }
 
     public RMI register(SystemEvent event)
     {
-        System.EREG.events.add(event);
+        System.event_registry.events.add(event);
 
         return this;
     }
@@ -422,6 +443,8 @@ public class RMI extends RMIImpl implements Serializable
         java.lang.System.out.println("  > Method : " + frame.classname + " " + frame.methodname);
 
         java.lang.System.out.println("  > Object : " + frame.object);
+
+        java.lang.System.out.println("  > Thread : " + frame.threadname);
 
         java.lang.System.out.println("  > Timestamp : " + frame.date);
 

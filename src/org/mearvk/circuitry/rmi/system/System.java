@@ -24,20 +24,15 @@ public class System implements Serializable
 
     //
 
-    public static FrameRegistry FREG = new FrameRegistry();
+    public static FrameRegistry frame_registry = new FrameRegistry();
 
-    public static CallRegistry CREG = new CallRegistry();
+    public static CallRegistry call_registry = new CallRegistry();
 
-    public static HookRegistry HREG = new HookRegistry();
+    public static HookRegistry hook_registry = new HookRegistry();
 
-    public static EventRegistry EREG = new EventRegistry();
+    public static EventRegistry event_registry = new EventRegistry();
 
     //
-
-    public String getNameAnnotationValue(StackTraceElement element)
-    {
-        return null;
-    }
 
     public RMI hooks()
     {
