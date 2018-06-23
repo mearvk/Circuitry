@@ -1,5 +1,7 @@
 package org.mearvk.circuitry.rmi.system;
 
+import java.io.ByteArrayOutputStream;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,15 +15,21 @@ public class Frame implements Serializable
 
     public static final String SYSTEM_BASED = "SYSTEM";
 
+    public Object object = null;
+
     public Date date = null;
 
     public String jvm = null;
 
-    public Object object = null;
-
     public String os = null;
 
-    public String system = null;
+    public String system = "";
+
+    public String stacktrace = "";
+
+    public String bytecodestring = "";
+
+    public byte[] bytecode = null;
 
     //
 
@@ -81,9 +89,13 @@ public class Frame implements Serializable
 
         this.system = java.lang.System.getProperty("system.name");
 
-        this.methodname = this.elements.get(0).getMethodName();
+        this.methodname = this.elements.get(4).getMethodName();
 
-        this.classname = this.elements.get(0).getClassName();
+        this.classname = this.elements.get(4).getClassName();
+
+        this.stacktrace();
+
+        this.bytecode();
     }
 
     public Frame()
@@ -100,9 +112,13 @@ public class Frame implements Serializable
 
         this.system = java.lang.System.getProperty("system.name");
 
-        this.methodname = this.elements.get(0).getMethodName();
+        this.methodname = this.elements.get(4).getMethodName();
 
-        this.classname = this.elements.get(0).getClassName();
+        this.classname = this.elements.get(4).getClassName();
+
+        this.stacktrace();
+
+        this.bytecode();
     }
 
     public Frame(Integer index)
@@ -127,6 +143,10 @@ public class Frame implements Serializable
         this.methodname = this.elements.get(0).getMethodName();
 
         this.classname = this.elements.get(0).getClassName();
+
+        this.stacktrace();
+
+        this.bytecode();
 
         //
 
@@ -166,6 +186,10 @@ public class Frame implements Serializable
 
         this.classname = this.elements.get(0).getClassName();
 
+        this.stacktrace();
+
+        this.bytecode();
+
         //
 
         for (int i = 0; i < elements.length; i++)
@@ -204,6 +228,10 @@ public class Frame implements Serializable
 
         this.classname = this.elements.get(0).getClassName();
 
+        this.stacktrace();
+
+        this.bytecode();
+
         //
 
         this.classname = this.element.getClassName();
@@ -240,6 +268,10 @@ public class Frame implements Serializable
         this.methodname = this.elements.get(0).getMethodName();
 
         this.classname = this.elements.get(0).getClassName();
+
+        this.stacktrace();
+
+        this.bytecode();
 
         //
 
@@ -279,5 +311,56 @@ public class Frame implements Serializable
         this.methodname = this.elements.get(0).getMethodName();
 
         this.classname = this.elements.get(0).getClassName();
+
+        this.stacktrace();
+
+        this.bytecode();
+    }
+
+    //
+
+    private void stacktrace()
+    {
+        String[] temp = null;
+
+        temp = this.elements.toString().split(",");
+
+        for (int i = 0; i < temp.length; i++)
+        {
+            if (temp[i] == null) continue;
+
+            this.stacktrace += "\t" + temp[i] + "\n";
+        }
+    }
+
+    private void bytecode()
+    {
+        try
+        {
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+
+            ObjectOutputStream oos = new ObjectOutputStream(baos);
+
+            //
+
+            oos.writeObject(this.object);
+
+            oos.flush();
+
+            oos.close();
+
+            //
+
+            this.bytecodestring = Arrays.toString(baos.toByteArray());
+
+            this.bytecode = baos.toByteArray();
+
+
+            //
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 }

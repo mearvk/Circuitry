@@ -21,7 +21,7 @@ public class UserInterface extends UserInterfaceImpl implements ActionListener, 
     @Resource(init = "/ui/init", frame = Frame.METHOD_BASED)
     public UserInterface()
     {
-        System.rmi.frame(this).run(this, null);
+        //System.rmi.frame(this).run(this, null);
     }
 
     @Resource()

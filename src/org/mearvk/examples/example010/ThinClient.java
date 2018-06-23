@@ -9,6 +9,9 @@ class Main
     public static void main(String... args)
     {
         ThinClient client000 = new ThinClient();
+
+        ThinClient client001 = new ThinClient();
+
     }
 }
 
@@ -28,7 +31,7 @@ class ThinClientImpl implements Serializable
 
     public ThinClientImpl()
     {
-        System.rmi.frame(this).run(this, null);
+        //System.rmi.frame(this).run(this, null);
     }
 }
 
