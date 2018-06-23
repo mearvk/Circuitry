@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/ancellaries/annotations/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/ancellaries/annotations/Resource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/FrameRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/FrameRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,17 +15,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ThinClient.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ThinClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="153">
+              <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#900#901#0" expanded="true" />
                 <element signature="e#954#955#0" expanded="true" />
-                <element signature="e#991#992#0" expanded="true" />
-                <element signature="e#1028#1029#0" expanded="true" />
                 <element signature="e#667#668#0" expanded="true" />
                 <element signature="e#721#722#0" expanded="true" />
               </folding>
@@ -226,7 +221,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="System.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="System.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/System.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -310,7 +305,6 @@
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/SystemEvent.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/ObjectRegistry.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/EventFilter.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/System.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/interfaces/Hooks.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/rmi/RMIImpl.java" />
@@ -323,6 +317,7 @@
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/FrameRegistry.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java" />
       </list>
     </option>
   </component>
@@ -498,13 +493,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00103" summary="Latest">
-      <created>1529183055987</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1529183055987</updated>
     </task>
     <task id="LOCAL-00104" summary="Latest">
       <created>1529250933797</created>
@@ -842,7 +830,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529780885323</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="Latest">
+      <created>1529785134284</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1529785134284</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1257,22 +1252,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/ancellaries/annotations/Resource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1461,6 +1440,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

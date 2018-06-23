@@ -44,11 +44,6 @@ public class ThinClient extends ThinClientImpl implements Serializable
     {
         System.rmi.frame(this).run(this, null);
     }
-
-    public void connect()
-    {
-        System.rmi.frame(this).run(this, null);
-    }
 }
 
 @Resource(frame = Frame.CLASS_BASED)
