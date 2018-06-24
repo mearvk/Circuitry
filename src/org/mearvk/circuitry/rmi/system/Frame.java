@@ -17,6 +17,8 @@ public class Frame implements Serializable
 
     //
 
+    public Object RMIobject = null;
+
     public Object object = null;
 
     public Date date = null;
@@ -93,7 +95,9 @@ public class Frame implements Serializable
 
         //
 
-        this.object = object;
+        this.object = null;
+
+        this.RMIobject = null;
 
         this.parameters.addAll(Arrays.asList(args));
 
@@ -410,12 +414,6 @@ public class Frame implements Serializable
             this.bytecodestring = Arrays.toString(baos.toByteArray());
 
             this.bytecode = baos.toByteArray();
-
-            //
-
-            //baos.flush();
-
-            //baos.close();
         }
         catch (Exception e)
         {

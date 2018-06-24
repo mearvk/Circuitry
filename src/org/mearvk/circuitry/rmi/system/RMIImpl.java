@@ -324,7 +324,7 @@ public class RMIImpl
     }
 
     @Resource()
-    public RMIImpl _run(Object object, Object reference)
+    public RMIImpl _run(Object object, Object reference, Thread thread)
     {
         java.lang.System.out.println("RMIImpl _run called...\n");
 

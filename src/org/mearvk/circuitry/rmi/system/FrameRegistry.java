@@ -49,6 +49,8 @@ public class FrameRegistry implements Serializable
 
         java.lang.System.out.println("  > Object : " + frame.object);
 
+        java.lang.System.out.println("  > RMI Object : " + frame.RMIobject);
+
         java.lang.System.out.println("  > Thread : " + frame.threadname + " : " + frame.thread);
 
         java.lang.System.out.println("  > Timestamp : " + frame.date);
