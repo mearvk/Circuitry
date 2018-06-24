@@ -17,8 +17,8 @@
       <file leaf-file-name="ThinClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+            <state relative-caret-position="170">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#900#901#0" expanded="true" />
@@ -493,13 +493,6 @@
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
     </task>
-    <task id="LOCAL-00105" summary="Latest">
-      <created>1529336717571</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1529336717571</updated>
-    </task>
     <task id="LOCAL-00106" summary="Latest">
       <created>1529336784399</created>
       <option name="number" value="00106" />
@@ -836,7 +829,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529785283653</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="Latest">
+      <created>1529785677138</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1529785677138</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1444,8 +1444,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#900#901#0" expanded="true" />
