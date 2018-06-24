@@ -102,7 +102,7 @@ public class RMIImpl
 
         System.event_registry.push(new Event(object, type));
 
-        System.frame_registry.push(new Frame(object, type));
+        System.frame_registry.push(new Frame(object, type, null));
 
         return this;
     }

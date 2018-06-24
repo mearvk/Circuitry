@@ -28,7 +28,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI create(Object object, Class _class, Object ref)
     {
-        System.rmi.frame(this).run(object, ref);
+        System.rmi.frame(this).run(this, _class, ref);
 
         return this;
     }
@@ -36,7 +36,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI create(Class _class, Object ref, Object... args)
     {
-        System.rmi.frame(this).run(this, ref, args);
+        System.rmi.frame(this).run(this, _class, ref, args);
 
         return this;
     }
@@ -444,7 +444,7 @@ public class RMI extends RMIImpl implements Serializable
     }
 
     @Resource(tie = "super")
-    public RMI run(Object object, Object reference, Object... args)
+    public RMI run(Object rmi, Object object, Object reference, Object... args)
     {
         Thread currentthread = Thread.currentThread();
 

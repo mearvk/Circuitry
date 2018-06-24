@@ -85,6 +85,41 @@ public class Frame implements Serializable
 
     //
 
+    public Frame(Object rmi, Object object, Object... args)
+    {
+        Thread currentthread = this.thread = Thread.currentThread();
+
+        //
+
+        this.elements.addAll(Arrays.asList(currentthread.getStackTrace()));
+
+        //
+
+        this.object = object;
+
+        this.RMIobject = rmi;
+
+        this.parameters.addAll(Arrays.asList(args));
+
+        this.os = java.lang.System.getProperty("os.name");
+
+        this.jvm = java.lang.System.getProperty("java.version");
+
+        this.date = new Date(java.lang.System.currentTimeMillis());
+
+        this.system = java.lang.System.getProperty("system.name");
+
+        this.methodname = this.elements.get(4).getMethodName();
+
+        this.classname = this.elements.get(4).getClassName();
+
+        this.threadname = currentthread.getName();
+
+        this.stacktrace();
+
+        this.bytecode();
+    }
+
     public Frame(Object object, Object... args)
     {
         Thread currentthread = this.thread = Thread.currentThread();
@@ -95,7 +130,7 @@ public class Frame implements Serializable
 
         //
 
-        this.object = null;
+        this.object = object;
 
         this.RMIobject = null;
 
