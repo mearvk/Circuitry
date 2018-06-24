@@ -85,7 +85,7 @@ public class Frame implements Serializable
 
     //
 
-    public Frame(Object rmi, Object object, Object... args)
+    public Frame(RMI rmi, Object object, Object... args)
     {
         Thread currentthread = this.thread = Thread.currentThread();
 

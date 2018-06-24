@@ -450,7 +450,7 @@ public class RMI extends RMIImpl implements Serializable
 
         System.call_registry.push(new Call(object, reference, currentthread.getStackTrace()));
 
-        System.frame_registry.push(new Frame(object, reference, currentthread.getStackTrace()));
+        System.frame_registry.push(new Frame(rmi, object, reference, currentthread.getStackTrace()));
 
         //
 
