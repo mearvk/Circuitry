@@ -283,7 +283,7 @@ public class RMIImpl
 
     public RMIImpl _frame(Object object, Object... args)
     {
-        java.lang.System.out.println("RMIImpl _frame called...");
+        java.lang.System.out.println("RMIImpl _frame called...\n");
 
         System.frame_registry.push(new Frame(object, args));
 
@@ -294,7 +294,7 @@ public class RMIImpl
 
     public RMIImpl _frame(Object object, String URI, Object... args)
     {
-        java.lang.System.out.println("RMIImpl _frame called...");
+        java.lang.System.out.println("RMIImpl _frame called...\n");
 
         System.frame_registry.push(new Frame(object, args));
 
@@ -326,6 +326,8 @@ public class RMIImpl
     @Resource()
     public RMIImpl _run(Object object, Object reference)
     {
+        java.lang.System.out.println("RMIImpl _run called...\n");
+
         Method method = null;
 
         Class[] types = null;
@@ -340,7 +342,21 @@ public class RMIImpl
 
         try
         {
-            reference = method.invoke(object, null);
+            if (reference == null)
+            {
+                java.lang.System.out.println("RMIImpl _run called [null reference]\n");
+
+                return this;
+            }
+
+            if (object == null)
+            {
+                java.lang.System.out.println("RMIImpl _run called [null object]\n");
+
+                return this;
+            }
+
+            reference = method.invoke(object);
         }
         catch (Exception e)
         {
@@ -355,6 +371,8 @@ public class RMIImpl
     @Resource()
     public RMIImpl _run(String URI, Object reference)
     {
+        java.lang.System.out.println("RMIImpl _run called...\n");
+
         Method method = null;
 
         Class[] types = null;
@@ -371,6 +389,20 @@ public class RMIImpl
 
         try
         {
+            if (reference == null)
+            {
+                java.lang.System.out.println("RMIImpl _run called [null reference]\n");
+
+                return this;
+            }
+
+            if (object == null)
+            {
+                java.lang.System.out.println("RMIImpl _run called [null object]\n");
+
+                return this;
+            }
+
             reference = method.invoke(object, null);
         }
         catch (Exception e)
@@ -384,6 +416,8 @@ public class RMIImpl
     @Resource()
     public RMIImpl _run(Object object, Object reference, Object... args)
     {
+        java.lang.System.out.println("RMIImpl _run called...\n");
+
         Method method = null;
 
         Class[] types = null;
@@ -396,6 +430,20 @@ public class RMIImpl
 
         try
         {
+            if (reference == null)
+            {
+                java.lang.System.out.println("RMIImpl _run called [null reference]\n");
+
+                return this;
+            }
+
+            if (object == null)
+            {
+                java.lang.System.out.println("RMIImpl _run called [null object]\n");
+
+                return this;
+            }
+
             reference = method.invoke(object, null);
         }
         catch (Exception e)
@@ -409,6 +457,8 @@ public class RMIImpl
     @Resource()
     public RMIImpl _run(String URI, Object reference, Class superclass, Object... args)
     {
+        java.lang.System.out.println("RMIImpl _run called...\n");
+
         return this;
     }
 

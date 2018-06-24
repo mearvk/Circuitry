@@ -398,7 +398,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI lookup(String URI, Object reference)
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.impl._frame(this)._run(this, null);
 
         return this;
     }
@@ -406,7 +406,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI run(Object object, Object reference)
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.impl._frame(this)._run(this, null);
 
         return this;
     }
@@ -414,7 +414,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI run(String URI, Object reference)
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.impl._frame(this)._run(this, null);
 
         return this;
     }
@@ -422,7 +422,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI run(Object object, Object reference, Object... args)
     {
-        System.rmi.impl._run(object, reference, args);
+        System.rmi.impl._frame(this)._run(object, reference, args);
 
         return this;
     }
@@ -430,7 +430,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI run(String URI, Object reference, Class superclass, Object... args)
     {
-        System.rmi.impl._run(URI, reference, args);
+        System.rmi.impl._frame(this)._run(URI, reference, args);
 
         return this;
     }

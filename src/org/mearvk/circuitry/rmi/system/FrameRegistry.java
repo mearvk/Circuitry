@@ -35,7 +35,7 @@ public class FrameRegistry implements Serializable
     @Resource(frame = Frame.METHOD_BASED)
     public void pull(Object object)
     {
-        //return object
+        this.post(new Frame(object));
     }
 
     @Resource

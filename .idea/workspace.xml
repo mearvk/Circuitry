@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/FrameRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/FrameRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,17 +18,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ThinClient.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ThinClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="272">
+              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#900#901#0" expanded="true" />
-                <element signature="e#954#955#0" expanded="true" />
-                <element signature="e#667#668#0" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -33,14 +33,10 @@
       <file leaf-file-name="HookRegistry.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/HookRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+            <state relative-caret-position="493">
+              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#402#403#0" expanded="true" />
-                <element signature="e#464#465#0" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,14 +45,12 @@
       <file leaf-file-name="EventRegistry.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/EventRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="80" lean-forward="true" selection-start-line="49" selection-start-column="80" selection-end-line="49" selection-end-column="80" />
+            <state relative-caret-position="731">
+              <caret line="49" column="80" selection-start-line="49" selection-start-column="80" selection-end-line="49" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#422#423#0" expanded="true" />
-                <element signature="e#696#697#0" expanded="true" />
-                <element signature="e#723#724#0" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,14 +59,16 @@
       <file leaf-file-name="FrameRegistry.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/FrameRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+            <state relative-caret-position="523">
+              <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#594#595#0" expanded="true" />
-                <element signature="e#638#639#0" expanded="true" />
+                <element signature="e#501#502#0" expanded="true" />
+                <element signature="e#584#585#0" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
+                <element signature="e#701#702#0" expanded="true" />
+                <element signature="e#727#728#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,7 +77,7 @@
       <file leaf-file-name="Hook.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/Hook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="68">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -93,8 +89,8 @@
       <file leaf-file-name="Event.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/Event.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="136">
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,11 +101,10 @@
       <file leaf-file-name="Frame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/Frame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1972">
+            <state relative-caret-position="1887">
               <caret line="116" selection-start-line="116" selection-end-line="116" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#837#856#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,103 +113,30 @@
       <file leaf-file-name="RMI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+            <state relative-caret-position="169">
+              <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#428#429#0" expanded="true" />
-                <element signature="e#455#456#0" expanded="true" />
-                <element signature="e#645#646#0" expanded="true" />
-                <element signature="e#672#673#0" expanded="true" />
-                <element signature="e#699#700#0" expanded="true" />
-                <element signature="e#726#727#0" expanded="true" />
-                <element signature="e#766#767#0" expanded="true" />
-                <element signature="e#793#794#0" expanded="true" />
-                <element signature="e#835#836#0" expanded="true" />
-                <element signature="e#862#863#0" expanded="true" />
-                <element signature="e#924#925#0" expanded="true" />
-                <element signature="e#951#952#0" expanded="true" />
-                <element signature="e#980#981#0" expanded="true" />
-                <element signature="e#1007#1008#0" expanded="true" />
-                <element signature="e#1069#1070#0" expanded="true" />
-                <element signature="e#1117#1118#0" expanded="true" />
-                <element signature="e#2282#2283#0" expanded="true" />
-                <element signature="e#2310#2311#0" expanded="true" />
-                <element signature="e#1254#1255#0" expanded="true" />
-                <element signature="e#1281#1282#0" expanded="true" />
-                <element signature="e#1312#1313#0" expanded="true" />
-                <element signature="e#1339#1340#0" expanded="true" />
-                <element signature="e#1373#1374#0" expanded="true" />
-                <element signature="e#1400#1401#0" expanded="true" />
-                <element signature="e#1433#1434#0" expanded="true" />
-                <element signature="e#1460#1461#0" expanded="true" />
-                <element signature="e#1489#1490#0" expanded="true" />
-                <element signature="e#1516#1517#0" expanded="true" />
-                <element signature="e#1712#1713#0" expanded="true" />
-                <element signature="e#1739#1740#0" expanded="true" />
-                <element signature="e#2577#2578#0" expanded="true" />
-                <element signature="e#2604#2605#0" expanded="true" />
-                <element signature="e#2643#2644#0" expanded="true" />
-                <element signature="e#2670#2671#0" expanded="true" />
-                <element signature="e#2714#2715#0" expanded="true" />
-                <element signature="e#2741#2742#0" expanded="true" />
-                <element signature="e#2787#2788#0" expanded="true" />
                 <element signature="e#2814#2815#0" expanded="true" />
-                <element signature="e#2872#2873#0" expanded="true" />
-                <element signature="e#2899#2900#0" expanded="true" />
-                <element signature="e#2954#2955#0" expanded="true" />
-                <element signature="e#2981#2982#0" expanded="true" />
-                <element signature="e#3037#3038#0" expanded="true" />
-                <element signature="e#3064#3065#0" expanded="true" />
-                <element signature="e#3107#3108#0" expanded="true" />
-                <element signature="e#3134#3135#0" expanded="true" />
-                <element signature="e#3184#3185#0" expanded="true" />
-                <element signature="e#3211#3212#0" expanded="true" />
-                <element signature="e#3276#3277#0" expanded="true" />
-                <element signature="e#3303#3304#0" expanded="true" />
-                <element signature="e#3365#3366#0" expanded="true" />
-                <element signature="e#3392#3393#0" expanded="true" />
-                <element signature="e#4878#4879#0" expanded="true" />
-                <element signature="e#4905#4906#0" expanded="true" />
-                <element signature="e#3420#3421#0" expanded="true" />
-                <element signature="e#3447#3448#0" expanded="true" />
-                <element signature="e#3506#3507#0" expanded="true" />
-                <element signature="e#3533#3534#0" expanded="true" />
-                <element signature="e#3589#3590#0" expanded="true" />
-                <element signature="e#3616#3617#0" expanded="true" />
-                <element signature="e#3660#3661#0" expanded="true" />
-                <element signature="e#3687#3688#0" expanded="true" />
-                <element signature="e#3728#3729#0" expanded="true" />
-                <element signature="e#3755#3756#0" expanded="true" />
-                <element signature="e#5937#5938#0" expanded="true" />
-                <element signature="e#5964#5965#0" expanded="true" />
-                <element signature="e#6294#6295#0" expanded="true" />
-                <element signature="e#6321#6322#0" expanded="true" />
+                <element signature="e#2841#2842#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RMIImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RMIImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+            <state relative-caret-position="50">
+              <caret line="346" column="81" selection-start-line="346" selection-start-column="81" selection-end-line="346" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#500#501#0" expanded="true" />
                 <element signature="e#527#528#0" expanded="true" />
-                <element signature="e#2768#2769#0" expanded="true" />
-                <element signature="e#2795#2796#0" expanded="true" />
-                <element signature="e#4440#4441#0" expanded="true" />
-                <element signature="e#4467#4468#0" expanded="true" />
-                <element signature="e#4543#4544#0" expanded="true" />
-                <element signature="e#4570#4571#0" expanded="true" />
-                <element signature="e#4965#5396#0" />
-                <element signature="e#5109#5110#0" expanded="true" />
-                <element signature="e#5136#5137#0" expanded="true" />
-                <element signature="e#6044#6045#0" expanded="true" />
-                <element signature="e#6071#6072#0" expanded="true" />
+                <element signature="e#8591#8592#0" expanded="true" />
+                <element signature="e#8618#8619#0" expanded="true" />
+                <element signature="e#8662#8663#0" expanded="true" />
+                <element signature="e#8689#8690#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -315,8 +237,8 @@
         <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/annotations/Resource.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/FrameRegistry.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java" />
       </list>
     </option>
   </component>
@@ -332,7 +254,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
@@ -346,6 +267,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -492,13 +414,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00106" summary="Latest">
-      <created>1529336784399</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1529336784399</updated>
     </task>
     <task id="LOCAL-00107" summary="Latest">
       <created>1529340777288</created>
@@ -836,7 +751,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529785677138</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="Latest">
+      <created>1529800056328</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1529800056328</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -851,24 +773,24 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47516403" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32987747" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.47516403" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15875" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3289597" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3289597" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
@@ -876,12 +798,12 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3139644" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32987747" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -891,7 +813,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32987747" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Capture Tool" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.3289597" />
@@ -1177,10 +1099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding>
-            <element signature="e#190#191#0" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1245,9 +1163,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1255,105 +1170,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#951#952#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1069#1070#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
-            <element signature="e#2282#2283#0" expanded="true" />
-            <element signature="e#2310#2311#0" expanded="true" />
-            <element signature="e#1254#1255#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1312#1313#0" expanded="true" />
-            <element signature="e#1339#1340#0" expanded="true" />
-            <element signature="e#1373#1374#0" expanded="true" />
-            <element signature="e#1400#1401#0" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1460#1461#0" expanded="true" />
-            <element signature="e#1489#1490#0" expanded="true" />
-            <element signature="e#1516#1517#0" expanded="true" />
-            <element signature="e#1712#1713#0" expanded="true" />
-            <element signature="e#1739#1740#0" expanded="true" />
-            <element signature="e#2577#2578#0" expanded="true" />
-            <element signature="e#2604#2605#0" expanded="true" />
-            <element signature="e#2643#2644#0" expanded="true" />
-            <element signature="e#2670#2671#0" expanded="true" />
-            <element signature="e#2714#2715#0" expanded="true" />
-            <element signature="e#2741#2742#0" expanded="true" />
-            <element signature="e#2787#2788#0" expanded="true" />
-            <element signature="e#2814#2815#0" expanded="true" />
-            <element signature="e#2872#2873#0" expanded="true" />
-            <element signature="e#2899#2900#0" expanded="true" />
-            <element signature="e#2954#2955#0" expanded="true" />
-            <element signature="e#2981#2982#0" expanded="true" />
-            <element signature="e#3037#3038#0" expanded="true" />
-            <element signature="e#3064#3065#0" expanded="true" />
-            <element signature="e#3107#3108#0" expanded="true" />
-            <element signature="e#3134#3135#0" expanded="true" />
-            <element signature="e#3184#3185#0" expanded="true" />
-            <element signature="e#3211#3212#0" expanded="true" />
-            <element signature="e#3276#3277#0" expanded="true" />
-            <element signature="e#3303#3304#0" expanded="true" />
-            <element signature="e#3365#3366#0" expanded="true" />
-            <element signature="e#3392#3393#0" expanded="true" />
-            <element signature="e#4878#4879#0" expanded="true" />
-            <element signature="e#4905#4906#0" expanded="true" />
-            <element signature="e#3420#3421#0" expanded="true" />
-            <element signature="e#3447#3448#0" expanded="true" />
-            <element signature="e#3506#3507#0" expanded="true" />
-            <element signature="e#3533#3534#0" expanded="true" />
-            <element signature="e#3589#3590#0" expanded="true" />
-            <element signature="e#3616#3617#0" expanded="true" />
-            <element signature="e#3660#3661#0" expanded="true" />
-            <element signature="e#3687#3688#0" expanded="true" />
-            <element signature="e#3728#3729#0" expanded="true" />
-            <element signature="e#3755#3756#0" expanded="true" />
-            <element signature="e#5937#5938#0" expanded="true" />
-            <element signature="e#5964#5965#0" expanded="true" />
-            <element signature="e#6294#6295#0" expanded="true" />
-            <element signature="e#6321#6322#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/Frame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
+        <state relative-caret-position="1887">
           <caret line="116" selection-start-line="116" selection-end-line="116" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#837#856#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/Event.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="136">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1362,75 +1195,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/EventRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="80" lean-forward="true" selection-start-line="49" selection-start-column="80" selection-end-line="49" selection-end-column="80" />
+        <state relative-caret-position="731">
+          <caret line="49" column="80" selection-start-line="49" selection-start-column="80" selection-end-line="49" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/FrameRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/HookRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/Hook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="68">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#2768#2769#0" expanded="true" />
-            <element signature="e#2795#2796#0" expanded="true" />
-            <element signature="e#4440#4441#0" expanded="true" />
-            <element signature="e#4467#4468#0" expanded="true" />
-            <element signature="e#4543#4544#0" expanded="true" />
-            <element signature="e#4570#4571#0" expanded="true" />
-            <element signature="e#4965#5396#0" />
-            <element signature="e#5109#5110#0" expanded="true" />
-            <element signature="e#5136#5137#0" expanded="true" />
-            <element signature="e#6044#6045#0" expanded="true" />
-            <element signature="e#6071#6072#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1442,16 +1222,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java">
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/FrameRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="523">
+          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/HookRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2814#2815#0" expanded="true" />
+            <element signature="e#2841#2842#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="346" column="81" selection-start-line="346" selection-start-column="81" selection-end-line="346" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#8591#8592#0" expanded="true" />
+            <element signature="e#8618#8619#0" expanded="true" />
+            <element signature="e#8662#8663#0" expanded="true" />
+            <element signature="e#8689#8690#0" expanded="true" />
           </folding>
         </state>
       </provider>

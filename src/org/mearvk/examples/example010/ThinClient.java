@@ -21,10 +21,6 @@ class Main
 
         System.rmi.hook(ThinClient.class, Hooks.ALL);
 
-        System.rmi.unhook(ThinClient.class, Hooks.ON_DATA);
-
-        System.rmi.rehook(ThinClient.class, Hooks.ON_DATA);
-
         //
 
         System.rmi.create(ThinClient.class, client000);
