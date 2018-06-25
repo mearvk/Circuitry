@@ -2,6 +2,7 @@ package org.mearvk.examples.example010;
 
 import org.mearvk.ancellaries.annotations.Resource;
 import org.mearvk.circuitry.rmi.system.Frame;
+import org.mearvk.circuitry.rmi.system.RMIStore;
 import org.mearvk.circuitry.rmi.system.System;
 import org.mearvk.circuitry.rmi.system.interfaces.Hooks;
 
@@ -34,22 +35,98 @@ class Main
 @Resource(frame = Frame.CLASS_BASED)
 public class ThinClient extends ThinClientImpl implements Serializable
 {
+    public ThinClient ref = this;
+
     public UserInterface userinterface = new UserInterface();
 
     public ThinClient()
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.passthru(this, super.ref);
+    }
+
+    public void connect()
+    {
+        System.rmi.passthru(this, super.ref);
+    }
+
+    public void disconnect()
+    {
+        System.rmi.passthru(this, super.ref);
+    }
+
+    public void show()
+    {
+        System.rmi.passthru(this, super.ref);
+    }
+
+    public void hide()
+    {
+        System.rmi.passthru(this, super.ref);
     }
 }
 
 @Resource(frame = Frame.CLASS_BASED)
-class ThinClientImpl implements Serializable
+class ThinClientImpl extends ThinClientSystemImpl implements Serializable
 {
+    public ThinClientImpl ref = this;
+
     public UserInterfaceImpl userinterfaceimpl = new UserInterfaceImpl();
 
     public ThinClientImpl()
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.passthru(this, super.ref);
+    }
+
+    public void connect()
+    {
+        System.rmi.passthru(this, super.ref);
+    }
+
+    public void disconnect()
+    {
+        System.rmi.passthru(this, super.ref);
+    }
+
+    public void show()
+    {
+        System.rmi.passthru(this, super.ref);
+    }
+
+    public void hide()
+    {
+        System.rmi.passthru(this, super.ref);
+    }
+}
+
+class ThinClientSystemImpl implements Serializable
+{
+    public ThinClientSystemImpl ref = this;
+
+    public UserInterfaceSystemImpl userinterfaceimpl = new UserInterfaceSystemImpl();
+
+    public ThinClientSystemImpl()
+    {
+        System.rmi.store(new RMIStore(), this);
+    }
+
+    public void connect()
+    {
+        System.rmi.store(new RMIStore(), this);
+    }
+
+    public void disconnect()
+    {
+        System.rmi.store(new RMIStore(), this);
+    }
+
+    public void show()
+    {
+        System.rmi.store(new RMIStore(), this);
+    }
+
+    public void hide()
+    {
+        System.rmi.store(new RMIStore(), this);
     }
 }
 

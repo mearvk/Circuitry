@@ -85,6 +85,11 @@ public class Frame implements Serializable
 
     //
 
+    public Frame(RMI rmi, Object object, StackTraceElement[] elements, Object... args)
+    {
+        this(rmi, object, args);
+    }
+
     public Frame(RMI rmi, Object object, Object... args)
     {
         Thread currentthread = this.thread = Thread.currentThread();
@@ -120,6 +125,14 @@ public class Frame implements Serializable
         this.bytecode();
     }
 
+    public Frame(Object object)
+    {
+        this();
+
+        this.object = object;
+    }
+
+    /*
     public Frame(Object object, Object... args)
     {
         Thread currentthread = this.thread = Thread.currentThread();
@@ -153,7 +166,7 @@ public class Frame implements Serializable
         this.stacktrace();
 
         this.bytecode();
-    }
+    }*/
 
     public Frame()
     {

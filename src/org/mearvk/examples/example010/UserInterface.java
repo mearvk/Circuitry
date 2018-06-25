@@ -21,43 +21,43 @@ public class UserInterface extends UserInterfaceImpl implements ActionListener, 
     @Resource(init = "/ui/init", frame = Frame.METHOD_BASED)
     public UserInterface()
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.frame(this).run(this, null, null, null);
     }
 
     @Resource()
     public void setSetters()
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.frame(this).run(this, null, null, null);
     }
 
     @Resource()
     public void setTitle()
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.frame(this).run(this, null, null, null);
     }
 
     @Resource()
     public void setSize()
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.frame(this).run(this, null, null, null);
     }
 
     @Resource()
     public void setLayout()
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.frame(this).run(this, null, null, null);
     }
 
     @Resource()
     public void connect()
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.frame(this).run(this, null, null, null);
     }
 
     @Resource()
     public void show()
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.frame(this).run(this, null, null, null);
     }
 
     //
@@ -65,18 +65,18 @@ public class UserInterface extends UserInterfaceImpl implements ActionListener, 
     @Override
     public void actionPerformed(ActionEvent e)
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.frame(this).run(this, null, null, null);
     }
 
     @Override
     public void focusGained(FocusEvent e)
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.frame(this).run(this, null, null, null);
     }
 
     @Override
     public void focusLost(FocusEvent e)
     {
-        System.rmi.frame(this).run(this, this);
+        System.rmi.frame(this).run(this, this, null, null);
     }
 }

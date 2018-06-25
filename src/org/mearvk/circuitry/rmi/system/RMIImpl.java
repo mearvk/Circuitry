@@ -102,7 +102,7 @@ public class RMIImpl
 
         System.event_registry.push(new Event(object, type));
 
-        System.frame_registry.push(new Frame(object, type, null));
+        System.frame_registry.push(new Frame(object));
 
         return this;
     }
@@ -285,7 +285,7 @@ public class RMIImpl
     {
         java.lang.System.out.println("RMIImpl _frame called...\n");
 
-        System.frame_registry.push(new Frame(object, args));
+        System.frame_registry.push(new Frame(object));
 
         //
 
@@ -296,7 +296,7 @@ public class RMIImpl
     {
         java.lang.System.out.println("RMIImpl _frame called...\n");
 
-        System.frame_registry.push(new Frame(object, args));
+        System.frame_registry.push(new Frame(object));
 
         //
 
@@ -424,7 +424,14 @@ public class RMIImpl
 
         //
 
-        System.call_registry.pull(object, method, types, args);
+        try
+        {
+            System.call_registry.pull(object, method, types, args);
+        }
+        catch (Exception e)
+        {
+            //
+        }
 
         //
 

@@ -28,7 +28,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI create(Object object, Class _class, Object ref)
     {
-        System.rmi.frame(this).run(this, _class, ref);
+        System.rmi.frame(this).run(this, _class, ref, null);
 
         return this;
     }
@@ -44,7 +44,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI filter(String type)
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.frame(this).run(this, null, null, null);
 
         return this;
     }
@@ -52,7 +52,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI filter(EventFilter filter)
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.frame(this).run(this, null, null, null);
 
         return this;
     }
@@ -60,7 +60,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI filter(Event event)
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.frame(this).run(this, null, null, null);
 
         return this;
     }
@@ -68,7 +68,53 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI init(String URI, Object initobject, File initfile)
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.frame(this).run(this, null, null, null);
+
+        return this;
+    }
+
+    @Resource
+    public RMI passthru()
+    {
+        return this;
+    }
+
+    @Resource
+    public RMI passthru(Object object, Object subclass, Object... args)
+    {
+        System.rmi.frame(object, subclass);
+
+        System.rmi.run(object, null, null, null);
+
+        return this;
+    }
+
+    @Resource
+    public RMI passthru(Object object, Object subclass)
+    {
+        System.rmi.frame(object, subclass);
+
+        System.rmi.run(object, subclass, null, null);
+
+        return this;
+    }
+
+    @Resource
+    public RMI passthru(Object object, Object subclass, Object reference, Object... args)
+    {
+        System.rmi.frame(object, subclass, reference, args);
+
+        System.rmi.run(object, args, null, null);
+
+        return this;
+    }
+
+    @Resource
+    public RMI passthru(Object object, Object... args)
+    {
+        System.rmi.frame(object, args);
+
+        System.rmi.run(object, args, null, null);
 
         return this;
     }
@@ -160,7 +206,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI rehook(Class _class, String type)
     {
-        System.rmi.frame(this).run(this, null);
+        //
 
         return this;
     }
@@ -168,7 +214,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI hook(Class _class, String type)
     {
-        System.rmi.frame(this).run(this, null, _class, type);
+        //
 
         return this;
     }
@@ -176,7 +222,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI hook(Object object, String type)
     {
-        System.rmi.frame(this).run(this, null, object, type);
+        //
 
         return this;
     }
@@ -184,7 +230,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI hook(Class _class, EventFilter filter)
     {
-        System.rmi.frame(this).run(this, null);
+        //
 
         return this;
     }
@@ -192,7 +238,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI hook(Class _class)
     {
-        System.rmi.frame(this).run(this, null);
+        //
 
         return this;
     }
@@ -200,7 +246,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI hook(Object object, Class _class)
     {
-        System.rmi.frame(this).run(this, null);
+        //
 
         return this;
     }
@@ -259,6 +305,66 @@ public class RMI extends RMIImpl implements Serializable
 
     @Resource(tie = "super")
     public RMI store(RMIStore store, Integer id)
+    {
+        return this;
+    }
+
+    @Resource(tie = "super")
+    public RMI store(String id, Object object)
+    {
+        return this;
+    }
+
+    @Resource(tie = "super")
+    public RMI store(RMIStore store, Object object)
+    {
+        return this;
+    }
+
+    @Resource(tie = "super")
+    public RMI store(RMIDbms database, Object object, Thread thread)
+    {
+        return this;
+    }
+
+    @Resource(tie = "super")
+    public RMI store(RMIDbms database, Integer id, Object object, Thread thread)
+    {
+        return this;
+    }
+
+    @Resource(tie = "super")
+    public RMI store(RMIStore store, String id, Object object, Thread thread)
+    {
+        return this;
+    }
+
+    @Resource(tie = "super")
+    public RMI store(RMIStore store, Integer id, Object object, Thread thread)
+    {
+        return this;
+    }
+
+    @Resource(tie = "super")
+    public RMI store(RMIDbms database, Object object)
+    {
+        return this;
+    }
+
+    @Resource(tie = "super")
+    public RMI store(RMIDbms database, Integer id, Object object)
+    {
+        return this;
+    }
+
+    @Resource(tie = "super")
+    public RMI store(RMIStore store, String id, Object object)
+    {
+        return this;
+    }
+
+    @Resource(tie = "super")
+    public RMI store(RMIStore store, Integer id, Object object)
     {
         return this;
     }
@@ -326,7 +432,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI post(PrintStream stream, Object object)
     {
-        System.rmi.frame(this).run(stream, object);
+        System.rmi.frame(this).run(stream, object, null, null);
 
         return this;
     }
@@ -334,7 +440,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI post(PrintStream stream, String URI)
     {
-        System.rmi.frame(this).run(stream, URI);
+        System.rmi.frame(this).run(stream, URI, null, null);
 
         return this;
     }
@@ -382,7 +488,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI logic(String URI)
     {
-        System.rmi.frame(this).run(this, null);
+        System.rmi.frame(this).run(this, null, null, null);
 
         return this;
     }
@@ -390,7 +496,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI lookup(Object object, Object reference)
     {
-        System.rmi.frame(this).run(this, null);
+        //
 
         return this;
     }
@@ -400,8 +506,19 @@ public class RMI extends RMIImpl implements Serializable
     {
         System.rmi.impl._frame(this)._run(this, null);
 
+        //
+
         return this;
     }
+
+    public RMI run(Object object, Object subclass, Object reference, Object args)
+    {
+        //
+
+        return this;
+    }
+
+    /*
 
     @Resource(tie = "super")
     public RMI run(Object object, Object reference)
@@ -410,7 +527,7 @@ public class RMI extends RMIImpl implements Serializable
 
         System.call_registry.push(new Call(object, reference, currentthread.getStackTrace()));
 
-        System.frame_registry.push(new Frame(object, reference, currentthread.getStackTrace()));
+        System.frame_registry.push(new Frame(this, object, null));
 
         //
 
@@ -430,7 +547,7 @@ public class RMI extends RMIImpl implements Serializable
 
         System.call_registry.push(new Call(object, reference, currentthread.getStackTrace()));
 
-        System.frame_registry.push(new Frame(object, reference, currentthread.getStackTrace()));
+        System.frame_registry.push(new Frame(this, object, null));
 
         System.rmi.lookup(object, URI);
 
@@ -450,7 +567,7 @@ public class RMI extends RMIImpl implements Serializable
 
         System.call_registry.push(new Call(object, reference, currentthread.getStackTrace()));
 
-        System.frame_registry.push(new Frame(rmi, object, reference, currentthread.getStackTrace()));
+        System.frame_registry.push(new Frame(this, object, args));
 
         //
 
@@ -462,7 +579,7 @@ public class RMI extends RMIImpl implements Serializable
     }
 
     @Resource(tie = "super")
-    public RMI run(String URI, Object reference, Class superclass, Object... args)
+    public RMI run(String URI, Object reference, Class subclass, Object... args)
     {
         Object object = null;
 
@@ -470,7 +587,7 @@ public class RMI extends RMIImpl implements Serializable
 
         System.call_registry.push(new Call(object, reference, currentthread.getStackTrace()));
 
-        System.frame_registry.push(new Frame(object, reference, currentthread.getStackTrace()));
+        System.frame_registry.push(new Frame(this, object, args));
 
         System.rmi.lookup(object, URI);
 
@@ -483,10 +600,12 @@ public class RMI extends RMIImpl implements Serializable
         return this;
     }
 
+    */
+
     @Resource(tie = "super")
     public RMI cast(Object object)
     {
-        System.rmi.frame(this).run(this, null);
+        //
 
         return this;
     }

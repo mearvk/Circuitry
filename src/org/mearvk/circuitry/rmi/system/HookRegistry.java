@@ -38,7 +38,7 @@ public class HookRegistry
 
         //
 
-        System.hooks.run(this, null);
+        System.hooks.run(this, null, null, null);
 
         //
 
@@ -52,7 +52,7 @@ public class HookRegistry
 
         //
 
-        System.hooks.run(this, null);
+        System.hooks.run(this, null, null, null);
 
         //
 
@@ -62,7 +62,7 @@ public class HookRegistry
     @Resource(frame = Frame.METHOD_BASED)
     public void register(Object object)
     {
-        System.hooks.run(this, null);
+        System.hooks.run(this, null, null, null);
 
         System.events.post(java.lang.System.out, object);
     }
