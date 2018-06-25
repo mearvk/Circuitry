@@ -4,8 +4,10 @@ import org.mearvk.ancellaries.annotations.Resource;
 
 import java.util.ArrayList;
 
-public class HookRegistry
+public class HookRegistry extends HookRegistryImpl
 {
+    public HookRegistry ref = null;
+
     public static Integer index = 0;
 
     public Object object;
@@ -16,52 +18,100 @@ public class HookRegistry
 
     public HookRegistry()
     {
-
+        return;
     }
 
     @Resource(frame = Frame.METHOD_BASED)
     public void push(Hook hook)
     {
-        System.events.post(java.lang.System.out, hook);
+        //Hook hook = null;
+
+        //
+
+        System.rmi.passthru(this, super.ref, hook);
+
+        System.events.post(java.lang.System.out, "TODO");
+    }
+
+    @Resource()
+    public void push(Object object, Class _class)
+    {
+        Hook hook = null;
+
+        //
+
+        System.rmi.passthru(this, super.ref, hook);
+
+        System.events.post(java.lang.System.out, "TODO");
+    }
+
+    @Resource()
+    public void push(Class _class)
+    {
+        Hook hook = null;
+
+        //
+
+        System.rmi.passthru(this, super.ref, hook);
+
+        System.events.post(java.lang.System.out, "TODO");
+    }
+
+    @Resource()
+    public void push(Object object, EventFilter filter)
+    {
+        Hook hook = null;
+
+        //
+
+        System.rmi.passthru(this, super.ref, hook);
+
+        System.events.post(java.lang.System.out, "TODO");
     }
 
     @Resource(frame = Frame.METHOD_BASED)
     public void push(String type)
     {
-        System.events.post(java.lang.System.out, type);
+        Hook hook = null;
+
+        //
+
+        System.rmi.passthru(this, super.ref, hook);
+
+        System.events.post(java.lang.System.out, "TODO");
     }
 
     @Resource(frame = Frame.METHOD_BASED)
     public void push(Class _class, String type)
     {
-        this.hooks.add(new Hook(_class, type));
+        Hook hook = null;
 
         //
 
-        System.hooks.run(this, null, null, null);
+        System.rmi.passthru(this, super.ref, hook);
 
-        //
-
-        System.events.post(java.lang.System.out, object);
+        System.events.post(java.lang.System.out, "TODO");
     }
 
     @Resource(frame = Frame.METHOD_BASED)
     public void push(Object object, String type)
     {
-        this.hooks.add(new Hook(object, type));
+        Hook hook = null;
 
         //
 
-        System.hooks.run(this, null, null, null);
+        System.rmi.passthru(this, super.ref, hook);
 
-        //
-
-        System.events.post(java.lang.System.out, object);
+        System.events.post(java.lang.System.out, "TODO");
     }
 
     @Resource(frame = Frame.METHOD_BASED)
     public void register(Object object)
     {
+        Hook hook = null;
+
+        //
+
         System.hooks.run(this, null, null, null);
 
         System.events.post(java.lang.System.out, object);

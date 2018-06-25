@@ -3,6 +3,7 @@ package org.mearvk.circuitry.rmi.system;
 import org.mearvk.ancellaries.annotations.Resource;
 import org.mearvk.circuitry.rmi.system.interfaces.RMIModel;
 
+import javax.lang.model.type.NullType;
 import java.io.File;
 import java.io.PrintStream;
 import java.io.Serializable;
@@ -100,7 +101,7 @@ public class RMI extends RMIImpl implements Serializable
     }
 
     @Resource
-    public RMI passthru(Object object, Object subclass, Object reference, Object... args)
+    public RMI passthru(Object object, Object subclass, Object reference, NullType dummy, Object... args)
     {
         System.rmi.frame(object, subclass, reference, args);
 
@@ -110,7 +111,7 @@ public class RMI extends RMIImpl implements Serializable
     }
 
     @Resource
-    public RMI passthru(Object object, Object... args)
+    public RMI passthru(Object object, NullType dummy, Object... args)
     {
         System.rmi.frame(object, args);
 
@@ -206,7 +207,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI rehook(Class _class, String type)
     {
-        //
+
 
         return this;
     }
@@ -214,7 +215,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI hook(Class _class, String type)
     {
-        //
+        System.hook_registry.push(_class, type);
 
         return this;
     }
@@ -222,7 +223,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI hook(Object object, String type)
     {
-        //
+        System.hook_registry.push(object, type);
 
         return this;
     }
@@ -230,7 +231,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI hook(Class _class, EventFilter filter)
     {
-        //
+        System.hook_registry.push(_class, filter);
 
         return this;
     }
@@ -238,7 +239,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI hook(Class _class)
     {
-        //
+        System.hook_registry.push(_class);
 
         return this;
     }
@@ -246,7 +247,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI hook(Object object, Class _class)
     {
-        //
+        System.hook_registry.push(object, _class);
 
         return this;
     }
