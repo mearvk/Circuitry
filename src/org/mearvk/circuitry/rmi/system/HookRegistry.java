@@ -50,6 +50,8 @@ public class HookRegistry extends HookRegistryImpl
     {
         Hook hook = null;
 
+        hook = new Hook(_class);
+
         //
 
         System.rmi.passthru(this, super.ref, hook);
@@ -62,17 +64,7 @@ public class HookRegistry extends HookRegistryImpl
     {
         Hook hook = null;
 
-        //
-
-        System.rmi.passthru(this, super.ref, hook);
-
-        System.events.post(java.lang.System.out, "TODO");
-    }
-
-    @Resource(frame = Frame.METHOD_BASED)
-    public void push(String type)
-    {
-        Hook hook = null;
+        hook = new Hook(object, filter);
 
         //
 
@@ -86,6 +78,8 @@ public class HookRegistry extends HookRegistryImpl
     {
         Hook hook = null;
 
+        hook = new Hook(_class, type);
+
         //
 
         System.rmi.passthru(this, super.ref, hook);
@@ -97,6 +91,8 @@ public class HookRegistry extends HookRegistryImpl
     public void push(Object object, String type)
     {
         Hook hook = null;
+
+        hook = new Hook(object, type);
 
         //
 

@@ -63,6 +63,11 @@ public class ThinClient extends ThinClientImpl implements Serializable
     {
         System.rmi.passthru(this, super.ref);
     }
+
+    public UserInterface getUserinterface()
+    {
+        return this.userinterface;
+    }
 }
 
 @Resource(frame = Frame.CLASS_BASED)
@@ -96,13 +101,19 @@ class ThinClientImpl extends ThinClientSystemImpl implements Serializable
     {
         System.rmi.passthru(this, super.ref);
     }
+
+    public UserInterfaceImpl getUserinterfaceImpl()
+    {
+        return this.userinterfaceimpl;
+    }
 }
 
+@Resource(frame = Frame.CLASS_BASED)
 class ThinClientSystemImpl implements Serializable
 {
     public ThinClientSystemImpl ref = this;
 
-    public UserInterfaceSystemImpl userinterfaceimpl = new UserInterfaceSystemImpl();
+    public UserInterfaceSystemImpl userinterfacesystemimpl = new UserInterfaceSystemImpl();
 
     public ThinClientSystemImpl()
     {
@@ -127,6 +138,11 @@ class ThinClientSystemImpl implements Serializable
     public void hide()
     {
         System.rmi.store(new RMIStore(), this);
+    }
+
+    public UserInterfaceSystemImpl getUserinterfaceSystemImpl()
+    {
+        return this.userinterfacesystemimpl;
     }
 }
 

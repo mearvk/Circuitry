@@ -207,8 +207,6 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI rehook(Class _class, String type)
     {
-
-
         return this;
     }
 
@@ -441,7 +439,9 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI post(PrintStream stream, String URI)
     {
-        System.rmi.frame(this).run(stream, URI, null, null);
+        //System.rmi.frame(this).run(stream, URI, null, null);
+
+        java.lang.System.out.println(URI);
 
         return this;
     }

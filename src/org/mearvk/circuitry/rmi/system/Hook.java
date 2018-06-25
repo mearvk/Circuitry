@@ -11,6 +11,8 @@ public class Hook
 
     public String type = null;
 
+    public EventFilter filter = null;
+
     //
 
     public static final String METHOD_BASED = "METHOD";
@@ -85,6 +87,20 @@ public class Hook
 
     //
 
+    public Hook(Object object, EventFilter filter)
+    {
+        this._class = _class;
+
+        this.filter = filter;
+    }
+
+    public Hook(Class _class, EventFilter filter)
+    {
+        this._class = _class;
+
+        this.filter = filter;
+    }
+
     public Hook(Class _class, String type)
     {
         this._class = _class;
@@ -93,6 +109,13 @@ public class Hook
     }
 
     public Hook(Object object, String type)
+    {
+        this.object = object;
+
+        this.type = type;
+    }
+
+    public Hook(Class _class)
     {
         this.object = object;
 
