@@ -2,9 +2,9 @@ package org.mearvk.examples.example010;
 
 import org.mearvk.ancellaries.annotations.Resource;
 import org.mearvk.circuitry.rmi.system.Frame;
+import org.mearvk.circuitry.rmi.system.RMI;
 import org.mearvk.circuitry.rmi.system.RMIStore;
 import org.mearvk.circuitry.rmi.system.System;
-import org.mearvk.circuitry.rmi.system.interfaces.Hooks;
 
 import java.io.Serializable;
 
@@ -20,7 +20,7 @@ class Main
 
         //
 
-        System.rmi.hook(ThinClient.class, Hooks.ALL);
+        //System.rmi.hook(ThinClient.class, Hooks.ALL);
 
         //
 
@@ -41,27 +41,27 @@ public class ThinClient extends ThinClientImpl implements Serializable
 
     public ThinClient()
     {
-        System.rmi.passthru(this, super.ref);
+        //System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
     public void connect()
     {
-        System.rmi.passthru(this, super.ref);
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
     public void disconnect()
     {
-        System.rmi.passthru(this, super.ref);
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
     public void show()
     {
-        System.rmi.passthru(this, super.ref);
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
     public void hide()
     {
-        System.rmi.passthru(this, super.ref);
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
     public UserInterface getUserinterface()
@@ -79,27 +79,27 @@ class ThinClientImpl extends ThinClientSystemImpl implements Serializable
 
     public ThinClientImpl()
     {
-        System.rmi.passthru(this, super.ref);
+        //System.rmi.passthru(this, super.ref, null, userinterfaceimpl);
     }
 
     public void connect()
     {
-        System.rmi.passthru(this, super.ref);
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
     public void disconnect()
     {
-        System.rmi.passthru(this, super.ref);
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
     public void show()
     {
-        System.rmi.passthru(this, super.ref);
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
     public void hide()
     {
-        System.rmi.passthru(this, super.ref);
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
     public UserInterfaceImpl getUserinterfaceImpl()

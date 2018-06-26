@@ -2,6 +2,7 @@ package org.mearvk.examples.example010;
 
 import org.mearvk.ancellaries.annotations.Resource;
 import org.mearvk.circuitry.rmi.system.Frame;
+import org.mearvk.circuitry.rmi.system.RMI;
 import org.mearvk.circuitry.rmi.system.System;
 import org.mearvk.circuitry.rmi.system.interfaces.RMIModel;
 
@@ -14,6 +15,8 @@ import java.io.Serializable;
 
 public class UserInterface extends UserInterfaceImpl implements ActionListener, FocusListener, RMIModel, Serializable
 {
+    public UserInterface ref = this;
+
     public File initfile = null;
 
     //
@@ -21,62 +24,66 @@ public class UserInterface extends UserInterfaceImpl implements ActionListener, 
     @Resource(init = "/ui/init", frame = Frame.METHOD_BASED)
     public UserInterface()
     {
-        System.rmi.frame(this).run(this, null, null, null);
+        //System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
+    @Override
     @Resource()
     public void setSetters()
     {
-        System.rmi.frame(this).run(this, null, null, null);
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
+    @Override
     @Resource()
     public void setTitle()
     {
-        System.rmi.frame(this).run(this, null, null, null);
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
+    @Override
     @Resource()
     public void setSize()
     {
-        System.rmi.frame(this).run(this, null, null, null);
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
+    @Override
     @Resource()
     public void setLayout()
     {
-        System.rmi.frame(this).run(this, null, null, null);
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
+    @Override
     @Resource()
     public void connect()
     {
-        System.rmi.frame(this).run(this, null, null, null);
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
+    @Override
     @Resource()
     public void show()
     {
-        System.rmi.frame(this).run(this, null, null, null);
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
-
-    //
 
     @Override
     public void actionPerformed(ActionEvent e)
     {
-        System.rmi.frame(this).run(this, null, null, null);
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
     @Override
     public void focusGained(FocusEvent e)
     {
-        System.rmi.frame(this).run(this, null, null, null);
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
     @Override
     public void focusLost(FocusEvent e)
     {
-        System.rmi.frame(this).run(this, this, null, null);
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 }

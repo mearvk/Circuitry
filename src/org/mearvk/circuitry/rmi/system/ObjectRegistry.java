@@ -26,7 +26,7 @@ public class ObjectRegistry
 
         //
 
-        System.registry.run(this, null, null, null);
+        System.registry.run(this, null, null, null, null);
 
         //
 
@@ -40,7 +40,7 @@ public class ObjectRegistry
 
         //
 
-        System.registry.run(this, null, null, null);
+        System.registry.run(this, null, null, null, null);
 
         //
 
@@ -50,7 +50,7 @@ public class ObjectRegistry
     @Resource(frame = Frame.METHOD_BASED)
     public void register(Object object)
     {
-        System.hooks.run(this, null, null, null);
+        System.hooks.run(this, null, null, null, null);
 
         System.events.post(java.lang.System.out, object);
     }

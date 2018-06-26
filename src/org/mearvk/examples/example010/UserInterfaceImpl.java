@@ -1,94 +1,122 @@
 package org.mearvk.examples.example010;
 
+import org.mearvk.ancellaries.annotations.Resource;
+import org.mearvk.circuitry.rmi.system.RMI;
+import org.mearvk.circuitry.rmi.system.System;
+
 import javax.swing.*;
-import java.awt.*;
 import java.io.Serializable;
 
-public class UserInterfaceImpl implements Serializable
+public class UserInterfaceImpl extends UserInterfaceSystemImpl implements Serializable
 {
-    public JFrame jframe = null;
+    public UserInterfaceImpl ref = this;
 
-    public JSplitPane jsplitpane = null;
-
-    public JTextPane top = null;
-
-    public JTextPane bottom = null;
-
-    public JPanel panel = null;
-
-    public JButton commit = null;
+    public UserInterface base = null;
 
     //
 
+    @Resource()
     public UserInterfaceImpl()
     {
-        this.jframe = new JFrame();
+        System.rmi.create(JFrame.class, this.jframe);
 
-        this.jsplitpane = new JSplitPane();
+        System.rmi.create(JSplitPane.class, this.jsplitpane);
 
-        this.top = new JTextPane();
+        System.rmi.create(JTextPane.class, this.top);
 
-        this.bottom = new JTextPane();
+        System.rmi.create(JTextPane.class, this.bottom);
 
-        this.panel = new JPanel();
+        System.rmi.create(JPanel.class, this.jpanel);
 
-        this.commit = new JButton("Commit");
-
-        //
-
-        this.top.setPreferredSize(new Dimension(800, 400));
-
-        this.top.requestFocus();
-
-        this.bottom.setPreferredSize(new Dimension(800, 200));
-
-        this.bottom.setEditable(false);
+        System.rmi.create(JButton.class, this.commit);
 
         //
 
-        this.jsplitpane.setOrientation(JSplitPane.VERTICAL_SPLIT);
+        this.setSetters();
+
+        this.setArchitecture();
+    }
+
+    @Resource()
+    public UserInterfaceImpl(UserInterface userinterface)
+    {
+        this.base = userinterface;
+
+        //
+
+        System.rmi.create(JFrame.class, this.jframe);
+
+        System.rmi.create(JSplitPane.class, this.jsplitpane);
+
+        System.rmi.create(JTextPane.class, this.top);
+
+        System.rmi.create(JTextPane.class, this.bottom);
+
+        System.rmi.create(JPanel.class, this.jpanel);
+
+        System.rmi.create(JButton.class, this.commit);
+
+        //
+
+        this.setSetters();
+
+        this.setArchitecture();
+    }
+
+    @Resource()
+    public void setArchitecture()
+    {
+        return;
+
+        /*
 
         this.jsplitpane.add(top, JSplitPane.TOP);
 
         this.jsplitpane.add(bottom, JSplitPane.BOTTOM);
 
-        this.jsplitpane.setSize(800, 600);
-
-        //
-
         this.jframe.add(this.jsplitpane);
 
-        this.jframe.add(this.panel);
+        this.jframe.add(this.jpanel);
 
-        this.panel.add(commit);
+        this.jpanel.add(commit);
 
-        //
-
-        this._setSetters();
+        */
     }
 
-    public void _setSetters()
+    @Resource()
+    public void setSetters()
     {
-        this._setTitle();
-
-        this._setSize();
-
-        this._setLayout();
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
-    public void _setTitle()
+    @Resource()
+    public void setTitle()
     {
-        this.jframe.setTitle("ThinClient");
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
-    public void _setSize()
+    @Resource()
+    public void setSize()
     {
-        this.jframe.setSize(800, 600);
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
-    public void _setLayout()
+    @Resource()
+    public void setLayout()
     {
-        this.jframe.setLayout(new FlowLayout());
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
+    }
+
+    @Resource()
+    public void connect()
+    {
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
+    }
+
+    @Resource()
+    public void show()
+    {
+        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 }
 

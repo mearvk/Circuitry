@@ -1,11 +1,19 @@
 package org.mearvk.examples.example010;
 
+import org.mearvk.ancellaries.annotations.Resource;
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.Serializable;
 
 public class UserInterfaceSystemImpl implements Serializable
 {
+    public UserInterfaceSystemImpl ref = this;
+
+    public UserInterfaceImpl base = null;
+
+    //
+
     public JFrame jframe = null;
 
     public JSplitPane jsplitpane = null;
@@ -14,7 +22,7 @@ public class UserInterfaceSystemImpl implements Serializable
 
     public JTextPane bottom = null;
 
-    public JPanel panel = null;
+    public JPanel jpanel = null;
 
     public JButton commit = null;
 
@@ -22,71 +30,33 @@ public class UserInterfaceSystemImpl implements Serializable
 
     public UserInterfaceSystemImpl()
     {
-        this.jframe = new JFrame();
-
-        this.jsplitpane = new JSplitPane();
-
-        this.top = new JTextPane();
-
-        this.bottom = new JTextPane();
-
-        this.panel = new JPanel();
-
-        this.commit = new JButton("Commit");
-
-        //
-
-        this.top.setPreferredSize(new Dimension(800, 400));
-
-        this.top.requestFocus();
-
-        this.bottom.setPreferredSize(new Dimension(800, 200));
-
-        this.bottom.setEditable(false);
-
-        //
-
-        this.jsplitpane.setOrientation(JSplitPane.VERTICAL_SPLIT);
-
-        this.jsplitpane.add(top, JSplitPane.TOP);
-
-        this.jsplitpane.add(bottom, JSplitPane.BOTTOM);
-
-        this.jsplitpane.setSize(800, 600);
-
-        //
-
-        this.jframe.add(this.jsplitpane);
-
-        this.jframe.add(this.panel);
-
-        this.panel.add(commit);
-
-        //
-
-        this._setSetters();
+        this.setSetters();
     }
 
-    public void _setSetters()
+    public UserInterfaceSystemImpl(UserInterfaceImpl userinterfaceimpl)
     {
-        this._setTitle();
+        this.base = userinterfaceimpl;
 
-        this._setSize();
-
-        this._setLayout();
+        this.setSetters();
     }
 
-    public void _setTitle()
+    @Resource()
+    public void setSetters()
+    {
+
+    }
+
+    public void setTitle()
     {
         this.jframe.setTitle("ThinClient");
     }
 
-    public void _setSize()
+    public void setSize()
     {
         this.jframe.setSize(800, 600);
     }
 
-    public void _setLayout()
+    public void setLayout()
     {
         this.jframe.setLayout(new FlowLayout());
     }

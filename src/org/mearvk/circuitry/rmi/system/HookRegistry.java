@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class HookRegistry extends HookRegistryImpl
 {
-    public HookRegistry ref = null;
+    public HookRegistry ref = this;
 
     public static Integer index = 0;
 
@@ -28,7 +28,7 @@ public class HookRegistry extends HookRegistryImpl
 
         //
 
-        System.rmi.passthru(this, super.ref, hook);
+        System.rmi.passthru(this, super.ref, null, hook);
 
         System.events.post(java.lang.System.out, "TODO");
     }
@@ -40,7 +40,7 @@ public class HookRegistry extends HookRegistryImpl
 
         //
 
-        System.rmi.passthru(this, super.ref, hook);
+        System.rmi.passthru(this, super.ref, null, hook);
 
         System.events.post(java.lang.System.out, "TODO");
     }
@@ -54,7 +54,7 @@ public class HookRegistry extends HookRegistryImpl
 
         //
 
-        System.rmi.passthru(this, super.ref, hook);
+        System.rmi.passthru(this, super.ref, null, hook);
 
         System.events.post(java.lang.System.out, "TODO");
     }
@@ -62,13 +62,11 @@ public class HookRegistry extends HookRegistryImpl
     @Resource()
     public void push(Object object, EventFilter filter)
     {
-        Hook hook = null;
-
-        hook = new Hook(object, filter);
+        Hook hook = new Hook(object, filter);
 
         //
 
-        System.rmi.passthru(this, super.ref, hook);
+        System.rmi.passthru(this, super.ref, null, hook);
 
         System.events.post(java.lang.System.out, "TODO");
     }
@@ -76,27 +74,25 @@ public class HookRegistry extends HookRegistryImpl
     @Resource(frame = Frame.METHOD_BASED)
     public void push(Class _class, String type)
     {
-        Hook hook = null;
-
-        hook = new Hook(_class, type);
+        Hook hook = new Hook(_class, type);
 
         //
 
-        System.rmi.passthru(this, super.ref, hook);
+        System.rmi.passthru(this, super.ref, null, hook);
 
-        System.events.post(java.lang.System.out, "TODO");
+        //
+
+        System.events.post(java.lang.System.out, "HookRegistry adds Hook(" + _class + "," + type + ")\n");
     }
 
     @Resource(frame = Frame.METHOD_BASED)
     public void push(Object object, String type)
     {
-        Hook hook = null;
-
-        hook = new Hook(object, type);
+        Hook hook = new Hook(object, type);
 
         //
 
-        System.rmi.passthru(this, super.ref, hook);
+        System.rmi.passthru(this, super.ref, null, hook);
 
         System.events.post(java.lang.System.out, "TODO");
     }
@@ -108,7 +104,7 @@ public class HookRegistry extends HookRegistryImpl
 
         //
 
-        System.hooks.run(this, null, null, null);
+        System.hooks.run(this, null, null, null, null);
 
         System.events.post(java.lang.System.out, object);
     }

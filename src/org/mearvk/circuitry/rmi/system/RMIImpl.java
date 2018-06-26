@@ -245,19 +245,23 @@ public class RMIImpl
         return this;
     }
 
-    public RMIImpl _post(PrintStream stream, String URI)
+    public RMIImpl post(PrintStream stream, String URI)
     {
         return this;
     }
 
     @Resource()
-    public RMIImpl _create(Class _class, Object ref)
+    public RMIImpl create(Class _class, Object ref)
     {
+        System.rmi.post(java.lang.System.out, "RMIImpl create() called...\n");
+
+        //
+
         return this;
     }
 
     @Resource()
-    public RMIImpl _create(Class _class, Object ref, Object... args)
+    public RMIImpl create(Class _class, Object ref, Object... args)
     {
         Object object = null;
 
