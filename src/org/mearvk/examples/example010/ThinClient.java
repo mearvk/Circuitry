@@ -7,6 +7,8 @@ import org.mearvk.circuitry.rmi.system.interfaces.Eric;
 
 import java.io.Serializable;
 
+import static sun.security.x509.CertificateX509Key.KEY;
+
 
 class Main
 {
@@ -31,6 +33,16 @@ class Main
         System.rmi.create(ThinClient.class, client001);
 
         System.rmi.create(ThinClient.class, client002);
+
+        //
+
+        System.rmi.create(KEY, ThinClient.class, client000);    //tie the client000 to my KEY
+
+        System.rmi.create(KEY, ThinClient.class, client001);    // ..
+
+        System.rmi.create(KEY, ThinClient.class, client002);    // ..
+
+        //
     }
 }
 
