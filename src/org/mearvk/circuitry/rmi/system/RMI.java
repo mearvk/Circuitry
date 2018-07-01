@@ -1,6 +1,7 @@
 package org.mearvk.circuitry.rmi.system;
 
 import org.mearvk.ancellaries.annotations.Resource;
+import org.mearvk.circuitry.rmi.system.interfaces.Eric;
 import org.mearvk.circuitry.rmi.system.interfaces.RMIModel;
 
 import javax.lang.model.type.NullType;
@@ -30,6 +31,12 @@ public class RMI extends RMIImpl implements Serializable
     public RMI()
     {
 
+    }
+
+    @Resource()
+    public RMI ref(Eric a, Eric b)
+    {
+        return this;
     }
 
     @Resource(tie = "super")

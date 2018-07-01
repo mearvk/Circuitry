@@ -2,7 +2,7 @@ package org.mearvk.circuitry.rmi.system;
 
 public class Wrapper
 {
-    Object subject;
+    public Object subject;
 
     public Wrapper(Object subject)
     {

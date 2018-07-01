@@ -1,22 +1,24 @@
 package org.mearvk.examples.example010;
 
 import org.mearvk.ancellaries.annotations.Resource;
-import org.mearvk.circuitry.rmi.system.Frame;
-import org.mearvk.circuitry.rmi.system.RMI;
-import org.mearvk.circuitry.rmi.system.RMIStore;
+import org.mearvk.circuitry.rmi.system.*;
 import org.mearvk.circuitry.rmi.system.System;
+import org.mearvk.circuitry.rmi.system.interfaces.Eric;
 
 import java.io.Serializable;
+
 
 class Main
 {
     public static void main(String... args)
     {
-        ThinClient client000 = null;
+        //
 
-        ThinClient client001 = null;
+        ThinClient client000 = new ThinClient();
 
-        ThinClient client002 = null;
+        ThinClient client001 = new ThinClient();
+
+        ThinClient client002 = new ThinClient();
 
         //
 
@@ -33,11 +35,26 @@ class Main
 }
 
 @Resource(frame = Frame.CLASS_BASED)
-public class ThinClient extends ThinClientImpl implements Serializable
+public class ThinClient extends ThinClientImpl implements Serializable, Eric
 {
     public ThinClient ref = this;
 
+    public static ThinClient proto = new ThinClient(new RMIImpl());
+
     public UserInterface userinterface = new UserInterface();
+
+    private ThinClient(RMIImpl rmi)
+    {
+        if (ThinClient.proto == null)
+        {
+            ThinClient.proto = new ThinClient();
+        }
+    }
+
+    public static ThinClient prototype()
+    {
+        return proto = new ThinClient(new RMIImpl());
+    }
 
     public ThinClient()
     {
@@ -46,7 +63,9 @@ public class ThinClient extends ThinClientImpl implements Serializable
 
     public void connect()
     {
-        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
+        java.lang.System.out.println("Connected...");
+
+        org.mearvk.circuitry.rmi.system.System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
     }
 
     public void disconnect()
@@ -145,4 +164,3 @@ class ThinClientSystemImpl implements Serializable
         return this.userinterfacesystemimpl;
     }
 }
-

@@ -9,5 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jms" level="project" />
     <orderEntry type="library" name="jboss-logging-3.3.0" level="project" />
+    <orderEntry type="library" name="Instrumentation" level="project" />
   </component>
 </module>
