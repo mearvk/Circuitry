@@ -4,6 +4,7 @@ import org.mearvk.ancellaries.annotations.Resource;
 import org.mearvk.circuitry.rmi.system.*;
 import org.mearvk.circuitry.rmi.system.System;
 import org.mearvk.circuitry.rmi.system.interfaces.Eric;
+import org.mearvk.circuitry.rmi.system.interfaces.Hooks;
 
 import java.io.Serializable;
 
@@ -24,7 +25,7 @@ class Main
 
         //
 
-        //System.rmi.hook(ThinClient.class, Hooks.ALL);
+        System.rmi.hook(ThinClient.class, Hooks.ALL);
 
         //
 

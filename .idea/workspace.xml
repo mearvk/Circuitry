@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java" description="public UserInterface userinterface = new UserInter..." line="43" />
+    <bookmark url="file://$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java" description="public UserInterface userinterface = new UserInter..." line="53" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Instrumentation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/instrumentation/InstantiationListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/instrumentation/InstantiationListenerAgent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/interfaces/Eric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Circuitry.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Circuitry.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/Wrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/Wrapper.java" afterDir="false" />
+    <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="Latest">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,8 +21,8 @@
       <file leaf-file-name="ThinClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+            <state relative-caret-position="714">
+              <caret line="42" column="69" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1172#1173#0" expanded="true" />
@@ -84,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/interfaces/Eric.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -120,7 +112,7 @@
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="274" selection-start-line="274" selection-end-line="274" />
+              <caret line="273" selection-start-line="273" selection-end-line="273" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#500#501#0" expanded="true" />
@@ -239,8 +231,8 @@
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/interfaces/Er.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/interfaces/Eric.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java" />
       </list>
     </option>
   </component>
@@ -263,51 +255,6 @@
             <path>
               <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
               <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mearvk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mearvk" type="462c0819:PsiDirectoryNode" />
-              <item name="circuitry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mearvk" type="462c0819:PsiDirectoryNode" />
-              <item name="circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="rmi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mearvk" type="462c0819:PsiDirectoryNode" />
-              <item name="circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="rmi" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mearvk" type="462c0819:PsiDirectoryNode" />
-              <item name="circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="rmi" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -470,13 +417,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00114" summary="Latest">
-      <created>1529368633625</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1529368633625</updated>
     </task>
     <task id="LOCAL-00115" summary="Latest">
       <created>1529368724867</created>
@@ -814,7 +754,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530048764919</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="Latest">
+      <created>1530412645612</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1530412645612</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -834,12 +781,12 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.166875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.166875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.33083412" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33083412" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -919,19 +866,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java</url>
-          <line>28</line>
+          <line>30</line>
           <properties />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java</url>
-          <line>30</line>
+          <line>32</line>
           <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java</url>
-          <line>32</line>
+          <line>34</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
@@ -949,7 +896,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java</url>
-          <line>65</line>
+          <line>75</line>
           <properties />
           <option name="timeStamp" value="41" />
         </line-breakpoint>
@@ -1309,14 +1256,14 @@
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/interfaces/Eric.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="274" selection-start-line="274" selection-end-line="274" />
+          <caret line="273" selection-start-line="273" selection-end-line="273" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#500#501#0" expanded="true" />
@@ -1339,8 +1286,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+        <state relative-caret-position="714">
+          <caret line="42" column="69" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1172#1173#0" expanded="true" />
