@@ -34,4 +34,6 @@ public @interface Resource
     String security() default "$security";
 
     String[] circuits() default "$circuits";
+
+    String exceptionhandler() default "$exceptionhandler";
 }

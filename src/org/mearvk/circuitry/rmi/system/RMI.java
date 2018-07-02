@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.PrintStream;
 import java.io.Serializable;
 import java.lang.reflect.Method;
+import java.security.Key;
 import java.util.ArrayList;
 
 public class RMI extends RMIImpl implements Serializable
@@ -270,6 +271,12 @@ public class RMI extends RMIImpl implements Serializable
 
     @Resource(tie = "super")
     public RMI securitize(RMI rmi, Object reference)
+    {
+        return this;
+    }
+
+    @Resource(tie = "super")
+    public RMI securitize(RMI rmi, Object reference, Key key)
     {
         return this;
     }

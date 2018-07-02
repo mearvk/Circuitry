@@ -44,6 +44,8 @@ class Main
         System.rmi.create(KEY, ThinClient.class, client002);    // ..
 
         //
+
+        //client000
     }
 }
 
