@@ -1,16 +1,17 @@
-package org.mearvk.circuitry.rmi.system;
+package org.mearvk.circuitry.rmi.system.thin;
 
 import org.mearvk.ancellaries.annotations.Resource;
-import org.mearvk.circuitry.rmi.system.thin.ThinUI;
+import org.mearvk.circuitry.rmi.system.RMI;
+import org.mearvk.circuitry.rmi.system.System;
 
 import java.io.File;
 import java.net.Socket;
 import java.security.Key;
 import java.util.ArrayList;
 
-public abstract class ThinClient
+public abstract class ThinClientAbstract
 {
-    protected ThinClient proto;
+    protected ThinClientAbstract proto;
 
     //
 
@@ -26,9 +27,9 @@ public abstract class ThinClient
 
     protected ArrayList<Object> registered_components;
 
-    protected ThinClient working_version;
+    protected ThinClientAbstract working_version;
 
-    protected ThinClient base_version = this;
+    protected ThinClientAbstract base_version = this;
 
     private File exceptionsfile;
 
@@ -36,7 +37,7 @@ public abstract class ThinClient
 
     private File outputfile;
 
-    //protected Recompiler;     //compile new Source Code into ThinClient impl
+    //protected Recompiler;     //compile new Source Code into ThinClientAbstract impl
 
     //protected Switch;         //move between working_version & base_version
 
@@ -49,7 +50,7 @@ public abstract class ThinClient
     //
 
     @Resource()
-    public ThinClient()
+    public ThinClientAbstract()
     {
         System.rmi.init("//security", this, this.securityfile);
 
@@ -63,7 +64,7 @@ public abstract class ThinClient
     }
 
     @Resource()
-    public ThinClient(Key key)
+    public ThinClientAbstract(Key key)
     {
         System.rmi.init("//security", this, this.securityfile);
 
@@ -102,6 +103,15 @@ public abstract class ThinClient
 
     @Resource()
     public abstract void connect(Socket socket);
+
+    @Resource()
+    public abstract void register();
+
+    @Resource()
+    public abstract void register(RMI rmi);
+
+    @Resource()
+    public abstract void register(Socket socket);
 
     //
 

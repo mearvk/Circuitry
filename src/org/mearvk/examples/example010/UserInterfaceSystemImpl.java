@@ -48,7 +48,7 @@ public class UserInterfaceSystemImpl implements Serializable
 
     public void setTitle()
     {
-        this.jframe.setTitle("ThinClient");
+        this.jframe.setTitle("ThinClientAbstract");
     }
 
     public void setSize()
