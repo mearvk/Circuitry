@@ -8,6 +8,8 @@ public class System implements Serializable
 
     public static RMI rmi = new RMI();
 
+    public static RMI debug = new RMI();
+
     public static RMI local = new RMI();
 
     public static RMI hooks = new RMI();
@@ -17,6 +19,8 @@ public class System implements Serializable
     public static RMI security = new RMI();
 
     public static RMI frames = new RMI();
+
+    public static RMI general = new RMI();
 
     public static RMI factory = new RMI();
 

@@ -208,7 +208,7 @@ public class RMI extends RMIImpl implements Serializable
     {
         System.rmi.frame(object, subclass, reference, args);
 
-        System.rmi.run(object, args, null, null, null);
+        System.rmi.run(object, subclass, reference, Thread.currentThread().getStackTrace(), this, args);
 
         //
 

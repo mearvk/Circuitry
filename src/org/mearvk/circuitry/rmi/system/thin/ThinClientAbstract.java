@@ -82,16 +82,28 @@ public abstract class ThinClientAbstract
     @Resource()
     public abstract void setVersion(byte version);
 
+    @Resource()
+    public abstract void setVersion(Key key, byte version);
+
     //
 
     @Resource()
     public abstract void setSource(String source);
 
     @Resource()
+    public abstract void setSource(Key key, String source);
+
+    @Resource()
     public abstract void setRMI(RMI rmi);
 
     @Resource()
+    public abstract void setRMI(Key key, RMI rmi);
+
+    @Resource()
     public abstract void setUI(ThinUI thinui);
+
+    @Resource()
+    public abstract void setUI(Key key, ThinUI thinui);
 
     //
 
@@ -99,19 +111,37 @@ public abstract class ThinClientAbstract
     public abstract void connect();
 
     @Resource()
+    public abstract void connect(Key key);
+
+    @Resource()
     public abstract void connect(RMI rmi);
+
+    @Resource()
+    public abstract void connect(Key key, RMI rmi);
 
     @Resource()
     public abstract void connect(Socket socket);
 
     @Resource()
+    public abstract void connect(Key key, Socket socket);
+
+    @Resource()
     public abstract void register();
+
+    @Resource()
+    public abstract void register(Key key);
 
     @Resource()
     public abstract void register(RMI rmi);
 
     @Resource()
+    public abstract void register(Key key, RMI rmi);
+
+    @Resource()
     public abstract void register(Socket socket);
+
+    @Resource()
+    public abstract void register(Key key, Socket socket);
 
     //
 
@@ -119,6 +149,12 @@ public abstract class ThinClientAbstract
     public abstract void addMember(Class _class, String name);
 
     @Resource()
+    public abstract void addMember(Key key, Class _class, String name);
+
+    @Resource()
     public abstract void removeMember(Class _class, String name);
+
+    @Resource()
+    public abstract void removeMember(Key key, Class _class, String name);
 }
 
