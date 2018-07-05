@@ -14,6 +14,10 @@ import java.util.ArrayList;
 
 public class RMI extends RMIImpl implements Serializable
 {
+    public RMIStore store = new RMIStore();
+
+    //
+
     public RMI ref = this;
 
     public RMIImpl impl = super.ref;
@@ -394,6 +398,9 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI store(RMIStore store)
     {
+
+        //
+
         return this;
     }
 

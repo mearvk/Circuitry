@@ -13,7 +13,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "setVersion: ["+version+"]");
 
@@ -25,7 +25,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "setVersion: ["+version+"]");
 
@@ -37,7 +37,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "setSource: ["+source+"]");
 
@@ -49,7 +49,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "setSource: ["+source+"]");
 
@@ -61,7 +61,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "setRMI: ["+rmi+"]");
 
@@ -73,7 +73,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "setRMI: ["+rmi+"]");
 
@@ -85,7 +85,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "register: ["+thinui+"]");
 
@@ -97,7 +97,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "register: ["+thinui+"]");
 
@@ -109,7 +109,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "register: ["+rmi+"]");
 
@@ -121,7 +121,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "register: ["+rmi+"]");
 
@@ -133,7 +133,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "register: ["+rmi+"]");
 
@@ -145,7 +145,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "register: ["+rmi+"]");
 
@@ -157,7 +157,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "register: ["+socket+"]");
 
@@ -169,7 +169,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "register: ["+socket+"]");
 
@@ -181,7 +181,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "register: ["+rmi+"]");
 
@@ -193,7 +193,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "register: ["+rmi+"]");
 
@@ -205,7 +205,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "register: ["+rmi+"]");
 
@@ -217,7 +217,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "register: ["+rmi+"]");
 
@@ -229,7 +229,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "register: ["+socket+"]");
 
@@ -241,7 +241,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "register: ["+socket+"]");
 
@@ -253,7 +253,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "addMember: ["+_class+"]");
 
@@ -265,7 +265,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "addMember: ["+_class+"]");
 
@@ -277,7 +277,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "removeMember: ["+_class+"]");
 
@@ -289,7 +289,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     {
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.store(this.rmi.store, this);
 
         System.debug.post(java.lang.System.out, "removeMember: ["+_class+"]");
 

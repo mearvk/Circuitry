@@ -1,6 +1,7 @@
 package org.mearvk.circuitry.rmi.system.thin;
 
 import org.mearvk.circuitry.rmi.system.RMI;
+import org.mearvk.circuitry.rmi.system.System;
 
 import java.net.Socket;
 

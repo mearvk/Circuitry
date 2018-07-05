@@ -2,6 +2,7 @@ package org.mearvk.circuitry.rmi.system.thin;
 
 import org.mearvk.ancellaries.annotations.Resource;
 import org.mearvk.circuitry.rmi.system.RMI;
+import org.mearvk.circuitry.rmi.system.RMIStore;
 import org.mearvk.circuitry.rmi.system.System;
 
 import java.io.File;
@@ -11,6 +12,10 @@ import java.util.ArrayList;
 
 public abstract class ThinClientAbstract
 {
+    public RMIStore store = new RMIStore();
+
+    //
+
     protected ThinClientAbstract proto;
 
     //
