@@ -5,7 +5,7 @@ import org.mearvk.circuitry.rmi.system.System;
 
 import java.net.Socket;
 
-public class ThinClient extends ThinClientImpl //ThinClientPrecall could call SecurityTest suite
+public class ThinClient extends ThinClientImpl
 {
     public ThinClient()
     {
@@ -140,7 +140,7 @@ public class ThinClient extends ThinClientImpl //ThinClientPrecall could call Se
 
         System.rmi.passthru();
 
-        System.debug.post(java.lang.System.out, "connect: ["+socket+"]");
+        System.debug.post(java.lang.System.out, "register: [" + socket + "]");
 
         System.rmi.desecuritize(rmi, this);
     }
@@ -152,7 +152,7 @@ public class ThinClient extends ThinClientImpl //ThinClientPrecall could call Se
 
         System.rmi.passthru();
 
-        System.debug.post(java.lang.System.out, "connect: ["+_class+"]");
+        System.debug.post(java.lang.System.out, "addMember: [" + _class + "]");
 
         System.rmi.desecuritize(rmi, this);
     }
