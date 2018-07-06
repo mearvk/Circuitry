@@ -7,12 +7,6 @@
     <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientAbstract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientSecurity.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +21,8 @@
       <file leaf-file-name="ThinClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            <state relative-caret-position="374">
+              <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#351#352#0" expanded="true" />
@@ -55,14 +49,10 @@
       <file leaf-file-name="RMI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="262" column="28" lean-forward="true" selection-start-line="262" selection-start-column="28" selection-end-line="262" selection-end-column="28" />
+            <state relative-caret-position="15283">
+              <caret line="902" column="28" lean-forward="true" selection-start-line="902" selection-start-column="28" selection-end-line="902" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1649#1650#0" expanded="true" />
-                <element signature="e#1676#1677#0" expanded="true" />
-                <element signature="e#1687#1688#0" expanded="true" />
-                <element signature="e#1714#1715#0" expanded="true" />
                 <element signature="e#2575#2576#0" expanded="true" />
                 <element signature="e#2602#2603#0" expanded="true" />
               </folding>
@@ -141,7 +131,7 @@
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/System.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -434,13 +424,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00121" summary="Latest">
-      <created>1529455267458</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1529455267459</updated>
     </task>
     <task id="LOCAL-00122" summary="Latest">
       <created>1529518690270</created>
@@ -778,7 +761,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530825515667</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="Latest">
+      <created>1530836534333</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1530836534333</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -787,7 +777,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.491875" weight="0.30084348" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.491875" visible="true" weight="0.30084348" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -798,7 +788,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.128125" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1725" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -895,13 +885,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
-          <line>211</line>
+          <line>169</line>
           <properties />
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
-          <line>805</line>
+          <line>835</line>
           <properties />
           <option name="timeStamp" value="38" />
         </line-breakpoint>
@@ -1066,6 +1056,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="method#setSetters#0;class#UserInterfaceSystemImpl#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1156,6 +1150,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1250,17 +1247,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIStoreAdmin.java">
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIStore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        <state relative-caret-position="829">
+          <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1276,17 +1266,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIStore.java">
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIStoreAdmin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+        <state relative-caret-position="136">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        <state relative-caret-position="374">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#351#352#0" expanded="true" />
@@ -1295,16 +1285,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="262" column="28" lean-forward="true" selection-start-line="262" selection-start-column="28" selection-end-line="262" selection-end-column="28" />
+        <state relative-caret-position="15283">
+          <caret line="902" column="28" lean-forward="true" selection-start-line="902" selection-start-column="28" selection-end-line="902" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1649#1650#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
-            <element signature="e#1687#1688#0" expanded="true" />
-            <element signature="e#1714#1715#0" expanded="true" />
             <element signature="e#2575#2576#0" expanded="true" />
             <element signature="e#2602#2603#0" expanded="true" />
           </folding>
