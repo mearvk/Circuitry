@@ -16,17 +16,28 @@ public class ThinClient extends ThinClientImpl
 
     public static void main(String... args)
     {
-        ThinClient client = new ThinClient();
+        //System.rmi.create(null, null);
+        CallClient samsungmicrowaveclient = new SamsungMicrowaveClient();
 
-        client.setVersion(0x0000);
+        System.registry
+                .lookup("rmi://samsung/microwaves")
+                .ref("remote/interface", samsungmicrowaveclient)
+                .synchronize(samsungmicrowaveclient)
+                .go();
 
-        client.setSource("0x0000");
+        System.registry
+                .lookup("ip://10.24.1.35")
+                .ref("local/microwave", samsungmicrowaveclient)
+                .synchronize(samsungmicrowaveclient)
+                .go();
 
-        client.setRMI(null);
+        samsungmicrowaveclient.probe(samsungmicrowaveclient, "language{Chinese-Mandarin}");
 
-        //
+        samsungmicrowaveclient.probe(samsungmicrowaveclient, "firmware{latest}");
 
-        ThinClientImpl impl = client;
+        samsungmicrowaveclient.stdout(System.out);
+
+        samsungmicrowaveclient.run();
     }
 
     //

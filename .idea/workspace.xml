@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/call/CallClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/call/CallClientImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/call/CallReference.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/System.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/System.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/call/CallClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/call/CallClientImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientAbstract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientSecurity.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ThinClient.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ThinClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="340">
+              <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,8 +36,22 @@
       <file leaf-file-name="CallClientImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/call/CallClientImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+            <state relative-caret-position="68">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RMIImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="278" column="19" selection-start-line="278" selection-start-column="19" selection-end-line="278" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#5890#5891#0" expanded="true" />
+                <element signature="e#5917#5918#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,8 +59,8 @@
       <file leaf-file-name="CallClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/call/CallClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+            <state relative-caret-position="68">
+              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -70,142 +77,20 @@
       <file leaf-file-name="ThinClientImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="136">
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#434#435#0" expanded="true" />
-                <element signature="e#482#483#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RMI.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RMI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="661">
-              <caret line="314" column="8" selection-start-line="314" selection-start-column="8" selection-end-line="314" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1194#1294#0" />
-                <element signature="e#1163#1262#0" />
-                <element signature="e#1430#1545#0" />
-                <element signature="e#1713#1821#0" />
-                <element signature="e#1989#2122#0" />
-                <element signature="e#2281#2419#0" />
-                <element signature="e#2578#2870#0" />
-                <element signature="e#1707#1878#0" />
-                <element signature="e#1884#2062#0" />
-                <element signature="e#2068#2239#0" />
-                <element signature="e#2529#2994#0" />
-                <element signature="e#3000#3880#0" />
-                <element signature="e#3886#4317#0" />
-                <element signature="e#4323#4555#0" />
-                <element signature="e#4561#4889#0" />
-                <element signature="e#4895#5118#0" />
-                <element signature="e#5717#5808#0" />
-                <element signature="e#5239#5334#0" />
-                <element signature="e#5322#5575#0" />
-                <element signature="e#5418#5528#0" />
-                <element signature="e#5516#5646#0" />
-                <element signature="e#5634#5731#0" />
-                <element signature="e#9282#9283#0" expanded="true" />
-                <element signature="e#9309#9310#0" expanded="true" />
-                <element signature="e#9383#9384#0" expanded="true" />
-                <element signature="e#9410#9411#0" expanded="true" />
-                <element signature="e#9496#9497#0" expanded="true" />
-                <element signature="e#9523#9524#0" expanded="true" />
-                <element signature="e#9600#9601#0" expanded="true" />
-                <element signature="e#9627#9628#0" expanded="true" />
-                <element signature="e#9713#9714#0" expanded="true" />
-                <element signature="e#9740#9741#0" expanded="true" />
-                <element signature="e#9817#9818#0" expanded="true" />
-                <element signature="e#9844#9845#0" expanded="true" />
-                <element signature="e#9148#9149#0" expanded="true" />
-                <element signature="e#9175#9176#0" expanded="true" />
-                <element signature="e#9252#9253#0" expanded="true" />
-                <element signature="e#9279#9280#0" expanded="true" />
-                <element signature="e#8938#8939#0" expanded="true" />
-                <element signature="e#8965#8966#0" expanded="true" />
-                <element signature="e#9055#9056#0" expanded="true" />
-                <element signature="e#9082#9083#0" expanded="true" />
-                <element signature="e#9258#9259#0" expanded="true" />
-                <element signature="e#9285#9286#0" expanded="true" />
-                <element signature="e#9362#9363#0" expanded="true" />
-                <element signature="e#9389#9390#0" expanded="true" />
-                <element signature="e#8111#8208#0" />
-                <element signature="e#8367#8457#0" />
-                <element signature="e#8625#8727#0" />
-                <element signature="e#8886#8987#0" />
-                <element signature="e#9146#9243#0" />
-                <element signature="e#9402#9526#0" />
-                <element signature="e#9685#9962#0" />
-                <element signature="e#6875#7029#0" />
-                <element signature="e#7035#7190#0" />
-                <element signature="e#7196#7359#0" />
-                <element signature="e#7365#7500#0" />
-                <element signature="e#7506#7664#0" />
-                <element signature="e#7670#7829#0" />
-                <element signature="e#7835#7966#0" />
-                <element signature="e#11785#11883#0" />
-                <element signature="e#12042#12140#0" />
-                <element signature="e#12308#12420#0" />
-                <element signature="e#12579#12693#0" />
-                <element signature="e#12852#13131#0" />
-                <element signature="e#13137#13260#0" />
-                <element signature="e#13419#13696#0" />
-                <element signature="e#13702#13824#0" />
-                <element signature="e#9274#9492#0" />
-                <element signature="e#8802#9004#0" />
-                <element signature="e#9010#9172#0" />
-                <element signature="e#9178#9369#0" />
-                <element signature="e#9375#9526#0" />
-                <element signature="e#9532#9671#0" />
-                <element signature="e#15322#15466#0" />
-                <element signature="e#15508#15655#0" />
-                <element signature="e#15706#15859#0" />
-                <element signature="e#15906#16096#0" />
-                <element signature="e#16099#16228#0" />
-                <element signature="e#16262#16431#0" />
-                <element signature="e#16437#16600#0" />
-                <element signature="e#16606#16770#0" />
-                <element signature="e#15859#15961#0" />
-                <element signature="e#16121#16239#0" />
-                <element signature="e#16389#16522#0" />
-                <element signature="e#16672#16802#0" />
-                <element signature="e#16952#17185#0" />
-                <element signature="e#17108#17354#0" />
-                <element signature="e#17360#17624#0" />
-                <element signature="e#17641#17765#0" />
-                <element signature="e#17914#18026#0" />
-                <element signature="e#11792#11975#0" />
-                <element signature="e#11981#12198#0" />
-                <element signature="e#12204#12377#0" />
-                <element signature="e#12383#12532#0" />
-                <element signature="e#12538#12702#0" />
-                <element signature="e#12708#12883#0" />
-                <element signature="e#12889#13076#0" />
-                <element signature="e#13082#13218#0" />
-                <element signature="e#13224#13381#0" />
-                <element signature="e#13387#13511#0" />
-                <element signature="e#13517#13694#0" />
-                <element signature="e#13700#15864#0" />
-                <element signature="e#17722#17826#0" />
-                <element signature="e#25547#25654#0" />
-                <element signature="e#17927#18102#0" />
-                <element signature="e#18108#18258#0" />
-                <element signature="e#26444#26583#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThinClientSecurity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientSecurity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="30" column="157" selection-start-line="30" selection-start-column="157" selection-end-line="30" selection-end-column="157" />
+            <state relative-caret-position="8976">
+              <caret line="576" lean-forward="true" selection-start-line="576" selection-end-line="576" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -216,8 +101,8 @@
       <file leaf-file-name="ThinClientAdmin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientAdmin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="102">
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#289#290#0" expanded="true" />
@@ -227,25 +112,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RMIStore.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIStore.java">
+      <file leaf-file-name="ThinClientAbstract.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientAbstract.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+            <state relative-caret-position="204">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1047#1048#0" expanded="true" />
-                <element signature="e#1074#1075#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="System.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/System.java">
+      <file leaf-file-name="ThinClientSecurity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientSecurity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+            <state relative-caret-position="238">
+              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -276,6 +162,7 @@
       <find>ThinC</find>
       <find>ThinClient</find>
       <find>store</find>
+      <find>create</find>
     </findStrings>
     <replaceStrings>
       <replace>return;</replace>
@@ -290,7 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/FrameStore.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/FrameRegistryImpl.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/interfaces/CallRegistry.java" />
         <option value="$PROJECT_DIR$/data/frames" />
@@ -320,7 +206,6 @@
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/Wrapper.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/interfaces/Er.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/interfaces/Eric.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/ThickClient.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/ancellaries/annotations/Resource.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java" />
@@ -337,10 +222,12 @@
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIStore.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/System.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientImpl.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClient.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/call/CallReference.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/call/CallClient.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/call/CallClientImpl.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClient.java" />
       </list>
     </option>
   </component>
@@ -356,7 +243,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -370,51 +256,12 @@
               <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mearvk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mearvk" type="462c0819:PsiDirectoryNode" />
-              <item name="circuitry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mearvk" type="462c0819:PsiDirectoryNode" />
-              <item name="circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="rmi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mearvk" type="462c0819:PsiDirectoryNode" />
-              <item name="circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="rmi" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Circuitry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mearvk" type="462c0819:PsiDirectoryNode" />
-              <item name="circuitry" type="462c0819:PsiDirectoryNode" />
-              <item name="rmi" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="call" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -583,13 +430,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00126" summary="Latest">
-      <created>1529529365173</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1529529365173</updated>
     </task>
     <task id="LOCAL-00127" summary="Latest">
       <created>1529597734952</created>
@@ -927,7 +767,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530840569703</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="Latest">
+      <created>1530848738110</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1530848738110</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -936,30 +783,30 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.491875" weight="0.30084348" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.491875" visible="true" weight="0.30084348" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.535" side_tool="true" weight="0.40299907" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.465" weight="0.24461105" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32987747" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.465" weight="0.24461105" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.183125" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.140625" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.33083412" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33083412" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
@@ -967,12 +814,12 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3139644" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32987747" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -982,7 +829,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32987747" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Capture Tool" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.3289597" />
@@ -1044,7 +891,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
-          <line>192</line>
+          <line>627</line>
           <properties />
           <option name="timeStamp" value="35" />
         </line-breakpoint>
@@ -1056,43 +903,37 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
-          <line>1045</line>
+          <line>750</line>
           <properties />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
-          <line>905</line>
-          <properties />
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
-          <line>691</line>
+          <line>1010</line>
           <properties />
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
-          <line>513</line>
+          <line>768</line>
           <properties />
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
-          <line>85</line>
+          <line>666</line>
           <properties />
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClient.java</url>
-          <line>48</line>
+          <line>59</line>
           <properties />
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClient.java</url>
-          <line>18</line>
+          <line>17</line>
           <properties />
           <option name="timeStamp" value="58" />
         </line-breakpoint>
@@ -1104,7 +945,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientImpl.java</url>
-          <line>21</line>
+          <line>18</line>
           <properties />
           <option name="timeStamp" value="60" />
         </line-breakpoint>
@@ -1128,13 +969,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
-          <line>142</line>
-          <properties />
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
-          <line>675</line>
+          <line>994</line>
           <properties />
           <option name="timeStamp" value="65" />
         </line-breakpoint>
@@ -1400,26 +1235,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="797">
-          <caret line="277" column="19" selection-start-line="277" selection-start-column="19" selection-end-line="277" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5890#5891#0" expanded="true" />
-            <element signature="e#5917#5918#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIStoreImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#185#186#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1437,28 +1256,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientAbstract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="90" column="48" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/security/Key.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="710">
@@ -1466,24 +1263,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientSecurity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="30" column="157" selection-start-line="30" selection-start-column="157" selection-end-line="30" selection-end-column="157" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIStore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+        <state relative-caret-position="1122">
+          <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1047#1048#0" expanded="true" />
-            <element signature="e#1074#1075#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1492,25 +1277,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/call/CallClientImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1523,15 +1289,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/call/CallClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+        <state relative-caret-position="68">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClient.java">
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/call/CallClientImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="68">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="278" column="19" selection-start-line="278" selection-start-column="19" selection-end-line="278" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5890#5891#0" expanded="true" />
+            <element signature="e#5917#5918#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientAbstract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1540,118 +1357,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="314" column="8" selection-start-line="314" selection-start-column="8" selection-end-line="314" selection-end-column="8" />
+        <state relative-caret-position="8976">
+          <caret line="576" lean-forward="true" selection-start-line="576" selection-end-line="576" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1194#1294#0" />
-            <element signature="e#1163#1262#0" />
-            <element signature="e#1430#1545#0" />
-            <element signature="e#1713#1821#0" />
-            <element signature="e#1989#2122#0" />
-            <element signature="e#2281#2419#0" />
-            <element signature="e#2578#2870#0" />
-            <element signature="e#1707#1878#0" />
-            <element signature="e#1884#2062#0" />
-            <element signature="e#2068#2239#0" />
-            <element signature="e#2529#2994#0" />
-            <element signature="e#3000#3880#0" />
-            <element signature="e#3886#4317#0" />
-            <element signature="e#4323#4555#0" />
-            <element signature="e#4561#4889#0" />
-            <element signature="e#4895#5118#0" />
-            <element signature="e#5717#5808#0" />
-            <element signature="e#5239#5334#0" />
-            <element signature="e#5322#5575#0" />
-            <element signature="e#5418#5528#0" />
-            <element signature="e#5516#5646#0" />
-            <element signature="e#5634#5731#0" />
-            <element signature="e#9282#9283#0" expanded="true" />
-            <element signature="e#9309#9310#0" expanded="true" />
-            <element signature="e#9383#9384#0" expanded="true" />
-            <element signature="e#9410#9411#0" expanded="true" />
-            <element signature="e#9496#9497#0" expanded="true" />
-            <element signature="e#9523#9524#0" expanded="true" />
-            <element signature="e#9600#9601#0" expanded="true" />
-            <element signature="e#9627#9628#0" expanded="true" />
-            <element signature="e#9713#9714#0" expanded="true" />
-            <element signature="e#9740#9741#0" expanded="true" />
-            <element signature="e#9817#9818#0" expanded="true" />
-            <element signature="e#9844#9845#0" expanded="true" />
-            <element signature="e#9148#9149#0" expanded="true" />
-            <element signature="e#9175#9176#0" expanded="true" />
-            <element signature="e#9252#9253#0" expanded="true" />
-            <element signature="e#9279#9280#0" expanded="true" />
-            <element signature="e#8938#8939#0" expanded="true" />
-            <element signature="e#8965#8966#0" expanded="true" />
-            <element signature="e#9055#9056#0" expanded="true" />
-            <element signature="e#9082#9083#0" expanded="true" />
-            <element signature="e#9258#9259#0" expanded="true" />
-            <element signature="e#9285#9286#0" expanded="true" />
-            <element signature="e#9362#9363#0" expanded="true" />
-            <element signature="e#9389#9390#0" expanded="true" />
-            <element signature="e#8111#8208#0" />
-            <element signature="e#8367#8457#0" />
-            <element signature="e#8625#8727#0" />
-            <element signature="e#8886#8987#0" />
-            <element signature="e#9146#9243#0" />
-            <element signature="e#9402#9526#0" />
-            <element signature="e#9685#9962#0" />
-            <element signature="e#6875#7029#0" />
-            <element signature="e#7035#7190#0" />
-            <element signature="e#7196#7359#0" />
-            <element signature="e#7365#7500#0" />
-            <element signature="e#7506#7664#0" />
-            <element signature="e#7670#7829#0" />
-            <element signature="e#7835#7966#0" />
-            <element signature="e#11785#11883#0" />
-            <element signature="e#12042#12140#0" />
-            <element signature="e#12308#12420#0" />
-            <element signature="e#12579#12693#0" />
-            <element signature="e#12852#13131#0" />
-            <element signature="e#13137#13260#0" />
-            <element signature="e#13419#13696#0" />
-            <element signature="e#13702#13824#0" />
-            <element signature="e#9274#9492#0" />
-            <element signature="e#8802#9004#0" />
-            <element signature="e#9010#9172#0" />
-            <element signature="e#9178#9369#0" />
-            <element signature="e#9375#9526#0" />
-            <element signature="e#9532#9671#0" />
-            <element signature="e#15322#15466#0" />
-            <element signature="e#15508#15655#0" />
-            <element signature="e#15706#15859#0" />
-            <element signature="e#15906#16096#0" />
-            <element signature="e#16099#16228#0" />
-            <element signature="e#16262#16431#0" />
-            <element signature="e#16437#16600#0" />
-            <element signature="e#16606#16770#0" />
-            <element signature="e#15859#15961#0" />
-            <element signature="e#16121#16239#0" />
-            <element signature="e#16389#16522#0" />
-            <element signature="e#16672#16802#0" />
-            <element signature="e#16952#17185#0" />
-            <element signature="e#17108#17354#0" />
-            <element signature="e#17360#17624#0" />
-            <element signature="e#17641#17765#0" />
-            <element signature="e#17914#18026#0" />
-            <element signature="e#11792#11975#0" />
-            <element signature="e#11981#12198#0" />
-            <element signature="e#12204#12377#0" />
-            <element signature="e#12383#12532#0" />
-            <element signature="e#12538#12702#0" />
-            <element signature="e#12708#12883#0" />
-            <element signature="e#12889#13076#0" />
-            <element signature="e#13082#13218#0" />
-            <element signature="e#13224#13381#0" />
-            <element signature="e#13387#13511#0" />
-            <element signature="e#13517#13694#0" />
-            <element signature="e#13700#15864#0" />
-            <element signature="e#17722#17826#0" />
-            <element signature="e#25547#25654#0" />
-            <element signature="e#17927#18102#0" />
-            <element signature="e#18108#18258#0" />
-            <element signature="e#26444#26583#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

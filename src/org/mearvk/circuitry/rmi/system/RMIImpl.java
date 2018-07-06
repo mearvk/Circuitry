@@ -1,6 +1,7 @@
 package org.mearvk.circuitry.rmi.system;
 
 import org.mearvk.ancellaries.annotations.Resource;
+import org.mearvk.circuitry.rmi.system.call.CallClient;
 import org.mearvk.circuitry.rmi.system.interfaces.Hooks;
 import org.mearvk.circuitry.rmi.system.interfaces.RMIModel;
 import org.mearvk.examples.example010.ThinClient;
@@ -253,6 +254,29 @@ public class RMIImpl
 
     @Resource()
     public RMIImpl create(Class _class, ThinClient ref)
+    {
+        System.rmi.post(java.lang.System.out, "RMIImpl create() called...\n");
+
+        //
+
+        try
+        {
+            ThinClient client = ((ThinClient) _class.newInstance());
+
+            ref.ref = client;
+        }
+        catch (Exception exception)
+        {
+            exception.printStackTrace();
+        }
+
+        //
+
+        return this;
+    }
+
+    @Resource()
+    public RMIImpl create(Class _class, CallClient ref)
     {
         System.rmi.post(java.lang.System.out, "RMIImpl create() called...\n");
 
