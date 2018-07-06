@@ -12,6 +12,11 @@ public class RMIDbms extends RMIDbmsImpl
 
     }
 
+    public void store(Object object, Thread thread, StackTraceElement[] elements)
+    {
+
+    }
+
     public void store(Object object, String name, Thread thread, StackTraceElement[] elements)
     {
 

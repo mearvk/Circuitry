@@ -33,16 +33,18 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI()
     {
-
+        System.rmi.store(this.store, "public RMI init<>", null, Thread.currentThread(), Thread.currentThread().getStackTrace());
     }
 
     @Resource(tie = "super")
     protected RMI file()
     {
+        System.rmi.store(this.store, "public RMI file()", null, Thread.currentThread(), Thread.currentThread().getStackTrace());
+
         return this;
     }
 
-    @Resource()
+    @Resource(tie = "super")
     public RMI put(Object object, String URI)
     {
         System.rmi.store(this.store, "public RMI put()", null, Thread.currentThread(), Thread.currentThread().getStackTrace());
@@ -50,7 +52,7 @@ public class RMI extends RMIImpl implements Serializable
         return this;
     }
 
-    @Resource()
+    @Resource(tie = "super")
     public RMI put(Object object, String URI, Object... args)
     {
         System.rmi.store(this.store, "public RMI put()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), object, URI, args);
@@ -58,7 +60,7 @@ public class RMI extends RMIImpl implements Serializable
         return this;
     }
 
-    @Resource()
+    @Resource(tie = "super")
     public RMI put(SystemComponent object, String URI)
     {
         System.rmi.store(this.store, "public RMI put()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), object, URI);
@@ -66,7 +68,7 @@ public class RMI extends RMIImpl implements Serializable
         return this;
     }
 
-    @Resource()
+    @Resource(tie = "super")
     public RMI put(SystemComponent object, String URI, Object... args)
     {
         System.rmi.store(this.store, "public RMI put()", object, Thread.currentThread(), Thread.currentThread().getStackTrace(), object, URI, args);
@@ -82,7 +84,7 @@ public class RMI extends RMIImpl implements Serializable
         return this;
     }
 
-    @Resource(tie = "super", rules = "meh")
+    @Resource(tie = "super")
     public RMI create(Class _class, Wrapper ref)
     {
         System.rmi.store(this.store, "public RMI create()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), _class, ref);
@@ -122,13 +124,15 @@ public class RMI extends RMIImpl implements Serializable
         return this;
     }
 
-    @Resource
+    @Resource(tie = "super")
     public RMI passthru()
     {
+        System.rmi.store(this.store, "public RMI passthru()", null, Thread.currentThread(), Thread.currentThread().getStackTrace());
+
         return this;
     }
 
-    @Resource
+    @Resource(tie = "super")
     public RMI passthru(RMI system, Object object, Object reference)
     {
         System.rmi.store(this.store, "public RMI passthru()", object, Thread.currentThread(), Thread.currentThread().getStackTrace(), object, system, reference);
@@ -136,7 +140,7 @@ public class RMI extends RMIImpl implements Serializable
         return this;
     }
 
-    @Resource
+    @Resource(tie = "super")
     public RMI passthru(Object object, Object reference, Integer constrainer)
     {
         System.rmi.store(this.store, "public RMI passthru()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), object, reference, constrainer);
@@ -144,7 +148,7 @@ public class RMI extends RMIImpl implements Serializable
         return this;
     }
 
-    @Resource
+    @Resource(tie = "super")
     public RMI passthru(Object object, Object subclass, NullType dummy, Object... args)
     {
         System.rmi.store(this.store, "public RMI passthru()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), object, subclass, dummy, args);
@@ -152,7 +156,7 @@ public class RMI extends RMIImpl implements Serializable
         return this;
     }
 
-    @Resource
+    @Resource(tie = "super")
     public RMI passthru(Object object, Object subclass, NullType dummy)
     {
         System.rmi.store(this.store, "public RMI passthru()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), object, subclass, dummy);
@@ -160,17 +164,15 @@ public class RMI extends RMIImpl implements Serializable
         return this;
     }
 
-    @Resource
+    @Resource(tie = "super")
     public RMI passthru(Object object, Object subclass, Object reference, NullType dummy, Object... args)
     {
         System.rmi.store(this.store, "public RMI passthru()", object, Thread.currentThread(), Thread.currentThread().getStackTrace(), object, subclass, reference, args);
 
-        //
-
         return this;
     }
 
-    @Resource
+    @Resource(tie = "super")
     public RMI passthru(Object object, NullType dummy, Object... args)
     {
         System.rmi.store(this.store, "public RMI passthru()", object, Thread.currentThread(), Thread.currentThread().getStackTrace(), object, args);
@@ -365,7 +367,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI store()
     {
-        System.rmi.store(this.store, "public RMI store()", null, Thread.currentThread(), Thread.currentThread().getStackTrace());
+        this.store.store(null, Thread.currentThread(), Thread.currentThread().getStackTrace());
 
         return this;
     }
@@ -373,7 +375,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI store(String id)
     {
-        System.rmi.store(this.store, "public RMI store()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), id);
+        this.store.store(id);
 
         return this;
     }
@@ -381,7 +383,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI store(RMIStore store)
     {
-        System.rmi.store(this.store, "public RMI store()", null, Thread.currentThread(), Thread.currentThread().getStackTrace());
+        store.store(null, Thread.currentThread(), Thread.currentThread().getStackTrace());
 
         return this;
     }
@@ -389,7 +391,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI store(RMIDbms database)
     {
-        System.rmi.store(this.store, "public RMI store()", null, Thread.currentThread(), Thread.currentThread().getStackTrace());
+        database.store(null, Thread.currentThread(), Thread.currentThread().getStackTrace());
 
         return this;
     }
@@ -397,7 +399,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI store(RMIDbms database, Integer id)
     {
-        System.rmi.store(this.store, "public RMI store()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), id);
+        database.store(id, Thread.currentThread(), Thread.currentThread().getStackTrace());
 
         return this;
     }
@@ -405,7 +407,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI store(RMIStore store, String id)
     {
-        System.rmi.store(this.store, "public RMI store()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), id);
+        store.store(null, id);
 
         return this;
     }
@@ -413,7 +415,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI store(RMIStore store, Integer id)
     {
-        System.rmi.store(this.store, "public RMI store()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), id);
+        store.store(id);
 
         return this;
     }
@@ -421,7 +423,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI store(String id, Object object)
     {
-        System.rmi.store(this.store, "public RMI store()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), object);
+        this.store.store(object, id);
 
         return this;
     }
@@ -687,7 +689,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI logic()
     {
-        System.rmi.store(this.store, "public RMI as()", null, Thread.currentThread(), Thread.currentThread().getStackTrace());
+        System.rmi.store(this.store, "public RMI logic()", null, Thread.currentThread(), Thread.currentThread().getStackTrace());
 
         return this;
     }
@@ -695,7 +697,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI logic(String URI)
     {
-        System.rmi.store(this.store, "public RMI as()", URI, Thread.currentThread(), Thread.currentThread().getStackTrace(), URI);
+        System.rmi.store(this.store, "public RMI logic()", URI, Thread.currentThread(), Thread.currentThread().getStackTrace(), URI);
 
         return this;
     }
@@ -703,7 +705,7 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI lookup(Object object, Object reference)
     {
-        System.rmi.store(this.store, "public RMI as()", object, Thread.currentThread(), Thread.currentThread().getStackTrace(), object, reference);
+        System.rmi.store(this.store, "public RMI lookup()", object, Thread.currentThread(), Thread.currentThread().getStackTrace(), object, reference);
 
         return this;
     }
@@ -711,14 +713,14 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI lookup(String URI, Object reference)
     {
-        System.rmi.store(this.store, "public RMI as()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), URI, reference);
+        System.rmi.store(this.store, "public RMI lookup()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), URI, reference);
 
         return this;
     }
 
     public RMI run(Object object, Object subclass, Object reference, StackTraceElement[] stackdata, RMI system, Object... args)
     {
-        System.rmi.store(this.store, "public RMI as()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), reference);
+        System.rmi.store(this.store, "public RMI run()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), reference);
 
         Method method = null;
 
@@ -787,90 +789,6 @@ public class RMI extends RMIImpl implements Serializable
 
         return this;
     }
-
-    /*
-
-    @Resource(tie = "super")
-    public RMI run(Object object, Object reference)
-    {
-        Thread currentthread = Thread.currentThread();
-
-        System.call_registry.push(new Call(object, reference, currentthread.getStackTrace()));
-
-        System.frame_registry.push(new Frame(this, object, null));
-
-        //
-
-        super._run(object, reference, currentthread);
-
-        //
-
-        return this;
-    }
-
-    @Resource(tie = "super")
-    public RMI run(String URI, Object reference)
-    {
-        Object object = null;
-
-        Thread currentthread = Thread.currentThread();
-
-        System.call_registry.push(new Call(object, reference, currentthread.getStackTrace()));
-
-        System.frame_registry.push(new Frame(this, object, null));
-
-        System.rmi.lookup(object, URI);
-
-        //
-
-        super._run(object, reference, currentthread);
-
-        //
-
-        return this;
-    }
-
-    @Resource(tie = "super")
-    public RMI run(Object rmi, Object object, Object reference, Object... args)
-    {
-        Thread currentthread = Thread.currentThread();
-
-        System.call_registry.push(new Call(object, reference, currentthread.getStackTrace()));
-
-        System.frame_registry.push(new Frame(this, object, args));
-
-        //
-
-        super._run(object, reference, args);
-
-        //
-
-        return this;
-    }
-
-    @Resource(tie = "super")
-    public RMI run(String URI, Object reference, Class subclass, Object... args)
-    {
-        Object object = null;
-
-        Thread currentthread = Thread.currentThread();
-
-        System.call_registry.push(new Call(object, reference, currentthread.getStackTrace()));
-
-        System.frame_registry.push(new Frame(this, object, args));
-
-        System.rmi.lookup(object, URI);
-
-        //
-
-        super._run(object, reference, args);
-
-        //
-
-        return this;
-    }
-
-    */
 
     @Resource(tie = "super")
     public RMI cast(Object object)

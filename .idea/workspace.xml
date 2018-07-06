@@ -7,6 +7,7 @@
     <list default="true" id="8936b3fe-91dd-4f9c-8d20-4b2e1b39c74a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIDbms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIDbms.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +36,7 @@
       <file leaf-file-name="RMIImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
+            <state relative-caret-position="542">
               <caret line="277" column="19" selection-start-line="277" selection-start-column="19" selection-end-line="277" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -49,25 +50,112 @@
       <file leaf-file-name="RMI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15283">
-              <caret line="902" column="28" lean-forward="true" selection-start-line="902" selection-start-column="28" selection-end-line="902" selection-end-column="28" />
+            <state relative-caret-position="17">
+              <caret line="24" column="35" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2575#2576#0" expanded="true" />
-                <element signature="e#2602#2603#0" expanded="true" />
+                <element signature="e#1006#1187#0" />
+                <element signature="e#1194#1294#0" />
+                <element signature="e#1163#1262#0" />
+                <element signature="e#1430#1545#0" />
+                <element signature="e#1713#1821#0" />
+                <element signature="e#1989#2122#0" />
+                <element signature="e#2281#2419#0" />
+                <element signature="e#2578#2870#0" />
+                <element signature="e#1707#1878#0" />
+                <element signature="e#1884#2062#0" />
+                <element signature="e#2068#2239#0" />
+                <element signature="e#2245#2449#0" />
+                <element signature="e#3989#4075#0" />
+                <element signature="e#2529#2994#0" />
+                <element signature="e#3000#3880#0" />
+                <element signature="e#3886#4317#0" />
+                <element signature="e#4323#4555#0" />
+                <element signature="e#4561#4889#0" />
+                <element signature="e#4895#5118#0" />
+                <element signature="e#5717#5808#0" />
+                <element signature="e#5239#5334#0" />
+                <element signature="e#5322#5575#0" />
+                <element signature="e#5418#5528#0" />
+                <element signature="e#5516#5646#0" />
+                <element signature="e#5634#5731#0" />
+                <element signature="e#5775#5917#0" />
+                <element signature="e#5831#6055#0" />
+                <element signature="e#6061#6209#0" />
+                <element signature="e#8111#8208#0" />
+                <element signature="e#8367#8457#0" />
+                <element signature="e#8625#8727#0" />
+                <element signature="e#8886#8987#0" />
+                <element signature="e#9146#9243#0" />
+                <element signature="e#9402#9526#0" />
+                <element signature="e#9685#9962#0" />
+                <element signature="e#6875#7029#0" />
+                <element signature="e#7035#7190#0" />
+                <element signature="e#7196#7359#0" />
+                <element signature="e#7365#7500#0" />
+                <element signature="e#7506#7664#0" />
+                <element signature="e#7670#7829#0" />
+                <element signature="e#7835#7966#0" />
+                <element signature="e#11785#11883#0" />
+                <element signature="e#12042#12140#0" />
+                <element signature="e#12308#12420#0" />
+                <element signature="e#12579#12693#0" />
+                <element signature="e#12852#13131#0" />
+                <element signature="e#13137#13260#0" />
+                <element signature="e#13419#13696#0" />
+                <element signature="e#13702#13824#0" />
+                <element signature="e#9274#9492#0" />
+                <element signature="e#8885#9087#0" />
+                <element signature="e#8802#9004#0" />
+                <element signature="e#9010#9172#0" />
+                <element signature="e#9178#9369#0" />
+                <element signature="e#9375#9526#0" />
+                <element signature="e#9532#9671#0" />
+                <element signature="e#15322#15466#0" />
+                <element signature="e#15508#15655#0" />
+                <element signature="e#15706#15859#0" />
+                <element signature="e#15906#16096#0" />
+                <element signature="e#16099#16228#0" />
+                <element signature="e#16262#16431#0" />
+                <element signature="e#16437#16600#0" />
+                <element signature="e#16606#16770#0" />
+                <element signature="e#15859#15961#0" />
+                <element signature="e#16121#16239#0" />
+                <element signature="e#16389#16522#0" />
+                <element signature="e#16672#16802#0" />
+                <element signature="e#16952#17185#0" />
+                <element signature="e#17108#17354#0" />
+                <element signature="e#17360#17624#0" />
+                <element signature="e#17641#17765#0" />
+                <element signature="e#17914#18026#0" />
+                <element signature="e#18170#18279#0" />
+                <element signature="e#11792#11975#0" />
+                <element signature="e#11981#12198#0" />
+                <element signature="e#12204#12377#0" />
+                <element signature="e#12383#12532#0" />
+                <element signature="e#12538#12702#0" />
+                <element signature="e#12708#12883#0" />
+                <element signature="e#12889#13076#0" />
+                <element signature="e#13082#13218#0" />
+                <element signature="e#13224#13381#0" />
+                <element signature="e#13387#13511#0" />
+                <element signature="e#13517#13694#0" />
+                <element signature="e#13700#15864#0" />
+                <element signature="e#17722#17826#0" />
+                <element signature="e#25547#25654#0" />
+                <element signature="e#17927#18102#0" />
+                <element signature="e#18108#18258#0" />
+                <element signature="e#26444#26583#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThinClientSecurity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientSecurity.java">
+      <file leaf-file-name="RMIDbms.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIDbms.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -216,7 +304,6 @@
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/ThinClientAbstract.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinUI.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/System.java" />
-        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIDbms.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIDbmsImpl.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIStoreAdmin.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIStoreImpl.java" />
@@ -226,6 +313,7 @@
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClientAbstract.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/thin/ThinClient.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIStore.java" />
+        <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIDbms.java" />
         <option value="$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java" />
       </list>
     </option>
@@ -424,13 +512,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526261329199</updated>
-    </task>
-    <task id="LOCAL-00122" summary="Latest">
-      <created>1529518690270</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1529518690270</updated>
     </task>
     <task id="LOCAL-00123" summary="Latest">
       <created>1529519524435</created>
@@ -768,7 +849,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530836534333</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="Latest">
+      <created>1530838464088</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1530838464088</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -777,7 +865,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.491875" visible="true" weight="0.30084348" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.491875" visible="true" weight="0.30084348" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -788,7 +876,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1725" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -885,15 +973,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
-          <line>169</line>
+          <line>171</line>
           <properties />
           <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
-          <line>835</line>
-          <properties />
-          <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/mearvk/examples/example010/ThinClient.java</url>
@@ -901,8 +983,50 @@
           <properties />
           <option name="timeStamp" value="41" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
+          <line>822</line>
+          <properties />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
+          <line>682</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
+          <line>480</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
+          <line>464</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
+          <line>304</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
+          <line>216</line>
+          <properties />
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="48" />
+      <option name="time" value="57" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -1180,13 +1304,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIDbms.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/module/Configuration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
@@ -1254,18 +1371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="277" column="19" selection-start-line="277" selection-start-column="19" selection-end-line="277" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5890#5891#0" expanded="true" />
-            <element signature="e#5917#5918#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIStoreAdmin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1292,14 +1397,123 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java">
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIDbms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15283">
-          <caret line="902" column="28" lean-forward="true" selection-start-line="902" selection-start-column="28" selection-end-line="902" selection-end-column="28" />
+        <state relative-caret-position="238">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMIImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="277" column="19" selection-start-line="277" selection-start-column="19" selection-end-line="277" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2575#2576#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
+            <element signature="e#5890#5891#0" expanded="true" />
+            <element signature="e#5917#5918#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/mearvk/circuitry/rmi/system/RMI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1006#1187#0" />
+            <element signature="e#1194#1294#0" />
+            <element signature="e#1163#1262#0" />
+            <element signature="e#1430#1545#0" />
+            <element signature="e#1713#1821#0" />
+            <element signature="e#1989#2122#0" />
+            <element signature="e#2281#2419#0" />
+            <element signature="e#2578#2870#0" />
+            <element signature="e#1707#1878#0" />
+            <element signature="e#1884#2062#0" />
+            <element signature="e#2068#2239#0" />
+            <element signature="e#2245#2449#0" />
+            <element signature="e#3989#4075#0" />
+            <element signature="e#2529#2994#0" />
+            <element signature="e#3000#3880#0" />
+            <element signature="e#3886#4317#0" />
+            <element signature="e#4323#4555#0" />
+            <element signature="e#4561#4889#0" />
+            <element signature="e#4895#5118#0" />
+            <element signature="e#5717#5808#0" />
+            <element signature="e#5239#5334#0" />
+            <element signature="e#5322#5575#0" />
+            <element signature="e#5418#5528#0" />
+            <element signature="e#5516#5646#0" />
+            <element signature="e#5634#5731#0" />
+            <element signature="e#5775#5917#0" />
+            <element signature="e#5831#6055#0" />
+            <element signature="e#6061#6209#0" />
+            <element signature="e#8111#8208#0" />
+            <element signature="e#8367#8457#0" />
+            <element signature="e#8625#8727#0" />
+            <element signature="e#8886#8987#0" />
+            <element signature="e#9146#9243#0" />
+            <element signature="e#9402#9526#0" />
+            <element signature="e#9685#9962#0" />
+            <element signature="e#6875#7029#0" />
+            <element signature="e#7035#7190#0" />
+            <element signature="e#7196#7359#0" />
+            <element signature="e#7365#7500#0" />
+            <element signature="e#7506#7664#0" />
+            <element signature="e#7670#7829#0" />
+            <element signature="e#7835#7966#0" />
+            <element signature="e#11785#11883#0" />
+            <element signature="e#12042#12140#0" />
+            <element signature="e#12308#12420#0" />
+            <element signature="e#12579#12693#0" />
+            <element signature="e#12852#13131#0" />
+            <element signature="e#13137#13260#0" />
+            <element signature="e#13419#13696#0" />
+            <element signature="e#13702#13824#0" />
+            <element signature="e#9274#9492#0" />
+            <element signature="e#8885#9087#0" />
+            <element signature="e#8802#9004#0" />
+            <element signature="e#9010#9172#0" />
+            <element signature="e#9178#9369#0" />
+            <element signature="e#9375#9526#0" />
+            <element signature="e#9532#9671#0" />
+            <element signature="e#15322#15466#0" />
+            <element signature="e#15508#15655#0" />
+            <element signature="e#15706#15859#0" />
+            <element signature="e#15906#16096#0" />
+            <element signature="e#16099#16228#0" />
+            <element signature="e#16262#16431#0" />
+            <element signature="e#16437#16600#0" />
+            <element signature="e#16606#16770#0" />
+            <element signature="e#15859#15961#0" />
+            <element signature="e#16121#16239#0" />
+            <element signature="e#16389#16522#0" />
+            <element signature="e#16672#16802#0" />
+            <element signature="e#16952#17185#0" />
+            <element signature="e#17108#17354#0" />
+            <element signature="e#17360#17624#0" />
+            <element signature="e#17641#17765#0" />
+            <element signature="e#17914#18026#0" />
+            <element signature="e#18170#18279#0" />
+            <element signature="e#11792#11975#0" />
+            <element signature="e#11981#12198#0" />
+            <element signature="e#12204#12377#0" />
+            <element signature="e#12383#12532#0" />
+            <element signature="e#12538#12702#0" />
+            <element signature="e#12708#12883#0" />
+            <element signature="e#12889#13076#0" />
+            <element signature="e#13082#13218#0" />
+            <element signature="e#13224#13381#0" />
+            <element signature="e#13387#13511#0" />
+            <element signature="e#13517#13694#0" />
+            <element signature="e#13700#15864#0" />
+            <element signature="e#17722#17826#0" />
+            <element signature="e#25547#25654#0" />
+            <element signature="e#17927#18102#0" />
+            <element signature="e#18108#18258#0" />
+            <element signature="e#26444#26583#0" />
           </folding>
         </state>
       </provider>
