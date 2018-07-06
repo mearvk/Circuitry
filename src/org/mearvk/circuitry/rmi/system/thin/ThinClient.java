@@ -16,6 +16,9 @@ public class ThinClient extends ThinClientImpl
 
     public static void main(String... args)
     {
+        /*
+
+
         //System.rmi.create(null, null);
         CallClient samsungmicrowaveclient = new SamsungMicrowaveClient();
 
@@ -38,6 +41,8 @@ public class ThinClient extends ThinClientImpl
         samsungmicrowaveclient.stdout(System.out);
 
         samsungmicrowaveclient.run();
+
+        */
     }
 
     //
