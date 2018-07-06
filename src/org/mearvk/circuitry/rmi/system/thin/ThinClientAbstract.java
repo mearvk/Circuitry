@@ -12,9 +12,9 @@ import java.util.ArrayList;
 
 public abstract class ThinClientAbstract
 {
-    public RMIStore store = new RMIStore();
-
     //
+
+    public RMIStore store = new RMIStore();
 
     protected ThinClientAbstract proto;
 

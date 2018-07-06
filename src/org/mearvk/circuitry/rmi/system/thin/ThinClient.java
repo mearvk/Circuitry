@@ -5,8 +5,26 @@ import org.mearvk.circuitry.rmi.system.System;
 
 import java.net.Socket;
 
-public class ThinClient extends ThinClientImpl
+public class ThinClient extends ThinClientImpl //ThinClientPrecall could call SecurityTest suite
 {
+    public ThinClient()
+    {
+        System.rmi.securitize(rmi, this);
+    }
+
+    //
+
+    public static void main(String... args)
+    {
+        ThinClient client = new ThinClient();
+
+        //
+
+        System.rmi.create(ThinClient.class, client);
+    }
+
+    //
+
     @Override
     public void setVersion(byte version)
     {

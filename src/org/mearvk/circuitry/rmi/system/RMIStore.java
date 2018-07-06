@@ -23,6 +23,11 @@ public class RMIStore extends RMIStoreImpl
         super(rmi, configuration);
     }
 
+    public void store(Object object)
+    {
+
+    }
+
     public void store(Object object, String name)
     {
 
@@ -34,6 +39,21 @@ public class RMIStore extends RMIStoreImpl
     }
 
     public void store(Object object, String name, Thread thread, StackTraceElement[] elements)
+    {
+
+    }
+
+    public void store(Object object, Thread thread)
+    {
+
+    }
+
+    public void store(Object object, Thread thread, StackTraceElement[] elements)
+    {
+
+    }
+
+    public void store(String message, Object object, Thread thread, StackTraceElement[] elements)
     {
 
     }

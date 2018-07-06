@@ -8,6 +8,15 @@ import java.security.Key;
 
 public class ThinClientAdmin extends ThinClientAbstract
 {
+    //
+
+    public ThinClientAdmin()
+    {
+        System.rmi.securitize(rmi, this);
+    }
+
+    //
+
     @Override
     public void setVersion(byte version)
     {

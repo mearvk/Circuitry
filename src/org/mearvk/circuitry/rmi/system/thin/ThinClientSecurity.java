@@ -7,6 +7,15 @@ import java.net.Socket;
 
 public class ThinClientSecurity extends ThinClientAdmin
 {
+    //
+
+    public ThinClientSecurity()
+    {
+        System.rmi.securitize(rmi, this);
+    }
+
+    //
+
     @Override
     public void setVersion(byte version)
     {
