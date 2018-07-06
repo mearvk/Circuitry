@@ -21,10 +21,22 @@ public class RMI extends RMIImpl implements Serializable
     public static final Integer ALL_TO_ARGS = 0b1000;
 
     //
+
     public RMIStore store = new RMIStore();
+
+    //
+
     public ThinClient thinclient001 = null;
-    public ThinClient tclient002 = null;
-    public ThinClient tclient003 = null;
+    public ThinClient thinclient002 = null;
+    public ThinClient thinclient003 = null;
+    public ThinClient thinclient004 = null;
+    public ThinClient thinclient005 = null;
+    public ThinClient thinclient006 = null;
+    public ThinClient thinclient007 = null;
+    public ThinClient thinclient008 = null;
+
+    //
+
     public RMI ref = this;
     public RMIImpl impl = super.ref;
 
