@@ -10,10 +10,12 @@ import java.io.File;
 import java.io.PrintStream;
 import java.io.Serializable;
 import java.lang.reflect.Method;
+import java.rmi.Naming;
+import java.rmi.Remote;
 import java.security.Key;
 import java.util.ArrayList;
 
-public class RMI extends RMIImpl implements Serializable
+public class RMI extends RMIImpl implements Serializable, Remote
 {
     public static final Integer SIMPLE_PASSTHRU = 0b0001;
     public static final Integer OBJECT_TO_ARGS = 0b0010;
@@ -43,9 +45,16 @@ public class RMI extends RMIImpl implements Serializable
     //
 
     @Resource(tie = "super")
-    public RMI()
+    public RMI(String name)
     {
-        System.rmi.store(this.store, "public RMI init<>", null, Thread.currentThread(), Thread.currentThread().getStackTrace());
+        try
+        {
+            Naming.bind("//rmi/" + name, this);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     @Resource(tie = "super")
@@ -241,9 +250,41 @@ public class RMI extends RMIImpl implements Serializable
     }
 
     @Resource(tie = "super")
+    public RMI desecuritize(RMI rmi, Object reference, Key key)
+    {
+        System.rmi.store(this.store, "public RMI desecuritize(RMI " + rmi + ", Object " + reference + ", Key " + key + ")", reference, Thread.currentThread(), Thread.currentThread().getStackTrace(), rmi, reference, key);
+
+        //
+
+        System.rmi.encrypt(rmi, reference, key);
+
+        System.rmi.encapsulate(rmi, reference, key);
+
+        System.rmi.synchronize(rmi, reference, key);
+
+        System.rmi.validate(rmi, reference, key);
+
+        //
+
+        return this;
+    }
+
+    @Resource(tie = "super")
     public RMI desecuritize(RMI rmi, Object reference)
     {
         System.rmi.store(this.store, "public RMI desecuritize(RMI " + rmi + ", Object " + reference + ")", reference, Thread.currentThread(), Thread.currentThread().getStackTrace(), rmi, reference);
+
+        //
+
+        System.rmi.encrypt(rmi, reference);
+
+        System.rmi.encapsulate(rmi, reference);
+
+        System.rmi.synchronize(rmi, reference);
+
+        System.rmi.validate(rmi, reference);
+
+        //
 
         return this;
     }
@@ -253,13 +294,166 @@ public class RMI extends RMIImpl implements Serializable
     {
         System.rmi.store(this.store, "public RMI securitize(RMI " + rmi + ", Object " + reference + ")", reference, Thread.currentThread(), Thread.currentThread().getStackTrace(), rmi, reference);
 
+        //
+
+        System.rmi.encrypt(rmi, reference);
+
+        System.rmi.encapsulate(rmi, reference);
+
+        System.rmi.synchronize(rmi, reference);
+
+        System.rmi.validate(rmi, reference);
+
+        //
+
         return this;
     }
 
     @Resource(tie = "super")
     public RMI securitize(RMI rmi, Object reference, Key key)
     {
-        System.rmi.store(this.store, "public RMI securitize(RMI " + rmi + ", Object " + reference + ", Key " + key + ")", reference, Thread.currentThread(), Thread.currentThread().getStackTrace(), rmi, reference, key);
+        System.rmi.store(this.store, "public RMI securiize(RMI " + rmi + ", Object " + reference + ", Key " + key + ")", reference, Thread.currentThread(), Thread.currentThread().getStackTrace(), rmi, reference, key);
+
+        //
+
+        System.rmi.encrypt(rmi, reference, key);
+
+        System.rmi.encapsulate(rmi, reference, key);
+
+        System.rmi.synchronize(rmi, reference, key);
+
+        System.rmi.validate(rmi, reference, key);
+
+        //
+
+        return this;
+    }
+
+    @Resource()
+    public RMI devalidate(RMI rmi, Object reference, Key key)
+    {
+        return this;
+    }
+
+    @Resource()
+    public RMI devalidate(RMI rmi, Object reference)
+    {
+        return this;
+    }
+
+    @Resource()
+    public RMI deencapsulate(RMI rmi, Object reference, Key key)
+    {
+        return this;
+    }
+
+    @Resource()
+    public RMI deencapsulate(RMI rmi, Object reference)
+    {
+        return this;
+    }
+
+    @Resource()
+    public RMI desynchronize(RMI rmi, Object reference, Key key)
+    {
+        return this;
+    }
+
+    @Resource()
+    public RMI desynchronize(RMI rmi, Object reference)
+    {
+        return this;
+    }
+
+    @Resource()
+    public RMI validate(RMI rmi, Object reference, Key key)
+    {
+        return this;
+    }
+
+    @Resource()
+    public RMI validate(RMI rmi, Object reference)
+    {
+        return this;
+    }
+
+    @Resource()
+    public RMI encapsulate(RMI rmi, Object reference, Key key)
+    {
+        return this;
+    }
+
+    @Resource()
+    public RMI encapsulate(RMI rmi, Object reference)
+    {
+        return this;
+    }
+
+    @Resource()
+    public RMI synchronize(RMI rmi, Object reference, Key key)
+    {
+        return this;
+    }
+
+    @Resource()
+    public RMI synchronize(RMI rmi, Object reference)
+    {
+        return this;
+    }
+
+    @Resource(tie = "super")
+    public RMI encrypt(RMI rmi, Object reference, Key key)
+    {
+        System.rmi.store(this.store, "public RMI encrypt(RMI " + rmi + ", Object " + reference + ", Key " + key + ")", reference, Thread.currentThread(), Thread.currentThread().getStackTrace(), rmi, reference, key);
+
+        //
+
+        Remote object = null;
+
+        object = (Remote) this.store.recall(null, null, null, null, null);
+
+        //
+
+        if (object == null)
+        {
+            //not actually in memory yet
+        } else
+        {
+            //in memory go ahead and ecnrypt it and put it up
+        }
+
+        return this;
+    }
+
+    @Resource(tie = "super")
+    public RMI encrypt(RMI rmi, Object reference)
+    {
+        System.rmi.store(this.store, "public RMI encrypt(RMI " + rmi + ", Object " + reference + ")", reference, Thread.currentThread(), Thread.currentThread().getStackTrace(), rmi, reference);
+
+        //
+
+        Remote object = null;
+
+        object = (Remote) this.store.recall(null, null, null, null, null);
+
+        //
+
+        if (object == null)
+        {
+            //not actually in memory yet
+        } else
+        {
+            //in memory go ahead and ecnrypt it and put it up
+        }
+
+        return this;
+    }
+
+    @Resource(tie = "super")
+    public RMI decrypt(RMI rmi, Object reference, Key key)
+    {
+        System.rmi.store(this.store, "public RMI decrypt(RMI " + rmi + ", Object " + reference + ", Key " + key + ")", reference, Thread.currentThread(), Thread.currentThread().getStackTrace(), rmi, reference, key);
+
 
         return this;
     }
@@ -451,6 +645,8 @@ public class RMI extends RMIImpl implements Serializable
     @Resource(tie = "super")
     public RMI store(RMIStore store, String message, Object object, Thread thread, StackTraceElement[] elements)
     {
+        System.rmi.post(java.lang.System.out, message);
+
         store.store(object, thread, elements);
 
         return this;
@@ -635,9 +831,21 @@ public class RMI extends RMIImpl implements Serializable
     }
 
     @Resource(tie = "super")
-    public RMI lookup(String URI)
+    public RMI lookup(ThinClient client, String URI) throws Exception
     {
         System.rmi.store(this.store, "public RMI lookup()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), URI);
+
+        Naming.lookup(URI);
+
+        return this;
+    }
+
+    @Resource(tie = "super")
+    public RMI lookupClass(ThinClient client, String URI) throws Exception
+    {
+        System.rmi.store(this.store, "public RMI lookupClass()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), URI);
+
+        Naming.lookup(URI);
 
         return this;
     }

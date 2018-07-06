@@ -4,27 +4,27 @@ import java.io.Serializable;
 
 public class System implements Serializable
 {
-    public static RMI init = new RMI();
+    public static RMI init = new RMI("init");
 
-    public static RMI rmi = new RMI();
+    public static RMI rmi = new RMI("rmi");
 
-    public static RMI debug = new RMI();
+    public static RMI debug = new RMI("debug");
 
-    public static RMI local = new RMI();
+    public static RMI local = new RMI("local");
 
-    public static RMI hooks = new RMI();
+    public static RMI hooks = new RMI("hooks");
 
-    public static RMI events = new RMI();
+    public static RMI events = new RMI("events");
 
-    public static RMI security = new RMI();
+    public static RMI security = new RMI("security");
 
-    public static RMI frames = new RMI();
+    public static RMI frames = new RMI("frames");
 
-    public static RMI general = new RMI();
+    public static RMI general = new RMI("general");
 
-    public static RMI factory = new RMI();
+    public static RMI factory = new RMI("factory");
 
-    public static RMI registry = new RMI();
+    public static RMI registry = new RMI("registry");
 
     //
 

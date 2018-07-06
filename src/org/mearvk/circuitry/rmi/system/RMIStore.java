@@ -1,6 +1,9 @@
 package org.mearvk.circuitry.rmi.system;
 
+import org.mearvk.circuitry.rmi.system.thin.ThinClient;
+
 import java.lang.module.Configuration;
+import java.util.HashMap;
 
 public class RMIStore extends RMIStoreImpl
 {
@@ -58,8 +61,30 @@ public class RMIStore extends RMIStoreImpl
 
     }
 
-    public void recall()
+    public HashMap<Class, Object> recallLast()
     {
+        return null;
+    }
 
+    public HashMap<Class, Object> recall(String rmiURI, Object object, String name, Thread thread, StackTraceElement[] elements)
+    {
+        HashMap<Class, Object> map = new HashMap<>();
+
+        ThinClient client = new ThinClient();
+
+        Object rv = null;
+
+        try
+        {
+            rv = this.rmi.lookup(client, "");
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+        map.put(Object.class, rv);
+
+        return map;
     }
 }

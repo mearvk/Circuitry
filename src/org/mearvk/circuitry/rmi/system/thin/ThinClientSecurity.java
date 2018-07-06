@@ -3,21 +3,43 @@ package org.mearvk.circuitry.rmi.system.thin;
 import org.mearvk.circuitry.rmi.system.RMI;
 import org.mearvk.circuitry.rmi.system.System;
 
+import java.math.BigInteger;
 import java.net.Socket;
+import java.security.KeyFactory;
+import java.security.PrivateKey;
+import java.security.PublicKey;
+import java.security.spec.RSAPrivateKeySpec;
+import java.security.spec.RSAPublicKeySpec;
+import java.util.Random;
 
 public class ThinClientSecurity extends ThinClientAdmin
 {
+    protected PublicKey pubkey = null;
+
+    protected PrivateKey prvkey = null;
+
     //
 
     public ThinClientSecurity()
     {
         System.rmi.securitize(rmi, this);
+
+        try
+        {
+            this.pubkey = KeyFactory.getInstance("RSA").generatePublic(new RSAPublicKeySpec(BigInteger.probablePrime(1024, new Random()), new BigInteger("3")));
+
+            this.prvkey = KeyFactory.getInstance("RSA").generatePrivate(new RSAPrivateKeySpec(BigInteger.probablePrime(1024, new Random()), new BigInteger("3")));
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     //
 
     @Override
-    public void setVersion(byte version)
+    public void setVersion(int version)
     {
         System.rmi.securitize(rmi, this);
 

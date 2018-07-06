@@ -85,10 +85,10 @@ public abstract class ThinClientAbstract
     //
 
     @Resource()
-    public abstract void setVersion(byte version);
+    public abstract void setVersion(int version);
 
     @Resource()
-    public abstract void setVersion(Key key, byte version);
+    public abstract void setVersion(Key key, int version);
 
     //
 

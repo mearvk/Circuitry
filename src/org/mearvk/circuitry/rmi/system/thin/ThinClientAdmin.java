@@ -18,7 +18,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     //
 
     @Override
-    public void setVersion(byte version)
+    public void setVersion(int version)
     {
         System.rmi.securitize(rmi, this);
 
@@ -30,7 +30,7 @@ public class ThinClientAdmin extends ThinClientAbstract
     }
 
     @Override
-    public void setVersion(Key key, byte version)
+    public void setVersion(Key key, int version)
     {
         System.rmi.securitize(rmi, this);
 

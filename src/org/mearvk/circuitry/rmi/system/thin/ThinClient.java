@@ -9,7 +9,7 @@ public class ThinClient extends ThinClientImpl
 {
     public ThinClient()
     {
-        System.rmi.securitize(rmi, this);
+        System.rmi.securitize(rmi, this); //encrypt object in memory, lock object calls, install encapsulators, validate before allowing method calls
     }
 
     //
@@ -18,15 +18,21 @@ public class ThinClient extends ThinClientImpl
     {
         ThinClient client = new ThinClient();
 
+        client.setVersion(0x0000);
+
+        client.setSource("0x0000");
+
+        client.setRMI(null);
+
         //
 
-        System.rmi.create(ThinClient.class, client);
+        ThinClientImpl impl = client;
     }
 
     //
 
     @Override
-    public void setVersion(byte version)
+    public void setVersion(int version)
     {
         System.rmi.securitize(rmi, this);
 
