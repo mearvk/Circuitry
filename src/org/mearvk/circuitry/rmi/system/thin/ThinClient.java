@@ -2,6 +2,7 @@ package org.mearvk.circuitry.rmi.system.thin;
 
 import org.mearvk.circuitry.rmi.system.RMI;
 import org.mearvk.circuitry.rmi.system.System;
+import org.mearvk.examples.example012.FramingClient;
 
 import java.net.Socket;
 
@@ -16,33 +17,30 @@ public class ThinClient extends ThinClientImpl
 
     public static void main(String... args)
     {
-        /*
+        ThinClient client = new FramingClient();
 
+        //
 
-        //System.rmi.create(null, null);
-        CallClient samsungmicrowaveclient = new SamsungMicrowaveClient();
-
-        System.registry
-                .lookup("rmi://samsung/microwaves")
-                .ref("remote/interface", samsungmicrowaveclient)
-                .synchronize(samsungmicrowaveclient)
+        System.rmi
+                .lookup("//system/logos1")
+                .synchronize(System.rmi, client)
                 .go();
 
-        System.registry
-                .lookup("ip://10.24.1.35")
-                .ref("local/microwave", samsungmicrowaveclient)
-                .synchronize(samsungmicrowaveclient)
-                .go();
+        client.setStdOut(java.lang.System.out);
 
-        samsungmicrowaveclient.probe(samsungmicrowaveclient, "language{Chinese-Mandarin}");
+        client.setNamedProcess
+                ("0xab", client.setProcessBlock("$", new ProcessBlock()), client.getTargetProcess("//x/y/z"), client.getBankProcess("//a/b/c"), ProcessBlock.PRECALL);
 
-        samsungmicrowaveclient.probe(samsungmicrowaveclient, "firmware{latest}");
+        client.setNamedProcess
+                ("0N_AB*", client.setProcessBlock("$", new ProcessBlock()), client.getTargetProcess("//x/y/z"), client.getBankProcess("//a/b/c"), ProcessBlock.POSTCALL);
 
-        samsungmicrowaveclient.stdout(System.out);
+        client.setNamedMonitor("PROCESS_MONITOR_3"); //monitoredobject1.fires :: none, <x>, monitoredobject2.receives :: std, final objectstandard :: out
 
-        samsungmicrowaveclient.run();
+        //
 
-        */
+        condensor.condense(client.calls(4)) >> umHaap. > dhl;>^*&Kj;
+
+        //
     }
 
     //
