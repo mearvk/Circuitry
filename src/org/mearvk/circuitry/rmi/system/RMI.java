@@ -297,6 +297,12 @@ public class RMI extends RMIImpl implements Serializable, Remote
     }
 
     @Resource()
+    public RMI synchronize(Object reference)
+    {
+        return this;
+    }
+
+    @Resource()
     public RMI validate(RMI rmi, Object reference)
     {
         return this;

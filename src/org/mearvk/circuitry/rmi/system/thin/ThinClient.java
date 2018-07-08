@@ -2,6 +2,9 @@ package org.mearvk.circuitry.rmi.system.thin;
 
 import org.mearvk.circuitry.rmi.system.RMI;
 import org.mearvk.circuitry.rmi.system.System;
+import org.mearvk.circuitry.rmi.system.framing.ProcessBank;
+import org.mearvk.circuitry.rmi.system.framing.ProcessBlock;
+import org.mearvk.circuitry.rmi.system.framing.TargetProcess;
 import org.mearvk.examples.example012.FramingClient;
 
 import java.net.Socket;
@@ -17,30 +20,32 @@ public class ThinClient extends ThinClientImpl
 
     public static void main(String... args)
     {
-        ThinClient client = new FramingClient();
+        FramingClient framingclient = new FramingClient();
 
         //
 
         System.rmi
-                .lookup("//system/logos1")
-                .synchronize(System.rmi, client)
+                .lookup("//systems/logos/001")
+                .synchronize(framingclient)
                 .go();
 
-        client.setStdOut(java.lang.System.out);
+        //
 
-        client.setNamedProcess
-                ("0xab", client.setProcessBlock("$", new ProcessBlock()), client.getTargetProcess("//x/y/z"), client.getBankProcess("//a/b/c"), ProcessBlock.PRECALL);
-
-        client.setNamedProcess
-                ("0N_AB*", client.setProcessBlock("$", new ProcessBlock()), client.getTargetProcess("//x/y/z"), client.getBankProcess("//a/b/c"), ProcessBlock.POSTCALL);
-
-        client.setNamedMonitor("PROCESS_MONITOR_3"); //monitoredobject1.fires :: none, <x>, monitoredobject2.receives :: std, final objectstandard :: out
+        framingclient.setStdOut(java.lang.System.out);
 
         //
 
-        condensor.condense(client.calls(4)) >> umHaap. > dhl;>^*&Kj;
+        framingclient.setNamedProcess("$", new ProcessBlock("$"), new TargetProcess("$"), new ProcessBank("//bank/001"), ProcessBlock.PRECALL);
+
+        framingclient.setNamedProcess("$", new ProcessBlock("$"), new TargetProcess("$"), new ProcessBank("//bank/002"), ProcessBlock.POSTCALL);
 
         //
+
+        framingclient.setNamedMonitor("$", new ProcessBlock("$"), ProcessBlock.ONCALL | ProcessBlock.PRECALL);
+
+        //
+
+        framingclient.compile("//output/framing/outputs");
     }
 
     //
