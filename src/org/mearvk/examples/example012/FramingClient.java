@@ -1,6 +1,7 @@
 package org.mearvk.examples.example012;
 
 import org.mearvk.ancellaries.annotations.Resource;
+import org.mearvk.circuitry.rmi.system.framing.ForkProcess;
 import org.mearvk.circuitry.rmi.system.framing.ProcessBank;
 import org.mearvk.circuitry.rmi.system.framing.ProcessBlock;
 import org.mearvk.circuitry.rmi.system.framing.TargetProcess;
@@ -31,6 +32,11 @@ public class FramingClient extends ThinClient
     }
 
     public void setNamedProcess(String name, ProcessBlock block, TargetProcess target, ProcessBank bank, Integer state)
+    {
+
+    }
+
+    public void setNamedFork(String name, ProcessBlock block, TargetProcess target, ProcessBank bank, ForkProcess fork, Integer state)
     {
 
     }

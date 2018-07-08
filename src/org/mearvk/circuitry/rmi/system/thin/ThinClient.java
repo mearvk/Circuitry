@@ -2,6 +2,7 @@ package org.mearvk.circuitry.rmi.system.thin;
 
 import org.mearvk.circuitry.rmi.system.RMI;
 import org.mearvk.circuitry.rmi.system.System;
+import org.mearvk.circuitry.rmi.system.framing.ForkProcess;
 import org.mearvk.circuitry.rmi.system.framing.ProcessBank;
 import org.mearvk.circuitry.rmi.system.framing.ProcessBlock;
 import org.mearvk.circuitry.rmi.system.framing.TargetProcess;
@@ -37,6 +38,10 @@ public class ThinClient extends ThinClientImpl
 
         //
 
+        framingclient.setNamedFork("$", new ProcessBlock("$"), new TargetProcess("//framing/lists{process}/a"), new ProcessBank("//banks/001"), new ForkProcess("$"), ProcessBlock.ONCALL | ProcessBlock.PRECALL);
+
+        //
+
         framingclient.setNamedProcess("$", new ProcessBlock("$"), new TargetProcess("//framing/lists{process}/a"), new ProcessBank("//banks/001"), ProcessBlock.PRECALL);
 
         framingclient.setNamedProcess("$", new ProcessBlock("$"), new TargetProcess("//framing/lists{process}/b"), new ProcessBank("//banks/001"), ProcessBlock.POSTCALL);
@@ -48,6 +53,8 @@ public class ThinClient extends ThinClientImpl
         //
 
         framingclient.compile("//output/framing/outputs");
+
+        //
     }
 
     //
