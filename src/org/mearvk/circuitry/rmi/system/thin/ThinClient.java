@@ -35,7 +35,7 @@ public class ThinClient extends ThinClientImpl
 
         //
 
-        framingclient.setNamedProcess("$", new ProcessBlock("$"), new TargetProcess("$"), new ProcessBank("//bank/001"), ProcessBlock.PRECALL);
+        framingclient.setNamedProcess("$", new ProcessBlock("$"), new TargetProcess("A:B:C:D"), new ProcessBank("//bank/001"), ProcessBlock.PRECALL);
 
         framingclient.setNamedProcess("$", new ProcessBlock("$"), new TargetProcess("$"), new ProcessBank("//bank/002"), ProcessBlock.POSTCALL);
 
