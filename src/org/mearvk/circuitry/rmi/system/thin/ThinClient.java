@@ -14,6 +14,8 @@ public class ThinClient extends ThinClientImpl
     public ThinClient()
     {
         System.rmi.securitize(rmi, this); //encrypt object in memory, lock object calls, install encapsulators, validate before allowing method calls
+
+        //System.rmi.filter(new ObjectIntegrityEvent()).passthru();
     }
 
     //
