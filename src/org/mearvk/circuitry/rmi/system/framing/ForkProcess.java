@@ -1,6 +1,8 @@
 package org.mearvk.circuitry.rmi.system.framing;
 
-public class ForkProcess
+import org.mearvk.circuitry.rmi.system.RMIImpl;
+
+public class ForkProcess extends RMIImpl
 {
     public ForkProcess()
     {
