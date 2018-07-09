@@ -9,7 +9,7 @@ import java.rmi.Naming;
 import java.rmi.Remote;
 
 @Resource(requires = "//pre/boards/exceptions")
-public class RMIServer implements Remote
+public class RMIServer extends RMIServerImpl implements Remote
 {
     public RMIServer()
     {
@@ -54,6 +54,6 @@ public class RMIServer implements Remote
 
     public static void main(String... args)
     {
-
+        new RMIServer();
     }
 }
