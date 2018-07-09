@@ -2,11 +2,7 @@ package org.mearvk.circuitry.rmi.system.thin;
 
 import org.mearvk.circuitry.rmi.system.RMI;
 import org.mearvk.circuitry.rmi.system.System;
-import org.mearvk.circuitry.rmi.system.framing.ForkProcess;
-import org.mearvk.circuitry.rmi.system.framing.ProcessBank;
-import org.mearvk.circuitry.rmi.system.framing.ProcessBlock;
-import org.mearvk.circuitry.rmi.system.framing.TargetProcess;
-import org.mearvk.examples.example012.FramingClient;
+import org.mearvk.circuitry.rmi.system.framing.*;
 
 import java.net.Socket;
 
