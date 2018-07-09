@@ -26,6 +26,8 @@ public class System implements Serializable
 
     public static RMI registry = new RMI("registry");
 
+    public static RMI exceptions = new RMI("exceptions");
+
     //
 
     public static FrameRegistry frame_registry = new FrameRegistry();

@@ -1,4 +1,4 @@
-package org.mearvk.circuitry.rmi.system.thin;
+package org.mearvk.circuitry.rmi.system.clients.thin;
 
 import org.mearvk.ancellaries.annotations.Resource;
 import org.mearvk.circuitry.rmi.system.RMI;

@@ -2,9 +2,10 @@ package org.mearvk.circuitry.rmi.system;
 
 import org.mearvk.ancellaries.SystemComponent;
 import org.mearvk.ancellaries.annotations.Resource;
+import org.mearvk.circuitry.rmi.system.boards.SystemBoard;
 import org.mearvk.circuitry.rmi.system.call.CallClient;
+import org.mearvk.circuitry.rmi.system.clients.thin.ThinClient;
 import org.mearvk.circuitry.rmi.system.interfaces.RMIModel;
-import org.mearvk.circuitry.rmi.system.thin.ThinClient;
 
 import javax.lang.model.type.NullType;
 import java.io.File;
@@ -55,6 +56,16 @@ public class RMI extends RMIImpl implements Serializable, Remote
         {
             e.printStackTrace();
         }
+    }
+
+    //
+
+    @Resource(tie = "super")
+    public RMI fort()
+    {
+        System.rmi.store(this.store, "public RMI as()", null, Thread.currentThread(), Thread.currentThread().getStackTrace());
+
+        return this;
     }
 
     //
@@ -116,7 +127,23 @@ public class RMI extends RMIImpl implements Serializable, Remote
     }
 
     @Resource(tie = "super")
-    public RMI post(PrintStream stream, String URI)
+    public RMI post(PrintStream stream, String message)
+    {
+        System.rmi.store(this.store, "public RMI post()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), message);
+
+        return this;
+    }
+
+    @Resource(tie = "super")
+    public RMI post(SystemBoard board, String message)
+    {
+        System.rmi.store(this.store, "public RMI post()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), message);
+
+        return this;
+    }
+
+    @Resource(tie = "super")
+    public RMI post(String URI, String message)
     {
         System.rmi.store(this.store, "public RMI post()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), URI);
 

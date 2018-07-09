@@ -1,7 +1,7 @@
-package org.mearvk.circuitry.rmi.system.thick;
+package org.mearvk.circuitry.rmi.system.clients.thick;
 
 import org.mearvk.circuitry.rmi.system.RMI;
-import org.mearvk.circuitry.rmi.system.thin.ThinClientAbstract;
+import org.mearvk.circuitry.rmi.system.clients.thin.ThinClientAbstract;
 
 import java.security.Key;
 

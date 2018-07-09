@@ -1,6 +1,6 @@
 package org.mearvk.circuitry.rmi.system;
 
-import org.mearvk.circuitry.rmi.system.thin.ThinClient;
+import org.mearvk.circuitry.rmi.system.clients.thin.ThinClient;
 
 import java.lang.module.Configuration;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package org.mearvk.circuitry.rmi.system.framing;
+package org.mearvk.circuitry.rmi.system.clients.framing;
 
 import org.mearvk.ancellaries.annotations.Resource;
 

@@ -1,11 +1,11 @@
 package org.mearvk.examples.example012;
 
 import org.mearvk.ancellaries.annotations.Resource;
-import org.mearvk.circuitry.rmi.system.framing.ForkProcess;
-import org.mearvk.circuitry.rmi.system.framing.ProcessBank;
-import org.mearvk.circuitry.rmi.system.framing.ProcessBlock;
-import org.mearvk.circuitry.rmi.system.framing.TargetProcess;
-import org.mearvk.circuitry.rmi.system.thin.ThinClient;
+import org.mearvk.circuitry.rmi.system.clients.framing.ForkProcess;
+import org.mearvk.circuitry.rmi.system.clients.framing.ProcessBank;
+import org.mearvk.circuitry.rmi.system.clients.framing.ProcessBlock;
+import org.mearvk.circuitry.rmi.system.clients.framing.TargetProcess;
+import org.mearvk.circuitry.rmi.system.clients.thin.ThinClient;
 
 import java.io.PrintStream;
 

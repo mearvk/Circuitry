@@ -1,28 +1,45 @@
-package org.mearvk.circuitry.rmi.system.thin;
+package org.mearvk.circuitry.rmi.system.clients.thin;
 
 import org.mearvk.circuitry.rmi.system.RMI;
 import org.mearvk.circuitry.rmi.system.System;
 
+import java.math.BigInteger;
 import java.net.Socket;
-import java.security.Key;
+import java.security.KeyFactory;
+import java.security.PrivateKey;
+import java.security.PublicKey;
+import java.security.spec.RSAPrivateKeySpec;
+import java.security.spec.RSAPublicKeySpec;
+import java.util.Random;
 
-public class ThinClientImpl extends ThinClientSecurity
+public class ThinClientSecurity extends ThinClientAdmin
 {
-    protected Key key = null;
+    protected PublicKey pubkey = null;
 
-
+    protected PrivateKey prvkey = null;
 
     //
 
-    public ThinClientImpl()
+    public ThinClientSecurity()
     {
         System.rmi.securitize(rmi, this);
+
+        try
+        {
+            this.pubkey = KeyFactory.getInstance("RSA").generatePublic(new RSAPublicKeySpec(BigInteger.probablePrime(1024, new Random()), new BigInteger("3")));
+
+            this.prvkey = KeyFactory.getInstance("RSA").generatePrivate(new RSAPrivateKeySpec(BigInteger.probablePrime(1024, new Random()), new BigInteger("3")));
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     //
 
     @Override
-    public synchronized void setVersion(int version)
+    public void setVersion(int version)
     {
         System.rmi.securitize(rmi, this);
 
@@ -34,7 +51,7 @@ public class ThinClientImpl extends ThinClientSecurity
     }
 
     @Override
-    public synchronized void setSource(String source)
+    public void setSource(String source)
     {
         System.rmi.securitize(rmi, this);
 
@@ -46,7 +63,7 @@ public class ThinClientImpl extends ThinClientSecurity
     }
 
     @Override
-    public synchronized void setRMI(RMI rmi)
+    public void setRMI(RMI rmi)
     {
         System.rmi.securitize(rmi, this);
 
@@ -58,7 +75,7 @@ public class ThinClientImpl extends ThinClientSecurity
     }
 
     @Override
-    public synchronized void setUI(ThinUI thinui)
+    public void setUI(ThinUI thinui)
     {
         System.rmi.securitize(rmi, this);
 
@@ -70,7 +87,19 @@ public class ThinClientImpl extends ThinClientSecurity
     }
 
     @Override
-    public synchronized void connect()
+    public void connect()
+    {
+        System.rmi.securitize(rmi, this);
+
+        System.rmi.passthru();
+
+        System.debug.post(java.lang.System.out, "connect: ["+null+"]");
+
+        System.rmi.desecuritize(rmi, this);
+    }
+
+    @Override
+    public void connect(RMI rmi)
     {
         System.rmi.securitize(rmi, this);
 
@@ -82,19 +111,7 @@ public class ThinClientImpl extends ThinClientSecurity
     }
 
     @Override
-    public synchronized void connect(RMI rmi)
-    {
-        System.rmi.securitize(rmi, this);
-
-        System.rmi.passthru();
-
-        System.debug.post(java.lang.System.out, "connect: ["+rmi+"]");
-
-        System.rmi.desecuritize(rmi, this);
-    }
-
-    @Override
-    public synchronized void connect(Socket socket)
+    public void connect(Socket socket)
     {
         System.rmi.securitize(rmi, this);
 
@@ -106,7 +123,19 @@ public class ThinClientImpl extends ThinClientSecurity
     }
 
     @Override
-    public synchronized void register()
+    public void register()
+    {
+        System.rmi.securitize(rmi, this);
+
+        System.rmi.passthru();
+
+        System.debug.post(java.lang.System.out, "register: ["+null+"]");
+
+        System.rmi.desecuritize(rmi, this);
+    }
+
+    @Override
+    public void register(RMI rmi)
     {
         System.rmi.securitize(rmi, this);
 
@@ -118,19 +147,7 @@ public class ThinClientImpl extends ThinClientSecurity
     }
 
     @Override
-    public synchronized void register(RMI rmi)
-    {
-        System.rmi.securitize(rmi, this);
-
-        System.rmi.passthru();
-
-        System.debug.post(java.lang.System.out, "register: ["+rmi+"]");
-
-        System.rmi.desecuritize(rmi, this);
-    }
-
-    @Override
-    public synchronized void register(Socket socket)
+    public void register(Socket socket)
     {
         System.rmi.securitize(rmi, this);
 
@@ -142,7 +159,7 @@ public class ThinClientImpl extends ThinClientSecurity
     }
 
     @Override
-    public synchronized void addMember(Class _class, String name)
+    public void addMember(Class _class, String name)
     {
         System.rmi.securitize(rmi, this);
 
@@ -154,7 +171,7 @@ public class ThinClientImpl extends ThinClientSecurity
     }
 
     @Override
-    public synchronized void removeMember(Class _class, String name)
+    public void removeMember(Class _class, String name)
     {
         System.rmi.securitize(rmi, this);
 

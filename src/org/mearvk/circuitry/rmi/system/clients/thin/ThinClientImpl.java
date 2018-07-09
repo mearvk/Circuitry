@@ -1,62 +1,28 @@
-package org.mearvk.circuitry.rmi.system.thin;
+package org.mearvk.circuitry.rmi.system.clients.thin;
 
 import org.mearvk.circuitry.rmi.system.RMI;
 import org.mearvk.circuitry.rmi.system.System;
-import org.mearvk.circuitry.rmi.system.framing.*;
 
 import java.net.Socket;
+import java.security.Key;
 
-public class ThinClient extends ThinClientImpl
+public class ThinClientImpl extends ThinClientSecurity
 {
-    public ThinClient()
-    {
-        System.rmi.securitize(rmi, this); //encrypt object in memory, lock object calls, install encapsulators, validate before allowing method calls
+    protected Key key = null;
 
-        //System.rmi.filter(new ObjectIntegrityEvent()).passthru();
-    }
+
 
     //
 
-    public static void main(String... args)
+    public ThinClientImpl()
     {
-        FramingClient framingclient = new FramingClient();
-
-        //
-
-        System.rmi
-                .lookup("//systems/logos/001")
-                .synchronize(framingclient)
-                .go();
-
-        //
-
-        framingclient.setStdOut(java.lang.System.out);
-
-        //
-
-        framingclient.setNamedFork("$", new ProcessBlock("$"), new TargetProcess("//framing/lists{process}/a"), new ProcessBank("//banks/001"), new ForkProcess("$"), ProcessBlock.ONCALL | ProcessBlock.PRECALL);
-
-        //
-
-        framingclient.setNamedProcess("$", new ProcessBlock("$"), new TargetProcess("//framing/lists{process}/a"), new ProcessBank("//banks/001"), ProcessBlock.PRECALL);
-
-        framingclient.setNamedProcess("$", new ProcessBlock("$"), new TargetProcess("//framing/lists{process}/b"), new ProcessBank("//banks/001"), ProcessBlock.POSTCALL);
-
-        //
-
-        framingclient.setNamedMonitor("$", new ProcessBlock("$"), ProcessBlock.ONCALL | ProcessBlock.PRECALL);
-
-        //
-
-        framingclient.compile("//output/framing/outputs");
-
-        //
+        System.rmi.securitize(rmi, this);
     }
 
     //
 
     @Override
-    public void setVersion(int version)
+    public synchronized void setVersion(int version)
     {
         System.rmi.securitize(rmi, this);
 
@@ -68,7 +34,7 @@ public class ThinClient extends ThinClientImpl
     }
 
     @Override
-    public void setSource(String source)
+    public synchronized void setSource(String source)
     {
         System.rmi.securitize(rmi, this);
 
@@ -80,7 +46,7 @@ public class ThinClient extends ThinClientImpl
     }
 
     @Override
-    public void setRMI(RMI rmi)
+    public synchronized void setRMI(RMI rmi)
     {
         System.rmi.securitize(rmi, this);
 
@@ -92,7 +58,7 @@ public class ThinClient extends ThinClientImpl
     }
 
     @Override
-    public void setUI(ThinUI thinui)
+    public synchronized void setUI(ThinUI thinui)
     {
         System.rmi.securitize(rmi, this);
 
@@ -104,19 +70,7 @@ public class ThinClient extends ThinClientImpl
     }
 
     @Override
-    public void connect()
-    {
-        System.rmi.securitize(rmi, this);
-
-        System.rmi.passthru();
-
-        System.debug.post(java.lang.System.out, "connect: ["+null+"]");
-
-        System.rmi.desecuritize(rmi, this);
-    }
-
-    @Override
-    public void connect(RMI rmi)
+    public synchronized void connect()
     {
         System.rmi.securitize(rmi, this);
 
@@ -128,7 +82,19 @@ public class ThinClient extends ThinClientImpl
     }
 
     @Override
-    public void connect(Socket socket)
+    public synchronized void connect(RMI rmi)
+    {
+        System.rmi.securitize(rmi, this);
+
+        System.rmi.passthru();
+
+        System.debug.post(java.lang.System.out, "connect: ["+rmi+"]");
+
+        System.rmi.desecuritize(rmi, this);
+    }
+
+    @Override
+    public synchronized void connect(Socket socket)
     {
         System.rmi.securitize(rmi, this);
 
@@ -140,19 +106,7 @@ public class ThinClient extends ThinClientImpl
     }
 
     @Override
-    public void register()
-    {
-        System.rmi.securitize(rmi, this);
-
-        System.rmi.passthru();
-
-        System.debug.post(java.lang.System.out, "register: ["+null+"]");
-
-        System.rmi.desecuritize(rmi, this);
-    }
-
-    @Override
-    public void register(RMI rmi)
+    public synchronized void register()
     {
         System.rmi.securitize(rmi, this);
 
@@ -164,31 +118,43 @@ public class ThinClient extends ThinClientImpl
     }
 
     @Override
-    public void register(Socket socket)
+    public synchronized void register(RMI rmi)
     {
         System.rmi.securitize(rmi, this);
 
         System.rmi.passthru();
 
-        System.debug.post(java.lang.System.out, "register: [" + socket + "]");
+        System.debug.post(java.lang.System.out, "register: ["+rmi+"]");
 
         System.rmi.desecuritize(rmi, this);
     }
 
     @Override
-    public void addMember(Class _class, String name)
+    public synchronized void register(Socket socket)
     {
         System.rmi.securitize(rmi, this);
 
         System.rmi.passthru();
 
-        System.debug.post(java.lang.System.out, "addMember: [" + _class + "]");
+        System.debug.post(java.lang.System.out, "register: ["+socket+"]");
 
         System.rmi.desecuritize(rmi, this);
     }
 
     @Override
-    public void removeMember(Class _class, String name)
+    public synchronized void addMember(Class _class, String name)
+    {
+        System.rmi.securitize(rmi, this);
+
+        System.rmi.passthru();
+
+        System.debug.post(java.lang.System.out, "addMember: ["+_class+"]");
+
+        System.rmi.desecuritize(rmi, this);
+    }
+
+    @Override
+    public synchronized void removeMember(Class _class, String name)
     {
         System.rmi.securitize(rmi, this);
 

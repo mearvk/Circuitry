@@ -1,39 +1,56 @@
-package org.mearvk.circuitry.rmi.system.thin;
+package org.mearvk.circuitry.rmi.system.clients.thin;
 
 import org.mearvk.circuitry.rmi.system.RMI;
 import org.mearvk.circuitry.rmi.system.System;
+import org.mearvk.circuitry.rmi.system.clients.framing.*;
 
-import java.math.BigInteger;
 import java.net.Socket;
-import java.security.KeyFactory;
-import java.security.PrivateKey;
-import java.security.PublicKey;
-import java.security.spec.RSAPrivateKeySpec;
-import java.security.spec.RSAPublicKeySpec;
-import java.util.Random;
 
-public class ThinClientSecurity extends ThinClientAdmin
+public class ThinClient extends ThinClientImpl
 {
-    protected PublicKey pubkey = null;
+    public ThinClient()
+    {
+        System.rmi.securitize(rmi, this); //encrypt object in memory, lock object calls, install encapsulators, validate before allowing method calls
 
-    protected PrivateKey prvkey = null;
+        //System.rmi.filter(new ObjectIntegrityEvent()).passthru();
+    }
 
     //
 
-    public ThinClientSecurity()
+    public static void main(String... args)
     {
-        System.rmi.securitize(rmi, this);
+        FramingClient framingclient = new FramingClient();
 
-        try
-        {
-            this.pubkey = KeyFactory.getInstance("RSA").generatePublic(new RSAPublicKeySpec(BigInteger.probablePrime(1024, new Random()), new BigInteger("3")));
+        //
 
-            this.prvkey = KeyFactory.getInstance("RSA").generatePrivate(new RSAPrivateKeySpec(BigInteger.probablePrime(1024, new Random()), new BigInteger("3")));
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
+        System.rmi
+                .lookup("//systems/logos/001")
+                .synchronize(framingclient)
+                .go();
+
+        //
+
+        framingclient.setStdOut(java.lang.System.out);
+
+        //
+
+        framingclient.setNamedFork("$", new ProcessBlock("$"), new TargetProcess("//framing/lists{process}/a"), new ProcessBank("//banks/001"), new ForkProcess("$"), ProcessBlock.ONCALL | ProcessBlock.PRECALL);
+
+        //
+
+        framingclient.setNamedProcess("$", new ProcessBlock("$"), new TargetProcess("//framing/lists{process}/a"), new ProcessBank("//banks/001"), ProcessBlock.PRECALL);
+
+        framingclient.setNamedProcess("$", new ProcessBlock("$"), new TargetProcess("//framing/lists{process}/b"), new ProcessBank("//banks/001"), ProcessBlock.POSTCALL);
+
+        //
+
+        framingclient.setNamedMonitor("$", new ProcessBlock("$"), ProcessBlock.ONCALL | ProcessBlock.PRECALL);
+
+        //
+
+        framingclient.compile("//output/framing/outputs");
+
+        //
     }
 
     //
@@ -153,7 +170,7 @@ public class ThinClientSecurity extends ThinClientAdmin
 
         System.rmi.passthru();
 
-        System.debug.post(java.lang.System.out, "register: ["+socket+"]");
+        System.debug.post(java.lang.System.out, "register: [" + socket + "]");
 
         System.rmi.desecuritize(rmi, this);
     }
@@ -165,7 +182,7 @@ public class ThinClientSecurity extends ThinClientAdmin
 
         System.rmi.passthru();
 
-        System.debug.post(java.lang.System.out, "addMember: ["+_class+"]");
+        System.debug.post(java.lang.System.out, "addMember: [" + _class + "]");
 
         System.rmi.desecuritize(rmi, this);
     }
