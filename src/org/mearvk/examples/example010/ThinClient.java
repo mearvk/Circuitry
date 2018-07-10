@@ -1,14 +1,14 @@
 package org.mearvk.examples.example010;
 
 import org.mearvk.ancellaries.annotations.Resource;
-import org.mearvk.circuitry.rmi.system.*;
+import org.mearvk.circuitry.rmi.system.Frame;
+import org.mearvk.circuitry.rmi.system.RMIImpl;
+import org.mearvk.circuitry.rmi.system.RMIStore;
 import org.mearvk.circuitry.rmi.system.System;
 import org.mearvk.circuitry.rmi.system.interfaces.Eric;
-import org.mearvk.circuitry.rmi.system.interfaces.Hooks;
+import org.mearvk.circuitry.rmi.system.parameterization.Parameter;
 
 import java.io.Serializable;
-
-import static sun.security.x509.CertificateX509Key.KEY;
 
 
 class Main
@@ -25,7 +25,7 @@ class Main
 
         //
 
-        System.rmi.hook(ThinClient.class, Hooks.ALL);
+        //System.rmi.hook(ThinClient.class, Hooks.ALL);
 
         //
 
@@ -37,11 +37,11 @@ class Main
 
         //
 
-        System.rmi.create(KEY, ThinClient.class, client000);    //tie the client000 to my KEY
+        //System.rmi.create(KEY, ThinClient.class, client000);    //tie the client000 to my KEY
 
-        System.rmi.create(KEY, ThinClient.class, client001);    // ..
+        //System.rmi.create(KEY, ThinClient.class, client001);    // ..
 
-        System.rmi.create(KEY, ThinClient.class, client002);    // ..
+        //System.rmi.create(KEY, ThinClient.class, client002);    // ..
 
         //
 
@@ -80,22 +80,22 @@ public class ThinClient extends ThinClientImpl implements Serializable, Eric
     {
         java.lang.System.out.println("Connected...");
 
-        org.mearvk.circuitry.rmi.system.System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
+        org.mearvk.circuitry.rmi.system.System.rmi.passthru(null);
     }
 
     public void disconnect()
     {
-        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
+        System.rmi.passthru(null);
     }
 
     public void show()
     {
-        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
+        System.rmi.passthru(null);
     }
 
     public void hide()
     {
-        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
+        System.rmi.passthru(null);
     }
 
     public UserInterface getUserinterface()
@@ -118,22 +118,22 @@ class ThinClientImpl extends ThinClientSystemImpl implements Serializable
 
     public void connect()
     {
-        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
+        System.rmi.passthru(null);
     }
 
     public void disconnect()
     {
-        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
+        System.rmi.passthru(null);
     }
 
     public void show()
     {
-        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
+        System.rmi.passthru(null);
     }
 
     public void hide()
     {
-        System.rmi.passthru(this, super.ref, RMI.SIMPLE_PASSTHRU);
+        System.rmi.passthru(null);
     }
 
     public UserInterfaceImpl getUserinterfaceImpl()
@@ -151,27 +151,27 @@ class ThinClientSystemImpl implements Serializable
 
     public ThinClientSystemImpl()
     {
-        System.rmi.store(new RMIStore(), this);
+        System.rmi.store(new Parameter(), new RMIStore());
     }
 
     public void connect()
     {
-        System.rmi.store(new RMIStore(), this);
+        System.rmi.store(new Parameter(), new RMIStore());
     }
 
     public void disconnect()
     {
-        System.rmi.store(new RMIStore(), this);
-    }
-
-    public void show()
-    {
-        System.rmi.store(new RMIStore(), this);
+        System.rmi.store(new Parameter(), new RMIStore());
     }
 
     public void hide()
     {
-        System.rmi.store(new RMIStore(), this);
+        System.rmi.store(new Parameter(), new RMIStore());
+    }
+
+    public void show()
+    {
+        System.rmi.store(new Parameter(), new RMIStore());
     }
 
     public UserInterfaceSystemImpl getUserinterfaceSystemImpl()

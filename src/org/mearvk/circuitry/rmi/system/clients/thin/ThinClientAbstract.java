@@ -65,7 +65,7 @@ public abstract class ThinClientAbstract
 
         //
 
-        System.rmi.securitize(rmi, this);
+        System.rmi.securitize(null);
     }
 
     @Resource()
@@ -79,7 +79,7 @@ public abstract class ThinClientAbstract
 
         //
 
-        System.rmi.securitize(rmi, this, key);
+        System.rmi.securitize(null, key);
     }
 
     //

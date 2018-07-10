@@ -23,7 +23,7 @@ public class ThinClientSecurity extends ThinClientAdmin
 
     public ThinClientSecurity()
     {
-        System.rmi.securitize(rmi, this);
+        System.rmi.securitize(new Parameter(), this.key);
 
         try
         {
@@ -46,7 +46,7 @@ public class ThinClientSecurity extends ThinClientAdmin
 
         //
 
-        System.rmi.securitize(rmi, this);
+        System.rmi.securitize(parameter, null);
 
         System.rmi.passthru(parameter);
 
@@ -62,7 +62,7 @@ public class ThinClientSecurity extends ThinClientAdmin
 
         //
 
-        System.rmi.securitize(rmi, this);
+        System.rmi.securitize(parameter, null);
 
         System.rmi.passthru(parameter);
 
@@ -78,7 +78,7 @@ public class ThinClientSecurity extends ThinClientAdmin
 
         //
 
-        System.rmi.securitize(rmi, this);
+        System.rmi.securitize(parameter, null);
 
         System.rmi.passthru(parameter);
 
@@ -94,7 +94,7 @@ public class ThinClientSecurity extends ThinClientAdmin
 
         //
 
-        System.rmi.securitize(rmi, this);
+        System.rmi.securitize(parameter, null);
 
         System.rmi.passthru(parameter);
 
@@ -110,7 +110,7 @@ public class ThinClientSecurity extends ThinClientAdmin
 
         //
 
-        System.rmi.securitize(rmi, this);
+        System.rmi.securitize(parameter, null);
 
         System.rmi.passthru(parameter);
 
@@ -126,7 +126,7 @@ public class ThinClientSecurity extends ThinClientAdmin
 
         //
 
-        System.rmi.securitize(rmi, this);
+        System.rmi.securitize(parameter, null);
 
         System.rmi.passthru(parameter);
 
@@ -142,7 +142,7 @@ public class ThinClientSecurity extends ThinClientAdmin
 
         //
 
-        System.rmi.securitize(rmi, this);
+        System.rmi.securitize(parameter, null);
 
         System.rmi.passthru(parameter);
 
@@ -158,7 +158,7 @@ public class ThinClientSecurity extends ThinClientAdmin
 
         //
 
-        System.rmi.securitize(rmi, this);
+        System.rmi.securitize(parameter, null);
 
         System.rmi.passthru(parameter);
 
@@ -174,7 +174,7 @@ public class ThinClientSecurity extends ThinClientAdmin
 
         //
 
-        System.rmi.securitize(rmi, this);
+        System.rmi.securitize(parameter, null);
 
         System.rmi.passthru(parameter);
 
@@ -190,7 +190,7 @@ public class ThinClientSecurity extends ThinClientAdmin
 
         //
 
-        System.rmi.securitize(rmi, this);
+        System.rmi.securitize(parameter, null);
 
         System.rmi.passthru(parameter);
 
@@ -206,7 +206,7 @@ public class ThinClientSecurity extends ThinClientAdmin
 
         //
 
-        System.rmi.securitize(rmi, this);
+        System.rmi.securitize(parameter, null);
 
         System.rmi.passthru(parameter);
 
@@ -222,7 +222,7 @@ public class ThinClientSecurity extends ThinClientAdmin
 
         //
 
-        System.rmi.securitize(rmi, this);
+        System.rmi.securitize(parameter, null);
 
         System.rmi.passthru(parameter);
 

@@ -8,50 +8,6 @@ import java.util.HashMap;
 
 public class Parameter extends ParameterImpl
 {
-    public byte[] getBytecode()
-    {
-        Parameter parameter = new Parameter();
-
-        //
-
-        System.rmi.securitize(null, null);
-
-        System.rmi.passthru(parameter);
-
-        System.rmi.desecuritize(null, null);
-
-        //
-
-        return parameter.getBytecode();
-    }
-
-    public void setBytecode(byte[] bytecode)
-    {
-        this.bytecode = bytecode;
-    }
-
-    public byte[] getEncrypted()
-    {
-        Parameter parameter = new Parameter();
-
-        //
-
-        System.rmi.securitize(null, null);
-
-        System.rmi.passthru(parameter);
-
-        System.rmi.desecuritize(null, null);
-
-        //
-
-        return parameter.getEncrypted();
-    }
-
-    public void setEncrypted(byte[] encrypted)
-    {
-        this.encrypted = encrypted;
-    }
-
     public Integer getHashCode()
     {
         Parameter parameter = new Parameter();
@@ -62,55 +18,16 @@ public class Parameter extends ParameterImpl
 
         System.rmi.passthru(parameter);
 
-        System.rmi.desecuritize(null, null);
+        System.rmi.desecuritize(parameter, null);
 
         //
 
         return parameter.getHashCode();
     }
 
-    public Integer getHashcode()
+    public void setBytecode(byte[] bytecode)
     {
-        Parameter parameter = new Parameter();
-
-        //
-
-        System.rmi.securitize(null, null);
-
-        System.rmi.passthru(parameter);
-
-        System.rmi.desecuritize(null, null);
-
-        //
-
-        return parameter.getHashcode();
-    }
-
-    public void setHashcode(int hashcode)
-    {
-        this.hashcode = hashcode;
-    }
-
-    public Key getKey()
-    {
-        Parameter parameter = new Parameter();
-
-        //
-
-        System.rmi.securitize(null, null);
-
-        System.rmi.passthru(parameter);
-
-        System.rmi.desecuritize(null, null);
-
-        //
-
-        return parameter.getKey();
-    }
-
-    public void setKey(Key key)
-    {
-        this.key = key;
+        this.bytecode = bytecode;
     }
 
     public RMI getRMI()
@@ -123,55 +40,16 @@ public class Parameter extends ParameterImpl
 
         System.rmi.passthru(parameter);
 
-        System.rmi.desecuritize(null, null);
+        System.rmi.desecuritize(parameter, null);
 
         //
 
         return parameter.getRMI();
     }
 
-    public Object getReference()
+    public void setEncrypted(byte[] encrypted)
     {
-        Parameter parameter = new Parameter();
-
-        //
-
-        System.rmi.securitize(null, null);
-
-        System.rmi.passthru(parameter);
-
-        System.rmi.desecuritize(null, null);
-
-        //
-
-        return parameter.getReference();
-    }
-
-    public void setReference(Object reference)
-    {
-        this.reference = reference;
-    }
-
-    public HashMap<Class, Object> getResult()
-    {
-        Parameter parameter = new Parameter();
-
-        //
-
-        System.rmi.securitize(null, null);
-
-        System.rmi.passthru(parameter);
-
-        System.rmi.desecuritize(null, null);
-
-        //
-
-        return parameter.getResult();
-    }
-
-    public void setResult(HashMap<Class, Object> result)
-    {
-        this.result = result;
+        this.encrypted = encrypted;
     }
 
     public RMI getRmi()
@@ -180,20 +58,15 @@ public class Parameter extends ParameterImpl
 
         //
 
-        System.rmi.securitize(null, null);
+        System.rmi.securitize(parameter, null);
 
         System.rmi.passthru(parameter);
 
-        System.rmi.desecuritize(null, null);
+        System.rmi.desecuritize(parameter, null);
 
         //
 
         return parameter.getRmi();
-    }
-
-    public void setRmi(RMI rmi)
-    {
-        this.rmi = rmi;
     }
 
     public String getURI()
@@ -206,11 +79,160 @@ public class Parameter extends ParameterImpl
 
         System.rmi.passthru(parameter);
 
-        System.rmi.desecuritize(null, null);
+        System.rmi.desecuritize(parameter, null);
 
         //
 
         return parameter.getURI();
+    }
+
+    public void setHashcode(int hashcode)
+    {
+        this.hashcode = hashcode;
+    }
+
+    public Object getReference()
+    {
+        Parameter parameter = new Parameter();
+
+        //
+
+        System.rmi.securitize(null, null);
+
+        System.rmi.passthru(parameter);
+
+        System.rmi.desecuritize(parameter, null);
+
+        //
+
+        return parameter.getReference();
+    }
+
+    public void setKey(Key key)
+    {
+        this.key = key;
+    }
+
+    public String getObject()
+    {
+        Parameter parameter = new Parameter();
+
+        //
+
+        System.rmi.securitize(null, null);
+
+        System.rmi.passthru(parameter);
+
+        System.rmi.desecuritize(parameter, null);
+
+        //
+
+        return parameter.getURI();
+    }
+
+    public byte[] getBytecode()
+    {
+        Parameter parameter = new Parameter();
+
+        //
+
+        System.rmi.securitize(null, null);
+
+        System.rmi.passthru(parameter);
+
+        System.rmi.desecuritize(parameter, null);
+
+        //
+
+        return parameter.getBytecode();
+    }
+
+    public void setReference(Object reference)
+    {
+        this.reference = reference;
+    }
+
+    public byte[] getEncrypted()
+    {
+        Parameter parameter = new Parameter();
+
+        //
+
+        System.rmi.securitize(null, null);
+
+        System.rmi.passthru(parameter);
+
+        System.rmi.desecuritize(parameter, null);
+
+        //
+
+        return parameter.getEncrypted();
+    }
+
+    public void setResult(HashMap<Class, Object> result)
+    {
+        this.result = result;
+    }
+
+    public HashMap<Class, Object> getResult()
+    {
+        Parameter parameter = new Parameter();
+
+        //
+
+        System.rmi.securitize(null, null);
+
+        System.rmi.passthru(parameter);
+
+        System.rmi.desecuritize(parameter, null);
+
+        //
+
+        return parameter.getResult();
+    }
+
+    public void setRmi(RMI rmi)
+    {
+        this.rmi = rmi;
+    }
+
+    public Key getKey()
+    {
+        Parameter parameter = new Parameter();
+
+        //
+
+        System.rmi.securitize(null, null);
+
+        System.rmi.passthru(parameter);
+
+        System.rmi.desecuritize(parameter, null);
+
+        //
+
+        return parameter.getKey();
+    }
+
+    public Integer getHashcode()
+    {
+        Parameter parameter = new Parameter();
+
+        //
+
+        System.rmi.securitize(null, null);
+
+        System.rmi.passthru(parameter);
+
+        System.rmi.desecuritize(parameter, null);
+
+        //
+
+        return parameter.getHashcode();
+    }
+
+    public void setObject(RMI rmi)
+    {
+        this.rmi = rmi;
     }
 
     public void setURI(String URI)
