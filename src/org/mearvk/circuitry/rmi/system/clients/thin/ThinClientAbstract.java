@@ -57,11 +57,11 @@ public abstract class ThinClientAbstract
     @Resource()
     public ThinClientAbstract()
     {
-        System.rmi.init("//security", this, this.securityfile);
+        System.rmi.init("rmi://localhost/security", this, this.securityfile);
 
-        System.rmi.init("//exceptions", this, this.exceptionsfile);
+        System.rmi.init("rmi://localhost/exceptions", this, this.exceptionsfile);
 
-        System.rmi.init("//output", this, this.outputfile);
+        System.rmi.init("rmi://localhost/output", this, this.outputfile);
 
         //
 
@@ -71,11 +71,11 @@ public abstract class ThinClientAbstract
     @Resource()
     public ThinClientAbstract(Key key)
     {
-        System.rmi.init("//security", this, this.securityfile);
+        System.rmi.init("rmi://localhost/security", this, this.securityfile);
 
-        System.rmi.init("//exceptions", this, this.exceptionsfile);
+        System.rmi.init("rmi://localhost/exceptions", this, this.exceptionsfile);
 
-        System.rmi.init("//output", this, this.outputfile);
+        System.rmi.init("rmi://localhost/output", this, this.outputfile);
 
         //
 

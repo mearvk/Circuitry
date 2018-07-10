@@ -1,5 +1,5 @@
 package org.mearvk.circuitry.rmi.system;
 
-public class RMIDbmsImpl
+public class RMIDbmsImpl extends RMIDbmsAdmin
 {
 }

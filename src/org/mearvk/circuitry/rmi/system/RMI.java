@@ -204,13 +204,13 @@ public class RMI extends RMIImpl implements Serializable, Remote
 
         //
 
-        System.rmi.encrypt(rmi, reference, key);
+        System.rmi.decrypt(rmi, reference, key);
 
-        System.rmi.encapsulate(rmi, reference, key);
+        System.rmi.deencapsulate(rmi, reference, key);
 
-        System.rmi.synchronize(rmi, reference, key);
+        System.rmi.desynchronize(rmi, reference, key);
 
-        System.rmi.validate(rmi, reference, key);
+        System.rmi.devalidate(rmi, reference, key);
 
         //
 
