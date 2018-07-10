@@ -6,16 +6,19 @@ import org.mearvk.circuitry.rmi.system.boards.SystemBoard;
 import org.mearvk.circuitry.rmi.system.call.CallClient;
 import org.mearvk.circuitry.rmi.system.clients.thin.ThinClient;
 import org.mearvk.circuitry.rmi.system.interfaces.RMIModel;
+import org.mearvk.circuitry.rmi.system.parameterization.Parameter;
 
+import javax.crypto.Cipher;
+import javax.crypto.spec.SecretKeySpec;
 import javax.lang.model.type.NullType;
-import java.io.File;
-import java.io.PrintStream;
-import java.io.Serializable;
+import java.io.*;
 import java.lang.reflect.Method;
 import java.rmi.Naming;
 import java.rmi.Remote;
 import java.security.Key;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Base64;
 
 public class RMI extends RMIImpl implements Serializable, Remote
 {
@@ -270,7 +273,7 @@ public class RMI extends RMIImpl implements Serializable, Remote
 
         //
 
-        System.rmi.encrypt(rmi, reference);
+        System.rmi.encrypt(rmi, reference, "");
 
         System.rmi.encapsulate(rmi, reference);
 
@@ -286,25 +289,60 @@ public class RMI extends RMIImpl implements Serializable, Remote
     //
 
     @Resource(tie = "super")
-    public RMI encrypt(RMI rmi, Object reference)
+    public RMI encrypt(RMI rmi, Object reference, String URI)
     {
         System.rmi.store(this.store, "public RMI encrypt(RMI " + rmi + ", Object " + reference + ")", reference, Thread.currentThread(), Thread.currentThread().getStackTrace(), rmi, reference);
 
         //
 
-        Remote object = null;
+        String bytecode = null;
 
-        object = (Remote) this.store.recall(null, null, null, null, null);
+
+        ByteArrayOutputStream baos; //= new ByteArrayOutputStream();
+
+        ObjectOutputStream oos; //= new ObjectOutputStream();
+
+        try
+        {
+            baos = new ByteArrayOutputStream();
+
+            oos = new ObjectOutputStream(baos);
+
+            //
+
+            oos.writeObject(reference);
+
+            oos.flush();
+
+            oos.close();
+
+            //
+
+            bytecode = Arrays.toString(baos.toByteArray());
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
 
         //
 
-        if (object == null)
+        Cipher cipher;
+
+        try
         {
-            //not actually in memory yet
-        } else
-        {
-            //in memory go ahead and ecnrypt it and put it up
+            cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+
+            cipher.init(Cipher.ENCRYPT_MODE, new SecretKeySpec("key".getBytes(), "AES"));
+
+            Base64.getEncoder().encodeToString(cipher.doFinal(bytecode.getBytes("UTF-8")));
         }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+        //
 
         return this;
     }
@@ -614,7 +652,7 @@ public class RMI extends RMIImpl implements Serializable, Remote
     }
 
     @Resource(tie = "super")
-    public RMI passthru()
+    public RMI passthru(Parameter parameter)
     {
         System.rmi.store(this.store, "public RMI passthru()", null, Thread.currentThread(), Thread.currentThread().getStackTrace());
 
@@ -908,7 +946,7 @@ public class RMI extends RMIImpl implements Serializable, Remote
 
         //
 
-        System.rmi.encrypt(rmi, reference);
+        System.rmi.encrypt(rmi, reference, "");
 
         System.rmi.encapsulate(rmi, reference);
 

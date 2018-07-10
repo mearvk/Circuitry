@@ -68,7 +68,7 @@ public class RMIStore extends RMIStoreImpl implements Remote, Serializable
         return null;
     }
 
-    public HashMap<Class, Object> recall(String rmiURI, Object object, String name, Thread thread, StackTraceElement[] elements)
+    public HashMap<Class, Object> recall(RMI rmi, Object object, String rmiURI, Thread thread, StackTraceElement[] elements)
     {
         HashMap<Class, Object> map = new HashMap<>();
 

@@ -2,7 +2,7 @@ package org.mearvk.circuitry.rmi.system.clients.thin;
 
 import org.mearvk.circuitry.rmi.system.RMI;
 import org.mearvk.circuitry.rmi.system.System;
-import org.mearvk.circuitry.rmi.system.clients.framing.*;
+import org.mearvk.circuitry.rmi.system.parameterization.Parameter;
 
 import java.net.Socket;
 
@@ -11,46 +11,13 @@ public class ThinClient extends ThinClientImpl
     public ThinClient()
     {
         System.rmi.securitize(rmi, this); //encrypt object in memory, lock object calls, install encapsulators, validate before allowing method calls
-
-        //System.rmi.filter(new ObjectIntegrityEvent()).passthru();
     }
 
     //
 
     public static void main(String... args)
     {
-        FramingClient framingclient = new FramingClient();
 
-        //
-
-        System.rmi
-                .lookup("//systems/logos/001")
-                .synchronize(framingclient)
-                .go();
-
-        //
-
-        framingclient.setStdOut(java.lang.System.out);
-
-        //
-
-        framingclient.setNamedFork("$", new ProcessBlock("$"), new TargetProcess("//framing/lists{process}/a"), new ProcessBank("//banks/001"), new ForkProcess("$"), ProcessBlock.ONCALL | ProcessBlock.PRECALL);
-
-        //
-
-        framingclient.setNamedProcess("$", new ProcessBlock("$"), new TargetProcess("//framing/lists{process}/a"), new ProcessBank("//banks/001"), ProcessBlock.PRECALL);
-
-        framingclient.setNamedProcess("$", new ProcessBlock("$"), new TargetProcess("//framing/lists{process}/b"), new ProcessBank("//banks/001"), ProcessBlock.POSTCALL);
-
-        //
-
-        framingclient.setNamedMonitor("$", new ProcessBlock("$"), ProcessBlock.ONCALL | ProcessBlock.PRECALL);
-
-        //
-
-        framingclient.compile("//output/framing/outputs");
-
-        //
     }
 
     //
@@ -58,9 +25,13 @@ public class ThinClient extends ThinClientImpl
     @Override
     public void setVersion(int version)
     {
+        Parameter parameter = new Parameter();
+
+        //
+
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.passthru(parameter);
 
         System.debug.post(java.lang.System.out, "setVersion: ["+version+"]");
 
@@ -70,9 +41,13 @@ public class ThinClient extends ThinClientImpl
     @Override
     public void setSource(String source)
     {
+        Parameter parameter = new Parameter();
+
+        //
+
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.passthru(parameter);
 
         System.debug.post(java.lang.System.out, "setSource: ["+source+"]");
 
@@ -82,9 +57,13 @@ public class ThinClient extends ThinClientImpl
     @Override
     public void setRMI(RMI rmi)
     {
+        Parameter parameter = new Parameter();
+
+        //
+
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.passthru(parameter);
 
         System.debug.post(java.lang.System.out, "setRMI: ["+rmi+"]");
 
@@ -94,9 +73,13 @@ public class ThinClient extends ThinClientImpl
     @Override
     public void setUI(ThinUI thinui)
     {
+        Parameter parameter = new Parameter();
+
+        //
+
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.passthru(parameter);
 
         System.debug.post(java.lang.System.out, "setUI: ["+thinui+"]");
 
@@ -106,9 +89,13 @@ public class ThinClient extends ThinClientImpl
     @Override
     public void connect()
     {
+        Parameter parameter = new Parameter();
+
+        //
+
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.passthru(parameter);
 
         System.debug.post(java.lang.System.out, "connect: ["+null+"]");
 
@@ -118,9 +105,13 @@ public class ThinClient extends ThinClientImpl
     @Override
     public void connect(RMI rmi)
     {
+        Parameter parameter = new Parameter();
+
+        //
+
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.passthru(parameter);
 
         System.debug.post(java.lang.System.out, "connect: ["+rmi+"]");
 
@@ -130,9 +121,13 @@ public class ThinClient extends ThinClientImpl
     @Override
     public void connect(Socket socket)
     {
+        Parameter parameter = new Parameter();
+
+        //
+
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.passthru(parameter);
 
         System.debug.post(java.lang.System.out, "connect: ["+socket+"]");
 
@@ -142,9 +137,13 @@ public class ThinClient extends ThinClientImpl
     @Override
     public void register()
     {
+        Parameter parameter = new Parameter();
+
+        //
+
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.passthru(parameter);
 
         System.debug.post(java.lang.System.out, "register: ["+null+"]");
 
@@ -154,9 +153,13 @@ public class ThinClient extends ThinClientImpl
     @Override
     public void register(RMI rmi)
     {
+        Parameter parameter = new Parameter();
+
+        //
+
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.passthru(parameter);
 
         System.debug.post(java.lang.System.out, "register: ["+rmi+"]");
 
@@ -166,9 +169,13 @@ public class ThinClient extends ThinClientImpl
     @Override
     public void register(Socket socket)
     {
+        Parameter parameter = new Parameter();
+
+        //
+
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.passthru(parameter);
 
         System.debug.post(java.lang.System.out, "register: [" + socket + "]");
 
@@ -178,9 +185,13 @@ public class ThinClient extends ThinClientImpl
     @Override
     public void addMember(Class _class, String name)
     {
+        Parameter parameter = new Parameter();
+
+        //
+
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.passthru(parameter);
 
         System.debug.post(java.lang.System.out, "addMember: [" + _class + "]");
 
@@ -190,9 +201,13 @@ public class ThinClient extends ThinClientImpl
     @Override
     public void removeMember(Class _class, String name)
     {
+        Parameter parameter = new Parameter();
+
+        //
+
         System.rmi.securitize(rmi, this);
 
-        System.rmi.passthru();
+        System.rmi.passthru(parameter);
 
         System.debug.post(java.lang.System.out, "removeMember: ["+_class+"]");
 
