@@ -2,10 +2,12 @@ package org.mearvk.circuitry.rmi.system;
 
 import org.mearvk.circuitry.rmi.system.clients.thin.ThinClient;
 
+import java.io.Serializable;
 import java.lang.module.Configuration;
+import java.rmi.Remote;
 import java.util.HashMap;
 
-public class RMIStore extends RMIStoreImpl
+public class RMIStore extends RMIStoreImpl implements Remote, Serializable
 {
     public Configuration configuration;
 

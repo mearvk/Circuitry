@@ -4,6 +4,10 @@ import java.io.Serializable;
 
 public class System implements Serializable
 {
+    public static final String version = "1.01";
+
+    //
+
     public static RMI init = new RMI("init");
 
     public static RMI rmi = new RMI("rmi");

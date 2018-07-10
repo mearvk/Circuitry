@@ -50,7 +50,7 @@ public class RMI extends RMIImpl implements Serializable, Remote
     {
         try
         {
-            Naming.bind("//rmi/" + name, this);
+            Naming.bind("rmi/" + name, this);
         }
         catch (Exception e)
         {
@@ -145,7 +145,7 @@ public class RMI extends RMIImpl implements Serializable, Remote
     @Resource(tie = "super")
     public RMI post(String URI, String message)
     {
-        System.rmi.store(this.store, "public RMI post()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), URI);
+        System.rmi.store(this.store, "public RMI post()", null, Thread.currentThread(), Thread.currentThread().getStackTrace(), URI, message);
 
         return this;
     }
